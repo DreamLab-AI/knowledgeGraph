@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proposal-system",
   "domain": "blockchain",
-  "definition": "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding [[OnChainVoting|on-chain exe...",
+  "definition": "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

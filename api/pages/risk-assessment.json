@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:risk-assessment",
   "domain": "infrastructure",
-  "definition": "Risk Assessment is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader Risk Management programmes aligned to [[ISO 3...",
+  "definition": "Risk Assessment is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader Risk Management programmes aligned to",
   "subClassOf": [
     {
       "id": "urn:ngm:class:audit",

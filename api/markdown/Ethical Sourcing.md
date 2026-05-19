@@ -696,7 +696,7 @@ public:: true
   "@id": "urn:ngm:class:ethical-sourcing",
   "@type": "Class",
   "label": "Ethical Sourcing",
-  "definition": "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks ([[ISO 2...",
+  "definition": "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks (",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

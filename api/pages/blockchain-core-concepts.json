@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-core-concepts",
   "domain": "infrastructure",
-  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and [[DataS...",
+  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infrastructure",

@@ -836,7 +836,7 @@ public:: true
   "@id": "urn:ngm:class:btc-layer-3",
   "@type": "Class",
   "label": "BTC Layer 3",
-  "definition": "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the Lightning Network and emerging [[ro...",
+  "definition": "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the Lightning Network and emerging",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

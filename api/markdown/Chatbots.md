@@ -348,7 +348,7 @@ public:: true
   "@id": "urn:ngm:class:chatbots",
   "@type": "Class",
   "label": "Chatbots",
-  "definition": "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern [[Large Language...",
+  "definition": "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

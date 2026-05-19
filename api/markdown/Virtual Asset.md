@@ -228,7 +228,7 @@ public:: true
   "@id": "urn:ngm:class:virtual-asset",
   "@type": "Class",
   "label": "Virtual Asset",
-  "definition": "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and [[InGameItems|in-g...",
+  "definition": "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

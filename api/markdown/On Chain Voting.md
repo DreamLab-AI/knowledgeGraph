@@ -528,7 +528,7 @@ public:: true
   "@id": "urn:ngm:class:on-chain-voting",
   "@type": "Class",
   "label": "On Chain Voting",
-  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries—deployed across Uniswap, [[Compou...",
+  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries—deployed across Uniswap,",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

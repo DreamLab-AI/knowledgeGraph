@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:verification",
   "@type": "Class",
   "label": "VERIFICATION",
-  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification, [[RuleBaseValidation|rule-based validatio...",
+  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification,",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

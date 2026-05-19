@@ -752,7 +752,7 @@ public:: true
   "@id": "urn:ngm:class:distributed-ledger",
   "@type": "Class",
   "label": "Distributed Ledger",
-  "definition": "A Distributed Ledger (or Distributed Ledger Technology, DLT) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic [[C...",
+  "definition": "A Distributed Ledger (or Distributed Ledger Technology, DLT) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -236,7 +236,7 @@ public:: true
   "@id": "urn:ngm:class:slam",
   "@type": "Class",
   "label": "SLAM",
-  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and [[MapConstruction|map c...",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

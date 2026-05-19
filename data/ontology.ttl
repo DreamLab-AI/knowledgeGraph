@@ -1374,7 +1374,7 @@ ngm:blockchain-collaboration a owl:Class ;
 
 ngm:blockchain-core-concepts a owl:Class ;
     rdfs:label "blockchain core concepts"@en ;
-    rdfs:comment "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and [[DataS..."@en ;
+    rdfs:comment "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and"@en ;
     rdfs:subClassOf ngm:infrastructure ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -4099,7 +4099,7 @@ ngm:energy-and-power a owl:Class ;
 
 ngm:enterprise-blockchain-architecture a owl:Class ;
     rdfs:label "Enterprise Blockchain Architecture"@en ;
-    rdfs:comment "Permissioned, enterprise-grade blockchain infrastructure implementing Consensus Mechanism|consensus mechanisms, Smart Contract|smart contracts, and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by [[Hyperledger F..."@en ;
+    rdfs:comment "Permissioned, enterprise-grade blockchain infrastructure implementing Consensus Mechanism|consensus mechanisms, Smart Contract|smart contracts, and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by"@en ;
     rdfs:subClassOf ngm:smart-contract-platform ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -4776,7 +4776,7 @@ ngm:etsi-domain-security-and-privacy a owl:Class ;
 
 ngm:etsi-domain-virtual-economy a owl:Class ;
     rdfs:label "ETSI_Domain_Virtual_Economy"@en ;
-    rdfs:comment "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through CryptoToken|crypto tokens, Cryptocurrency|cryptocurrencies, CentralBankDigitalCurrency|CBDCs, and [[DigitalAsset|digital assets..."@en ;
+    rdfs:comment "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through CryptoToken|crypto tokens, Cryptocurrency|cryptocurrencies, CentralBankDigitalCurrency|CBDCs, and"@en ;
     rdfs:subClassOf ngm:spatial-computing ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -5940,7 +5940,7 @@ ngm:immersive-workspaces a owl:Class ;
 
 ngm:implementation-examples a owl:Class ;
     rdfs:label "implementation examples"@en ;
-    rdfs:comment "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including SmartContractExamples|smart contract implementations, NFTContracts|NFT contract patterns, and [[Met..."@en ;
+    rdfs:comment "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including SmartContractExamples|smart contract implementations, NFTContracts|NFT contract patterns, and"@en ;
     rdfs:subClassOf ngm:spatial-computing ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -13146,7 +13146,7 @@ ngm:update-cycle a owl:Class ;
 
 ngm:us-regulatory-framework a owl:Class ;
     rdfs:label "US Regulatory Framework"@en ;
-    rdfs:comment "US cryptocurrency regulation operates through a fragmented multi-agency framework where SEC|Securities and Exchange Commission applies securities law to tokens, FinCEN|Financial Crimes Enforcement Network supervises money transmission and AMLKYCCompliance|anti-money laundering, the [[..."@en ;
+    rdfs:comment "US cryptocurrency regulation operates through a fragmented multi-agency framework where SEC|Securities and Exchange Commission applies securities law to tokens, FinCEN|Financial Crimes Enforcement Network supervises money transmission and AMLKYCCompliance|anti-money laundering, the"@en ;
     rdfs:subClassOf ngm:blockchain ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -13340,7 +13340,7 @@ ngm:verifiable-credential-standard a owl:Class ;
 
 ngm:verification a owl:Class ;
     rdfs:label "VERIFICATION"@en ;
-    rdfs:comment "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification, [[RuleBaseValidation|rule-based validatio..."@en ;
+    rdfs:comment "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification,"@en ;
     rdfs:subClassOf ngm:spatial-computing ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -14056,7 +14056,7 @@ ngm:xr-headset a owl:Class ;
 
 ngm:zero-knowledge a owl:Class ;
     rdfs:label "Zero Knowledge"@en ;
-    rdfs:comment "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or [[NIZKProof|non-interactiv..."@en ;
+    rdfs:comment "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or"@en ;
     rdfs:subClassOf ngm:privacy-enhancing-computation-pec ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -16261,7 +16261,7 @@ ngm:account-model a owl:Class ;
 
 ngm:adapter-slot a owl:Class ;
     rdfs:label "Adapter Slot"@en ;
-    rdfs:comment "A pluggable interface architecture (ADR-005) providing five standardised slots through which a VisionClaw Agentic Container|VisionClaw agent interacts with its environment: Solid Pod Storage|Pod (persistent storage), Agent Memory|Memory (episodic and semantic), [[Agent Event Stream|Ev..."@en ;
+    rdfs:comment "A pluggable interface architecture (ADR-005) providing five standardised slots through which a VisionClaw Agentic Container|VisionClaw agent interacts with its environment: Solid Pod Storage|Pod (persistent storage), Agent Memory|Memory (episodic and semantic),"@en ;
     rdfs:subClassOf ngm:infrastructure ;
     vc:enables ngm:deployment-flexibility,
         ngm:pluggable-memory,
@@ -19660,7 +19660,7 @@ ngm:ethical-design-standard a owl:Class ;
 
 ngm:ethical-sourcing a owl:Class ;
     rdfs:label "Ethical Sourcing"@en ;
-    rdfs:comment "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks ([[ISO 2..."@en ;
+    rdfs:comment "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards — operationalised through codified frameworks ("@en ;
     rdfs:subClassOf ngm:corporate-social-responsibility,
         ngm:human-rights-due-diligence ;
     vc:enables ngm:child-labour-prevention,
@@ -20704,7 +20704,7 @@ ngm:hidden-state a owl:Class ;
 
 ngm:home-assistant a owl:Class ;
     rdfs:label "Home Assistant"@en ;
-    rdfs:comment "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including Zigbee Protocol, Z-Wave Protocol, [[Matter Prot..."@en ;
+    rdfs:comment "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including Zigbee Protocol, Z-Wave Protocol,"@en ;
     rdfs:subClassOf ngm:home-automation,
         ngm:io-t-platform ;
     vc:enables ngm:demand-side-response,
@@ -33192,7 +33192,7 @@ ngm:value-transfer a owl:Class ;
 
 ngm:virtual-asset a owl:Class ;
     rdfs:label "Virtual Asset"@en ;
-    rdfs:comment "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and [[InGameItems|in-g..."@en ;
+    rdfs:comment "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and"@en ;
     rdfs:subClassOf ngm:spatial-computing ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -34774,7 +34774,7 @@ ngm:node a owl:Class ;
 
 ngm:nvidia-omniverse a owl:Class ;
     rdfs:label "NVIDIA Omniverse"@en ;
-    rdfs:comment "NVIDIA Omniverse is a [[]]-centric, physically accurate simulation and digital twin platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and ..."@en ;
+    rdfs:comment "NVIDIA Omniverse is a -centric, physically accurate simulation and digital twin platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and ..."@en ;
     rdfs:subClassOf ngm:3-d-platform,
         ngm:physical-ai ;
     vc:enables ngm:digital-twin,
@@ -34859,7 +34859,7 @@ ngm:nvidia-omniverse a owl:Class ;
 
 ngm:on-chain-voting a owl:Class ;
     rdfs:label "On Chain Voting"@en ;
-    rdfs:comment "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries—deployed across Uniswap, [[Compou..."@en ;
+    rdfs:comment "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries—deployed across Uniswap,"@en ;
     rdfs:subClassOf ngm:cryptography-security-and-privacy,
         ngm:dao ;
     vc:enables ngm:anti-collusion-voting,
@@ -36962,7 +36962,7 @@ ngm:obstacle-avoidance a owl:Class ;
 
 ngm:perception-system a owl:Class ;
     rdfs:label "Perception System"@en ;
-    rdfs:comment "A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking, [[Localization]..."@en ;
+    rdfs:comment "A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking,"@en ;
     rdfs:subClassOf ngm:autonomous-systems ;
     vc:enables ngm:autonomous-navigation,
         ngm:environmental-mapping,
@@ -38947,7 +38947,7 @@ ngm:procedural-generation a owl:Class ;
 
 ngm:proposal-system a owl:Class ;
     rdfs:label "Proposal System"@en ;
-    rdfs:comment "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding [[OnChainVoting|on-chain exe..."@en ;
+    rdfs:comment "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding"@en ;
     rdfs:subClassOf ngm:blockchain ;
     vc:enables ngm:on-chain-voting ;
     vc:maturity "draft" ;
@@ -41981,7 +41981,7 @@ ngm:ar-frame a owl:Class ;
 
 ngm:btc-layer-3 a owl:Class ;
     rdfs:label "BTC Layer 3"@en ;
-    rdfs:comment "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the Lightning Network and emerging [[ro..."@en ;
+    rdfs:comment "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the Lightning Network and emerging"@en ;
     rdfs:subClassOf ngm:application-layer-protocol,
         ngm:bitcoin-protocol-stack ;
     vc:enables ngm:ai-agent-smart-contracts,
@@ -42121,7 +42121,7 @@ ngm:carbon-footprint-measurement a owl:Class ;
 
 ngm:carbon-neutral-blockchain a owl:Class ;
     rdfs:label "Carbon Neutral Blockchain"@en ;
-    rdfs:comment "Carbon Neutral Blockchain is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: (1) Consensus mechanism transition: Adoption of low-energy Consensus Mechanisms — pre-eminently [[..."@en ;
+    rdfs:comment "Carbon Neutral Blockchain is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: (1) Consensus mechanism transition: Adoption of low-energy Consensus Mechanisms — pre-eminently"@en ;
     rdfs:subClassOf ngm:climate-aligned-finance,
         ngm:green-infrastructure ;
     vc:enables ngm:carbon-credit-tracking,
@@ -42898,7 +42898,7 @@ ngm:trust-infrastructure a owl:Class ;
 
 ngm:web-rtc a owl:Class ;
     rdfs:label "WebRTC"@en ;
-    rdfs:comment "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (getUserMedia, RTCPeerConnection, RTCDataChannel), combining [[ICE..."@en ;
+    rdfs:comment "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (getUserMedia, RTCPeerConnection, RTCDataChannel), combining"@en ;
     rdfs:subClassOf ngm:peer-to-peer-network-protocol,
         ngm:real-time-communication-protocol ;
     vc:enables ngm:collaborative-xr,
@@ -45811,7 +45811,7 @@ ngm:blockchain-infrastructure a owl:Class ;
 
 ngm:chatbots a owl:Class ;
     rdfs:label "Chatbots"@en ;
-    rdfs:comment "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern [[Large Language..."@en ;
+    rdfs:comment "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern"@en ;
     rdfs:subClassOf ngm:ai-agent-system,
         ngm:dialogue-systems ;
     vc:enables ngm:customer-service-automation,
@@ -45890,7 +45890,7 @@ ngm:creator-economy a owl:Class ;
 
 ngm:distributed-ledger a owl:Class ;
     rdfs:label "Distributed Ledger"@en ;
-    rdfs:comment "A Distributed Ledger (or Distributed Ledger Technology, DLT) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic [[C..."@en ;
+    rdfs:comment "A Distributed Ledger (or Distributed Ledger Technology, DLT) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic"@en ;
     rdfs:subClassOf ngm:append-only-log,
         ngm:multi-party-database ;
     vc:enables ngm:atomic-settlement,
@@ -47041,7 +47041,7 @@ ngm:sensor-fusion a owl:Class ;
 
 ngm:slam a owl:Class ;
     rdfs:label "SLAM"@en ;
-    rdfs:comment "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and [[MapConstruction|map c..."@en ;
+    rdfs:comment "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and"@en ;
     rdfs:subClassOf ngm:spatial-mapping ;
     vc:maturity "draft" ;
     vc:qualityScore "0.4"^^xsd:float ;
@@ -47943,7 +47943,7 @@ ngm:prompt-engineering a owl:Class ;
 
 ngm:risk-assessment a owl:Class ;
     rdfs:label "Risk Assessment"@en ;
-    rdfs:comment "Risk Assessment is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader Risk Management programmes aligned to [[ISO 3..."@en ;
+    rdfs:comment "Risk Assessment is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader Risk Management programmes aligned to"@en ;
     rdfs:subClassOf ngm:audit,
         ngm:systems-analysis ;
     vc:enables ngm:ai-governance,
@@ -49396,7 +49396,7 @@ ngm:digital-twin a owl:Class ;
 
 ngm:large-language-models a owl:Class ;
     rdfs:label "Large Language Models"@en ;
-    rdfs:comment "Large Language Models (LLMs) are Foundation Models with s to s of parameters trained on massive text corpora using Transformer architectures and Self-Supervised Learning, capable of performing diverse Natural Language Processing tasks through Few-Shot Learning, [[Zero-Shot..."@en ;
+    rdfs:comment "Large Language Models (LLMs) are Foundation Models with s to s of parameters trained on massive text corpora using Transformer architectures and Self-Supervised Learning, capable of performing diverse Natural Language Processing tasks through Few-Shot Learning,"@en ;
     rdfs:subClassOf ngm:foundation-models,
         ngm:neural-network ;
     vc:enables ngm:code-generation,
