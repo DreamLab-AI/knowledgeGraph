@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:training-hardware",
   "domain": "artificial-intelligence",
-  "definition": "Training Hardware is a concept within the ai domain.",
+  "definition": "Training Hardware is a artificial intelligence concept and a type of High-Performance Computing. that enables Neural Network Training.",
   "subClassOf": [
     {
       "id": "urn:visionflow:linked:high-performance-computing",

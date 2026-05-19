@@ -12,24 +12,12 @@
       "label": "Knowledge-Intensive NLP"
     },
     {
-      "id": "urn:visionflow:linked:neural-information-retrieval",
-      "label": "Neural Information Retrieval"
-    },
-    {
       "id": "urn:visionflow:linked:open-domain-question-answering",
       "label": "Open Domain Question Answering"
     },
     {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
+      "id": "urn:visionflow:linked:neural-information-retrieval",
+      "label": "Neural Information Retrieval"
     }
   ],
   "qualityScore": 0.52,

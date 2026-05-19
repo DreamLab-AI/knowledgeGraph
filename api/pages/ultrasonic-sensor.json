@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:ultrasonic-sensor",
   "domain": "robotics",
-  "definition": "",
+  "definition": "Ultrasonic Sensor is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robotics",

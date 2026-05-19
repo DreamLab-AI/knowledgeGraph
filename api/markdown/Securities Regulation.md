@@ -482,16 +482,8 @@ public:: true
       "vc:label": "Digital Asset Law"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:investment-law",
       "vc:label": "Investment Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
     }
   ],
   "vc:sourceDomain": "blockchain",

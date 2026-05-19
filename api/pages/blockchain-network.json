@@ -8,10 +8,6 @@
   "definition": "A Blockchain Network is a permissionless or permissioned peer-to-peer (P2P) overlay network through which participating nodes collectively maintain, validate, and propagate a shared append-only ledger (the blockchain) without relying on any central coordinator, achieving agreement through a deterministic consensus protocol that selects and finalises canonical chain state under bounded Byzantine fault assumptions. At the physical layer the network is realised as a set of independent software processes\u2014full nodes, light clients, validators, miners, and archive nodes\u2014connected via encrypted TCP/IP or QUIC transport sessions, discovering peers through Kademlia-derived distributed hash table (DHT) protocols such as Ethereum's discv5 v5.1 or Bitcoin's DNS seed bootstrapping, and disseminating transactions and blocks through gossip-based flooding protocols (GossipSub in Ethereum's consensus layer, INV/GETDATA inventory propagation in Bitcoin). The network topology is neither a pure random graph nor a structured DHT overlay but an emergent hybrid: each node maintains a small out-degree peer set (typically 8\u2013125 connections) selected by a combination of geographic diversity heuristics, late",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "label": "Byzantine Fault Tolerant System"
-    },
-    {
       "id": "urn:visionflow:linked:fault-tolerant-system",
       "label": "Fault Tolerant System"
     },
@@ -20,12 +16,8 @@
       "label": "Overlay Network"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-system",
-      "label": "Distributed System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "label": "Peer to Peer Network"
+      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
     }
   ],
   "qualityScore": 0.52,

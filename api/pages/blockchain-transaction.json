@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:blockchain-transaction",
   "domain": "blockchain",
-  "definition": "BlockchainTransaction is a concept within the ngm domain.",
+  "definition": "Blockchain Transaction is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

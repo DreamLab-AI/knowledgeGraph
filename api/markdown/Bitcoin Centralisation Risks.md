@@ -616,14 +616,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:decentralisation",
       "vc:label": "Decentralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-security",
-      "vc:label": "Network Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:systemic-risk",
-      "vc:label": "Systemic Risk"
     }
   ],
   "vc:sourceDomain": "blockchain",

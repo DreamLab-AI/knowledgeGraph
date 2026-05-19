@@ -602,10 +602,6 @@ public:: true
   "label": "Groq",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-accelerator",
-      "vc:label": "AI Accelerator"
-    },
-    {
       "@id": "urn:visionflow:linked:ai-inference-hardware",
       "vc:label": "AI Inference Hardware"
     },
@@ -616,10 +612,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:domain-specific-architecture",
       "vc:label": "Domain-Specific Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-company",
-      "vc:label": "Semiconductor Company"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -582,24 +582,12 @@ public:: true
       "vc:label": "Diffusion Transformer"
     },
     {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
       "@id": "urn:visionflow:linked:generative-video-model",
       "vc:label": "Generative Video Model"
     },
     {
-      "@id": "urn:visionflow:linked:latent-diffusion-model",
-      "vc:label": "Latent Diffusion Model"
-    },
-    {
       "@id": "urn:visionflow:linked:open-weights-foundation-model",
       "vc:label": "Open-Weights Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-video-model",
-      "vc:label": "Text-to-Video Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:system-property",
       "label": "System Property"
-    },
-    {
-      "id": "urn:visionflow:owl:class:resilience",
-      "label": "Resilience"
     }
   ],
   "qualityScore": 0.52,

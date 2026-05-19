@@ -424,18 +424,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:industrial-ecology",
       "vc:label": "Industrial Ecology"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-thinking",
-      "vc:label": "Systems Thinking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:resource-management",
-      "vc:label": "Resource Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainability",
-      "vc:label": "Sustainability"
     }
   ],
   "vc:sourceDomain": "infrastructure",

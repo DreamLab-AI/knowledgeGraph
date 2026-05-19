@@ -8,28 +8,16 @@
   "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated [[Generative AI]] systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons, motion vectors), developed and served by corporations retaining exclusive access to model weights, training data compositions, and inference infrastructure, encompassing five dominant commercial families \u2014 (1) foundation text-to-video generators with physics-aware spatiotemporal modelling (OpenAI Sora Feb 2024 preview / Dec 2024 Turbo launch / Sep 2025 Sora 2 with synchronised audio, [[Google DeepMind]] Veo 2 Dec 2024 / Veo 3 May 2025 with native joint audio, Kuaishou Kling 1.0 Jun 2024 / 2.0 Apr 2025 120-second clips / 2.1 Aug 2025 multi-shot consistency, [[Runway]] Gen-3 Alpha Jun 2024 / Gen-3 Alpha Turbo Jul 2024 $0.05/sec / Gen-4 Mar 2025 character consistency); (2) prosumer creative tools optimised for short-form social content (Pika 1.5 Oct 2024 Pikaffects / 2.0 Dec 2024 Scene Ingredients / 2.2 Feb 2025 Pikaframes-Pikaswaps-Pikadditions, Luma Dream Machine Jun 2024 / Ray2 Jan 2025, M",
   "subClassOf": [
     {
+      "id": "urn:visionflow:owl:class:model-training",
+      "label": "Model Training"
+    },
+    {
       "id": "urn:visionflow:owl:class:ai-video",
       "label": "AI Video"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
       "id": "urn:visionflow:owl:class:diffusion-models",
       "label": "Diffusion Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:model-training",
-      "label": "Model Training"
     }
   ],
   "qualityScore": 0.52,

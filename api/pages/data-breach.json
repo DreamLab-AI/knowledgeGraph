@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:data-breach",
   "domain": "artificial-intelligence",
-  "definition": "Data Breach is a concept within the ai domain.",
+  "definition": "Data Breach is a artificial intelligence concept and a type of Risk.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:risk",

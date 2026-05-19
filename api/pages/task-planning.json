@@ -8,24 +8,16 @@
   "definition": "Task Planning is the computational sub-field of artificial intelligence and robotics concerned with automatically synthesising finite sequences of discrete actions \u2014 called plans \u2014 that transform a given initial world state into a state satisfying a specified goal condition, subject to action preconditions, effects, resource constraints, and temporal or probabilistic uncertainty. A planner accepts a formal problem description (initial state I, goal condition G, action schema set A), searches over the space of reachable states or action sequences, and returns either a complete plan \u03c0 = \u27e8a\u2081, a\u2082, \u2026, a\u2099\u27e9 such that executing \u03c0 from I guarantees (or probabilistically approaches) G, or a proof of unsolvability. The field spans five decades of research from the foundational STRIPS formalism (Fikes & Nilsson, Stanford Research Institute 1971) through modern neural\u2013symbolic hybrid planners that couple large language models with classical planning engines (Liu LLM+P 2023, Wang Voyager 2023), foundation model end-to-end visuomotor planners (Black et al. \u03c00 Physical Intelligence Mar 2024), and Monte Carlo Tree Search-guided deliberative reasoning architectures (Silver AlphaGo/AlphaZero 2016\u2013201",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:sequential-decision-making",
-      "label": "Sequential Decision Making"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    },
-    {
       "id": "urn:visionflow:owl:class:automated-planning",
       "label": "Automated Planning"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
-    },
-    {
       "id": "urn:visionflow:owl:class:symbolic-ai",
       "label": "Symbolic AI"
+    },
+    {
+      "id": "urn:visionflow:linked:sequential-decision-making",
+      "label": "Sequential Decision Making"
     }
   ],
   "qualityScore": 0.52,

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:environmental-finance",
       "label": "Environmental Finance"
-    },
-    {
-      "id": "urn:visionflow:linked:green-finance",
-      "label": "Green Finance"
-    },
-    {
-      "id": "urn:visionflow:linked:real-world-asset-tokenisation",
-      "label": "Real World Asset Tokenisation"
     }
   ],
   "qualityScore": 0.52,

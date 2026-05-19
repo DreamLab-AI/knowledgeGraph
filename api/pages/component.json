@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:component",
   "domain": "artificial-intelligence",
-  "definition": "Component is a concept within the ai domain.",
+  "definition": "Component is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

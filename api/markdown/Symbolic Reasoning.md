@@ -135,7 +135,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Symbolic Reasoning is a concept within the ai domain.",
+  "definition": "Symbolic Reasoning is a artificial intelligence concept and a type of Reasoning.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

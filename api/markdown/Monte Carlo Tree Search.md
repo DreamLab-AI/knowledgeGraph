@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Monte Carlo Tree Search is a concept within the ai domain.",
+  "definition": "Monte Carlo Tree Search is a artificial intelligence concept and a type of Search Algorithms. that enables Game Playing AI.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

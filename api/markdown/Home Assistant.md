@@ -546,16 +546,8 @@ public:: true
       "vc:label": "IoT Platform"
     },
     {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
-    },
-    {
       "@id": "urn:visionflow:linked:smart-home",
       "vc:label": "Smart Home"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
     }
   ],
   "vc:sourceDomain": "infrastructure",

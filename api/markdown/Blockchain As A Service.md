@@ -778,20 +778,12 @@ public:: true
       "vc:label": "Cloud Service Model"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:enterprise-software-platform",
       "vc:label": "Enterprise Software Platform"
     },
     {
       "@id": "urn:visionflow:linked:managed-service",
       "vc:label": "Managed Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-as-a-service",
-      "vc:label": "Platform as a Service"
     }
   ],
   "vc:sourceDomain": "blockchain",

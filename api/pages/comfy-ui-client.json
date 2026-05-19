@@ -12,20 +12,12 @@
       "label": "API Client"
     },
     {
-      "id": "urn:visionflow:linked:generative-ai-tool",
-      "label": "Generative AI Tool"
-    },
-    {
       "id": "urn:visionflow:linked:graphical-user-interface",
       "label": "Graphical User Interface"
     },
     {
       "id": "urn:visionflow:linked:node-based-interface",
       "label": "Node Based Interface"
-    },
-    {
-      "id": "urn:visionflow:linked:workflow-orchestration-system",
-      "label": "Workflow Orchestration System"
     }
   ],
   "qualityScore": 0.52,

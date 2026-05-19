@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0105-speed-and-separation-monitoring",
   "domain": "robotics",
-  "definition": "",
+  "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:light-curtain",

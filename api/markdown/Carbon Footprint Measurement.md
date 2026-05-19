@@ -378,20 +378,12 @@ public:: true
       "vc:label": "Climate Risk Management"
     },
     {
-      "@id": "urn:visionflow:linked:corporate-disclosure",
-      "vc:label": "Corporate Disclosure"
-    },
-    {
       "@id": "urn:visionflow:linked:measurement-frameworks",
       "vc:label": "Measurement Frameworks"
     },
     {
       "@id": "urn:visionflow:linked:sustainability-reporting",
       "vc:label": "Sustainability Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:environmental-accounting",
-      "vc:label": "Environmental Accounting"
     }
   ],
   "vc:sourceDomain": "infrastructure",

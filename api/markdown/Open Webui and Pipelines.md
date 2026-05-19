@@ -258,16 +258,8 @@ public:: true
   "label": "Open Webui and Pipelines",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
       "@id": "urn:visionflow:owl:class:chatbots",
       "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
     },
     {
       "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",

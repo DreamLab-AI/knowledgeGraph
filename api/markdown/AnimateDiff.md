@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:video-generation",
       "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

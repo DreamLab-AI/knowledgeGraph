@@ -434,20 +434,8 @@ public:: true
       "vc:label": "Electronic Money Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:monetary-law",
       "vc:label": "Monetary Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-systems-regulation",
-      "vc:label": "Payment Systems Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -12,20 +12,12 @@
       "label": "Compliance Programs"
     },
     {
-      "id": "urn:visionflow:linked:corporate-governance",
-      "label": "Corporate Governance"
-    },
-    {
       "id": "urn:visionflow:linked:international-law",
       "label": "International Law"
     },
     {
       "id": "urn:visionflow:linked:legal-risk-management",
       "label": "Legal Risk Management"
-    },
-    {
-      "id": "urn:visionflow:linked:regulatory-governance",
-      "label": "Regulatory Governance"
     }
   ],
   "qualityScore": 0.52,

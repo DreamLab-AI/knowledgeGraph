@@ -582,10 +582,6 @@ public:: true
   "label": "Hyperledger Iroha",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "vc:label": "Byzantine Fault Tolerant System"
-    },
-    {
       "@id": "urn:visionflow:linked:enterprise-blockchain-framework",
       "vc:label": "Enterprise Blockchain Framework"
     },
@@ -594,12 +590,8 @@ public:: true
       "vc:label": "Hyperledger Project"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "vc:label": "Byzantine Fault Tolerant System"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:stacking",
   "domain": "artificial-intelligence",
-  "definition": "Stacking is a concept within the ai domain.",
+  "definition": "Stacking is a artificial intelligence concept and a type of Ensemble Methods.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:ensemble-methods",

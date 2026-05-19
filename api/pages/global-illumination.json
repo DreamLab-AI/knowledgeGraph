@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:global-illumination",
   "domain": "spatial-computing",
-  "definition": "Global Illumination is a concept within the mv domain.",
+  "definition": "Global Illumination is a spatial computing concept and a type of Metaverse.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:metaverse",

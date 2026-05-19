@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:courses-and-training",
   "domain": "infrastructure",
-  "definition": "Courses and Training is a concept within the ngm domain.",
+  "definition": "Courses and Training is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

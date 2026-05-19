@@ -220,10 +220,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sustainability-instrument",
       "vc:label": "SustainabilityInstrument"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "DigitalAsset"
     }
   ],
   "vc:sourceDomain": "blockchain",

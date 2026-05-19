@@ -130,7 +130,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "PsychologicalPhenomenon is a concept within the ngm domain.",
+  "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars , Character.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

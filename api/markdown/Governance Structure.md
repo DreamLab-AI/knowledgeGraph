@@ -350,20 +350,12 @@ public:: true
   "label": "Governance Structure",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
-    },
-    {
       "@id": "urn:visionflow:linked:institutional-design",
       "vc:label": "Institutional Design"
     },
     {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
+      "@id": "urn:visionflow:linked:accountability-mechanism",
+      "vc:label": "Accountability Mechanism"
     },
     {
       "@id": "urn:visionflow:owl:class:trust-framework",

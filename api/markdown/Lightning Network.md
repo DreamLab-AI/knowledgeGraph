@@ -380,14 +380,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
       "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-scalability",
-      "vc:label": "Blockchain Scalability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
     }
   ],
   "vc:sourceDomain": "blockchain",

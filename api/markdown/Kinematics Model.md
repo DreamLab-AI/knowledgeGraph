@@ -412,14 +412,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:motion-model",
       "vc:label": "Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:rigid-body-mechanics",
-      "vc:label": "Rigid Body Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-model",
-      "vc:label": "Robot Model"
     }
   ],
   "vc:sourceDomain": "robotics",

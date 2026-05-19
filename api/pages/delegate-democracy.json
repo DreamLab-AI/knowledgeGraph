@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:social-choice-mechanism",
       "label": "Social Choice Mechanism"
-    },
-    {
-      "id": "urn:visionflow:owl:class:dao-governance",
-      "label": "DAO Governance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:governance-model",
-      "label": "Governance Model"
     }
   ],
   "qualityScore": 0.52,

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:extended-reality",
+  "title": "Extended Reality",
+  "slug": "extended-reality",
+  "public": true,
+  "classIri": "urn:visionflow:linked:extended-reality",
+  "domain": "spatial-computing",
+  "definition": "Extended Reality is a foundational concept in spatial computing that serves as a classification parent for 3 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "etsi-domain-immersive-experiences",
+      "label": "ETSI_Domain_Immersive_Experiences"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "summary",
+      "label": "SUMMARY"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

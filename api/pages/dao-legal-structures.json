@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:legal-entity-wrappers",
       "label": "Legal Entity Wrappers"
-    },
-    {
-      "id": "urn:visionflow:linked:liability-shield-mechanisms",
-      "label": "Liability Shield Mechanisms"
-    },
-    {
-      "id": "urn:visionflow:linked:regulatory-compliance-frameworks",
-      "label": "Regulatory Compliance Frameworks"
     }
   ],
   "qualityScore": 0.52,

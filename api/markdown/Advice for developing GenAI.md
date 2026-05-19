@@ -163,7 +163,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Advice for developing GenAI is a concept within the ngm domain.",
+  "definition": "Advice for developing GenAI is a artificial intelligence concept and a type of artificial-intelligence.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

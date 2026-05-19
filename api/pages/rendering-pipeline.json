@@ -8,16 +8,8 @@
   "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations \u2014 vertex buffers, index buffers, textures, uniform data, and acceleration structures \u2014 into a two-dimensional raster image suitable for display or further processing. It encompasses programmable shader stages (vertex, hull/tessellation control, domain/tessellation evaluation, geometry, fragment/pixel, compute, mesh, task/amplification) and fixed-function hardware blocks (primitive assembly, rasteriser, depth-stencil unit, render output unit, blending) executing across massively parallel SIMD warps (NVIDIA), wavefronts (AMD), or SIMD groups (Metal/Vulkan subgroups), achieving teraflop-scale throughput at 300-450 W power envelopes on discrete desktop hardware. The classical programmable rasterisation pipeline was formalised by SGI GL and codified in OpenGL 1.0 (1992), evolving through DirectX 9 shader model 3.0 (2004) separating vertex and pixel shaders, DirectX 10 unified shader architecture (2006) adding geometry shaders, DirectX 11 tessellation (2009), and the modern low-overhead explicit API era \u2014 AMD Mantle (2014), DirectX 12 (July 2015), Metal 1 (June 2",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computer-graphics",
-      "label": "Computer Graphics"
-    },
-    {
       "id": "urn:visionflow:linked:gpu-compute",
       "label": "GPU Compute"
-    },
-    {
-      "id": "urn:visionflow:linked:parallel-computing",
-      "label": "Parallel Computing"
     },
     {
       "id": "urn:visionflow:linked:rasterisation",

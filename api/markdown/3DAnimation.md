@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "3DAnimation is a concept within the ngm domain.",
+  "definition": "3DAnimation is a spatial computing concept and a type of Animation Technique.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

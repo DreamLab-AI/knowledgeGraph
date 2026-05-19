@@ -136,7 +136,7 @@ public:: true
   ],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "active",
-  "vc:maturity": "stable",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:befd85f49a23293fe9ce611589bd86294d7a371992519deafd1eff776a52fb13"
   },

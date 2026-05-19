@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:no-sql-database",
       "label": "NoSQL Database"
-    },
-    {
-      "id": "urn:visionflow:linked:persistent-data-store",
-      "label": "Persistent Data Store"
     }
   ],
   "qualityScore": 0.52,

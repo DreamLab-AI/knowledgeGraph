@@ -550,20 +550,12 @@ public:: true
       "vc:label": "Perception"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:human-computer-interaction",
       "vc:label": "Human-Computer Interaction"
     },
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

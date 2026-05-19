@@ -8,24 +8,16 @@
   "definition": "Blender is a free, open-source, cross-platform 3D computer graphics software suite developed by the Blender Foundation (Amsterdam) and maintained by a global community of thousands of contributors, providing a fully integrated production pipeline covering 3D polygonal modelling, digital sculpting, armature-based skeletal rigging, keyframe and physics-driven animation, multi-physics simulation (rigid body via Bullet, cloth, FLIP fluid via MantaFlow, smoke/fire via OpenVDB volumes, soft body, ocean modifiers), non-destructive procedural modelling and scene generation via Geometry Nodes, hybrid 2D/3D animation and storyboarding via the Grease Pencil subsystem, physically based rendering through two production-quality engines (Cycles unidirectional path tracer and EEVEE Next rasteriser with screen-space ray tracing), node-based compositing, camera and object motion tracking, a timeline-based Video Sequence Editor (VSE), and a comprehensive Python scripting API (`bpy`) that exposes the full data model and operator system to programmatic manipulation \u2014 constituting the most widely deployed open-source DCC (Digital Content Creation) application in the world with approximately 30 million d",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:open-source-software",
-      "label": "Open Source Software"
-    },
-    {
       "id": "urn:visionflow:owl:class:3-d-and-4-d",
       "label": "3D and 4D"
     },
     {
-      "id": "urn:visionflow:owl:class:creative-software",
-      "label": "Creative Software"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-content-creation",
-      "label": "Digital Content Creation"
-    },
-    {
       "id": "urn:visionflow:owl:class:rendering-engine",
       "label": "Rendering Engine"
+    },
+    {
+      "id": "urn:visionflow:owl:class:creative-software",
+      "label": "Creative Software"
     }
   ],
   "qualityScore": 0.52,

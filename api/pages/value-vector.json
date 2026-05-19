@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:value-vector",
   "domain": "artificial-intelligence",
-  "definition": "Value Vector is a concept within the ai domain.",
+  "definition": "Value Vector is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

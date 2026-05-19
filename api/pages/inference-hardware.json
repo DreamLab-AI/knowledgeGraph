@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:inference-hardware",
   "domain": "artificial-intelligence",
-  "definition": "Inference Hardware is a concept within the ai domain.",
+  "definition": "Inference Hardware is a artificial intelligence concept and a type of AI Hardware. that enables Real-Time AI.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:ai-hardware",

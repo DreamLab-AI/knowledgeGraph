@@ -8,24 +8,16 @@
   "definition": "Cyber Security and Cryptography is the integrated discipline governing the confidentiality, integrity, availability, and authenticity of digital information systems through mathematical cryptographic primitives, protocol engineering, and systemic security architecture. The field bifurcates into two tightly coupled branches: **applied cryptography** \u2014 providing provably secure mathematical constructions formalised via indistinguishability (IND-CPA, IND-CCA2), existential unforgeability (EUF-CMA), and authenticated key exchange (Bellare-Rogaway model); and **operational cybersecurity** \u2014 addressing the adversarial environment in which cryptographic systems are deployed. Symmetric cryptography furnishes the data-plane protection layer: AES-256-GCM (NIST FIPS 197, AEAD, 10-40 Gbps with AES-NI hardware acceleration; ARMv8 Crypto Extension achieving 2-8 Gbps on Cortex-A55/A78 SoC); ChaCha20-Poly1305 (RFC 8439, TLS 1.3 and WireGuard, preferred where AES hardware is absent); AES-256-XTS (IEEE Std 1619-2007, full-disk encryption at 4-7 GB/s inline on NVMe TCG Opal 2.0 drives); BLAKE3 (2020, 14 GB/s x86, tree-structured parallelism).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-mathematics",
-      "label": "Applied Mathematics"
-    },
-    {
       "id": "urn:visionflow:linked:network-security",
       "label": "Network Security"
     },
     {
+      "id": "urn:visionflow:linked:applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "id": "urn:visionflow:linked:systems-engineering",
       "label": "Systems Engineering"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-security",
-      "label": "Information Security"
-    },
-    {
-      "id": "urn:visionflow:owl:class:risk-management",
-      "label": "Risk Management"
     }
   ],
   "qualityScore": 0.52,

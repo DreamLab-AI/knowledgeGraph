@@ -1320,10 +1320,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:web-architecture",
       "vc:label": "Web Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

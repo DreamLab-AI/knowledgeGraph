@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:empirical-methodology",
       "label": "Empirical Methodology"
-    },
-    {
-      "id": "urn:visionflow:linked:measurement",
-      "label": "Measurement"
-    },
-    {
-      "id": "urn:visionflow:linked:standardised-testing",
-      "label": "Standardised Testing"
     }
   ],
   "qualityScore": 0.52,

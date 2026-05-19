@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Minimax Algorithm is a concept within the ai domain.",
+  "definition": "Minimax Algorithm is a artificial intelligence concept and a type of Search Algorithms. that enables Adversarial Search.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

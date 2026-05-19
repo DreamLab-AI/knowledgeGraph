@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0078-infrared-sensor",
   "domain": "robotics",
-  "definition": "",
+  "definition": "infrared sensor is a robotics and autonomous systems concept and a type of Sensor.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:sensor",

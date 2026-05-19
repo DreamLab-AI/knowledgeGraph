@@ -482,14 +482,6 @@ public:: true
       "vc:label": "Cognitive AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
-    },
-    {
       "@id": "urn:visionflow:owl:class:multimodal-ai",
       "vc:label": "Multimodal AI"
     }

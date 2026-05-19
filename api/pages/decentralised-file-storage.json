@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:permissionless-protocol",
       "label": "Permissionless Protocol"
-    },
-    {
-      "id": "urn:visionflow:linked:web3-infrastructure",
-      "label": "Web3 Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "label": "Peer-to-Peer Network"
     }
   ],
   "qualityScore": 0.52,

@@ -562,16 +562,8 @@ public:: true
       "vc:label": "Sociotechnical Harm"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
       "@id": "urn:visionflow:owl:class:algorithmic-bias",
       "vc:label": "Algorithmic Bias"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:harmful-bias",
-      "vc:label": "Harmful Bias"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

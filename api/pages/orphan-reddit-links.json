@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:orphan-reddit-links",
   "domain": "infrastructure",
-  "definition": "Orphan Reddit Links is a concept within the ngm domain.",
+  "definition": "Orphan Reddit Links is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:transaction-processing",
   "domain": "infrastructure",
-  "definition": "TransactionProcessing is a concept within the ngm domain.",
+  "definition": "Transaction Processing is a technology infrastructure concept and a type of Blockchain Transaction.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain-transaction",

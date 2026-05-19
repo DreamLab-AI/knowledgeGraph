@@ -126,7 +126,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Vibe Coding is a concept within the ngm domain.",
+  "definition": "Vibe Coding is a technology infrastructure concept and a type of Software Engineering.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

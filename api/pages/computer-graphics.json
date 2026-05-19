@@ -1,0 +1,50 @@
+{
+  "id": "urn:visionflow:page:computer-graphics",
+  "title": "Computer Graphics",
+  "slug": "computer-graphics",
+  "public": true,
+  "classIri": "urn:visionflow:linked:computer-graphics",
+  "domain": "spatial-computing",
+  "definition": "Computer Graphics is a foundational concept in spatial computing that serves as a classification parent for 5 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

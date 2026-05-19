@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:system",
   "domain": "artificial-intelligence",
-  "definition": "System is a concept within the ai domain.",
+  "definition": "System is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

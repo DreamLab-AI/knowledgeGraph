@@ -366,14 +366,6 @@ public:: true
       "vc:label": "Open Source"
     },
     {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
       "@id": "urn:visionflow:owl:class:transformer-architecture",
       "vc:label": "Transformer Architecture"
     }

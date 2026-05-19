@@ -1,0 +1,46 @@
+{
+  "id": "urn:visionflow:page:ai-governance-principle",
+  "title": "Ai Governance Principle",
+  "slug": "ai-governance-principle",
+  "public": true,
+  "classIri": "urn:visionflow:linked:ai-governance-principle",
+  "domain": "artificial-intelligence",
+  "definition": "Ai Governance Principle is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "Ethical Framework"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    }
+  ]
+}

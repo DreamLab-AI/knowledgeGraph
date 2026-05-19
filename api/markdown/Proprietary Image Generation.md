@@ -442,20 +442,12 @@ public:: true
       "vc:label": "Commercial AI Systems"
     },
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
       "@id": "urn:visionflow:linked:text-to-image-generation",
       "vc:label": "Text-to-Image Generation"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

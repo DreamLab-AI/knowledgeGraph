@@ -706,10 +706,6 @@ public:: true
   "label": "Cashu",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bearer-instrument",
-      "vc:label": "Bearer Instrument"
-    },
-    {
       "@id": "urn:visionflow:linked:bitcoin-layer-2",
       "vc:label": "Bitcoin Layer 2"
     },
@@ -720,10 +716,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:digital-cash",
       "vc:label": "Digital Cash"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-protocol",
-      "vc:label": "Privacy Protocol"
     }
   ],
   "vc:sourceDomain": "blockchain",

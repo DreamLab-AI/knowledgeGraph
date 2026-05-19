@@ -408,10 +408,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:policy-framework",
       "vc:label": "Policy Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -16,20 +16,8 @@
       "label": "Hyperscaler"
     },
     {
-      "id": "urn:visionflow:linked:public-company",
-      "label": "Public Company"
-    },
-    {
       "id": "urn:visionflow:linked:social-media-platform-operator",
       "label": "Social Media Platform Operator"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-conglomerate",
-      "label": "Technology Conglomerate"
-    },
-    {
-      "id": "urn:visionflow:linked:vr-ar-hardware-manufacturer",
-      "label": "VR AR Hardware Manufacturer"
     }
   ],
   "qualityScore": 0.52,

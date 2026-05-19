@@ -560,14 +560,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:protocol",
       "vc:label": "Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
     }
   ],
   "vc:sourceDomain": "blockchain",

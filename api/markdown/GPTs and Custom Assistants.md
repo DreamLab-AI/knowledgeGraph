@@ -498,14 +498,6 @@ public:: true
   "label": "GPTs and Custom Assistants",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-productivity-tool",
-      "vc:label": "AI Productivity Tool"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversational-ai-system",
-      "vc:label": "Conversational AI System"
-    },
-    {
       "@id": "urn:visionflow:linked:llm-application",
       "vc:label": "LLM Application"
     },

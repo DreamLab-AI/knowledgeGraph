@@ -530,20 +530,12 @@ public:: true
       "vc:label": "Protocol Implementation"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
+      "@id": "urn:visionflow:owl:class:testing-infrastructure",
+      "vc:label": "Testing Infrastructure"
     },
     {
       "@id": "urn:visionflow:owl:class:distributed-system",
       "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:testing-infrastructure",
-      "vc:label": "Testing Infrastructure"
     }
   ],
   "vc:sourceDomain": "blockchain",

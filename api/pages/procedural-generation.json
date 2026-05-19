@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:procedural-generation",
   "domain": "spatial-computing",
-  "definition": "ProceduralGeneration is a concept within the ngm domain.",
+  "definition": "Procedural Generation is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:spatial-computing",

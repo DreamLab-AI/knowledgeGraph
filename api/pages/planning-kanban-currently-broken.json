@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:planning-kanban-currently-broken",
   "domain": "infrastructure",
-  "definition": "Planning Kanban - currently broken is a concept within the ngm domain.",
+  "definition": "Planning Kanban - currently broken is a technology infrastructure concept and a type of Projects.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:projects",

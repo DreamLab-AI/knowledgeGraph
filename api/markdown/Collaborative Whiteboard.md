@@ -462,24 +462,16 @@ public:: true
   "label": "Collaborative Whiteboard",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:asynchronous-communication",
-      "vc:label": "Asynchronous Communication"
-    },
-    {
       "@id": "urn:visionflow:linked:digital-workspace",
       "vc:label": "Digital Workspace"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration",
-      "vc:label": "Distributed Collaboration"
+      "@id": "urn:visionflow:linked:visual-collaboration-tools",
+      "vc:label": "Visual Collaboration Tools"
     },
     {
       "@id": "urn:visionflow:linked:remote-work-technology",
       "vc:label": "Remote Work Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-collaboration-tools",
-      "vc:label": "Visual Collaboration Tools"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

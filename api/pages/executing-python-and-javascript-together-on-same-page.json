@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:executing-python-and-javascript-together-on-same-page",
   "domain": "infrastructure",
-  "definition": "Executing Python and Javascript together on same page is a concept within the ngm domain.",
+  "definition": "Executing Python and Javascript together on same page is a technology infrastructure concept and a type of Runtime Environment.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:runtime-environment",

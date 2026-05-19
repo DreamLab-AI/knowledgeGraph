@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:surveillance-capitalism",
       "label": "Surveillance Capitalism"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-ethics",
-      "label": "AI Ethics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "label": "Digital Society Surveillance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:media-theory",
-      "label": "Media Theory"
     }
   ],
   "qualityScore": 0.52,

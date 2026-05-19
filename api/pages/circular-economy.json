@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:industrial-ecology",
       "label": "Industrial Ecology"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-thinking",
-      "label": "Systems Thinking"
-    },
-    {
-      "id": "urn:visionflow:owl:class:resource-management",
-      "label": "Resource Management"
-    },
-    {
-      "id": "urn:visionflow:owl:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "qualityScore": 0.52,

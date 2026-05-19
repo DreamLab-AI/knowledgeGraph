@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:lead-poisoning-hypothesis",
   "domain": "infrastructure",
-  "definition": "Lead Poisoning Hypothesis is a concept within the ngm domain.",
+  "definition": "Lead Poisoning Hypothesis is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

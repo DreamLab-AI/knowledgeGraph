@@ -420,22 +420,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:decentralized-web",
       "vc:label": "Decentralized Web"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-by-design",
-      "vc:label": "Privacy by Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-standards",
-      "vc:label": "Web Standards"
     }
   ],
   "vc:sourceDomain": "infrastructure",

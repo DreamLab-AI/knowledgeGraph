@@ -342,20 +342,12 @@ public:: true
       "vc:label": "Adversarial Machine Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
     },
     {
       "@id": "urn:visionflow:owl:class:ai-risks",
       "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

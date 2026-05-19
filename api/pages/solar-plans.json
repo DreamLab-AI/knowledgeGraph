@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:solar-plans",
   "domain": "infrastructure",
-  "definition": "solar plans is a concept within the ngm domain.",
+  "definition": "solar plans is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

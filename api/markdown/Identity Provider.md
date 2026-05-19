@@ -458,16 +458,8 @@ public:: true
       "vc:label": "Trust Service"
     },
     {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
       "@id": "urn:visionflow:owl:class:authentication-service",
       "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
     }
   ],
   "vc:sourceDomain": "infrastructure",

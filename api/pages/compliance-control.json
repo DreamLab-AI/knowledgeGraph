@@ -8,10 +8,6 @@
   "definition": "Compliance Control is an enterprise governance mechanism comprising the policies, procedures, automated tests, and continuous monitoring activities that an organisation deploys to demonstrate, document, and enforce adherence to regulatory obligations, internal standards, and contractual requirements across operational, financial, and information-security domains. Compliance controls are operationalised within structured frameworks \u2014 COSO Internal Control\u2013Integrated Framework 2013 (refreshed with cloud-era guidance 2023), NIST Cybersecurity Framework 2.0 published February 2024, ISO/IEC 27001:2022, SOX Sections 302 and 404, GDPR Article 32 technical-and-organisational measures, EU AI Act Articles 9\u201317 for high-risk AI systems, and DORA (Digital Operational Resilience Act) operative January 2025 \u2014 and are executed across three organisational lines of defence: first line (business units executing controls as embedded workflow steps), second line (risk and compliance functions monitoring design and operating effectiveness), and third line (internal and external audit providing independent assurance).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:corporate-governance",
-      "label": "Corporate Governance"
-    },
-    {
       "id": "urn:visionflow:linked:enterprise-risk-management",
       "label": "Enterprise Risk Management"
     },
@@ -22,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:internal-control",
       "label": "Internal Control"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-compliance",
-      "label": "Regulatory Compliance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:risk-management",
-      "label": "Risk Management"
     }
   ],
   "qualityScore": 0.52,

@@ -406,24 +406,16 @@ public:: true
   "label": "Regulatory Reporting",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:financial-services",
-      "vc:label": "Financial Services"
-    },
-    {
       "@id": "urn:visionflow:linked:supervisory-technology",
       "vc:label": "Supervisory Technology"
     },
     {
+      "@id": "urn:visionflow:linked:financial-services",
+      "vc:label": "Financial Services"
+    },
+    {
       "@id": "urn:visionflow:owl:class:data-governance",
       "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:distributed-work",
   "domain": "infrastructure",
-  "definition": "DistributedWork is a concept within the ngm domain.",
+  "definition": "Distributed Work is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

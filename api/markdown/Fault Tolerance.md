@@ -608,10 +608,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:system-property",
       "vc:label": "System Property"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:resilience",
-      "vc:label": "Resilience"
     }
   ],
   "vc:sourceDomain": "infrastructure",

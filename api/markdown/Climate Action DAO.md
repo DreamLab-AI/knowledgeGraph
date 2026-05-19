@@ -218,10 +218,6 @@ public:: true
   "label": "Climate Action DAO",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:climate-finance",
-      "vc:label": "ClimateFinance"
-    },
-    {
       "@id": "urn:visionflow:linked:collective-governance",
       "vc:label": "CollectiveGovernance"
     },

@@ -16,18 +16,6 @@
       "label": "Trade Finance"
     },
     {
-      "id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "label": "AML KYC Compliance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-technology",
-      "label": "Regulatory Technology"
-    },
-    {
       "id": "urn:visionflow:owl:class:supply-chain-traceability",
       "label": "Supply Chain Traceability"
     }

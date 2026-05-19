@@ -554,20 +554,12 @@ public:: true
       "vc:label": "Consortium Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
       "@id": "urn:visionflow:owl:class:ethereum",
       "vc:label": "Ethereum"
     },
     {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
+      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
+      "vc:label": "Enterprise Blockchain"
     }
   ],
   "vc:sourceDomain": "blockchain",

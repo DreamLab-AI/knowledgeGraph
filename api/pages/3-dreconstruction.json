@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:3-dreconstruction",
   "domain": "infrastructure",
-  "definition": "3DReconstruction is a concept within the ngm domain.",
+  "definition": "3DReconstruction is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

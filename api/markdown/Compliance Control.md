@@ -546,10 +546,6 @@ public:: true
   "label": "Compliance Control",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:corporate-governance",
-      "vc:label": "Corporate Governance"
-    },
-    {
       "@id": "urn:visionflow:linked:enterprise-risk-management",
       "vc:label": "Enterprise Risk Management"
     },
@@ -560,14 +556,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:internal-control",
       "vc:label": "Internal Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
     }
   ],
   "vc:sourceDomain": "infrastructure",

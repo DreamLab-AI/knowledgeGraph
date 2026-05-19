@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:blockchain-scalability-solution",
       "label": "Blockchain Scalability Solution"
-    },
-    {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
     }
   ],
   "qualityScore": 0.54,

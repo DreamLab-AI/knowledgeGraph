@@ -16,24 +16,8 @@
       "label": "Market Regulation"
     },
     {
-      "id": "urn:visionflow:linked:product-liability",
-      "label": "Product Liability"
-    },
-    {
       "id": "urn:visionflow:linked:regulation",
       "label": "Regulation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-governance",
-      "label": "AI Governance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-regulation",
-      "label": "Digital Regulation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:platform-governance",
-      "label": "Platform Governance"
     }
   ],
   "qualityScore": 0.52,

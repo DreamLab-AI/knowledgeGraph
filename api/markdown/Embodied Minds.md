@@ -546,24 +546,16 @@ public:: true
   "label": "Embodied Minds",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
+      "@id": "urn:visionflow:linked:situated-cognition",
+      "vc:label": "Situated Cognition"
     },
     {
       "@id": "urn:visionflow:linked:philosophy-of-mind",
       "vc:label": "Philosophy of Mind"
     },
     {
-      "@id": "urn:visionflow:linked:situated-cognition",
-      "vc:label": "Situated Cognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

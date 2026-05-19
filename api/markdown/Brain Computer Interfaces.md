@@ -624,14 +624,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:neural-interface",
       "vc:label": "Neural Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:neuroprosthetic-system",
-      "vc:label": "Neuroprosthetic System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interface",
-      "vc:label": "Human-Computer Interface"
     }
   ],
   "vc:sourceDomain": "infrastructure",

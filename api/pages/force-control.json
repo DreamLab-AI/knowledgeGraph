@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:closed-loop-control",
       "label": "Closed Loop Control"
-    },
-    {
-      "id": "urn:visionflow:owl:class:interaction-control",
-      "label": "Interaction Control"
     }
   ],
   "qualityScore": 0.52,

@@ -442,14 +442,6 @@ public:: true
       "vc:label": "3D Modelling"
     },
     {
-      "@id": "urn:visionflow:linked:computer-graphics",
-      "vc:label": "Computer Graphics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
       "@id": "urn:visionflow:owl:class:simulation",
       "vc:label": "Simulation"
     },

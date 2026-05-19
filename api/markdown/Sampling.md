@@ -370,16 +370,8 @@ public:: true
   "label": "Sampling",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
       "@id": "urn:visionflow:linked:numerical-methods",
       "vc:label": "Numerical Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-computing",
-      "vc:label": "Statistical Computing"
     },
     {
       "@id": "urn:visionflow:linked:stochastic-processes",

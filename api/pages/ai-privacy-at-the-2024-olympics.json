@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:ai-privacy-at-the-2024-olympics",
   "domain": "artificial-intelligence",
-  "definition": "AI privacy at the 2024 Olympics is a concept within the ngm domain.",
+  "definition": "AI privacy at the 2024 Olympics is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:money-from-digi-soc",
   "domain": "infrastructure",
-  "definition": "Money from DigiSoc is a concept within the ngm domain.",
+  "definition": "Money from DigiSoc is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

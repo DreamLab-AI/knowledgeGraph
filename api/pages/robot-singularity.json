@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:robot-singularity",
   "domain": "robotics",
-  "definition": "Robot Singularity is a concept within the rb domain.",
+  "definition": "Robot Singularity is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robotics",

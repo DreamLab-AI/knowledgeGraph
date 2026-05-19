@@ -502,20 +502,12 @@ public:: true
       "vc:label": "Cloud Platform"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-technology",
-      "vc:label": "Distributed Collaboration Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:employee-experience-system",
       "vc:label": "Employee Experience System"
     },
     {
       "@id": "urn:visionflow:linked:enterprise-software-infrastructure",
       "vc:label": "Enterprise Software Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:intranet-evolution",
-      "vc:label": "Intranet Evolution"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

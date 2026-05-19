@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:distributed-software-engineering",
       "vc:label": "Distributed Software Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:pair-programming",
-      "vc:label": "Pair Programming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synchronous-collaboration",
-      "vc:label": "Synchronous Collaboration"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

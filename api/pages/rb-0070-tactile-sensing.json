@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0070-tactile-sensing",
   "domain": "robotics",
-  "definition": "",
+  "definition": "tactile sensing is a robotics and autonomous systems concept and a type of Tactile Sensor.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:tactile-sensor",

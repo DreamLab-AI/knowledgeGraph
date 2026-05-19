@@ -8,14 +8,6 @@
   "definition": "Stable Diffusion is a family of open-weight latent diffusion models (LDMs) developed primarily by Stability AI in collaboration with academic partners, originating from the seminal \"High-Resolution Image Synthesis with Latent Diffusion Models\" paper (Rombach et al., CompVis Heidelberg, CVPR 2022), which introduced the core architectural insight of performing the iterative denoising process in a compressed latent space rather than pixel space, enabling high-resolution synthesis on consumer GPUs by compressing 512\u00d7512 RGB images (786,432 pixels) into 64\u00d764\u00d74 latent tensors (16,384 values, 48\u00d7 compression) via a trainable variational autoencoder (VAE) with encoder E:X\u2192Z and decoder D:Z\u2192X, training a U-Net denoising network \u03b5_\u03b8(z_t, t, \u03c4_\u03b8(y)) conditioned on timestep t and text prompt embeddings \u03c4_\u03b8(y) from CLIP text encoder ViT-L/14, applying Gaussian noise forward process q(z_t|z_{t-1}) = N(z_t; \u221a(1-\u03b2_t)z_{t-1}, \u03b2_tI) over T=1000 steps and learning reverse denoising p_\u03b8(z_{t-1}|z_t) to minimise L = E_{\u03b5\u223cN(0,1),t}[\u2016\u03b5 \u2212 \u03b5_\u03b8(z_t, t, \u03c4_\u03b8(y))\u2016\u00b2] integrating cross-attention between U-Net spatial features and CLIP embeddings for text conditioning (Rombach et al. 2022 achieving FID 12.64 on ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
-    },
-    {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:visionflow:linked:latent-diffusion-model",
       "label": "Latent Diffusion Model"
     },
@@ -24,12 +16,8 @@
       "label": "Text-to-Image Model"
     },
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
+      "id": "urn:visionflow:linked:diffusion-model",
+      "label": "Diffusion Model"
     }
   ],
   "qualityScore": 0.52,

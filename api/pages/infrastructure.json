@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:infrastructure",
   "domain": "infrastructure",
-  "definition": "infrastructure is a concept within the ngm domain.",
+  "definition": "infrastructure is a technology infrastructure concept and a type of owl:Thing.",
   "subClassOf": [
     {
       "id": "owl:Thing",

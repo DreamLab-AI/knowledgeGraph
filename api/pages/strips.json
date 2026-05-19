@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:strips",
   "domain": "artificial-intelligence",
-  "definition": "STRIPS is a concept within the ai domain.",
+  "definition": "STRIPS is a artificial intelligence concept and a type of Knowledge Representation.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:knowledge-representation",

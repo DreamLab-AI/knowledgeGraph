@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:state-space-and-other-approaches",
   "domain": "infrastructure",
-  "definition": "State Space and Other Approaches is a concept within the ngm domain.",
+  "definition": "State Space and Other Approaches is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

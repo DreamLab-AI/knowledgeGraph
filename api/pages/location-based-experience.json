@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:location-based-experience",
   "domain": "spatial-computing",
-  "definition": "Location Based Experience is a concept within the ngm domain.",
+  "definition": "Location Based Experience is a spatial computing concept and a type of Immersive Experience.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:immersive-experience",

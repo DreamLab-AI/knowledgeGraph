@@ -546,10 +546,6 @@ public:: true
   "label": "Pneumatic Actuator",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
       "@id": "urn:visionflow:linked:compliant-mechanism",
       "vc:label": "Compliant Mechanism"
     },
@@ -560,10 +556,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:robotic-actuator",
       "vc:label": "Robotic Actuator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
     }
   ],
   "vc:sourceDomain": "robotics",

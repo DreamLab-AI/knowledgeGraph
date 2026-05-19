@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:organisational-software",
       "label": "Organisational Software"
-    },
-    {
-      "id": "urn:visionflow:linked:web3-stack",
-      "label": "Web3 Stack"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "label": "Blockchain Infrastructure"
     }
   ],
   "qualityScore": 0.52,

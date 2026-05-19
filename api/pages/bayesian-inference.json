@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:bayesian-inference",
+  "title": "Bayesian Inference",
+  "slug": "bayesian-inference",
+  "public": true,
+  "classIri": "urn:visionflow:linked:bayesian-inference",
+  "domain": "artificial-intelligence",
+  "definition": "Bayesian Inference is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

@@ -8,18 +8,6 @@
   "definition": "**Flux.1** (stylised **FLUX.1**) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Robin Rombach, Andreas Blattmann, Patrick Esser, Dominik Lorenz, Tim Dockhorn, Sumith Kulal and colleagues, most departing [[Stability AI]] in mid-2024 to establish BFL in Freiburg im Breisgau, Germany), comprising a tiered model lineup distinguished by licence and intended deployment surface\u2014**FLUX.1 [pro]** (closed-weights flagship accessed solely through the BFL API and partner endpoints fal.ai/Replicate/Together AI/AWS Bedrock with the highest measured quality), **FLUX.1 [dev]** (12-billion-parameter open-weights variant distributed under the bespoke FLUX.1 [dev] Non-Commercial Licence permitting research/personal/non-revenue use whilst requiring a separate commercial licence agreement for monetisation, distilled from pro via guidance distillation, accumulating 2M+ Hugging Face downloads within thirty days of release establishing it as the dominant open-weights image baseline by Q",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
-    },
-    {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
-      "id": "urn:visionflow:linked:latent-diffusion-model",
-      "label": "Latent Diffusion Model"
-    },
-    {
       "id": "urn:visionflow:linked:multimodal-diffusion-transformer",
       "label": "Multimodal Diffusion Transformer"
     },
@@ -28,8 +16,8 @@
       "label": "Rectified Flow Model"
     },
     {
-      "id": "urn:visionflow:linked:text-to-image-model",
-      "label": "Text-to-Image Model"
+      "id": "urn:visionflow:linked:latent-diffusion-model",
+      "label": "Latent Diffusion Model"
     }
   ],
   "qualityScore": 0.52,

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:language-technology",
       "label": "Language Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:sequence-to-sequence-learning",
-      "label": "Sequence-to-Sequence Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "qualityScore": 0.52,

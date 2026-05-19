@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:autonomy-level",
   "domain": "blockchain",
-  "definition": "Autonomy Level is a concept within the bc domain.",
+  "definition": "Autonomy Level is a blockchain and distributed systems concept and a type of Blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

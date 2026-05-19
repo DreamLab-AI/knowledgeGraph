@@ -510,14 +510,6 @@ public:: true
       "vc:label": "Attention Mechanism"
     },
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
       "@id": "urn:visionflow:owl:class:neural-network",
       "vc:label": "Neural Network"
     }

@@ -8,10 +8,6 @@
   "definition": "Persistent capture and archival of synchronous virtual or physical meetings\u2014comprising video, audio, screen share, and transcript streams\u2014stored in cloud platforms or on-premises repositories for asynchronous playback, compliance audit, onboarding, and AI-mediated analysis. Meeting recording bridges synchronous real-time participation and asynchronous access by preserving full session context (video/audio encoded typically as MP4 or WebM, auto-generated transcripts via automatic speech recognition, participant metadata, chat logs, shared artefacts) across enterprise platforms including Zoom cloud recording, Microsoft Teams recording stored to OneDrive/SharePoint, Google Meet recording to Google Drive, Loom screen-capture video, and Otter.ai transcription services. Legal validity of recordings is jurisdiction-dependent: the UK operates under a one-party consent model with ICO guidance requiring participant notification under GDPR Article 6 lawful basis; EU GDPR Articles 5\u20136 impose data minimisation, purpose limitation, and right-to-erasure obligations; US federal wiretapping law (18 U.S.C. \u00a7 2511) permits one-party consent whereas twelve US states (including California, Florida, Ill",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:asynchronous-communication",
-      "label": "Asynchronous Communication"
-    },
-    {
       "id": "urn:visionflow:linked:meeting-documentation",
       "label": "Meeting Documentation"
     },

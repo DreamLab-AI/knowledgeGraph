@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0062-model-predictive-control",
   "domain": "robotics",
-  "definition": "",
+  "definition": "model predictive control is a robotics and autonomous systems concept and a type of Optimal Control.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:optimal-control",

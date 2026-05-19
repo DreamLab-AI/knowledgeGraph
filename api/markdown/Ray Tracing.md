@@ -546,10 +546,6 @@ public:: true
   "label": "Ray Tracing",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computer-graphics",
-      "vc:label": "Computer Graphics"
-    },
-    {
       "@id": "urn:visionflow:linked:light-transport",
       "vc:label": "Light Transport"
     },
@@ -560,14 +556,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:rendering",
       "vc:label": "Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-illumination",
-      "vc:label": "Global Illumination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physically-based-rendering",
-      "vc:label": "Physically-Based Rendering"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

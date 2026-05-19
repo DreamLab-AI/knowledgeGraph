@@ -18,26 +18,6 @@
     {
       "id": "urn:visionflow:linked:ontology-engineering",
       "label": "Ontology Engineering"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "label": "Artificial General Intelligence"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-retrieval",
-      "label": "Information Retrieval"
-    },
-    {
-      "id": "urn:visionflow:owl:class:knowledge-representation",
-      "label": "Knowledge Representation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:semantic-web",
-      "label": "Semantic Web"
     }
   ],
   "qualityScore": 0.52,

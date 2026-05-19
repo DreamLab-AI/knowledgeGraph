@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:long-short-term-memory",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Long Short Term Memory is a artificial intelligence concept and a type of Recurrent Neural Network.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:recurrent-neural-network",

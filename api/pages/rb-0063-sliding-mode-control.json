@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0063-sliding-mode-control",
   "domain": "robotics",
-  "definition": "",
+  "definition": "sliding mode control is a robotics and autonomous systems concept and a type of Control Theory.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:control-theory",

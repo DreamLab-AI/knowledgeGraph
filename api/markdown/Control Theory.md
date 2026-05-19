@@ -574,10 +574,6 @@ public:: true
   "label": "Control Theory",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-mathematics",
-      "vc:label": "Applied Mathematics"
-    },
-    {
       "@id": "urn:visionflow:linked:control-engineering",
       "vc:label": "Control Engineering"
     },
@@ -588,10 +584,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:dynamical-systems-theory",
       "vc:label": "Dynamical Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-engineering",
-      "vc:label": "Systems Engineering"
     }
   ],
   "vc:sourceDomain": "robotics",

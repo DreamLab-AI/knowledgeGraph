@@ -279,7 +279,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Telecollaboration and Telepresence Domain is a concept within the tc domain.",
+  "definition": "Telecollaboration and Telepresence Domain is a distributed collaboration concept and a type of Telecollaboration. that enables DistributedWork.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

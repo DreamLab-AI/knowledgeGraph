@@ -8,10 +8,6 @@
   "definition": "Mixed reality (MR) is the perceptual and computational regime occupying the central span of the Milgram-Kishino Reality-Virtuality Continuum (1994, IEICE Transactions on Information Systems E77-D:12, 1321-1329), wherein real-world physical objects and digitally synthesised content coexist, interact, and exhibit bidirectional occlusion in real time within a unified perceptual field, distinguished from pure augmented reality (AR) by physics-consistent anchoring and real-time scene-geometry coupling, and from pure virtual reality (VR) by persistent visual coupling to the physical environment through either optically see-through waveguide combiners or video pass-through camera pipelines rendering at 72-120 Hz refresh with motion-to-photon latency below 20 ms to suppress perceptual conflict and simulator sickness. The decisive technical property separating MR from simpler AR is that virtual objects in MR are not mere overlays \u2014 they participate in the geometric model of the physical environment: a holographic robot arm is occluded when a user's real hand passes in front of it; a digital information panel is anchored to a physical wall and persists sub-centimetre accurate across session ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:extended-reality",
-      "label": "Extended Reality"
-    },
-    {
       "id": "urn:visionflow:linked:immersive-computing",
       "label": "Immersive Computing"
     },
@@ -20,16 +16,8 @@
       "label": "Perceptual Computing"
     },
     {
-      "id": "urn:visionflow:owl:class:augmented-reality",
-      "label": "Augmented Reality"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
-      "label": "Human Computer Interaction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:visionflow:linked:extended-reality",
+      "label": "Extended Reality"
     }
   ],
   "qualityScore": 0.52,

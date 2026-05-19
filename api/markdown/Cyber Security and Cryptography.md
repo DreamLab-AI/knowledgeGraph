@@ -470,24 +470,16 @@ public:: true
   "label": "Cyber Security and Cryptography",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-mathematics",
-      "vc:label": "Applied Mathematics"
-    },
-    {
       "@id": "urn:visionflow:linked:network-security",
       "vc:label": "Network Security"
     },
     {
+      "@id": "urn:visionflow:linked:applied-mathematics",
+      "vc:label": "Applied Mathematics"
+    },
+    {
       "@id": "urn:visionflow:linked:systems-engineering",
       "vc:label": "Systems Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-security",
-      "vc:label": "Information Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
     }
   ],
   "vc:sourceDomain": "infrastructure",

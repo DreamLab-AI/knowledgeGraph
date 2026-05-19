@@ -830,16 +830,8 @@ public:: true
       "vc:label": "Identity Proofing"
     },
     {
-      "@id": "urn:visionflow:linked:security-mechanism",
-      "vc:label": "Security Mechanism"
-    },
-    {
       "@id": "urn:visionflow:linked:trust-establishment",
       "vc:label": "Trust Establishment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-control",
-      "vc:label": "Compliance Control"
     }
   ],
   "vc:sourceDomain": "infrastructure",

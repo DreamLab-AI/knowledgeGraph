@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:ensemble-methods",
   "domain": "artificial-intelligence",
-  "definition": "Ensemble Methods is a concept within the ai domain.",
+  "definition": "Ensemble Methods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning",

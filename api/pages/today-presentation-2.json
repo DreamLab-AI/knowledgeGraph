@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:today-presentation-2",
   "domain": "infrastructure",
-  "definition": "today presentation 2 is a concept within the ngm domain.",
+  "definition": "today presentation 2 is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

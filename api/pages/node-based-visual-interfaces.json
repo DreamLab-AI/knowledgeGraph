@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:node-based-visual-interfaces",
   "domain": "infrastructure",
-  "definition": "Node based visual interfaces is a concept within the ngm domain.",
+  "definition": "Node based visual interfaces is a technology infrastructure concept and a type of User Interface.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:user-interface",

@@ -14,7 +14,7 @@
   ],
   "qualityScore": 0.95,
   "authorityScore": 0.0,
-  "maturity": "production",
+  "maturity": "production-ready",
   "status": "revised",
   "relationships": {
     "hasPart": [],

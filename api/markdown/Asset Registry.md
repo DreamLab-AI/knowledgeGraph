@@ -338,10 +338,6 @@ public:: true
       "vc:label": "Blockchain Application"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
       "@id": "urn:visionflow:owl:class:financial-infrastructure",
       "vc:label": "Financial Infrastructure"
     }

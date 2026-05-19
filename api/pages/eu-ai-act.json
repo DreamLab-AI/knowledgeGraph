@@ -8,14 +8,6 @@
   "definition": "The **EU AI Act** (Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence) is the first horizontal, cross-sectoral statutory framework for artificial intelligence anywhere in the world, adopted by the European Union under the Treaty on the Functioning of the European Union (TFEU) Articles 16 (data protection) and 114 (internal market harmonisation), published in the Official Journal of the European Union (OJ L of 12 July 2024) and entering into force on 1 August 2024 with a staged application calendar\u2014Article 5 unacceptable-risk prohibitions plus Article 4 AI literacy obligations effective 2 February 2025, General-Purpose AI (GPAI) model rules under Articles 51-55 plus governance bodies (AI Office, AI Board, Scientific Panel, Advisory Forum) effective 2 August 2025, the bulk of high-risk system obligations under Title III effective 2 August 2026, and full integration of Annex I product-safety legislation effective 2 August 2027\u2014structured around a **risk-based pyramid** classifying AI systems into four tiers (unacceptable risk prohibited outright under Article 5, high-risk permitted only under ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-regulation",
-      "label": "AI Regulation"
-    },
-    {
-      "id": "urn:visionflow:linked:eu-regulation",
-      "label": "EU Regulation"
-    },
-    {
       "id": "urn:visionflow:linked:product-safety-regulation",
       "label": "Product Safety Regulation"
     },
@@ -24,8 +16,8 @@
       "label": "Risk-Based Regulation"
     },
     {
-      "id": "urn:visionflow:owl:class:digital-regulation",
-      "label": "Digital Regulation"
+      "id": "urn:visionflow:linked:ai-regulation",
+      "label": "AI Regulation"
     }
   ],
   "qualityScore": 0.52,

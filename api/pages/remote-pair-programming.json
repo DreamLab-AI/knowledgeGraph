@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:distributed-software-engineering",
       "label": "Distributed Software Engineering"
-    },
-    {
-      "id": "urn:visionflow:linked:pair-programming",
-      "label": "Pair Programming"
-    },
-    {
-      "id": "urn:visionflow:owl:class:synchronous-collaboration",
-      "label": "Synchronous Collaboration"
     }
   ],
   "qualityScore": 0.52,

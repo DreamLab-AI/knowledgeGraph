@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0073-imu",
   "domain": "robotics",
-  "definition": "",
+  "definition": "imu is a robotics and autonomous systems concept and a type of Proprioceptive Sensor.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:proprioceptive-sensor",

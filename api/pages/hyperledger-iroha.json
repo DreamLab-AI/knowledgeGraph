@@ -8,10 +8,6 @@
   "definition": "**Hyperledger Iroha** is a general-purpose permissioned Byzantine-fault-tolerant [[Distributed Ledger]] framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the [[Hyperledger]] Foundation (now Linux Foundation Decentralised Trust) on 17 October 2017 as the third top-level Hyperledger project after [[Hyperledger Fabric]] and Sawtooth, distinguished from its sibling frameworks by a radical commitment to operational simplicity, a built-in domain model of accounts/assets/permissions/signatories/peers rather than general-purpose smart contracts, and an explicit optimisation for mobile, IoT and bank-grade transaction processing \u2014 currently maintained in two production lineages: **Iroha 1.x** (C++17 implementation, YAC \"Yet Another Consensus\" voting BFT, command-query separation with pre-defined commands such as `CreateAccount`, `TransferAsset`, `AddAssetQuantity`, `AppendRole`, `GrantPermission`, PostgreSQL-backed world-state, gRPC + WebSocket Torii API, multi-signature transactions and atomic batches as first-class primitives, client SDKs for Java/Kotlin, Python, JavaScript/TypeScript, iOS Swift, Android, C++ and .NET",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "label": "Byzantine Fault Tolerant System"
-    },
-    {
       "id": "urn:visionflow:linked:enterprise-blockchain-framework",
       "label": "Enterprise Blockchain Framework"
     },
@@ -20,12 +16,8 @@
       "label": "Hyperledger Project"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
-    },
-    {
-      "id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "label": "Permissioned Blockchain"
+      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "label": "Byzantine Fault Tolerant System"
     }
   ],
   "qualityScore": 0.52,

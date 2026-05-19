@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:knowhere",
   "domain": "infrastructure",
-  "definition": "Knowhere is a concept within the ngm domain.",
+  "definition": "Knowhere is a technology infrastructure concept and a type of Tracking Technology.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:tracking-technology",

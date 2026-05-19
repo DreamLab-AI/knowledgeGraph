@@ -670,14 +670,6 @@ public:: true
   "label": "Grok",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:conversational-ai-system",
-      "vc:label": "Conversational AI System"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
       "@id": "urn:visionflow:linked:frontier-model",
       "vc:label": "Frontier Model"
     },
@@ -688,10 +680,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:transformer-model",
       "vc:label": "Transformer Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

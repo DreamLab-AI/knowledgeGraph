@@ -1,0 +1,50 @@
+{
+  "id": "urn:visionflow:page:cognitive-science",
+  "title": "Cognitive Science",
+  "slug": "cognitive-science",
+  "public": true,
+  "classIri": "urn:visionflow:linked:cognitive-science",
+  "domain": "infrastructure",
+  "definition": "Cognitive Science is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "Computation And Intelligence Domain"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    }
+  ]
+}

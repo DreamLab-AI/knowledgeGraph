@@ -402,16 +402,8 @@ public:: true
       "vc:label": "Awareness Mechanisms"
     },
     {
-      "@id": "urn:visionflow:linked:real-time-communication",
-      "vc:label": "Real-Time Communication"
-    },
-    {
       "@id": "urn:visionflow:linked:synchronous-collaboration-infrastructure",
       "vc:label": "Synchronous Collaboration Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-state-management",
-      "vc:label": "User State Management"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

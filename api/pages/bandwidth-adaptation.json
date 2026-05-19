@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:network-quality-of-service",
       "label": "Network Quality-of-Service"
-    },
-    {
-      "id": "urn:visionflow:linked:quality-of-experience",
-      "label": "Quality of Experience"
-    },
-    {
-      "id": "urn:visionflow:linked:real-time-transport-optimisation",
-      "label": "Real-time Transport Optimisation"
     }
   ],
   "qualityScore": 0.52,

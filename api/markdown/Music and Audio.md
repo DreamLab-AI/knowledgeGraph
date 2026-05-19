@@ -454,18 +454,6 @@ public:: true
       "vc:label": "Creative AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
       "@id": "urn:visionflow:owl:class:multimodal-ai",
       "vc:label": "Multimodal AI"
     }

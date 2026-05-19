@@ -610,20 +610,12 @@ public:: true
   "label": "Consortium Blockchain",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:federated-system",
       "vc:label": "Federated System"
     },
     {
       "@id": "urn:visionflow:linked:multi-organisation-database",
       "vc:label": "Multi-Organisation Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
     },
     {
       "@id": "urn:visionflow:owl:class:permissioned-network",

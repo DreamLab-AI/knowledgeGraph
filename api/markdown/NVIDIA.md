@@ -552,14 +552,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:fabless-semiconductor",
       "vc:label": "Fabless Semiconductor"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-manufacturer",
-      "vc:label": "GPU Manufacturer"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-company",
-      "vc:label": "Semiconductor Company"
     }
   ],
   "vc:sourceDomain": "infrastructure",

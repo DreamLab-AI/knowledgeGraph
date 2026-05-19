@@ -508,10 +508,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:statistical-learning-theory",
       "vc:label": "Statistical Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-learning",
-      "vc:label": "Supervised Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

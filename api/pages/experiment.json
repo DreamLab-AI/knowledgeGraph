@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:experiment",
   "domain": "infrastructure",
-  "definition": "experiment is a concept within the ngm domain.",
+  "definition": "experiment is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

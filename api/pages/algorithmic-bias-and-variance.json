@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:statistical-learning-theory",
       "label": "Statistical Learning Theory"
-    },
-    {
-      "id": "urn:visionflow:owl:class:supervised-learning",
-      "label": "Supervised Learning"
     }
   ],
   "qualityScore": 0.52,

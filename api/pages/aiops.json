@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:aiops",
   "domain": "artificial-intelligence",
-  "definition": "AIOps is a concept within the ai domain.",
+  "definition": "AIOps is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

@@ -538,16 +538,8 @@ public:: true
   "label": "AI Diagram Tools",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-productivity-tool",
-      "vc:label": "AI Productivity Tool"
-    },
-    {
       "@id": "urn:visionflow:linked:diagram-as-code",
       "vc:label": "Diagram-as-Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:generative-ai-application",
-      "vc:label": "Generative AI Application"
     },
     {
       "@id": "urn:visionflow:linked:knowledge-visualisation",

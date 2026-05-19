@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:3-ddesign",
   "domain": "infrastructure",
-  "definition": "3DDesign is a concept within the ngm domain.",
+  "definition": "3DDesign is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

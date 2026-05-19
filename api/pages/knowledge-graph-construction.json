@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:knowledge-graph-construction",
   "domain": "artificial-intelligence",
-  "definition": "Knowledge Graph Construction is a concept within the ai domain.",
+  "definition": "Knowledge Graph Construction is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

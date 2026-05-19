@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:landv-ttir",
   "domain": "infrastructure",
-  "definition": "Landv\u00e6ttir is a concept within the ngm domain.",
+  "definition": "Landv\u00e6ttir is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

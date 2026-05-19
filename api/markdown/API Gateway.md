@@ -744,14 +744,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:reverse-proxy",
       "vc:label": "Reverse Proxy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:middleware",
-      "vc:label": "Middleware"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:fabless-semiconductor",
       "label": "Fabless Semiconductor"
-    },
-    {
-      "id": "urn:visionflow:linked:gpu-manufacturer",
-      "label": "GPU Manufacturer"
-    },
-    {
-      "id": "urn:visionflow:linked:semiconductor-company",
-      "label": "Semiconductor Company"
     }
   ],
   "qualityScore": 0.54,

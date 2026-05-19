@@ -414,10 +414,6 @@ public:: true
   "label": "Probabilistic Model",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
       "@id": "urn:visionflow:linked:statistical-learning",
       "vc:label": "Statistical Learning"
     },
@@ -426,12 +422,8 @@ public:: true
       "vc:label": "Uncertainty Quantification"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-model",
-      "vc:label": "Generative Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

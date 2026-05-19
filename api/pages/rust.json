@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:memory-safe-language",
       "label": "Memory-Safe Language"
-    },
-    {
-      "id": "urn:visionflow:linked:statically-typed-language",
-      "label": "Statically Typed Language"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-programming-language",
-      "label": "Systems Programming Language"
     }
   ],
   "qualityScore": 0.52,

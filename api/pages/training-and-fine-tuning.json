@@ -8,24 +8,16 @@
   "definition": "**Fine-tuning** is the post-pre-training adaptation of a large neural network \u2014 typically a transformer-based [[Foundation Models]] or [[Large Language Models]] \u2014 to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated datasets (10 K\u20131 M examples), contrasting with the trillion-token self-supervised pre-training covered in [[Model Training]]. Fine-tuning subdivides into four principal tracks: (1) **Supervised Fine-Tuning (SFT)**, also termed *instruction tuning*, presents (instruction, response) pairs to the model under a causal language modelling loss applied exclusively over response tokens, transforming a raw next-token predictor into an instruction-following assistant \u2014 exemplified by InstructGPT (Ouyang et al. 2022), Alpaca (Stanford 2023), FLAN (Wei et al. 2022), and Llama-3.1-Instruct; (2) **Preference Alignment** via Reinforcement Learning from Human Feedback ([[Reinforcement Learning from Human Feedback]]) using Proximal Policy Optimisation (PPO, Schulman et al. 2017) to maximise a learned scalar [[Reward Model]] while penalising KL-divergence from the SFT reference policy J(\u03b8) = E[R_\u03c6(x,y)] \u2212 \u03b2\u00b7KL(",
   "subClassOf": [
     {
+      "id": "urn:visionflow:owl:class:model-training",
+      "label": "Model Training"
+    },
+    {
       "id": "urn:visionflow:linked:transfer-learning",
       "label": "Transfer Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:foundation-models",
       "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:model-training",
-      "label": "Model Training"
     }
   ],
   "qualityScore": 0.52,

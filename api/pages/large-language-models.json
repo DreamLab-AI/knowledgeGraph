@@ -8,20 +8,16 @@
   "definition": "[[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
+      "id": "urn:visionflow:owl:class:neural-network",
+      "label": "Neural Network"
     },
     {
       "id": "urn:visionflow:owl:class:foundation-models",
       "label": "Foundation Models"
     },
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:neural-network",
-      "label": "Neural Network"
+      "id": "urn:visionflow:owl:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "qualityScore": 0.92,

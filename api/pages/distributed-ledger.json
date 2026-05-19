@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:replicated-state-machine",
       "label": "Replicated State Machine"
-    },
-    {
-      "id": "urn:visionflow:owl:class:data-structure",
-      "label": "Data Structure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-system",
-      "label": "Distributed System"
     }
   ],
   "qualityScore": 0.52,

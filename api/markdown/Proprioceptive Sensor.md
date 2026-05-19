@@ -400,14 +400,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:robotic-subsystem",
       "vc:label": "Robotic Subsystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-estimation-component",
-      "vc:label": "State Estimation Component"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
     }
   ],
   "vc:sourceDomain": "robotics",

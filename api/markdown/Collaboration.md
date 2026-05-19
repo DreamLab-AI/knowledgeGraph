@@ -147,7 +147,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Collaboration is a concept within the ngm domain.",
+  "definition": "Collaboration is a technology infrastructure concept and a type of Collaboration Platform.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

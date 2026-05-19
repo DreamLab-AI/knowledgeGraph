@@ -370,14 +370,6 @@ public:: true
       "vc:label": "W3C Standard"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-identity",
-      "vc:label": "Distributed Identity"
-    },
-    {
       "@id": "urn:visionflow:owl:class:self-sovereign-identity",
       "vc:label": "Self-Sovereign Identity"
     }

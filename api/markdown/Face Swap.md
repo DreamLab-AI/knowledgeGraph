@@ -590,10 +590,6 @@ public:: true
   "label": "Face Swap",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:conditional-image-synthesis",
-      "vc:label": "Conditional Image Synthesis"
-    },
-    {
       "@id": "urn:visionflow:linked:face-manipulation",
       "vc:label": "Face Manipulation"
     },
@@ -602,12 +598,8 @@ public:: true
       "vc:label": "Identity Transfer"
     },
     {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:visionflow:linked:conditional-image-synthesis",
+      "vc:label": "Conditional Image Synthesis"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -480,18 +480,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:software-framework",
       "vc:label": "Software Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-system",
-      "vc:label": "Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:middleware",
-      "vc:label": "Middleware"
     }
   ],
   "vc:sourceDomain": "robotics",

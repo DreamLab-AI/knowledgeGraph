@@ -848,14 +848,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:financial-crime-compliance",
       "vc:label": "Financial Crime Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-management-framework",
-      "vc:label": "Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
     }
   ],
   "vc:sourceDomain": "blockchain",

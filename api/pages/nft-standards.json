@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:nft-standards",
   "domain": "blockchain",
-  "definition": "NFT Standards is a concept within the bc domain.",
+  "definition": "NFT Standards is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

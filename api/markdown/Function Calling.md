@@ -520,14 +520,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:llm-capability",
       "vc:label": "LLM Capability"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-output-generation",
-      "vc:label": "Structured Output Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

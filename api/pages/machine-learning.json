@@ -5,8 +5,13 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:machine-learning",
   "domain": "artificial-intelligence",
-  "definition": "",
-  "subClassOf": [],
+  "definition": "Machine Learning is a concept in artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:visionflow:owl:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "qualityScore": 0.5,
   "authorityScore": 0.0,
   "maturity": "draft",

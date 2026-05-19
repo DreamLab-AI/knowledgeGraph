@@ -450,28 +450,16 @@ public:: true
   "label": "Vircadia",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
       "@id": "urn:visionflow:owl:class:social-vr",
       "vc:label": "Social VR"
     },
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
       "@id": "urn:visionflow:owl:class:virtual-world",
       "vc:label": "Virtual World"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-software",
+      "vc:label": "Open Source Software"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

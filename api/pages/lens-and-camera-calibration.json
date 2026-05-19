@@ -8,10 +8,6 @@
   "definition": "Lens and Camera Calibration is the systematic metrology process of estimating the full set of geometric and photometric parameters that govern image formation in a camera-lens system, enabling precise bidirectional mapping between three-dimensional world coordinates and two-dimensional image pixel coordinates. This estimation is foundational to every quantitative computer vision task: metric [[3D Reconstruction]], [[Structure from Motion]], [[Stereo Vision]], [[SLAM]], [[Augmented Reality]] hologram registration, surgical robot navigation, autonomous vehicle perception, satellite photogrammetry, and industrial dimensional inspection. Without calibration a camera functions as a qualitative sensor; with calibration every pixel becomes a directed ray in 3D space with known angular bearing, origin, and depth scale, enabling millimetre-accurate spatial reasoning from images alone. The canonical mathematical model decomposes into two tightly coupled components: intrinsic parameters and lens distortion. The intrinsic matrix K \u2014 a 3\u00d73 upper-triangular matrix K = [[fx, s, cx], [0, fy, cy], [0, 0, 1]] \u2014 encodes the focal lengths fx, fy (in pixel units, related to the physical focal length f ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computational-photography",
-      "label": "Computational Photography"
-    },
-    {
       "id": "urn:visionflow:linked:geometric-camera-models",
       "label": "Geometric Camera Models"
     },
@@ -22,14 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:3-d-reconstruction",
       "label": "3D Reconstruction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:photogrammetry",
-      "label": "Photogrammetry"
     }
   ],
   "qualityScore": 0.52,

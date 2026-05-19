@@ -8,14 +8,6 @@
   "definition": "Screen sharing is the real-time capture and transmission of a computing device's visual display output \u2014 encompassing full-desktop, application-window, browser-tab, and mobile-device viewports \u2014 to one or more remote participants over a network, enabling synchronous visual communication of interfaces, live code execution, design artefacts, data dashboards, and instructional demonstrations without requiring physical co-location or asynchronous file exchange. The technology operates through a pipeline of display capture, frame encoding, network packetisation, decoding, and rendering, spanning four dominant protocol stacks \u2014 [[WebRTC]] getDisplayMedia API (browser-native, peer-to-peer), [[Remote Desktop Protocol]] (RDP; Microsoft, TCP/UDP 3389), VNC/[[RFB Protocol]] (Remote Framebuffer, port 5900), and [[Network Device Interface]] (NDI, broadcast-grade LAN/WAN) \u2014 each making different trade-offs across latency, fidelity, interactivity, and deployment complexity. Codec selection is the primary quality lever: H.264 Screen Content Coding (SCC, ISO/IEC 14496-10 Annex N) adds palette tables and intra-block-copy (IBC) tools that exploit the large flat-colour regions and sharp text edges pre",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-collaboration",
-      "label": "Distributed Collaboration"
-    },
-    {
-      "id": "urn:visionflow:linked:real-time-communication",
-      "label": "Real-Time Communication"
-    },
-    {
       "id": "urn:visionflow:linked:remote-desktop-technology",
       "label": "Remote Desktop Technology"
     },

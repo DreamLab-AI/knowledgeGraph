@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:synthetic-data-generation",
   "domain": "artificial-intelligence",
-  "definition": "0422 Synthetic Data Generation is a concept within the ai domain.",
+  "definition": "Synthetic Data Generation is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

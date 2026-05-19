@@ -376,14 +376,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:organisational-governance",
       "vc:label": "Organisational Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-choice-theory",
-      "vc:label": "Social Choice Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

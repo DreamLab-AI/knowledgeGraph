@@ -698,16 +698,8 @@ public:: true
   "label": "Hyperledger Indy",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "vc:label": "Byzantine Fault Tolerant System"
-    },
-    {
       "@id": "urn:visionflow:linked:decentralized-identifier-method",
       "vc:label": "Decentralized Identifier Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-project",
-      "vc:label": "Hyperledger Project"
     },
     {
       "@id": "urn:visionflow:linked:permissioned-distributed-ledger",

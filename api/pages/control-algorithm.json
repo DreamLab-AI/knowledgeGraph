@@ -8,20 +8,12 @@
   "definition": "ControlAlgorithm is a formalised mathematical and computational procedure that generates actuator commands to drive a dynamic system from its current state toward a desired target state, exploiting feedback from sensors, an internal model of the plant, or learned approximations of system dynamics, and spanning a hierarchy of algorithmic families: classical proportional\u2013integral\u2013derivative (PID) control achieving steady-state error cancellation via u(t) = K_p\u00b7e(t) + K_i\u00b7\u222be dt + K_d\u00b7(de/dt); Linear Quadratic Regulator (LQR) minimising the infinite-horizon quadratic cost J = \u222b\u2080^\u221e(x^T\u00b7Q\u00b7x + u^T\u00b7R\u00b7u)dt by solving the algebraic Riccati equation P\u00b7A + A^T\u00b7P \u2212 P\u00b7B\u00b7R\u207b\u00b9\u00b7B^T\u00b7P + Q = 0 to obtain optimal gain K* = R\u207b\u00b9\u00b7B^T\u00b7P; Model Predictive Control (MPC) solving a receding-horizon finite-time constrained optimisation min_{u} \u03a3_{k=0}^{N\u22121}[x_k^T\u00b7Q\u00b7x_k + u_k^T\u00b7R\u00b7u_k] + x_N^T\u00b7P_f\u00b7x_N subject to state and input constraint polytopes at each sample step; H-infinity (H\u221e) robust control minimising the L\u2082-induced gain from disturbance w to performance output z (\u2016T_{zw}\u2016_\u221e < \u03b3) via two-Riccati or LMI synthesis; sliding mode control (SMC) driving trajectories onto a switching surface s(x) = 0 in finite t",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computational-intelligence",
-      "label": "Computational Intelligence"
-    },
-    {
       "id": "urn:visionflow:linked:dynamical-systems",
       "label": "Dynamical Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:control-theory",
-      "label": "Control Theory"
-    },
-    {
-      "id": "urn:visionflow:owl:class:feedback-control",
-      "label": "Feedback Control"
+      "id": "urn:visionflow:linked:computational-intelligence",
+      "label": "Computational Intelligence"
     },
     {
       "id": "urn:visionflow:owl:class:optimal-control",

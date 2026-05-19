@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:batch-processing",
   "domain": "artificial-intelligence",
-  "definition": "Batch Processing is a concept within the ai domain.",
+  "definition": "Batch Processing is a artificial intelligence concept and a type of Processing Model.",
   "subClassOf": [
     {
       "id": "urn:visionflow:linked:processing-model",

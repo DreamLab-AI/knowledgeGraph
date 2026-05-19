@@ -436,14 +436,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:performance-capture",
       "vc:label": "Performance Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

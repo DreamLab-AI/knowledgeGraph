@@ -12,20 +12,12 @@
       "label": "Cloud Platform"
     },
     {
-      "id": "urn:visionflow:linked:distributed-collaboration-technology",
-      "label": "Distributed Collaboration Technology"
-    },
-    {
       "id": "urn:visionflow:linked:employee-experience-system",
       "label": "Employee Experience System"
     },
     {
       "id": "urn:visionflow:linked:enterprise-software-infrastructure",
       "label": "Enterprise Software Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:linked:intranet-evolution",
-      "label": "Intranet Evolution"
     }
   ],
   "qualityScore": 0.52,

@@ -366,16 +366,8 @@ public:: true
       "vc:label": "AI Ethics"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
       "@id": "urn:visionflow:owl:class:human-computer-interaction",
       "vc:label": "Human-Computer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

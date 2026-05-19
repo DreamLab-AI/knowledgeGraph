@@ -880,14 +880,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:web-architecture",
       "vc:label": "Web Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer To Peer Network"
     }
   ],
   "vc:sourceDomain": "infrastructure",

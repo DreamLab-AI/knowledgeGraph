@@ -524,14 +524,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:offline-reinforcement-learning",
       "vc:label": "Offline Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:preference-learning",
-      "vc:label": "Preference Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-fine-tuning",
-      "vc:label": "Supervised Fine Tuning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

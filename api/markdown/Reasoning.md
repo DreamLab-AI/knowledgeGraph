@@ -326,20 +326,8 @@ public:: true
       "vc:label": "Artificial General Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
       "@id": "urn:visionflow:owl:class:knowledge-representation",
       "vc:label": "Knowledge Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

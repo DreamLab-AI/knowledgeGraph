@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:tele002telecollaboration",
   "domain": "infrastructure",
-  "definition": "TELE002telecollaboration is a concept within the ngm domain.",
+  "definition": "TELE002telecollaboration is a technology infrastructure concept and a type of Realtime Collaboration.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:realtime-collaboration",

@@ -55,6 +55,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "autonomous-system",
+      "title": "Autonomous System",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "autonomous-vehicle",
       "title": "Autonomous Vehicle",
       "qualityScore": 0.5,
@@ -145,6 +151,12 @@
       "authorityScore": 0.09
     },
     {
+      "slug": "cyber-physical-systems",
+      "title": "Cyber Physical Systems",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "cybersecurity-standard",
       "title": "Cybersecurity Standard",
       "qualityScore": 0.5,
@@ -221,6 +233,12 @@
       "title": "Electric Motor",
       "qualityScore": 0.5,
       "authorityScore": 0.95
+    },
+    {
+      "slug": "embedded-systems",
+      "title": "Embedded Systems",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "end-effector",
@@ -2169,6 +2187,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "ai-governance-principle",
+      "title": "Ai Governance Principle",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "ai-machine-learning",
       "title": "Ai Machine Learning",
       "qualityScore": 0.35,
@@ -2431,6 +2455,12 @@
       "title": "Bayes Filter",
       "qualityScore": 0.52,
       "authorityScore": 0.87
+    },
+    {
+      "slug": "bayesian-inference",
+      "title": "Bayesian Inference",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "behavior-analysis",
@@ -2901,6 +2931,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "deep-generative-model",
+      "title": "Deep Generative Model",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "deep-learning",
       "title": "Deep Learning",
       "qualityScore": 0.91,
@@ -2935,6 +2971,12 @@
       "title": "Differential Privacy",
       "qualityScore": 0.35,
       "authorityScore": 0.95
+    },
+    {
+      "slug": "diffusion-model",
+      "title": "Diffusion Model",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "diffusion-models",
@@ -3421,6 +3463,18 @@
       "title": "Fooocus",
       "qualityScore": 0.52,
       "authorityScore": 0.87
+    },
+    {
+      "slug": "foundation-model-provider",
+      "title": "Foundation Model Provider",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
+      "slug": "foundation-model",
+      "title": "Foundation Model",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "foundation-models",
@@ -5529,6 +5583,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "transfer-learning",
+      "title": "Transfer Learning",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "transformer-architecture",
       "title": "Transformer Architecture",
       "qualityScore": 0.5,
@@ -6447,6 +6507,12 @@
       "title": "Compute Shader",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "computer-graphics",
+      "title": "Computer Graphics",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "computer-vision-system",
@@ -7551,6 +7617,12 @@
       "title": "Extended Reality (XR)",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "extended-reality",
+      "title": "Extended Reality",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "eye-tracking",
@@ -11143,6 +11215,12 @@
       "authorityScore": 0.87
     },
     {
+      "slug": "distributed-collaboration",
+      "title": "Distributed Collaboration",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "distributed-decision-making",
       "title": "Distributed Decision Making",
       "qualityScore": 0.52,
@@ -11529,6 +11607,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "asynchronous-communication",
+      "title": "Asynchronous Communication",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "authentication-service",
       "title": "Authentication Service",
       "qualityScore": 0.5,
@@ -11563,6 +11647,12 @@
       "title": "Brain Computer Interfaces",
       "qualityScore": 0.52,
       "authorityScore": 0.87
+    },
+    {
+      "slug": "byzantine-fault-tolerant-system",
+      "title": "Byzantine Fault Tolerant System",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "calculating-empires",
@@ -11617,6 +11707,18 @@
       "title": "Coding support",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "cognitive-architecture",
+      "title": "Cognitive Architecture",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
+      "slug": "cognitive-science",
+      "title": "Cognitive Science",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "cold-chain-monitoring",
@@ -12357,6 +12459,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "financial-services",
+      "title": "Financial Services",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "funding-active-and-available",
       "title": "Funding (active and available)",
       "qualityScore": 0.5,
@@ -12891,6 +12999,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "open-source-software",
+      "title": "Open Source Software",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "open-standard",
       "title": "Open Standard",
       "qualityScore": 0.35,
@@ -13108,7 +13222,7 @@
     },
     {
       "slug": "presentation-3-a-conclusion",
-      "title": "Presentation%3A Conclusion",
+      "title": "Presentation: Conclusion",
       "qualityScore": 0.35,
       "authorityScore": 0.0
     },
@@ -13671,6 +13785,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "synthetic-media",
+      "title": "Synthetic Media",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "system-integration",
       "title": "System Integration",
       "qualityScore": 0.35,
@@ -13681,6 +13801,12 @@
       "title": "System Interoperability",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "systems-engineering",
+      "title": "Systems Engineering",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "tele002telecollaboration",
@@ -14074,7 +14200,7 @@
     },
     {
       "slug": "chatgpt-2024-08-20-09-3-a48-3-a00",
-      "title": "chatgpt__2024-08-20 09%3A48%3A00",
+      "title": "ChatGPT (August 2024 Release)",
       "qualityScore": 0.35,
       "authorityScore": 0.0
     },
@@ -15065,6 +15191,12 @@
       "authorityScore": 0.87
     },
     {
+      "slug": "distributed-ledger-technology",
+      "title": "Distributed Ledger Technology",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
+    },
+    {
       "slug": "distributed-ledger",
       "title": "Distributed Ledger",
       "qualityScore": 0.52,
@@ -15273,6 +15405,12 @@
       "title": "Finality",
       "qualityScore": 0.5,
       "authorityScore": 0.95
+    },
+    {
+      "slug": "financial-regulation",
+      "title": "Financial Regulation",
+      "qualityScore": 0.3,
+      "authorityScore": 0.5
     },
     {
       "slug": "financial-technology",

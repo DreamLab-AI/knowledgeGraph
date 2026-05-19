@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rapid-ai-deployment",
   "domain": "artificial-intelligence",
-  "definition": "Rapid AI Deployment is a concept within the ai domain.",
+  "definition": "Rapid AI Deployment is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

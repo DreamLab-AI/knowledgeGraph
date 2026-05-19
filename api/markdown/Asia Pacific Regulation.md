@@ -1224,14 +1224,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:regional-ai-regulation",
       "vc:label": "Regional AI Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

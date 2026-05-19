@@ -398,24 +398,16 @@ public:: true
   "label": "Training and fine tuning",
   "subClassOf": [
     {
+      "@id": "urn:visionflow:owl:class:model-training",
+      "vc:label": "Model Training"
+    },
+    {
       "@id": "urn:visionflow:linked:transfer-learning",
       "vc:label": "Transfer Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:foundation-models",
       "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

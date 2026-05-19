@@ -456,14 +456,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
       "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-representation",
-      "vc:label": "Spatial Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-database",
-      "vc:label": "Graph Database"
     }
   ],
   "vc:sourceDomain": "robotics",

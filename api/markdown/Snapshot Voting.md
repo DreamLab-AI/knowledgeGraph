@@ -600,18 +600,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:gasless-governance",
       "vc:label": "Gasless Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-voting",
-      "vc:label": "Off-Chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3-infrastructure",
-      "vc:label": "Web3 Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
     }
   ],
   "vc:sourceDomain": "blockchain",

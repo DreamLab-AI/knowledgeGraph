@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:tensor-processing-unit",
   "domain": "artificial-intelligence",
-  "definition": "Tensor Processing Unit is a concept within the ai domain.",
+  "definition": "Tensor Processing Unit is a artificial intelligence concept and a type of Inference Hardware. that enables Large Language Models.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:inference-hardware",

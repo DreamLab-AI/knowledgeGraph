@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:plotting-a-graph-using-matplotlib-python-library",
   "domain": "infrastructure",
-  "definition": "Plotting a graph using matplotlib python library is a concept within the ngm domain.",
+  "definition": "Plotting a graph using matplotlib python library is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

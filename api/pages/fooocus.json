@@ -8,20 +8,12 @@
   "definition": "Fooocus is an open-source desktop image-generation interface for Stable Diffusion XL released in August 2023 by Lvmin Zhang (GitHub handle lllyasviel, originator of ControlNet, IC-Light, Forge, Paints-Undo, FramePack and OmniControl), conceived as a deliberate philosophical and ergonomic reaction to the perceived over-complexity of AUTOMATIC1111 Stable Diffusion WebUI (form-based, 200+ exposed parameters across a dozen tabs) and ComfyUI (node-based directed-acyclic-graph editor requiring users to wire generation pipelines manually), pursuing instead the stated design principle that \"all the local automatic optimization is enabled, hyperparameter tweaking minimised\" \u2014 i.e. the application opaquely chooses sampler, scheduler, refiner activation, FreeU coefficients, LoRA blending weights, prompt-expansion strategies and image-to-image denoise strengths so that the user is presented with a minimal Midjourney-like surface (a single prompt box, a style picker, an aspect-ratio selector and a Generate button) whilst still running entirely on local consumer hardware (8 GB VRAM minimum for SDXL Base 1.0, 4 GB possible with offloading) and shipping all weights, code and presets under permissi",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:generative-ai-application",
-      "label": "Generative AI Application"
-    },
-    {
       "id": "urn:visionflow:linked:gradio-application",
       "label": "Gradio Application"
     },
     {
       "id": "urn:visionflow:linked:local-image-generation-interface",
       "label": "Local Image Generation Interface"
-    },
-    {
-      "id": "urn:visionflow:linked:open-source-software",
-      "label": "Open Source Software"
     },
     {
       "id": "urn:visionflow:linked:stable-diffusion-frontend",

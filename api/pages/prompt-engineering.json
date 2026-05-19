@@ -8,32 +8,16 @@
   "definition": "Prompt Engineering is the systematic discipline of designing, structuring, and optimising natural language or structured inputs (prompts) to elicit desired behaviours, outputs, and reasoning traces from large language models (LLMs) and other generative AI systems, spanning a hierarchy of techniques from zero-shot instruction following through few-shot in-context learning (ICL) where 1-16 demonstration examples are embedded in context improving task accuracy by 10-40% across classification, translation, and reasoning benchmarks, to chain-of-thought (CoT) prompting (Wei et al. 2022 NeurIPS) where explicit step-by-step reasoning elicitation through the phrase \"Let's think step by step\" improved GPT-3 performance on GSM8K arithmetic from 17.9% to 48.7% and on MATH from 5% to 40%+, self-consistency decoding (Wang et al. 2022) sampling 40+ diverse reasoning chains and majority-voting the final answer to gain 17.9% on GSM8K over greedy CoT, tree-of-thoughts (ToT) (Yao et al. 2023 NeurIPS) decomposing problems into intermediate thought nodes explored via breadth-first or depth-first search with LLM-based evaluation raising Game of 24 success from 4% (CoT) to 74%, ReAct (Yao et al. 2022) in",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-artificial-intelligence",
-      "label": "Applied Artificial Intelligence"
-    },
-    {
       "id": "urn:visionflow:linked:in-context-learning",
       "label": "In-Context Learning"
     },
     {
+      "id": "urn:visionflow:linked:applied-artificial-intelligence",
+      "label": "Applied Artificial Intelligence"
+    },
+    {
       "id": "urn:visionflow:linked:instruction-following",
       "label": "Instruction Following"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-alignment",
-      "label": "AI Alignment"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "qualityScore": 0.52,

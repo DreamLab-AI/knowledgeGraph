@@ -652,14 +652,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:payment-instrument",
       "vc:label": "Payment Instrument"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-money",
-      "vc:label": "Sovereign Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-currency",
-      "vc:label": "Digital Currency"
     }
   ],
   "vc:sourceDomain": "blockchain",

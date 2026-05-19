@@ -130,7 +130,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "VideoStreaming is a concept within the ngm domain.",
+  "definition": "Video Streaming is a technology infrastructure concept and a type of Network Infrastructure.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

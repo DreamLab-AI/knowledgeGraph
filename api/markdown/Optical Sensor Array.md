@@ -366,24 +366,12 @@ public:: true
       "vc:label": "Computer Vision System"
     },
     {
-      "@id": "urn:visionflow:owl:class:exteroceptive-sensor",
-      "vc:label": "Exteroceptive Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware",
-      "vc:label": "Hardware"
-    },
-    {
       "@id": "urn:visionflow:owl:class:imaging-parameters",
       "vc:label": "Imaging Parameters"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
+      "@id": "urn:visionflow:owl:class:hardware",
+      "vc:label": "Hardware"
     }
   ],
   "vc:sourceDomain": "robotics",

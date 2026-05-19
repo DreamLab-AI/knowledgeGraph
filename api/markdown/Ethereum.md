@@ -612,18 +612,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:programmable-money",
       "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-stake-network",
-      "vc:label": "Proof of Stake Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-blockchain",
-      "vc:label": "Public Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
     }
   ],
   "vc:sourceDomain": "blockchain",

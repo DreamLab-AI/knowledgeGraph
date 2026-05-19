@@ -8,10 +8,6 @@
   "definition": "**AI Adoption** is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems \u2014 classical machine learning, deep learning, foundation models, generative AI and agentic AI \u2014 into productive workflows, decision-making pipelines, products, services and governance structures, measured through complementary lenses of **diffusion** (share of organisations using AI in at least one business function, which rose from 55% in 2023 to 78% in 2024 to 88% in 2025 according to the McKinsey *State of AI* survey series and corroborated by the Stanford HAI *AI Index Report 2025*), **depth** (number of business functions using AI per organisation, with two-thirds of adopters now deploying across multiple functions and half across three or more by late 2025), **modality mix** (the rapid shift from narrow predictive ML through 2022 to generative AI dominating new deployments 2023-2025 with 72% generative AI adoption by 2025 up >65% year-on-year, and a 2025-2026 transition toward agentic AI with 17% enterprise deployment and 60%+ planning within 24 months per the 2026 Gartner CIO Survey)",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:innovation-diffusion",
-      "label": "Innovation Diffusion"
-    },
-    {
       "id": "urn:visionflow:linked:organisational-change",
       "label": "Organisational Change"
     },
@@ -20,12 +16,8 @@
       "label": "Socio-Technical Process"
     },
     {
-      "id": "urn:visionflow:owl:class:digital-transformation",
-      "label": "Digital Transformation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:technology-adoption",
-      "label": "Technology Adoption"
+      "id": "urn:visionflow:linked:innovation-diffusion",
+      "label": "Innovation Diffusion"
     }
   ],
   "qualityScore": 0.52,

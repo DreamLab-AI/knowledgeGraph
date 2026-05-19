@@ -518,24 +518,16 @@ public:: true
   "label": "Adoption of Convergent Technologies",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:innovation-diffusion",
-      "vc:label": "Innovation Diffusion"
-    },
-    {
       "@id": "urn:visionflow:linked:socio-technical-transition",
       "vc:label": "Socio-Technical Transition"
     },
     {
+      "@id": "urn:visionflow:linked:innovation-diffusion",
+      "vc:label": "Innovation Diffusion"
+    },
+    {
       "@id": "urn:visionflow:linked:technology-policy",
       "vc:label": "Technology Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:technology-adoption",
-      "vc:label": "Technology Adoption"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

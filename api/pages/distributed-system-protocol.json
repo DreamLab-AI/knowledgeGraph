@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:distributed-system-protocol",
   "domain": "infrastructure",
-  "definition": "DistributedSystemProtocol is a concept within the ngm domain.",
+  "definition": "Distributed System Protocol is a technology infrastructure concept and a type of Protocol Layer.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:protocol-layer",

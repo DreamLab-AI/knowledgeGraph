@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:overfitting",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Overfitting is a artificial intelligence concept and a type of Machine Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning",

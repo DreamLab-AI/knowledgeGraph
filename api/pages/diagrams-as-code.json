@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:domain-specific-language",
       "label": "Domain-Specific Language"
-    },
-    {
-      "id": "urn:visionflow:linked:text-based-authoring",
-      "label": "Text-Based Authoring"
-    },
-    {
-      "id": "urn:visionflow:linked:version-controlled-artefact",
-      "label": "Version-Controlled Artefact"
     }
   ],
   "qualityScore": 0.52,

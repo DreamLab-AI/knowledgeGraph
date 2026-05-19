@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:llm-agents",
       "label": "LLM Agents"
-    },
-    {
-      "id": "urn:visionflow:linked:multi-agent-systems",
-      "label": "Multi Agent Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:tool-use",
-      "label": "Tool Use"
     }
   ],
   "qualityScore": 0.52,

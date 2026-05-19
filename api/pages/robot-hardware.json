@@ -8,24 +8,16 @@
   "definition": "RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4.1, RP2040, ESP32-S3), motor driver electronics (ODrive Pro, MoteusController, hoverboard motor controllers), actuator assemblies (BLDC motors, servo motors, hydraulic/pneumatic actuators, compliant series-elastic actuators), power systems (multi-cell LiPo/LiFePO4 battery packs, Battery Management Systems enforcing SOC/SOH monitoring, cell balancing, thermal protection at 2\u201380A continuous), wiring harnesses (shielded twisted-pair CAN-FD at 8 Mbit/s, EtherCAT at 100 Mbit/s, RS-485, PWM signal cables rated 600V), sensor suites (proprioceptive IMUs, encoders, force/torque sensors; exteroceptive LiDAR, depth cameras, stereo rigs), communication fabric (Gigabit Ethernet, Wi-Fi 6/6E, Bluetooth 5.3, 5G NR), and structural chassis designed to IP20\u2013IP68 environmental ingress ratings. Hardware integration is mediated by [[ROS 2]] and micro-ROS, which bridge deterministic real-time microcontroller loop",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:embedded-systems",
-      "label": "Embedded Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:mechatronics",
-      "label": "Mechatronics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:industrial-robot",
-      "label": "Industrial Robot"
-    },
-    {
       "id": "urn:visionflow:owl:class:mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },
     {
       "id": "urn:visionflow:owl:class:robotics-platform",
       "label": "Robotics Platform"
+    },
+    {
+      "id": "urn:visionflow:linked:mechatronics",
+      "label": "Mechatronics"
     }
   ],
   "qualityScore": 0.52,

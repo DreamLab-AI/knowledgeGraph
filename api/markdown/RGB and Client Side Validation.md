@@ -966,20 +966,8 @@ public:: true
       "vc:label": "Off-Chain Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
       "@id": "urn:visionflow:owl:class:layer-3",
       "vc:label": "Layer 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
     }
   ],
   "vc:sourceDomain": "blockchain",

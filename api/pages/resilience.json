@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:resilience",
   "domain": "blockchain",
-  "definition": "Resilience is a concept within the bc domain.",
+  "definition": "Resilience is a blockchain and distributed systems concept and a type of Blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

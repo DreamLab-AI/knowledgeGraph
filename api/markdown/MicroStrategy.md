@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:levered-asset-allocator",
       "vc:label": "Levered Asset Allocator"
-    },
-    {
-      "@id": "urn:visionflow:linked:listed-equity-vehicle",
-      "vc:label": "Listed Equity Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-company",
-      "vc:label": "Public Company"
     }
   ],
   "vc:sourceDomain": "blockchain",

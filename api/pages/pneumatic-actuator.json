@@ -8,10 +8,6 @@
   "definition": "PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion \u2014 linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) \u2014 and serves as the primary actuation primitive in robotics domains requiring inherent compliance, explosion-proof operation, high power-to-weight ratios, and safe physical human-robot interaction. Pneumatic actuators operate by regulating the flow and pressure of compressed air (typically 4\u20138 bar gauge in industrial settings, 0.1\u20132 bar in soft-robotics applications) through directional-control valves (4/2, 5/2, proportional) into one or two working chambers, generating force according to F = P\u00b7A \u2212 P_back\u00b7A_back \u2212 F_friction, where P is supply pressure, A is bore area, and P_back is back-pressure in double-acting configurations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:actuator",
-      "label": "Actuator"
-    },
-    {
       "id": "urn:visionflow:linked:compliant-mechanism",
       "label": "Compliant Mechanism"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:robotic-actuator",
       "label": "Robotic Actuator"
-    },
-    {
-      "id": "urn:visionflow:owl:class:soft-robotics",
-      "label": "Soft Robotics"
     }
   ],
   "qualityScore": 0.52,

@@ -420,14 +420,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:industrial-io-t",
       "vc:label": "Industrial IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:maintenance-strategy",
-      "vc:label": "Maintenance Strategy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

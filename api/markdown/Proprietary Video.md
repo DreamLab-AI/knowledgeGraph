@@ -528,22 +528,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:intellectual-property",
       "vc:label": "Intellectual Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:patent-licensing",
-      "vc:label": "Patent Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-protocols",
-      "vc:label": "Streaming Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-codec-standards",
-      "vc:label": "Video Codec Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-rights-management",
-      "vc:label": "Digital Rights Management"
     }
   ],
   "vc:sourceDomain": "infrastructure",

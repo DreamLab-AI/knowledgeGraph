@@ -16,16 +16,8 @@
       "label": "Digital Finance Package"
     },
     {
-      "id": "urn:visionflow:linked:eu-regulation",
-      "label": "EU Regulation"
-    },
-    {
       "id": "urn:visionflow:linked:financial-services-regulation",
       "label": "Financial Services Regulation"
-    },
-    {
-      "id": "urn:visionflow:linked:harmonised-single-market-rulebook",
-      "label": "Harmonised Single Market Rulebook"
     }
   ],
   "qualityScore": 0.52,

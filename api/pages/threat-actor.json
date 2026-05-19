@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:threat-actor",
   "domain": "blockchain",
-  "definition": "Threat Actor is a concept within the bc domain.",
+  "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:attack-vector",

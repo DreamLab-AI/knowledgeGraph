@@ -354,28 +354,16 @@ public:: true
   "label": "Proprietary AI Video",
   "subClassOf": [
     {
+      "@id": "urn:visionflow:owl:class:model-training",
+      "vc:label": "Model Training"
+    },
+    {
       "@id": "urn:visionflow:owl:class:ai-video",
       "vc:label": "AI Video"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
       "@id": "urn:visionflow:owl:class:diffusion-models",
       "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

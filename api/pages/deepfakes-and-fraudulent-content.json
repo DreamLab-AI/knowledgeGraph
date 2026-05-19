@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:information-integrity-threat",
       "label": "Information Integrity Threat"
-    },
-    {
-      "id": "urn:visionflow:linked:online-harm",
-      "label": "Online Harm"
-    },
-    {
-      "id": "urn:visionflow:linked:synthetic-media",
-      "label": "Synthetic Media"
     }
   ],
   "qualityScore": 0.52,

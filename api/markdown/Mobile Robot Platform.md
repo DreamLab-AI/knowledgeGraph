@@ -418,10 +418,6 @@ public:: true
   "label": "Mobile Robot Platform",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
-    },
-    {
       "@id": "urn:visionflow:linked:cyber-physical-system",
       "vc:label": "Cyber Physical System"
     },
@@ -432,10 +428,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:unmanned-ground-vehicle",
       "vc:label": "Unmanned Ground Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
     }
   ],
   "vc:sourceDomain": "robotics",

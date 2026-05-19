@@ -384,14 +384,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:novel-view-synthesis",
       "vc:label": "Novel View Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-rendering",
-      "vc:label": "Neural Rendering"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

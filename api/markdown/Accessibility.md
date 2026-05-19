@@ -514,20 +514,12 @@ public:: true
       "vc:label": "Design Principle"
     },
     {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
-    },
-    {
       "@id": "urn:visionflow:linked:non-functional-requirement",
       "vc:label": "Non-Functional Requirement"
     },
     {
       "@id": "urn:visionflow:linked:quality-attribute",
       "vc:label": "Quality Attribute"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-factors",
-      "vc:label": "Human Factors"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

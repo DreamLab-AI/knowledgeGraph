@@ -562,16 +562,8 @@ public:: true
       "vc:label": "Civil Liability"
     },
     {
-      "@id": "urn:visionflow:linked:product-liability",
-      "vc:label": "Product Liability"
-    },
-    {
       "@id": "urn:visionflow:linked:tort-law",
       "vc:label": "Tort Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
     },
     {
       "@id": "urn:visionflow:owl:class:algorithmic-accountability",

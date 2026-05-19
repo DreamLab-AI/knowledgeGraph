@@ -358,24 +358,16 @@ public:: true
   "label": "Model Control Protocols like MCP",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
       "@id": "urn:visionflow:owl:class:api-gateway",
       "vc:label": "API Gateway"
     },
     {
       "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
       "vc:label": "CLI Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agentic-internet",
+      "vc:label": "Agentic Internet"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:email-search",
   "domain": "infrastructure",
-  "definition": "email search is a concept within the ngm domain.",
+  "definition": "email search is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

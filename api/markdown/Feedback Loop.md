@@ -576,14 +576,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:control-mechanism",
       "vc:label": "Control Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:cybernetic-process",
-      "vc:label": "Cybernetic Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-mechanism",
-      "vc:label": "System Mechanism"
     }
   ],
   "vc:sourceDomain": "infrastructure",

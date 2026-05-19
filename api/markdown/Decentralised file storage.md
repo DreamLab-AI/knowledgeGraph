@@ -492,14 +492,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:permissionless-protocol",
       "vc:label": "Permissionless Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3-infrastructure",
-      "vc:label": "Web3 Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:decentralisation",
       "label": "Decentralisation"
-    },
-    {
-      "id": "urn:visionflow:linked:network-security",
-      "label": "Network Security"
-    },
-    {
-      "id": "urn:visionflow:owl:class:systemic-risk",
-      "label": "Systemic Risk"
     }
   ],
   "qualityScore": 0.52,

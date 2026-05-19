@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:distributed-collaboration-enablers",
       "label": "Distributed Collaboration Enablers"
-    },
-    {
-      "id": "urn:visionflow:linked:speech-technology",
-      "label": "Speech Technology"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-translation",
-      "label": "Machine Translation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "qualityScore": 0.52,

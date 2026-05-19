@@ -338,24 +338,16 @@ public:: true
   "label": "Microsoft Copilot",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
+      "@id": "urn:visionflow:owl:class:code-generation",
+      "vc:label": "Code Generation"
     },
     {
       "@id": "urn:visionflow:owl:class:ai-adoption",
       "vc:label": "AI Adoption"
     },
     {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

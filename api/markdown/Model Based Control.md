@@ -398,14 +398,6 @@ public:: true
       "vc:label": "Trajectory Optimisation"
     },
     {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimal-control",
-      "vc:label": "Optimal Control"
-    },
-    {
       "@id": "urn:visionflow:owl:class:robot-control",
       "vc:label": "Robot Control"
     }

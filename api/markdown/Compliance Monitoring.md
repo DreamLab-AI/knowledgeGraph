@@ -688,14 +688,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:governance-risk-compliance",
       "vc:label": "Governance Risk Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
     }
   ],
   "vc:sourceDomain": "infrastructure",

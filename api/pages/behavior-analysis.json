@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:behavior-analysis",
   "domain": "artificial-intelligence",
-  "definition": "Behavior Analysis is a concept within the ai domain.",
+  "definition": "Behavior Analysis is a artificial intelligence concept and a type of Machine Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning",

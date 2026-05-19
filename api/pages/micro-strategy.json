@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:levered-asset-allocator",
       "label": "Levered Asset Allocator"
-    },
-    {
-      "id": "urn:visionflow:linked:listed-equity-vehicle",
-      "label": "Listed Equity Vehicle"
-    },
-    {
-      "id": "urn:visionflow:linked:public-company",
-      "label": "Public Company"
     }
   ],
   "qualityScore": 0.54,

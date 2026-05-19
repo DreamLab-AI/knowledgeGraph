@@ -522,10 +522,6 @@ public:: true
   "label": "Bayes Filter",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
       "@id": "urn:visionflow:linked:probabilistic-filter",
       "vc:label": "Probabilistic Filter"
     },
@@ -536,10 +532,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sequential-monte-carlo",
       "vc:label": "Sequential Monte Carlo"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -8,24 +8,16 @@
   "definition": "**Blockchain Interoperability** is the technical and economic capability for distinct, sovereign blockchain networks to securely communicate state, transfer assets, invoke smart contracts, and propagate consensus across heterogeneous trust domains without relinquishing each chain's independent finality, governance, or economic security \u2014 addressing the structural fragmentation of the 2026 blockchain landscape in which 200+ production layer-1 networks plus 50+ Ethereum rollups (Optimism, Arbitrum, Base, zkSync, Starknet, Linea, Scroll, Polygon zkEVM, Mantle, Blast, Mode, Fraxtal, Cyber, Soneium and growing weekly via Conduit, Caldera, AltLayer rollup-as-a-service), 100+ Cosmos zones connected via IBC, and 50+ Polkadot parachains operate as economically and computationally isolated trust islands collectively securing roughly $3.5 trillion in 2025-cycle peak market capitalisation across incompatible consensus mechanisms (Nakamoto PoW, Tendermint BFT, GRANDPA/BABE PoS, GHOST-Casper, HotStuff variants, DAG-based), virtual machines (EVM, WASM, MoveVM, SVM, Bitcoin Script, Cairo VM, RISC-V via Polkadot JAM 2025+), state models (UTXO, account-based, object-centric Sui/Aptos), and finality ",
   "subClassOf": [
     {
+      "id": "urn:visionflow:linked:network-interoperability",
+      "label": "Network Interoperability"
+    },
+    {
       "id": "urn:visionflow:linked:cross-chain-communication",
       "label": "Cross Chain Communication"
     },
     {
       "id": "urn:visionflow:linked:distributed-systems-protocol",
       "label": "Distributed Systems Protocol"
-    },
-    {
-      "id": "urn:visionflow:linked:network-interoperability",
-      "label": "Network Interoperability"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "label": "Blockchain Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
     }
   ],
   "qualityScore": 0.52,

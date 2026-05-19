@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:smart-contract-operation",
       "label": "Smart Contract Operation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-process",
-      "label": "Blockchain Process"
-    },
-    {
-      "id": "urn:visionflow:owl:class:tokenisation",
-      "label": "Tokenisation"
     }
   ],
   "qualityScore": 0.52,

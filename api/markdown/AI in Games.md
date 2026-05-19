@@ -498,10 +498,6 @@ public:: true
   "label": "AI in Games",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-artificial-intelligence",
-      "vc:label": "Applied Artificial Intelligence"
-    },
-    {
       "@id": "urn:visionflow:linked:entertainment-technology",
       "vc:label": "Entertainment Technology"
     },
@@ -512,10 +508,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:interactive-computing",
       "vc:label": "Interactive Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-ai",
-      "vc:label": "Real-Time AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -432,14 +432,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:recursive-bayesian-estimator",
       "vc:label": "Recursive Bayesian Estimator"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequential-monte-carlo",
-      "vc:label": "Sequential Monte Carlo"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

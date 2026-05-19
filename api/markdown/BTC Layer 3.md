@@ -848,14 +848,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:blockchain-scalability-solution",
       "vc:label": "Blockchain Scalability Solution"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
     }
   ],
   "vc:sourceDomain": "blockchain",

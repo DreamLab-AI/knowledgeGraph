@@ -16,16 +16,8 @@
       "label": "Futures Studies"
     },
     {
-      "id": "urn:visionflow:linked:philosophy-of-mind",
-      "label": "Philosophy of Mind"
-    },
-    {
       "id": "urn:visionflow:linked:transhumanism",
       "label": "Transhumanism"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "label": "Artificial General Intelligence"
     }
   ],
   "qualityScore": 0.52,

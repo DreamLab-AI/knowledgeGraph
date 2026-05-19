@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:general-intelligence",
       "label": "General Intelligence"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
     }
   ],
   "qualityScore": 0.52,

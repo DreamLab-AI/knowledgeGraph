@@ -354,20 +354,12 @@ public:: true
   "label": "Image Segmentation",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:dense-prediction",
-      "vc:label": "Dense Prediction"
-    },
-    {
       "@id": "urn:visionflow:linked:structured-prediction",
       "vc:label": "Structured Prediction"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
+      "@id": "urn:visionflow:linked:dense-prediction",
+      "vc:label": "Dense Prediction"
     },
     {
       "@id": "urn:visionflow:owl:class:scene-understanding",

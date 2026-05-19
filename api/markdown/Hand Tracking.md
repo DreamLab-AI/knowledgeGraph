@@ -390,20 +390,12 @@ public:: true
       "vc:label": "Gesture Recognition"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
-    },
-    {
       "@id": "urn:visionflow:owl:class:pose-estimation",
       "vc:label": "Pose Estimation"
     },
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:visionflow:owl:class:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

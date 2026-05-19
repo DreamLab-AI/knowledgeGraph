@@ -764,14 +764,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:replicated-state-machine",
       "vc:label": "Replicated State Machine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-structure",
-      "vc:label": "Data Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -542,10 +542,6 @@ public:: true
   "label": "AI Adoption",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:innovation-diffusion",
-      "vc:label": "Innovation Diffusion"
-    },
-    {
       "@id": "urn:visionflow:linked:organisational-change",
       "vc:label": "Organisational Change"
     },
@@ -554,12 +550,8 @@ public:: true
       "vc:label": "Socio-Technical Process"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:technology-adoption",
-      "vc:label": "Technology Adoption"
+      "@id": "urn:visionflow:linked:innovation-diffusion",
+      "vc:label": "Innovation Diffusion"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -12,24 +12,12 @@
       "label": "Online Safety"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
-      "label": "AI Ethics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:content-moderation",
-      "label": "Content Moderation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:data-protection",
-      "label": "Data Protection"
-    },
-    {
       "id": "urn:visionflow:owl:class:digital-society-harms",
       "label": "Digital Society Harms"
     },
     {
-      "id": "urn:visionflow:owl:class:platform-governance",
-      "label": "Platform Governance"
+      "id": "urn:visionflow:owl:class:content-moderation",
+      "label": "Content Moderation"
     }
   ],
   "qualityScore": 0.52,

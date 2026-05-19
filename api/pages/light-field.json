@@ -8,10 +8,6 @@
   "definition": "Light field is a foundational concept in computational optics and computer graphics describing the complete distribution of light rays travelling through free space in all directions at all points, formalised by Adelson and Bergen (1991) as the 7-dimensional plenoptic function P(Vx, Vy, Vz, \u03b8, \u03c6, \u03bb, t) specifying the luminance of light rays as a function of 3D position (Vx, Vy, Vz), viewing direction (\u03b8, \u03c6), wavelength \u03bb, and time t \u2014 subsequently reduced by Marc Levoy and Pat Hanrahan in their landmark SIGGRAPH 1996 paper \"Light Field Rendering\" to a tractable 4D parameterisation L(s,t,u,v) on two parallel planes (the st-plane and uv-plane) by exploiting the fact that radiance is constant along rays in free space absent occluders, enabling the first practical algorithms for image-based rendering from dense light field samples (100\u00d7100 camera arrays producing 10,000 images rendered to novel viewpoints by ray-plane intersection at interactive rates on 1996-era workstations); simultaneously Gortler et al. (1996) introduced the equivalent \"Lumigraph\" parameterisation with a non-uniform sampling correction factor accounting for camera distance variation, establishing the foundational a",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computational-photography",
-      "label": "Computational Photography"
-    },
-    {
       "id": "urn:visionflow:linked:image-based-rendering",
       "label": "Image Based Rendering"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:radiance-field",
       "label": "Radiance Field"
-    },
-    {
-      "id": "urn:visionflow:linked:volumetric-display",
-      "label": "Volumetric Display"
     }
   ],
   "qualityScore": 0.52,

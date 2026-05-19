@@ -16,20 +16,8 @@
       "label": "Artificial General Intelligence"
     },
     {
-      "id": "urn:visionflow:owl:class:cognitive-ai",
-      "label": "Cognitive AI"
-    },
-    {
       "id": "urn:visionflow:owl:class:knowledge-representation",
       "label": "Knowledge Representation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "qualityScore": 0.52,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:taylor-swift-is-venice",
   "domain": "infrastructure",
-  "definition": "Taylor Swift is Venice is a concept within the ngm domain.",
+  "definition": "Taylor Swift is Venice is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

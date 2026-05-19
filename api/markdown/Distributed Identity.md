@@ -578,20 +578,16 @@ public:: true
   "label": "Distributed Identity",
   "subClassOf": [
     {
+      "@id": "urn:visionflow:owl:class:privacy-preserving-technology",
+      "vc:label": "Privacy-Preserving Technology"
+    },
+    {
       "@id": "urn:visionflow:owl:class:decentralised-web",
       "vc:label": "Decentralised Web"
     },
     {
       "@id": "urn:visionflow:owl:class:digital-identity",
       "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-technology",
-      "vc:label": "Privacy-Preserving Technology"
     }
   ],
   "vc:sourceDomain": "blockchain",

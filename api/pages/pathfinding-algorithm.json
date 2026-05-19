@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:pathfinding-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "Pathfinding Algorithm is a concept within the ai domain.",
+  "definition": "Pathfinding Algorithm is a artificial intelligence concept and a type of Algorithm.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:algorithm",

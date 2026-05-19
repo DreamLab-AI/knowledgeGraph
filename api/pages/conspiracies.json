@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:conspiracies",
   "domain": "infrastructure",
-  "definition": "Conspiracies is a concept within the ngm domain.",
+  "definition": "Conspiracies is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

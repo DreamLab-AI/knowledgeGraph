@@ -16,14 +16,6 @@
       "label": "Object Recognition"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:scene-understanding",
       "label": "Scene Understanding"
     }

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:computational-component",
   "domain": "artificial-intelligence",
-  "definition": "Computational Component is a concept within the ai domain.",
+  "definition": "Computational Component is a artificial intelligence concept and a type of Component.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:component",

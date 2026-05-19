@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:outliner",
       "label": "Outliner"
-    },
-    {
-      "id": "urn:visionflow:linked:personal-knowledge-management",
-      "label": "Personal Knowledge Management"
-    },
-    {
-      "id": "urn:visionflow:linked:semantic-web-tools",
-      "label": "Semantic Web Tools"
-    },
-    {
-      "id": "urn:visionflow:owl:class:knowledge-graph",
-      "label": "Knowledge Graph"
     }
   ],
   "qualityScore": 0.52,

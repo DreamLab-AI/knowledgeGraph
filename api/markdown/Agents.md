@@ -574,20 +574,16 @@ public:: true
   "label": "Agents",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
+      "@id": "urn:visionflow:linked:intelligent-system",
+      "vc:label": "Intelligent System"
     },
     {
       "@id": "urn:visionflow:linked:cognitive-architecture",
       "vc:label": "Cognitive Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:intelligent-system",
-      "vc:label": "Intelligent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

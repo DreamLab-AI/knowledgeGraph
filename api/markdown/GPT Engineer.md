@@ -354,18 +354,6 @@ public:: true
   "label": "GPT Engineer",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
       "@id": "urn:visionflow:owl:class:ai-adoption",
       "vc:label": "AI Adoption"
     },
@@ -374,8 +362,8 @@ public:: true
       "vc:label": "CLI Multi-Agent Systems"
     },
     {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
+      "@id": "urn:visionflow:owl:class:agentic-internet",
+      "vc:label": "Agentic Internet"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

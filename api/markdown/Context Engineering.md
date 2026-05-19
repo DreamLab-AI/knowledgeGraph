@@ -532,10 +532,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:llm-application-engineering",
       "vc:label": "LLM Application Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-engineering-for-ai",
-      "vc:label": "Systems Engineering for AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

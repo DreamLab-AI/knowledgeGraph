@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:educational-platform",
       "label": "Educational Platform"
-    },
-    {
-      "id": "urn:visionflow:linked:open-source-ml-framework",
-      "label": "Open Source ML Framework"
-    },
-    {
-      "id": "urn:visionflow:linked:py-torch-ecosystem-project",
-      "label": "PyTorch Ecosystem Project"
     }
   ],
   "qualityScore": 0.52,

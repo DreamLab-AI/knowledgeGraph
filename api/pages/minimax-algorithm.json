@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:minimax-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "Minimax Algorithm is a concept within the ai domain.",
+  "definition": "Minimax Algorithm is a artificial intelligence concept and a type of Search Algorithms. that enables Adversarial Search.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:search-algorithms",

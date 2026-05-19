@@ -668,10 +668,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:no-sql-database",
       "vc:label": "NoSQL Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-data-store",
-      "vc:label": "Persistent Data Store"
     }
   ],
   "vc:sourceDomain": "infrastructure",

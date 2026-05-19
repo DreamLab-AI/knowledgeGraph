@@ -644,14 +644,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:passive-index-product",
       "vc:label": "Passive Index Product"
-    },
-    {
-      "@id": "urn:visionflow:linked:pooled-investment-vehicle",
-      "vc:label": "Pooled Investment Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulated-investment-company",
-      "vc:label": "Regulated Investment Company"
     }
   ],
   "vc:sourceDomain": "blockchain",

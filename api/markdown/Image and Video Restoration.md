@@ -410,10 +410,6 @@ public:: true
   "label": "Image and Video Restoration",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-photography",
-      "vc:label": "Computational Photography"
-    },
-    {
       "@id": "urn:visionflow:linked:image-processing",
       "vc:label": "Image Processing"
     },
@@ -424,10 +420,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:signal-recovery",
       "vc:label": "Signal Recovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

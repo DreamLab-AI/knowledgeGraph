@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:statistical-modelling",
       "label": "Statistical Modelling"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:predictive-analytics",
-      "label": "Predictive Analytics"
     }
   ],
   "qualityScore": 0.52,

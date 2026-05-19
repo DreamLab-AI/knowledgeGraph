@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:melvin-carvalho",
   "domain": "infrastructure",
-  "definition": "Melvin Carvalho is a concept within the ngm domain.",
+  "definition": "Melvin Carvalho is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

@@ -8,10 +8,6 @@
   "definition": "**DALL\u00b7E** (canonical typography with U+00B7 middle dot; portmanteau of Salvador Dal\u00ed + Pixar's WALL\u00b7E) is the proprietary text-to-image model family developed by OpenAI from January 2021 onwards, comprising four generations of foundation models that progressively redefined the state-of-the-art for natural-language-conditioned image synthesis: **DALL\u00b7E 1** (Ramesh, Pavlov, Goh, Gray, Voss, Radford, Chen, Sutskever 2021, arXiv:2102.12092) \u2014 a 12-billion-parameter sparse-attention decoder-only transformer trained autoregressively over interleaved text BPE tokens and image tokens emitted by a discrete VAE (dVAE) compressing 256\u00d7256 images into 32\u00d732 grids of indices over an 8,192-entry codebook, demonstrating for the first time at scale that a single autoregressive transformer can generate plausible novel images from arbitrary text prompts including unprecedented compositions (the canonical \"an armchair in the shape of an avocado\") through zero-shot reasoning over a 250-million image-text dataset filtered from Conceptual Captions, YFCC100M and proprietary web crawls, with results released as a research blog post and curated gallery rather than a production API; **DALL\u00b7E 2** (Ramesh, D",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:visionflow:linked:multimodal-model",
       "label": "Multimodal Model"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:text-to-image-model",
       "label": "Text-to-Image Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
     }
   ],
   "qualityScore": 0.52,

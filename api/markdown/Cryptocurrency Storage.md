@@ -151,7 +151,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "CryptocurrencyStorage is a concept within the ngm domain.",
+  "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

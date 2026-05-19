@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:list-of-agent-projects",
   "domain": "artificial-intelligence",
-  "definition": "List Of Agent Projects is a concept within the ngm domain.",
+  "definition": "List Of Agent Projects is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

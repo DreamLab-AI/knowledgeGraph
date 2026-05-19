@@ -360,14 +360,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:platform-gatekeeper",
       "vc:label": "Platform Gatekeeper"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-company",
-      "vc:label": "Technology Company"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
     }
   ],
   "vc:sourceDomain": "infrastructure",

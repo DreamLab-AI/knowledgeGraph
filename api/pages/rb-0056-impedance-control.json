@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0056-impedance-control",
   "domain": "robotics",
-  "definition": "",
+  "definition": "impedance control is a robotics and autonomous systems concept and a type of Interaction Control.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:interaction-control",

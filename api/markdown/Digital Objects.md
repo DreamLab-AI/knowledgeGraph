@@ -580,10 +580,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:information-resource",
       "vc:label": "Information Resource"
-    },
-    {
-      "@id": "urn:visionflow:linked:networked-resource",
-      "vc:label": "Networked Resource"
     }
   ],
   "vc:sourceDomain": "infrastructure",

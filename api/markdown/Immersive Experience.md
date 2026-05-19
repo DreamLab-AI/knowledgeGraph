@@ -154,7 +154,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "Immersive Experience is a spatial computing concept and a type of spatial-computing."
 }
 ```
 

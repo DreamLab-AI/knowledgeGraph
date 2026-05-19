@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:interfaces",
   "domain": "infrastructure",
-  "definition": "Interfaces is a concept within the ngm domain.",
+  "definition": "Interfaces is a technology infrastructure concept and a type of User Interface.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:user-interface",

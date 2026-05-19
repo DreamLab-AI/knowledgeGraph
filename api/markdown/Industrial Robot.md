@@ -366,14 +366,6 @@ public:: true
   "label": "Industrial Robot",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems",
-      "vc:label": "Cyber Physical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:electromechanical-systems",
-      "vc:label": "Electromechanical Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:manufacturing-automation",
       "vc:label": "Manufacturing Automation"
     },
@@ -382,8 +374,8 @@ public:: true
       "vc:label": "Programmable Logic Controller"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics-systems",
-      "vc:label": "Robotics Systems"
+      "@id": "urn:visionflow:linked:electromechanical-systems",
+      "vc:label": "Electromechanical Systems"
     }
   ],
   "vc:sourceDomain": "robotics",

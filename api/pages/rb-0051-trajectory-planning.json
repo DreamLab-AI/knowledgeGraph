@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0051-trajectory-planning",
   "domain": "robotics",
-  "definition": "",
+  "definition": "trajectory planning is a robotics and autonomous systems concept and a type of Motion Planning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:motion-planning",

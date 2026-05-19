@@ -422,32 +422,16 @@ public:: true
   "label": "Prompt Engineering",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-artificial-intelligence",
-      "vc:label": "Applied Artificial Intelligence"
-    },
-    {
       "@id": "urn:visionflow:linked:in-context-learning",
       "vc:label": "In-Context Learning"
     },
     {
+      "@id": "urn:visionflow:linked:applied-artificial-intelligence",
+      "vc:label": "Applied Artificial Intelligence"
+    },
+    {
       "@id": "urn:visionflow:linked:instruction-following",
       "vc:label": "Instruction Following"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -222,10 +222,6 @@ public:: true
       "vc:label": "SustainabilityMetric"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "BlockchainGovernance"
-    },
-    {
       "@id": "urn:visionflow:owl:class:environmental-assessment",
       "vc:label": "EnvironmentalAssessment"
     }

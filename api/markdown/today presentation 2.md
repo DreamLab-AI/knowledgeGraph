@@ -126,7 +126,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "today presentation 2 is a concept within the ngm domain.",
+  "definition": "today presentation 2 is a technology infrastructure concept and a type of infrastructure.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:libertarian-thesis",
   "domain": "infrastructure",
-  "definition": "Libertarian thesis is a concept within the ngm domain.",
+  "definition": "Libertarian thesis is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

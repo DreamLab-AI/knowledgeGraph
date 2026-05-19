@@ -16,16 +16,8 @@
       "label": "Awareness Mechanisms"
     },
     {
-      "id": "urn:visionflow:linked:real-time-communication",
-      "label": "Real-Time Communication"
-    },
-    {
       "id": "urn:visionflow:linked:synchronous-collaboration-infrastructure",
       "label": "Synchronous Collaboration Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:linked:user-state-management",
-      "label": "User State Management"
     }
   ],
   "qualityScore": 0.52,

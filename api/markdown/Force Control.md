@@ -560,10 +560,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:closed-loop-control",
       "vc:label": "Closed Loop Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interaction-control",
-      "vc:label": "Interaction Control"
     }
   ],
   "vc:sourceDomain": "robotics",

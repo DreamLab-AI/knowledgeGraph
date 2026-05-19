@@ -378,14 +378,6 @@ public:: true
   "label": "Screen Sharing",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration",
-      "vc:label": "Distributed Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-communication",
-      "vc:label": "Real-Time Communication"
-    },
-    {
       "@id": "urn:visionflow:linked:remote-desktop-technology",
       "vc:label": "Remote Desktop Technology"
     },

@@ -16,20 +16,8 @@
       "label": "Data Ethics"
     },
     {
-      "id": "urn:visionflow:linked:political-economy",
-      "label": "Political Economy"
-    },
-    {
       "id": "urn:visionflow:owl:class:digital-rights",
       "label": "Digital Rights"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-rights",
-      "label": "Human Rights"
-    },
-    {
-      "id": "urn:visionflow:owl:class:privacy",
-      "label": "Privacy"
     }
   ],
   "qualityScore": 0.52,

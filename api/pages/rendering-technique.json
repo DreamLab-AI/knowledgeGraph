@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rendering-technique",
   "domain": "spatial-computing",
-  "definition": "RenderingTechnique is a concept within the ngm domain.",
+  "definition": "Rendering Technique is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:spatial-computing",

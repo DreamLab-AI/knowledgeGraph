@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:robotic-subsystem",
       "label": "Robotic Subsystem"
-    },
-    {
-      "id": "urn:visionflow:linked:state-estimation-component",
-      "label": "State Estimation Component"
-    },
-    {
-      "id": "urn:visionflow:owl:class:sensor",
-      "label": "Sensor"
     }
   ],
   "qualityScore": 0.52,

@@ -398,16 +398,8 @@ public:: true
       "vc:label": "Neural Networks"
     },
     {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:fine-tuning",
       "vc:label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

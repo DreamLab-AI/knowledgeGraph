@@ -8,16 +8,8 @@
   "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, 50,000+ GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] backends for on-device inference alongside any OpenAI-compatible REST API (OpenAI GPT-4o, Anthropic Claude 3.x, Mistral, Groq, Together AI, Replicate, and arbitrary custom endpoints), providing document-grounded [[Retrieval Augmented Generation - RAG]] via ChromaDB vector storage with configurable chunking (default 1,500-token chunks, 100-token overlap) and BM25/dense-embedding hybrid retrieval (sentence-transformers or OpenAI text-embedding-3-small/large), built-in web search integration (SearXNG, Google PSE, Brave Search, DuckDuckGo, Tavily, Jina AI, Bing), JSON-schema tool calling and Python [[Function Calling]] execution (native Functions editor with Valve parameter configuration, event emitter streaming, shared library dependencies), image generation via [[Stable Diffusion]] ComfyUI/AUTOMATIC1111/Replicate backends, speech-to-text (OpenAI Whisper and Faster-Whisper local) and tex",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
       "id": "urn:visionflow:owl:class:chatbots",
       "label": "Chatbots"
-    },
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
     },
     {
       "id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",

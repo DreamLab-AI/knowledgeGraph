@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0040-backlash",
   "domain": "robotics",
-  "definition": "",
+  "definition": "backlash is a robotics and autonomous systems concept and a type of Backlash.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:backlash",

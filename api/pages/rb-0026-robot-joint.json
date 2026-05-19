@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0026-robot-joint",
   "domain": "robotics",
-  "definition": "",
+  "definition": "robot joint is a robotics and autonomous systems concept and a type of Robot.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot",

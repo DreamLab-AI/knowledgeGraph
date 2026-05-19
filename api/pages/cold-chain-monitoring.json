@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:monitoring-systems",
       "label": "Monitoring Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:sensor-networks",
-      "label": "Sensor Networks"
-    },
-    {
-      "id": "urn:visionflow:linked:supply-chain",
-      "label": "Supply Chain"
-    },
-    {
-      "id": "urn:visionflow:linked:traceability",
-      "label": "Traceability"
     }
   ],
   "qualityScore": 0.52,

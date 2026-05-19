@@ -8,10 +8,6 @@
   "definition": "A humanoid robot is an autonomous or semi-autonomous mechanical system whose overall morphology, kinematic chain, and sensorimotor organisation deliberately mirrors the human body plan: a vertical torso supported on two bipedal legs, bilateral upper limbs terminating in multi-fingered end-effectors, a head-mounted sensory cluster, and a centralised onboard compute stack, collectively enabling the robot to perceive, navigate, and manipulate a world that has been architecturally and ergonomically designed for human anatomy. Unlike wheeled or tracked mobile bases, humanoid robots must continuously solve the under-determined stability problem of bipedal locomotion\u2014balancing an inverted-pendulum-like structure with a high centre of mass on a small support polygon\u2014whilst simultaneously executing dexterous manipulation, perceiving a 3-D environment, and interpreting natural human instructions. This conjunction of simultaneous hard real-time control (joint torque bandwidths of 200-1000 Hz for balance), mid-frequency motion planning (1-50 Hz trajectory generation), and high-latency cognitive inference (0.1-10 Hz neural policy inference) across a single embodied platform represents the defin",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-system",
-      "label": "Autonomous System"
-    },
-    {
       "id": "urn:visionflow:linked:bipedal-robot",
       "label": "Bipedal Robot"
     },
@@ -20,12 +16,8 @@
       "label": "Embodied Agent"
     },
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
-      "label": "Mobile Robot"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robot",
-      "label": "Robot"
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
     }
   ],
   "qualityScore": 0.52,

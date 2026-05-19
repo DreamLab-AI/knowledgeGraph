@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:residual-network",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Residual Network is a artificial intelligence concept and a type of Deep Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:deep-learning",

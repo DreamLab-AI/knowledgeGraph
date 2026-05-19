@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:cross-scale-phenomenon",
       "label": "Cross-Scale Phenomenon"
-    },
-    {
-      "id": "urn:visionflow:linked:non-reductive-property",
-      "label": "Non-Reductive Property"
-    },
-    {
-      "id": "urn:visionflow:linked:organisational-pattern",
-      "label": "Organisational Pattern"
     }
   ],
   "qualityScore": 0.52,

@@ -16,16 +16,8 @@
       "label": "AI Ethics"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
-      "label": "AI Governance"
-    },
-    {
       "id": "urn:visionflow:owl:class:human-computer-interaction",
       "label": "Human-Computer Interaction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
     }
   ],
   "qualityScore": 0.52,

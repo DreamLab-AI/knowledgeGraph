@@ -294,20 +294,12 @@ public:: true
   "label": "Admittance Control",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:compliance-control",
-      "vc:label": "Compliance Control"
-    },
-    {
       "@id": "urn:visionflow:owl:class:force-control",
       "vc:label": "Force Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:interaction-control",
-      "vc:label": "Interaction Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-control",
-      "vc:label": "Motion Control"
+      "@id": "urn:visionflow:owl:class:compliance-control",
+      "vc:label": "Compliance Control"
     },
     {
       "@id": "urn:visionflow:owl:class:robot-control",

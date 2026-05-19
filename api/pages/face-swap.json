@@ -8,10 +8,6 @@
   "definition": "**Face Swap** is the family of computer vision techniques that transfers the identity of a source face onto a target image, video frame, or live stream while preserving the target's pose, expression, illumination, occlusions, and surrounding scene context, formalised as the conditional generation problem of producing an output image y' = f(x_target, x_source) such that the identity embedding ID(y') \u2248 ID(x_source) under a face recognition encoder (typically ArcFace Deng et al. 2019 or CosFace Wang et al. 2018) whilst non-identity attributes A(y') \u2248 A(x_target) measured by pose estimators (HopeNet, 6DRepNet), expression encoders (3DMM/FLAME blendshape coefficients), and perceptual reconstruction losses (LPIPS Zhang et al. 2018, VGG-19 feature matching). The lineage begins with the Reddit user **u/deepfakes** posting celebrity face-swap pornography in late 2017 using a paired autoencoder architecture\u2014one shared encoder and two identity-specific decoders trained on thousands of frames per identity\u2014precipitating the **r/deepfakes subreddit ban on 7 February 2018** followed within fourteen days by Pornhub, Twitter and Discord prohibitions; the codebase forked into two dominant open-sourc",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:conditional-image-synthesis",
-      "label": "Conditional Image Synthesis"
-    },
-    {
       "id": "urn:visionflow:linked:face-manipulation",
       "label": "Face Manipulation"
     },
@@ -20,12 +16,8 @@
       "label": "Identity Transfer"
     },
     {
-      "id": "urn:visionflow:linked:synthetic-media",
-      "label": "Synthetic Media"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
+      "id": "urn:visionflow:linked:conditional-image-synthesis",
+      "label": "Conditional Image Synthesis"
     }
   ],
   "qualityScore": 0.52,

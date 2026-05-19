@@ -434,20 +434,12 @@ public:: true
       "vc:label": "Autonomous Systems"
     },
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems",
-      "vc:label": "Cyber-Physical Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:embodied-ai",
       "vc:label": "Embodied AI"
     },
     {
       "@id": "urn:visionflow:linked:unmanned-ground-vehicle",
       "vc:label": "Unmanned Ground Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
     }
   ],
   "vc:sourceDomain": "robotics",

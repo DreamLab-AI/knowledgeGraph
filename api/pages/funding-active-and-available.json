@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:funding-active-and-available",
   "domain": "infrastructure",
-  "definition": "Funding (active and available) is a concept within the ngm domain.",
+  "definition": "Funding (active and available) is a technology infrastructure concept and a type of Resource Management.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:resource-management",

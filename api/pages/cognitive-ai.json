@@ -8,14 +8,6 @@
   "definition": "Cognitive AI is the family of artificial-intelligence systems built around cognitively-plausible architectures that explicitly model the components and information-flow of human cognition \u2014 working memory, declarative and procedural long-term memory, perception-action loops, attention, production-rule firing, chunking, goal stacks, metacognitive control \u2014 rather than treating intelligence as an undifferentiated statistical mapping from inputs to outputs, instantiating in classical Unified Theories of Cognition (Newell 1990) realised through symbolic cognitive architectures SOAR (Soar Technology Inc / University of Michigan, originated Carnegie Mellon 1983, ~280 publications, fielded in TacAir-Soar piloting 100+ simulated fighter aircraft in DARPA STOW-97 exercise) and ACT-R (Carnegie Mellon, John Anderson 1993-present, 1,200+ derivative models, ~7,500 citations on ACT-R 5.0 paper), hybrid neuro-symbolic architectures CLARION (Ron Sun, RPI, dual-process implicit/explicit learning, 1997-present), LIDA (Stan Franklin, Memphis, global-workspace consciousness model, 2009-present), Sigma (Paul Rosenbloom, USC ICT, graphical-model unification, 2011-present), Companion cognitive architectu",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cognitive-architecture",
-      "label": "Cognitive Architecture"
-    },
-    {
-      "id": "urn:visionflow:linked:cognitive-science",
-      "label": "Cognitive Science"
-    },
-    {
       "id": "urn:visionflow:linked:hybrid-ai",
       "label": "Hybrid AI"
     },
@@ -24,8 +16,8 @@
       "label": "Neurosymbolic AI"
     },
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:visionflow:linked:cognitive-architecture",
+      "label": "Cognitive Architecture"
     }
   ],
   "qualityScore": 0.52,

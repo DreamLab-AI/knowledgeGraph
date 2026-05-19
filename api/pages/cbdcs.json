@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:payment-instrument",
       "label": "Payment Instrument"
-    },
-    {
-      "id": "urn:visionflow:linked:sovereign-money",
-      "label": "Sovereign Money"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-currency",
-      "label": "Digital Currency"
     }
   ],
   "qualityScore": 0.52,

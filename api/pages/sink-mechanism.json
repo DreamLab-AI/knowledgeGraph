@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:sink-mechanism",
   "domain": "blockchain",
-  "definition": "Sink Mechanism is a concept within the bc domain.",
+  "definition": "Sink Mechanism is a blockchain and distributed systems concept and a type of Virtual Economy.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:virtual-economy",

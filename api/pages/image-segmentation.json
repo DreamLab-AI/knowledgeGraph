@@ -8,20 +8,12 @@
   "definition": "Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to reason about the spatial structure and composition of visual scenes at pixel granularity rather than merely bounding-box or image-level resolution. Unlike object detection\u2014which produces coarse bounding rectangles\u2014and image classification\u2014which assigns a single label to an entire image\u2014segmentation delivers dense per-pixel predictions that precisely delineate object boundaries, capture irregular shapes, and distinguish overlapping or touching objects of the same class, making it indispensable for applications requiring spatial understanding: surgical robots that must avoid cutting blood vessels, autonomous vehicles that must distinguish drivable road surface from pedestrian crossings, and augmented reality pipelines that must cleanly separate foreground subjects from backgrounds in real time.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:dense-prediction",
-      "label": "Dense Prediction"
-    },
-    {
       "id": "urn:visionflow:linked:structured-prediction",
       "label": "Structured Prediction"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
+      "id": "urn:visionflow:linked:dense-prediction",
+      "label": "Dense Prediction"
     },
     {
       "id": "urn:visionflow:owl:class:scene-understanding",

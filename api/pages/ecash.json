@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:ecash",
   "domain": "blockchain",
-  "definition": "ecash is a concept within the ngm domain.",
+  "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:payment-system",

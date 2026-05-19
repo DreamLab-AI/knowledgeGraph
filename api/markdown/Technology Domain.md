@@ -144,7 +144,7 @@ public:: true
   ],
   "vc:sourceDomain": "infrastructure",
   "vc:status": "active",
-  "vc:maturity": "stable",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:564269168f0d93a7b74649ec815d67a215a8600e51c023b3c783c6332e816f65"
   },

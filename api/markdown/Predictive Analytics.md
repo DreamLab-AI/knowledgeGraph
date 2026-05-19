@@ -130,7 +130,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "PredictiveAnalytics is a concept within the ngm domain.",
+  "definition": "Predictive Analytics is a artificial intelligence concept and a type of artificial-intelligence.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

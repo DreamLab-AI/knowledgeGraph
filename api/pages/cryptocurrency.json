@@ -8,10 +8,6 @@
   "definition": "**Cryptocurrency** is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by [[Public-Key Cryptography]] and a permissionless [[Consensus Mechanism]] operated by a [[Peer-to-Peer Network]] of independent nodes, such that no central monetary authority is required to mint units, settle transfers, freeze balances, or arbitrate disputes \u2014 the canonical instance being [[Bitcoin]] (Satoshi Nakamoto, whitepaper 31 October 2008, Genesis Block 3 January 2009) which fused four pre-existing primitives (Adam Back's 1997 [[Hashcash]] proof-of-work spam-prevention scheme, Wei Dai's 1998 b-money proposal for distributed electronic cash, Nick Szabo's 1998-2005 bit gold chained-PoW registry, Hal Finney's 2004 Reusable Proof of Work RPOW transferable PoW tokens) into the first practical [[Double-Spending|double-spend]]-resistant electronic cash by combining a [[UTXO|Unspent Transaction Output]] ledger, SHA-256 [[Proof of Work]] securing block ordering via the heaviest-chain rule, an asymptotic 21M unit supply cap with quadrennial issuance halvings (50\u219225 BTC November 2012, 25\u219212.5 BTC July 2016, 12.5\u21926.25 BTC May 2020, 6.25\u21923.12",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:bearer-instrument",
-      "label": "Bearer Instrument"
-    },
-    {
       "id": "urn:visionflow:linked:cryptoasset",
       "label": "Cryptoasset"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:permissionless-asset",
       "label": "Permissionless Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "qualityScore": 0.52,

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:platform-gatekeeper",
       "label": "Platform Gatekeeper"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-company",
-      "label": "Technology Company"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-companies",
-      "label": "AI Companies"
     }
   ],
   "qualityScore": 0.52,

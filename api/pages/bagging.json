@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:bagging",
   "domain": "artificial-intelligence",
-  "definition": "Bagging is a concept within the ai domain.",
+  "definition": "Bagging is a artificial intelligence concept and a type of Ensemble Methods. that enables Parallel Training.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:ensemble-methods",

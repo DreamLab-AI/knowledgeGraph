@@ -282,20 +282,12 @@ public:: true
   "label": "Instant value settlement",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
+      "@id": "urn:visionflow:owl:class:financial-infrastructure",
+      "vc:label": "Financial Infrastructure"
     },
     {
       "@id": "urn:visionflow:owl:class:cryptocurrency",
       "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:financial-infrastructure",
-      "vc:label": "Financial Infrastructure"
     },
     {
       "@id": "urn:visionflow:owl:class:smart-contract",

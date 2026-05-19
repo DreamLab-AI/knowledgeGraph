@@ -540,10 +540,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:robot-sensor",
       "vc:label": "Robot Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
     }
   ],
   "vc:sourceDomain": "robotics",

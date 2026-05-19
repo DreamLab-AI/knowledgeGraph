@@ -8,10 +8,6 @@
   "definition": "**Cashu** is a free and open-source Chaumian ecash protocol designed for Bitcoin and the [[Lightning Network]], first released in October 2022 by the pseudonymous developer Calle (alias @callebtc), a PhD physicist and Bitcoin developer. Cashu implements [[David Chaum]]'s 1982 blind signature scheme \u2014 originally operationalised through [[DigiCash]] in the 1990s \u2014 to provide instant, near-free, and completely anonymous bearer instrument transactions denominated in satoshis. The protocol is defined through a numbered family of specifications called NUTs (Notation, Usage, and Terminology), which govern cryptographic primitives, mint APIs, token serialisation, optional extensions (payment conditions, offline payments, authentication), and inter-operability requirements for wallets and mints. Unlike [[Fedimint]], which federates multiple guardians into a consensus-managed custody arrangement, Cashu operates through single-operator mints: any individual or service may deploy a Cashu mint, accept Lightning deposits, issue ecash tokens, and redeem them \u2014 acting as a non-bank bearer-instrument issuer. The [[Mint]] operator cannot link the act of issuing a token to the later act of redeeming ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:bearer-instrument",
-      "label": "Bearer Instrument"
-    },
-    {
       "id": "urn:visionflow:linked:bitcoin-layer-2",
       "label": "Bitcoin Layer 2"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:digital-cash",
       "label": "Digital Cash"
-    },
-    {
-      "id": "urn:visionflow:linked:privacy-protocol",
-      "label": "Privacy Protocol"
     }
   ],
   "qualityScore": 0.52,

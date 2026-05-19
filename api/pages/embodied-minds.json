@@ -8,24 +8,16 @@
   "definition": "**Embodied Minds** denotes the theoretical and engineering position that genuine cognition, intelligence and meaning-making cannot be reduced to disembodied symbol manipulation or text-token prediction but instead arises from the dynamic, sensorimotor coupling of a physical body with a structured environment, encompassing the philosophical programme of **4E cognition** (cognition as **Embodied**, **Embedded**, **Enacted**, **Extended**) advanced by Varela/Thompson/Rosch (1991 *The Embodied Mind*), Andy Clark (1997 *Being There*, 2008 *Supersizing the Mind*, 2016 *Surfing Uncertainty*, 2023 *The Experience Machine*), Lakoff & Johnson (1999 *Philosophy in the Flesh*) and Alva No\u00eb (2004 *Action in Perception*), the **predictive processing / active inference** framework formalised by Karl Friston's **Free Energy Principle** (FEP, 2010 *Nature Reviews Neuroscience*) where biological agents minimise variational free energy F = E_q[ln q(s) - ln p(o,s)] by either updating internal generative models (perception) or acting on the world to make sensory observations match predictions (action), the phenomenological critique of classical symbolic AI by Hubert Dreyfus (*What Computers Can't Do* 1",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cognitive-science",
-      "label": "Cognitive Science"
+      "id": "urn:visionflow:linked:situated-cognition",
+      "label": "Situated Cognition"
     },
     {
       "id": "urn:visionflow:linked:philosophy-of-mind",
       "label": "Philosophy of Mind"
     },
     {
-      "id": "urn:visionflow:linked:situated-cognition",
-      "label": "Situated Cognition"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
+      "id": "urn:visionflow:linked:cognitive-science",
+      "label": "Cognitive Science"
     }
   ],
   "qualityScore": 0.52,

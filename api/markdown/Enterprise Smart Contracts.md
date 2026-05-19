@@ -674,20 +674,12 @@ public:: true
       "vc:label": "Business Logic Code"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-application",
-      "vc:label": "Distributed Application"
-    },
-    {
       "@id": "urn:visionflow:linked:multi-party-agreement",
       "vc:label": "Multi-Party Agreement"
     },
     {
       "@id": "urn:visionflow:linked:permissioned-compute-artefact",
       "vc:label": "Permissioned Compute Artefact"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
     }
   ],
   "vc:sourceDomain": "blockchain",

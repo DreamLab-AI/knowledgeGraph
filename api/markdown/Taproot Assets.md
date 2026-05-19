@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:client-side-validation",
       "vc:label": "Client-Side Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-commitment-scheme",
-      "vc:label": "Cryptographic Commitment Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-extension",
-      "vc:label": "Lightning Network Extension"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
   "domain": "artificial-intelligence",
-  "definition": "Soon-Next-Later (AI futurology) is a concept within the ngm domain.",
+  "definition": "Soon-Next-Later (AI futurology) is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

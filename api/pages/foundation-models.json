@@ -16,18 +16,6 @@
       "label": "Self-Supervised Learning"
     },
     {
-      "id": "urn:visionflow:linked:transfer-learning",
-      "label": "Transfer Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:pretrained-model",
       "label": "Pretrained Model"
     }

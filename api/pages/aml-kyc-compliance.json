@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:financial-crime-compliance",
       "label": "Financial Crime Compliance"
-    },
-    {
-      "id": "urn:visionflow:linked:risk-management-framework",
-      "label": "Risk Management Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-compliance",
-      "label": "Regulatory Compliance"
     }
   ],
   "qualityScore": 0.52,

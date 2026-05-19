@@ -8,20 +8,12 @@
   "definition": "Hardware and Edge refers to the integrated class of specialised silicon architectures, embedded compute platforms, and distributed inference runtimes designed to execute artificial intelligence workloads at or near the point of data generation, without mandatory dependence on centralised cloud data centres. The concept spans dedicated neural processing units (NPUs) fabricated in high-volume consumer silicon (smartphones, laptops, wearables), purpose-built edge AI accelerators for industrial and robotics applications (NVIDIA Jetson Orin/Thor, Google Coral Edge TPU, Hailo-8/10, Qualcomm Cloud AI 100), the runtime ecosystems that compile, quantise, and deploy models to heterogeneous endpoints (ONNX Runtime, TensorFlow Lite, Apache TVM, ExecuTorch), and the federated learning frameworks that allow multiple edge nodes to jointly improve model quality without centralising raw data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-accelerator",
-      "label": "AI Accelerator"
-    },
-    {
-      "id": "urn:visionflow:linked:embedded-systems",
-      "label": "Embedded Systems"
-    },
-    {
       "id": "urn:visionflow:linked:neural-processing-unit",
       "label": "Neural Processing Unit"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-computing",
-      "label": "Distributed Computing"
+      "id": "urn:visionflow:linked:ai-accelerator",
+      "label": "AI Accelerator"
     },
     {
       "id": "urn:visionflow:owl:class:edge-computing",

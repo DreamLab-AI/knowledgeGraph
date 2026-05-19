@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:valsoft",
   "domain": "infrastructure",
-  "definition": "Valsoft is a concept within the ngm domain.",
+  "definition": "Valsoft is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:llm-application-engineering",
       "label": "LLM Application Engineering"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-engineering-for-ai",
-      "label": "Systems Engineering for AI"
     }
   ],
   "qualityScore": 0.52,

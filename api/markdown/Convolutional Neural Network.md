@@ -180,7 +180,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:computer-vision",
       "vc:label": "Computer Vision"
     }
-  ]
+  ],
+  "definition": "Convolutional Neural Network is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

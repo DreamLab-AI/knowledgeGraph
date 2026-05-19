@@ -488,18 +488,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:information-theory",
       "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-economics",
-      "vc:label": "Institutional Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:political-economy",
-      "vc:label": "Political Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-science",
-      "vc:label": "Social Science"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

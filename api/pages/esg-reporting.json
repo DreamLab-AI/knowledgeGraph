@@ -8,10 +8,6 @@
   "definition": "**ESG Reporting** is the composite corporate disclosure discipline by which obligated and voluntary entities \u2014 listed companies, large private undertakings, banks, insurers, asset managers, investment funds and a rapidly expanding perimeter of public-interest organisations \u2014 measure, assure and publish structured information about their **Environmental** (climate change mitigation/adaptation, GHG emissions across Scopes 1/2/3, energy mix, water and marine resources, biodiversity and ecosystems, circular economy, pollution), **Social** (own workforce, workers in the value chain, affected communities, consumers and end-users, human rights, diversity equity and inclusion, occupational health and safety) and **Governance** (business conduct, anti-corruption and anti-bribery, political engagement, lobbying activities, supplier relationships including payment practices, board composition and independence, executive remuneration linkage to sustainability metrics) performance against codified reporting frameworks; the regime descends institutionally from the **Global Reporting Initiative** (GRI, founded 1997 in Boston by CERES and Tellus Institute following the Exxon Valdez disaster, headq",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:corporate-disclosure",
-      "label": "Corporate Disclosure"
-    },
-    {
       "id": "urn:visionflow:linked:non-financial-reporting",
       "label": "Non-Financial Reporting"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:sustainability-disclosure",
       "label": "Sustainability Disclosure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-reporting",
-      "label": "Regulatory Reporting"
     }
   ],
   "qualityScore": 0.52,

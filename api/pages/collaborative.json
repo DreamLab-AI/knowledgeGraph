@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:collaborative",
   "domain": "infrastructure",
-  "definition": "collaborative is a concept within the ngm domain.",
+  "definition": "collaborative is a technology infrastructure concept and a type of Collaboration.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:collaboration",

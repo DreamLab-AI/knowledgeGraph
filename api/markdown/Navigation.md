@@ -518,24 +518,16 @@ public:: true
   "label": "Navigation",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:path-planning",
       "vc:label": "Path Planning"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
     }
   ],
   "vc:sourceDomain": "robotics",

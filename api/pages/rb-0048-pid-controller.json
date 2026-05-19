@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0048-pid-controller",
   "domain": "robotics",
-  "definition": "",
+  "definition": "pid controller is a robotics and autonomous systems concept and a type of Control System.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:control-system",

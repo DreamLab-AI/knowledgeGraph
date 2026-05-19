@@ -8,10 +8,6 @@
   "definition": "Control Theory is the interdisciplinary mathematical framework for analysing and synthesising dynamical systems that automatically regulate themselves toward desired behaviour in the presence of disturbances, model uncertainty, sensor noise, and parameter variation, formalising the closed-loop feedback principle in which a controller observes system outputs y(t), compares them against a reference r(t) generating an error signal e(t)=r(t)\u2212y(t), and computes an input u(t) driving the plant toward its setpoint, originating in James Clerk Maxwell's 1868 analysis \"On Governors\" of Watt's centrifugal governor establishing the first stability criterion, formalised through Edward Routh (1877) and Adolf Hurwitz (1895) algebraic stability tests, Harry Nyquist's 1932 frequency-domain stability criterion at Bell Labs, Hendrik Bode's 1945 Network Analysis and Feedback Amplifier Design introducing gain-phase relations and the Bode plot, Walter Evans's 1948 root-locus method, and the postwar synthesis of classical control around the PID (proportional-integral-derivative) controller (proportional term K_p\u00b7e(t), integral term K_i\u00b7\u222be(\u03c4)d\u03c4 removing steady-state error, derivative term K_d\u00b7de/dt provid",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-mathematics",
-      "label": "Applied Mathematics"
-    },
-    {
       "id": "urn:visionflow:linked:control-engineering",
       "label": "Control Engineering"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:dynamical-systems-theory",
       "label": "Dynamical Systems Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-engineering",
-      "label": "Systems Engineering"
     }
   ],
   "qualityScore": 0.52,

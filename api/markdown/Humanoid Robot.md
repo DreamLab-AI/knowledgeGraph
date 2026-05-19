@@ -406,10 +406,6 @@ public:: true
   "label": "Humanoid Robot",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
-    },
-    {
       "@id": "urn:visionflow:linked:bipedal-robot",
       "vc:label": "Bipedal Robot"
     },
@@ -418,12 +414,8 @@ public:: true
       "vc:label": "Embodied Agent"
     },
     {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot",
-      "vc:label": "Robot"
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
     }
   ],
   "vc:sourceDomain": "robotics",

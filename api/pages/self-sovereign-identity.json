@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:user-centric-identity",
       "label": "User-Centric Identity"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-identity",
-      "label": "Digital Identity"
-    },
-    {
-      "id": "urn:visionflow:owl:class:trust-framework",
-      "label": "Trust Framework"
     }
   ],
   "qualityScore": 0.52,

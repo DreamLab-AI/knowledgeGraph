@@ -142,7 +142,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor."
 }
 ```
 

@@ -516,14 +516,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:measure-theory",
       "vc:label": "Measure Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-series-analysis",
-      "vc:label": "Time Series Analysis"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

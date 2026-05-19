@@ -147,7 +147,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Inter-world Remittance is a concept within the bc domain.",
+  "definition": "Inter-world Remittance is a blockchain and distributed systems concept and a type of Blockchain.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

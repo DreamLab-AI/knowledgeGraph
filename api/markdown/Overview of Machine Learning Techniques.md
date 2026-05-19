@@ -159,7 +159,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Overview of Machine Learning Techniques is a concept within the ngm domain.",
+  "definition": "Overview of Machine Learning Techniques is a artificial intelligence concept and a type of Deep Learning.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

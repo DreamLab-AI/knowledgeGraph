@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:collaboration",
   "domain": "infrastructure",
-  "definition": "Collaboration is a concept within the ngm domain.",
+  "definition": "Collaboration is a technology infrastructure concept and a type of Collaboration Platform.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:collaboration-platform",

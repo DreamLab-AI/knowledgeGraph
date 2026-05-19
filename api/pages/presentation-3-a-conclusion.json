@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:de96e003015f3f55d9b488e6571cdd581889e9452a365111003b66fe0fe2b4e5",
-  "title": "Presentation%3A Conclusion",
+  "title": "Presentation: Conclusion",
   "slug": "presentation-3-a-conclusion",
   "public": true,
   "classIri": "urn:visionflow:owl:class:presentation-3-a-conclusion",
   "domain": "infrastructure",
-  "definition": "Presentation%3A Conclusion is a concept within the ngm domain.",
+  "definition": "Presentation%3A Conclusion is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

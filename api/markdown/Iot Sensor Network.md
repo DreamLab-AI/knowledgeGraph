@@ -450,10 +450,6 @@ public:: true
   "label": "IoT Sensor Network",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cyber-physical-systems",
-      "vc:label": "Cyber-Physical Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:networked-embedded-systems",
       "vc:label": "Networked Embedded Systems"
     },
@@ -464,10 +460,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:wireless-sensor-network",
       "vc:label": "Wireless Sensor Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
     }
   ],
   "vc:sourceDomain": "infrastructure",

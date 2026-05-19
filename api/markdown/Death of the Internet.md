@@ -536,18 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:surveillance-capitalism",
       "vc:label": "Surveillance Capitalism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "vc:label": "Digital Society Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:media-theory",
-      "vc:label": "Media Theory"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

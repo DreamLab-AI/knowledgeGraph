@@ -430,16 +430,8 @@ public:: true
       "vc:label": "Data Governance"
     },
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    },
-    {
       "@id": "urn:visionflow:owl:class:knowledge-representation",
       "vc:label": "Knowledge Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

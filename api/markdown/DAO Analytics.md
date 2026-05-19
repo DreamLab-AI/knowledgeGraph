@@ -580,14 +580,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:data-driven-governance",
       "vc:label": "Data-Driven Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "vc:label": "Decentralised Autonomous Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-tooling",
-      "vc:label": "Governance Tooling"
     }
   ],
   "vc:sourceDomain": "blockchain",

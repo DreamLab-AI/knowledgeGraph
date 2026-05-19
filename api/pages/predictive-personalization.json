@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:predictive-personalization",
   "domain": "artificial-intelligence",
-  "definition": "Predictive Personalization is a concept within the ai domain.",
+  "definition": "Predictive Personalization is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

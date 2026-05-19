@@ -12,20 +12,12 @@
       "label": "Climate Risk Management"
     },
     {
-      "id": "urn:visionflow:linked:corporate-disclosure",
-      "label": "Corporate Disclosure"
-    },
-    {
       "id": "urn:visionflow:linked:measurement-frameworks",
       "label": "Measurement Frameworks"
     },
     {
       "id": "urn:visionflow:linked:sustainability-reporting",
       "label": "Sustainability Reporting"
-    },
-    {
-      "id": "urn:visionflow:owl:class:environmental-accounting",
-      "label": "Environmental Accounting"
     }
   ],
   "qualityScore": 0.52,

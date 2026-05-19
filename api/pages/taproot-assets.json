@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:client-side-validation",
       "label": "Client-Side Validation"
-    },
-    {
-      "id": "urn:visionflow:linked:cryptographic-commitment-scheme",
-      "label": "Cryptographic Commitment Scheme"
-    },
-    {
-      "id": "urn:visionflow:linked:lightning-network-extension",
-      "label": "Lightning Network Extension"
     }
   ],
   "qualityScore": 0.52,

@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Octave Multi Model Laboratory is a concept within the ngm domain.",
+  "definition": "Octave Multi Model Laboratory is a technology infrastructure concept and a type of infrastructure.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

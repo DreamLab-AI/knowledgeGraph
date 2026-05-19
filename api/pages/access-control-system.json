@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:information-security-system",
       "label": "Information Security System"
-    },
-    {
-      "id": "urn:visionflow:linked:security-control",
-      "label": "Security Control"
     }
   ],
   "qualityScore": 0.52,

@@ -548,10 +548,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:networked-systems",
       "vc:label": "Networked Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallel-computing",
-      "vc:label": "Parallel Computing"
     }
   ],
   "vc:sourceDomain": "infrastructure",

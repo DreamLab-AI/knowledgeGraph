@@ -16,16 +16,8 @@
       "label": "IoT Platform"
     },
     {
-      "id": "urn:visionflow:linked:open-source-software",
-      "label": "Open Source Software"
-    },
-    {
       "id": "urn:visionflow:linked:smart-home",
       "label": "Smart Home"
-    },
-    {
-      "id": "urn:visionflow:owl:class:edge-computing",
-      "label": "Edge Computing"
     }
   ],
   "qualityScore": 0.52,

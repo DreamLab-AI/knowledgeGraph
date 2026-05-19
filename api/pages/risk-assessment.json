@@ -12,20 +12,12 @@
       "label": "Audit"
     },
     {
-      "id": "urn:visionflow:linked:safety-engineering",
-      "label": "Safety Engineering"
-    },
-    {
       "id": "urn:visionflow:linked:systems-analysis",
       "label": "Systems Analysis"
     },
     {
-      "id": "urn:visionflow:owl:class:compliance-framework",
-      "label": "Compliance Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:risk-management",
-      "label": "Risk Management"
+      "id": "urn:visionflow:linked:safety-engineering",
+      "label": "Safety Engineering"
     }
   ],
   "qualityScore": 0.52,

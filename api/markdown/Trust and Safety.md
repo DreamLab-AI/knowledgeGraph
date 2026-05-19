@@ -350,24 +350,12 @@ public:: true
       "vc:label": "Online Safety"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-society-harms",
       "vc:label": "Digital Society Harms"
     },
     {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

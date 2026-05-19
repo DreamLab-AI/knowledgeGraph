@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:data-driven-governance",
       "label": "Data-Driven Governance"
-    },
-    {
-      "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "label": "Decentralised Autonomous Organisation"
-    },
-    {
-      "id": "urn:visionflow:linked:governance-tooling",
-      "label": "Governance Tooling"
     }
   ],
   "qualityScore": 0.52,

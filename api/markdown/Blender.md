@@ -454,24 +454,16 @@ public:: true
   "label": "Blender",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
-    },
-    {
       "@id": "urn:visionflow:owl:class:3-d-and-4-d",
       "vc:label": "3D and 4D"
     },
     {
-      "@id": "urn:visionflow:owl:class:creative-software",
-      "vc:label": "Creative Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-content-creation",
-      "vc:label": "Digital Content Creation"
-    },
-    {
       "@id": "urn:visionflow:owl:class:rendering-engine",
       "vc:label": "Rendering Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-software",
+      "vc:label": "Creative Software"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

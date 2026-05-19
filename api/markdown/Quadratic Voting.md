@@ -526,16 +526,8 @@ public:: true
   "label": "Quadratic Voting",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "vc:label": "Decentralised Autonomous Organisation"
-    },
-    {
       "@id": "urn:visionflow:linked:governance-protocol",
       "vc:label": "Governance Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
     },
     {
       "@id": "urn:visionflow:linked:public-goods-funding",
@@ -544,10 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:voting-theory",
       "vc:label": "Voting Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:welfare-economics",
-      "vc:label": "Welfare Economics"
     }
   ],
   "vc:sourceDomain": "blockchain",

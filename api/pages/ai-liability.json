@@ -12,16 +12,8 @@
       "label": "Civil Liability"
     },
     {
-      "id": "urn:visionflow:linked:product-liability",
-      "label": "Product Liability"
-    },
-    {
       "id": "urn:visionflow:linked:tort-law",
       "label": "Tort Law"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-governance",
-      "label": "AI Governance"
     },
     {
       "id": "urn:visionflow:owl:class:algorithmic-accountability",

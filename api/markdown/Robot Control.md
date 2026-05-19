@@ -332,7 +332,7 @@ public:: true
   ],
   "vc:sourceDomain": "robotics",
   "vc:status": "corrected",
-  "vc:maturity": "production",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:1eb4a99a80ff425f8769ade5493c234788cecb0c4409177116de1aeaf13a9462"
   },

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:video-generation",
       "label": "Video Generation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:diffusion-models",
-      "label": "Diffusion Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
     }
   ],
   "qualityScore": 0.52,

@@ -8,20 +8,12 @@
   "definition": "Force control strategy where robotic systems respond to external forces by producing proportional motion governed by virtual admittance parameters (mass, damping, stiffness), enabling compliant physical interaction with uncertain or variable environments by regulating position/velocity trajectories as functions of measured contact forces rather than directly controlling force magnitudes, widely deployed across collaborative robotics (cobots processing 40,000+ installations annually with <100N contact force thresholds enabling safe human-robot interaction per ISO/TS 15066:2016), surgical systems (da Vinci 7,500+ units worldwide achieving <0.5mm positioning accuracy during soft tissue manipulation via force feedback), manufacturing assembly (electronics 25,000+ units inserting components with 0.1-10N controlled forces, automotive 15,000+ units assembling doors/panels), industrial polishing (aerospace turbine blades achieving Ra <0.2\u03bcm surface finish through 5-50N adaptive force control), rehabilitation exoskeletons (Ekso/ReWalk 10,000+ clinical deployments providing 20-100Nm joint torque assistance adapting to patient effort), and space robotics (ISS Canadarm2 17.6m reaching 116 tonn",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:compliance-control",
-      "label": "Compliance Control"
-    },
-    {
       "id": "urn:visionflow:owl:class:force-control",
       "label": "Force Control"
     },
     {
-      "id": "urn:visionflow:owl:class:interaction-control",
-      "label": "Interaction Control"
-    },
-    {
-      "id": "urn:visionflow:owl:class:motion-control",
-      "label": "Motion Control"
+      "id": "urn:visionflow:owl:class:compliance-control",
+      "label": "Compliance Control"
     },
     {
       "id": "urn:visionflow:owl:class:robot-control",

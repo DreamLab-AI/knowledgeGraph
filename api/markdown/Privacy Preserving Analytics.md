@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:statistical-computing",
       "vc:label": "Statistical Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-security",
-      "vc:label": "Information Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

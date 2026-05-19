@@ -163,7 +163,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Dimensionality Reduction is a concept within the ai domain.",
+  "definition": "Dimensionality Reduction is a artificial intelligence concept and a type of Unsupervised Learning. that enables Data Visualization.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

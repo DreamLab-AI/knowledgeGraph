@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:motion-model",
       "label": "Motion Model"
-    },
-    {
-      "id": "urn:visionflow:linked:rigid-body-mechanics",
-      "label": "Rigid Body Mechanics"
-    },
-    {
-      "id": "urn:visionflow:linked:robot-model",
-      "label": "Robot Model"
     }
   ],
   "qualityScore": 0.52,

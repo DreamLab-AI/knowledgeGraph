@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:recursive-bayesian-estimator",
       "label": "Recursive Bayesian Estimator"
-    },
-    {
-      "id": "urn:visionflow:linked:sequential-monte-carlo",
-      "label": "Sequential Monte Carlo"
-    },
-    {
-      "id": "urn:visionflow:owl:class:bayes-filter",
-      "label": "Bayes Filter"
     }
   ],
   "qualityScore": 0.52,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0094-power-and-force-limiting",
   "domain": "robotics",
-  "definition": "",
+  "definition": "power and force limiting is a robotics and autonomous systems concept and a type of Robot Safety.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot-safety",

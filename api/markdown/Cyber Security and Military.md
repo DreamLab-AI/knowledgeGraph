@@ -572,14 +572,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:national-security-capability",
       "vc:label": "National Security Capability"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-sponsored-activity",
-      "vc:label": "State-Sponsored Activity"
-    },
-    {
-      "@id": "urn:visionflow:linked:warfighting-domain",
-      "vc:label": "Warfighting Domain"
     }
   ],
   "vc:sourceDomain": "infrastructure",

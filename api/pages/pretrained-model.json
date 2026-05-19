@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:pretrained-model",
   "domain": "artificial-intelligence",
-  "definition": "Pretrained Model is a concept within the ai domain.",
+  "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:model",

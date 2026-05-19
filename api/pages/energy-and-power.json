@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:carbon-footprint-measurement",
       "label": "Carbon Footprint Measurement"
-    },
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:sustainability",
-      "label": "Sustainability"
     }
   ],
   "qualityScore": 0.52,

@@ -143,7 +143,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Automated Planning is a concept within the ai domain.",
+  "definition": "Automated Planning is a artificial intelligence concept and a type of Planning and Scheduling. that enables Autonomous Systems.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

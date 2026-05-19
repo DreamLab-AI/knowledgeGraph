@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:personal-accounts",
   "domain": "infrastructure",
-  "definition": "personal accounts is a concept within the ngm domain.",
+  "definition": "personal accounts is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

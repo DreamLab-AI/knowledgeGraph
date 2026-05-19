@@ -136,7 +136,12 @@ public:: true
   "@id": "urn:visionflow:owl:class:machine-learning",
   "@type": "OntologyClass",
   "label": "Machine Learning",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence-core",
+      "vc:label": "Artificial Intelligence"
+    }
+  ],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "draft",
   "vc:maturity": "draft",
@@ -161,7 +166,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "Machine Learning is a concept in artificial intelligence."
 }
 ```
 

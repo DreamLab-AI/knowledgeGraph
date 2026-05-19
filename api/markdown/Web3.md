@@ -350,20 +350,12 @@ public:: true
       "vc:label": "Decentralised Finance"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    },
-    {
       "@id": "urn:visionflow:owl:class:peer-to-peer-network",
       "vc:label": "Peer-to-Peer Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain-network",
+      "vc:label": "Blockchain Network"
     }
   ],
   "vc:sourceDomain": "blockchain",

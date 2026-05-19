@@ -8,24 +8,16 @@
   "definition": "**Computer Use and Browser Agents** are a class of agentic AI systems that operate graphical user interfaces, web browsers, and operating systems by perceiving the screen through vision-language models (VLMs), planning actions in natural language, and emitting low-level input events (mouse coordinates, keystrokes, scrolls, clicks, drags, OS shortcuts) through a controlled execution layer (Playwright / Selenium / Puppeteer / Chrome DevTools Protocol / xdotool / PyAutoGUI / OS-native automation APIs), thereby driving software designed for humans rather than relying on programmatic APIs, and distinguished both from earlier passive browser plugins and rule-based Robotic Process Automation (RPA, UiPath / Automation Anywhere / Blue Prism) by their capacity to handle previously-unseen interfaces through visual generalisation rather than recorded scripts, originating with Adept's **ACT-1** (Action Transformer, September 2022, the first commercial agent trained end-to-end to map natural-language instructions to UI actions in a Chrome extension demo-environment), elaborated through a 2023-2024 academic generation of multimodal web agents (Microsoft Research's **WebArena**-targeting agents an",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-system",
-      "label": "Autonomous System"
+      "id": "urn:visionflow:linked:intelligent-system",
+      "label": "Intelligent System"
     },
     {
       "id": "urn:visionflow:linked:cognitive-architecture",
       "label": "Cognitive Architecture"
     },
     {
-      "id": "urn:visionflow:linked:intelligent-system",
-      "label": "Intelligent System"
-    },
-    {
       "id": "urn:visionflow:owl:class:agents",
       "label": "Agents"
-    },
-    {
-      "id": "urn:visionflow:owl:class:multimodal-ai",
-      "label": "Multimodal AI"
     }
   ],
   "qualityScore": 0.52,

@@ -8,28 +8,16 @@
   "definition": "MS Phi models is Microsoft Research's family of small language models (SLMs) demonstrating that carefully curated, textbook-quality synthetic training data can achieve state-of-the-art performance at parameter counts one to two orders of magnitude smaller than frontier large language models, establishing a new paradigm in which data quality dominates data quantity as the primary driver of emergent reasoning capability across the full capability spectrum from Python code generation through mathematical chain-of-thought reasoning, multimodal vision-speech-text integration, and agentic tool-use. The series spans eight distinct model generations released between June 2023 and April 2025: Phi-1 (1.3B parameters, June 2023, Python code generation trained on GPT-4-synthesised textbook chapters and exercises, achieving HumanEval pass@1 50.6% matching CodeLLaMA-34B at 26\u00d7 fewer parameters); Phi-1.5 (1.3B, September 2023, extending to natural language commonsense reasoning through \"synthetic fables\" \u2014 short educational narratives encoding causal and common-sense inference, MMLU 46.1%); Phi-2 (2.7B, December 2023, outperforming LLaMA-2-70B on ARC / WinoGrande / HellaSwag / PIQA reasoning benc",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "id": "urn:visionflow:owl:class:general-purpose-ai-model",
       "label": "General Purpose AI Model"
     },
     {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
+      "id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
     },
     {
       "id": "urn:visionflow:owl:class:generative-model",
       "label": "Generative Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "label": "Proprietary Large Language Models"
     }
   ],
   "qualityScore": 0.52,

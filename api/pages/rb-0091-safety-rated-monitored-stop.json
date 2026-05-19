@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0091-safety-rated-monitored-stop",
   "domain": "robotics",
-  "definition": "",
+  "definition": "safety rated monitored stop is a robotics and autonomous systems concept and a type of Robot Safety.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot-safety",

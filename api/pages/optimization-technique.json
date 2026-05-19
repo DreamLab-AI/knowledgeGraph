@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:optimization-technique",
   "domain": "infrastructure",
-  "definition": "OptimizationTechnique is a concept within the ngm domain.",
+  "definition": "Optimization Technique is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

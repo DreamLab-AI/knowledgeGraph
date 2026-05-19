@@ -135,7 +135,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Spatial AI is a concept within the ai domain.",
+  "definition": "Spatial AI is a artificial intelligence concept and a type of Artificial Intelligence.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

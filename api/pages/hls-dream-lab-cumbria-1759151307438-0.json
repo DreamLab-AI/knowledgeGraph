@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:hls-dream-lab-cumbria-1759151307438-0",
   "domain": "infrastructure",
-  "definition": "hls__DreamLabCumbria_1759151307438_0 is a concept within the ngm domain.",
+  "definition": "hls__DreamLabCumbria_1759151307438_0 is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

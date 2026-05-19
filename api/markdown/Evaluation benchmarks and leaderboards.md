@@ -564,14 +564,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:empirical-methodology",
       "vc:label": "Empirical Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:measurement",
-      "vc:label": "Measurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:standardised-testing",
-      "vc:label": "Standardised Testing"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

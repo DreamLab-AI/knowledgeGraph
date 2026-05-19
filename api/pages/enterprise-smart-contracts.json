@@ -12,20 +12,12 @@
       "label": "Business Logic Code"
     },
     {
-      "id": "urn:visionflow:linked:distributed-application",
-      "label": "Distributed Application"
-    },
-    {
       "id": "urn:visionflow:linked:multi-party-agreement",
       "label": "Multi-Party Agreement"
     },
     {
       "id": "urn:visionflow:linked:permissioned-compute-artefact",
       "label": "Permissioned Compute Artefact"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contracts",
-      "label": "Smart Contracts"
     }
   ],
   "qualityScore": 0.52,

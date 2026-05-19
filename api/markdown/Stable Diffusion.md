@@ -394,14 +394,6 @@ public:: true
   "label": "Stable Diffusion",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
       "@id": "urn:visionflow:linked:latent-diffusion-model",
       "vc:label": "Latent Diffusion Model"
     },
@@ -410,12 +402,8 @@ public:: true
       "vc:label": "Text-to-Image Model"
     },
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

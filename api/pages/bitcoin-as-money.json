@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:digital-asset-economics",
       "label": "Digital Asset Economics"
-    },
-    {
-      "id": "urn:visionflow:linked:monetary-theory",
-      "label": "Monetary Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:sound-money",
-      "label": "Sound Money"
     }
   ],
   "qualityScore": 0.52,

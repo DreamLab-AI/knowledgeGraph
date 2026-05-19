@@ -152,7 +152,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:digital-twin",
       "vc:label": "Digital Twin"
     }
-  ]
+  ],
+  "definition": "Model Capacity is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

@@ -234,10 +234,6 @@ public:: true
       "vc:label": "ThermalImager"
     },
     {
-      "@id": "urn:visionflow:owl:class:exteroceptive-sensor",
-      "vc:label": "ExteroceptiveSensor"
-    },
-    {
       "@id": "urn:visionflow:owl:class:proximity-sensor",
       "vc:label": "ProximitySensor"
     }

@@ -382,20 +382,12 @@ public:: true
   "label": "Stable Diffusion Training",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:fine-tuning",
       "vc:label": "Fine Tuning"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
     },
     {
       "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",

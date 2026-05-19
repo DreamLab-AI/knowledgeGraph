@@ -8,24 +8,16 @@
   "definition": "Agent Frameworks are software libraries, runtimes, and orchestration platforms that compose large language models (LLMs) with tool-use, memory, planning, and inter-agent communication into autonomous or semi-autonomous systems capable of multi-step goal pursuit, encompassing single-agent harnesses (LangChain 97K+ GitHub stars 50K+ production apps, LlamaIndex 38K+ stars document/knowledge agents, Pydantic-AI type-safe Python framework May 2024, Vercel AI SDK streaming UI generation, BAML prompts-as-typed-functions DSL), graph-state runtimes (LangGraph 12.8K+ stars adopted by LinkedIn/Uber/Replit/Klarna/400+ enterprises, Gartner-cited in 34% of agent-framework production architecture documents at 1000+ employee companies, state-machine with conditional routing/checkpointing/human-in-the-loop), multi-agent orchestrators (AutoGen Microsoft Research 42K+ stars v0.4 January 2025 reorganised into autogen-core/autogen-agentchat/autogen-ext, CrewAI 45.9K+ stars $18M Series A powering 60% of Fortune 500 agents via role-playing crews, OpenAI Swarm October 2024 superseded by OpenAI Agents SDK March 2025 with Responses API, Google ADK April 2025 Vertex AI integration, claude-agent-sdk September",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-system",
-      "label": "Autonomous System"
-    },
-    {
       "id": "urn:visionflow:linked:llm-orchestration",
       "label": "LLM Orchestration"
-    },
-    {
-      "id": "urn:visionflow:linked:software-framework",
-      "label": "Software Framework"
     },
     {
       "id": "urn:visionflow:linked:workflow-engine",
       "label": "Workflow Engine"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-agent-system",
-      "label": "AI Agent System"
+      "id": "urn:visionflow:linked:software-framework",
+      "label": "Software Framework"
     }
   ],
   "qualityScore": 0.52,

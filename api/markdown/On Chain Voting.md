@@ -538,20 +538,8 @@ public:: true
       "vc:label": "DAO"
     },
     {
-      "@id": "urn:visionflow:owl:class:decentralised-web",
-      "vc:label": "Decentralised Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
       "@id": "urn:visionflow:owl:class:governance-token",
       "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:sustainability-instrument",
       "label": "SustainabilityInstrument"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "DigitalAsset"
     }
   ],
   "qualityScore": 0.5,

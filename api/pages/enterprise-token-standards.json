@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:securities-representation-format",
       "label": "Securities Representation Format"
-    },
-    {
-      "id": "urn:visionflow:linked:smart-contract-specification",
-      "label": "Smart Contract Specification"
-    },
-    {
-      "id": "urn:visionflow:owl:class:token-standard",
-      "label": "Token Standard"
     }
   ],
   "qualityScore": 0.52,

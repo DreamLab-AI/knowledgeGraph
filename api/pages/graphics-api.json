@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:hardware-interface",
       "label": "Hardware Interface"
-    },
-    {
-      "id": "urn:visionflow:linked:rendering-interface",
-      "label": "Rendering Interface"
-    },
-    {
-      "id": "urn:visionflow:owl:class:system-software",
-      "label": "System Software"
     }
   ],
   "qualityScore": 0.52,

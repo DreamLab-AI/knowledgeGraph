@@ -406,10 +406,6 @@ public:: true
   "label": "Motion Control",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:industrial-automation",
       "vc:label": "Industrial Automation"
     },
@@ -418,12 +414,8 @@ public:: true
       "vc:label": "Mechatronics"
     },
     {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:visionflow:linked:embedded-systems",
+      "vc:label": "Embedded Systems"
     }
   ],
   "vc:sourceDomain": "robotics",

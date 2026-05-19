@@ -530,20 +530,12 @@ public:: true
       "vc:label": "Conditional Image Generation"
     },
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:fine-tuning",
       "vc:label": "Fine-tuning"
     },
     {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

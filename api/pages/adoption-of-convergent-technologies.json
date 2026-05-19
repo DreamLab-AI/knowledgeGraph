@@ -8,24 +8,16 @@
   "definition": "**Adoption of Convergent Technologies** is the socio-technical process by which enterprises, governments, consumers and communities progressively integrate interoperating stacks of mutually reinforcing deep-technology families \u2014 artificial intelligence (including foundation models, generative AI and agentic AI), distributed ledger / blockchain infrastructure, extended-reality (XR) platforms (AR, VR, MR), Internet of Things (IoT) sensor-actuator networks, and biotechnology / synthetic biology \u2014 into workflows, products, services and governance structures in ways that create multiplicative rather than additive capability gains, constituting a phenomenon distinct from single-technology adoption and demanding theoretical frameworks capable of modelling the interdependencies, complementarities and co-evolutionary dynamics that characterise multi-technology convergence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:innovation-diffusion",
-      "label": "Innovation Diffusion"
-    },
-    {
       "id": "urn:visionflow:linked:socio-technical-transition",
       "label": "Socio-Technical Transition"
     },
     {
+      "id": "urn:visionflow:linked:innovation-diffusion",
+      "label": "Innovation Diffusion"
+    },
+    {
       "id": "urn:visionflow:linked:technology-policy",
       "label": "Technology Policy"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-transformation",
-      "label": "Digital Transformation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:technology-adoption",
-      "label": "Technology Adoption"
     }
   ],
   "qualityScore": 0.52,

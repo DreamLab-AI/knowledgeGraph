@@ -8,20 +8,12 @@
   "definition": "**Instant value settlement** is the process by which the transfer of economic value between counterparties \u2014 whether central-bank fiat currency, commercial bank money, tokenised deposits, stablecoins, securities, or programmable digital money \u2014 is completed in real time (sub-second to at most a few seconds) with immediate, irrevocable finality, eliminating or collapsing the traditional settlement lag (T+2 for equities in most markets, one to three business days for cross-border wire, several working days for correspondent-chain SWIFT transfers) that has characterised financial infrastructure since manual clearing houses in the nineteenth century. True instant settlement is distinguished from instant notification of a deferred settlement obligation: the critical property is that the payer's account is debited and the payee's account is irrevocably credited in a single atomic operation, eliminating principal risk (the risk that one counterparty delivers while the other fails to settle) and dramatically reducing liquidity needs by eliminating intraday float.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
+      "id": "urn:visionflow:owl:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
     },
     {
       "id": "urn:visionflow:owl:class:cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
-    },
-    {
-      "id": "urn:visionflow:owl:class:financial-infrastructure",
-      "label": "Financial Infrastructure"
     },
     {
       "id": "urn:visionflow:owl:class:smart-contract",

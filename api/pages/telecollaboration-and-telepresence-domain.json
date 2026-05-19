@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:telecollaboration-and-telepresence-domain",
   "domain": "distributed-collaboration",
-  "definition": "Telecollaboration and Telepresence Domain is a concept within the tc domain.",
+  "definition": "Telecollaboration and Telepresence Domain is a distributed collaboration concept and a type of Telecollaboration. that enables DistributedWork.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:telecollaboration",

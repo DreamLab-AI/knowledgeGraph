@@ -352,14 +352,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:innovation-economics",
       "vc:label": "Innovation Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-race",
-      "vc:label": "Technology Race"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -450,24 +450,16 @@ public:: true
   "label": "Asynchronous Video",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:asynchronous-communication",
-      "vc:label": "Asynchronous Communication"
-    },
-    {
       "@id": "urn:visionflow:linked:digital-workplace-technology",
       "vc:label": "Digital Workplace Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-collaboration",
-      "vc:label": "Distributed Collaboration"
     },
     {
       "@id": "urn:visionflow:linked:video-based-communication",
       "vc:label": "Video-based Communication"
     },
     {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
+      "@id": "urn:visionflow:linked:asynchronous-communication",
+      "vc:label": "Asynchronous Communication"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

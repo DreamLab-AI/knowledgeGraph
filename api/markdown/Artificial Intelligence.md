@@ -418,7 +418,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "Telecollaboration"
     }
-  ]
+  ],
+  "definition": "Artificial Intelligence is a artificial intelligence concept and a type of owl:Thing. that enables Autonomous Systems, Decision Support. comprising Computer Vision, Deep Learning."
 }
 ```
 

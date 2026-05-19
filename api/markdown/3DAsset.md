@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "3DAsset is a concept within the ngm domain.",
+  "definition": "3DAsset is a spatial computing concept and a type of Digital Asset Management.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

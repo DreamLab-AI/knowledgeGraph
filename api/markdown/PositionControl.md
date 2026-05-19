@@ -228,10 +228,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:feedback-control",
       "vc:label": "FeedbackControl"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-control",
-      "vc:label": "MotionControl"
     }
   ],
   "vc:sourceDomain": "robotics",

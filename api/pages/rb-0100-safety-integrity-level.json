@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0100-safety-integrity-level",
   "domain": "robotics",
-  "definition": "",
+  "definition": "safety integrity level is a robotics and autonomous systems concept and a type of Cobot Safety Levels.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:cobot-safety-levels",

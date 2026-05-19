@@ -370,14 +370,6 @@ public:: true
       "vc:label": "Parametric Model"
     },
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:neural-network",
       "vc:label": "Neural Network"
     }

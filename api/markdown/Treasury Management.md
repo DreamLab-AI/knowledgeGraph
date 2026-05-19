@@ -540,18 +540,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:institutional-asset-management",
       "vc:label": "Institutional Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-economics",
-      "vc:label": "Protocol Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
     }
   ],
   "vc:sourceDomain": "blockchain",

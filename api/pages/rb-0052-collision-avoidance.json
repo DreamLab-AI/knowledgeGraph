@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0052-collision-avoidance",
   "domain": "robotics",
-  "definition": "",
+  "definition": "collision avoidance is a robotics and autonomous systems concept and a type of Motion Planning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:motion-planning",

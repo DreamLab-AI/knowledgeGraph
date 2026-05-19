@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:software-engineering",
   "domain": "infrastructure",
-  "definition": "SoftwareEngineering is a concept within the ngm domain.",
+  "definition": "Software Engineering is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

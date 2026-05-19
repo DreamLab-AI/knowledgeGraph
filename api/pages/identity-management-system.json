@@ -16,14 +16,6 @@
       "label": "Access Control System"
     },
     {
-      "id": "urn:visionflow:owl:class:digital-infrastructure",
-      "label": "Digital Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:governance-framework",
-      "label": "Governance Framework"
-    },
-    {
       "id": "urn:visionflow:owl:class:security-architecture",
       "label": "Security Architecture"
     }

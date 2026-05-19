@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:global-catastrophic-risk",
       "label": "Global Catastrophic Risk"
-    },
-    {
-      "id": "urn:visionflow:linked:pandemic-preparedness",
-      "label": "Pandemic Preparedness"
-    },
-    {
-      "id": "urn:visionflow:linked:weapons-of-mass-destruction",
-      "label": "Weapons of Mass Destruction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-risks",
-      "label": "AI Risks"
     }
   ],
   "qualityScore": 0.52,

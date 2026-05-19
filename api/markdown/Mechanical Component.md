@@ -768,14 +768,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:mechatronic-system",
       "vc:label": "Mechatronic System"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-system",
-      "vc:label": "Physical System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-hardware",
-      "vc:label": "Robot Hardware"
     }
   ],
   "vc:sourceDomain": "robotics",

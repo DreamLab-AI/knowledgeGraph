@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:hls-cave-system-quote-1759150983216-0",
   "domain": "infrastructure",
-  "definition": "hls__CaveSystemQuote_1759150983216_0 is a concept within the ngm domain.",
+  "definition": "hls__CaveSystemQuote_1759150983216_0 is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

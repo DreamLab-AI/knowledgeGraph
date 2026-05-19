@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:two-heads-are-better-than-one",
   "domain": "infrastructure",
-  "definition": "Two Heads Are Better Than One is a concept within the ngm domain.",
+  "definition": "Two Heads Are Better Than One is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

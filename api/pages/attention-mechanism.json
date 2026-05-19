@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:attention-mechanism",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Attention Mechanism is a artificial intelligence concept and a type of Neural Network Component.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:neural-network-component",

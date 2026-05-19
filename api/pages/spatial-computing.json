@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:spatial-computing",
   "domain": "spatial-computing",
-  "definition": "SpatialComputing is a concept within the ngm domain.",
+  "definition": "Spatial Computing is a spatial computing concept and a type of owl:Thing.",
   "subClassOf": [
     {
       "id": "owl:Thing",

@@ -468,14 +468,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:market-making",
       "vc:label": "Market Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-generation",
-      "vc:label": "Yield Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "vc:label": "Decentralized Finance (DeFi)"
     }
   ],
   "vc:sourceDomain": "blockchain",

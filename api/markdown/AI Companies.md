@@ -656,14 +656,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:research-organisation",
       "vc:label": "Research Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-vendor",
-      "vc:label": "Software Vendor"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-company",
-      "vc:label": "Technology Company"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

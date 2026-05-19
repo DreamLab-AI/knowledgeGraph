@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:collaboration-platform",
   "domain": "infrastructure",
-  "definition": "CollaborationPlatform is a concept within the ngm domain.",
+  "definition": "Collaboration Platform is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

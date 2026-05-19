@@ -420,14 +420,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sociotechnical-systems",
       "vc:label": "Sociotechnical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-management",
-      "vc:label": "Technology Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

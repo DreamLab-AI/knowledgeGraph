@@ -1,0 +1,46 @@
+{
+  "id": "urn:visionflow:page:distributed-collaboration",
+  "title": "Distributed Collaboration",
+  "slug": "distributed-collaboration",
+  "public": true,
+  "classIri": "urn:visionflow:owl:class:distributed-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "Distributed Collaboration is a foundational concept in distributed collaboration that serves as a classification parent for 19 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

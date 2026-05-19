@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:social-platform",
   "domain": "infrastructure",
-  "definition": "SocialPlatform is a concept within the ngm domain.",
+  "definition": "Social Platform is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

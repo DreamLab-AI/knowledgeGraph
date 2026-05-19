@@ -8,10 +8,6 @@
   "definition": "MotionControl is the discipline governing the coordinated generation and execution of actuator commands that transform high-level kinematic or task-space specifications into precise, smooth, and dynamically consistent robot motion through the integrated chain of trajectory generation, servo-loop control, feedforward compensation, and communication infrastructure. The field synthesises classical control theory (PID, state-space, optimal control), mechanical dynamics (Newton-Euler, Lagrangian), drive electronics (BLDC, stepper, linear), and deterministic real-time networks (EtherCAT, SERCOS) to achieve positioning accuracies spanning sub-micron semiconductor lithography through millimetre-level heavy-payload industrial manipulators. At its mathematical core, motion control decomposes into three cascaded abstractions: the **path** (a geometric locus in configuration space, e.g. a Cartesian straight line or joint-space arc), the **trajectory** (the path parameterised by time, imposing velocity and acceleration profiles respecting actuator limits), and the **control law** (the closed-loop algorithm mapping trajectory error to corrective torque or force commands). Lynch and Park (2017) f",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:embedded-systems",
-      "label": "Embedded Systems"
-    },
-    {
       "id": "urn:visionflow:linked:industrial-automation",
       "label": "Industrial Automation"
     },
@@ -20,12 +16,8 @@
       "label": "Mechatronics"
     },
     {
-      "id": "urn:visionflow:owl:class:control-theory",
-      "label": "Control Theory"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
+      "id": "urn:visionflow:linked:embedded-systems",
+      "label": "Embedded Systems"
     }
   ],
   "qualityScore": 0.52,

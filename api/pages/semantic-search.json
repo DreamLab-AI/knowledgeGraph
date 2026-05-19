@@ -12,20 +12,12 @@
       "label": "Knowledge Retrieval"
     },
     {
-      "id": "urn:visionflow:linked:neural-information-retrieval",
-      "label": "Neural Information Retrieval"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-retrieval",
-      "label": "Information Retrieval"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    },
-    {
       "id": "urn:visionflow:owl:class:search-technology",
       "label": "Search Technology"
+    },
+    {
+      "id": "urn:visionflow:linked:neural-information-retrieval",
+      "label": "Neural Information Retrieval"
     }
   ],
   "qualityScore": 0.52,

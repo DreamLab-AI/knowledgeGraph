@@ -712,14 +712,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:domain-specific-language",
       "vc:label": "Domain-Specific Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-based-authoring",
-      "vc:label": "Text-Based Authoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-controlled-artefact",
-      "vc:label": "Version-Controlled Artefact"
     }
   ],
   "vc:sourceDomain": "infrastructure",

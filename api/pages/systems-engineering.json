@@ -1,0 +1,46 @@
+{
+  "id": "urn:visionflow:page:systems-engineering",
+  "title": "Systems Engineering",
+  "slug": "systems-engineering",
+  "public": true,
+  "classIri": "urn:visionflow:linked:systems-engineering",
+  "domain": "infrastructure",
+  "definition": "Systems Engineering is a foundational concept in infrastructure that serves as a classification parent for 4 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ]
+}

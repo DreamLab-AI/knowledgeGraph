@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:inference-orchestration-system",
       "label": "Inference Orchestration System"
-    },
-    {
-      "id": "urn:visionflow:linked:node-based-visual-programming",
-      "label": "Node-Based Visual Programming"
-    },
-    {
-      "id": "urn:visionflow:linked:workflow-execution-engine",
-      "label": "Workflow Execution Engine"
     }
   ],
   "qualityScore": 0.52,

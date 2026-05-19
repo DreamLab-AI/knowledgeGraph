@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
       "label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "id": "urn:visionflow:linked:spatial-representation",
-      "label": "Spatial Representation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:graph-database",
-      "label": "Graph Database"
     }
   ],
   "qualityScore": 0.52,

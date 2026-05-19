@@ -508,10 +508,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:image-conditioning-mechanism",
       "vc:label": "Image Conditioning Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
-      "vc:label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

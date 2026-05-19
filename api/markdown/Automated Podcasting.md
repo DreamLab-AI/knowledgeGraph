@@ -384,18 +384,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:speech-synthesis",
       "vc:label": "Speech Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companions",
-      "vc:label": "AI companions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

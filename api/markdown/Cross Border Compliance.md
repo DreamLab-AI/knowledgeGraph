@@ -574,20 +574,12 @@ public:: true
       "vc:label": "Compliance Programs"
     },
     {
-      "@id": "urn:visionflow:linked:corporate-governance",
-      "vc:label": "Corporate Governance"
-    },
-    {
       "@id": "urn:visionflow:linked:international-law",
       "vc:label": "International Law"
     },
     {
       "@id": "urn:visionflow:linked:legal-risk-management",
       "vc:label": "Legal Risk Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-governance",
-      "vc:label": "Regulatory Governance"
     }
   ],
   "vc:sourceDomain": "infrastructure",

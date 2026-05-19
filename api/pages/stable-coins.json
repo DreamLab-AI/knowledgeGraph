@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:tokenised-asset",
       "label": "Tokenised Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "qualityScore": 0.52,

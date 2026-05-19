@@ -416,14 +416,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:fault-tolerance",
       "vc:label": "Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training",
-      "vc:label": "Training"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

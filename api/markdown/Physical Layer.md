@@ -468,18 +468,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:osi-model",
       "vc:label": "OSI Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:telecommunications",
-      "vc:label": "Telecommunications"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-architecture",
-      "vc:label": "Network Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
     }
   ],
   "vc:sourceDomain": "infrastructure",

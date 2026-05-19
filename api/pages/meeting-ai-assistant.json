@@ -16,16 +16,8 @@
       "label": "Collaboration Software"
     },
     {
-      "id": "urn:visionflow:linked:distributed-collaboration-technology",
-      "label": "Distributed Collaboration Technology"
-    },
-    {
       "id": "urn:visionflow:linked:meeting-support-tools",
       "label": "Meeting Support Tools"
-    },
-    {
-      "id": "urn:visionflow:owl:class:conversational-ai",
-      "label": "Conversational AI"
     }
   ],
   "qualityScore": 0.52,

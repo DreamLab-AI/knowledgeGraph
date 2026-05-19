@@ -488,14 +488,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:developer-tooling",
       "vc:label": "Developer Tooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:os-level-virtualisation",
-      "vc:label": "OS-Level Virtualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-packaging-system",
-      "vc:label": "Software Packaging System"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -706,24 +706,12 @@ public:: true
       "vc:label": "Economic Philosophy"
     },
     {
-      "@id": "urn:visionflow:linked:monetary-theory",
-      "vc:label": "Monetary Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
-    },
-    {
       "@id": "urn:visionflow:linked:store-of-value",
       "vc:label": "Store of Value"
     },
     {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
+      "@id": "urn:visionflow:linked:monetary-theory",
+      "vc:label": "Monetary Theory"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -576,10 +576,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:general-intelligence",
       "vc:label": "General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

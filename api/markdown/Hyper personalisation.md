@@ -420,14 +420,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:recommender-systems",
       "vc:label": "Recommender Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-personalization",
-      "vc:label": "Predictive Personalization"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

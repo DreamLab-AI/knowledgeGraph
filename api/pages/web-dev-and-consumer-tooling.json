@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:web-dev-and-consumer-tooling",
   "domain": "infrastructure",
-  "definition": "WebDev and Consumer Tooling is a concept within the ngm domain.",
+  "definition": "Web Dev and Consumer Tooling is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

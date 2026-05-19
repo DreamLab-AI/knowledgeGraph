@@ -16,16 +16,8 @@
       "label": "Cross-Chain Application"
     },
     {
-      "id": "urn:visionflow:linked:interoperability-protocol",
-      "label": "Interoperability Protocol"
-    },
-    {
       "id": "urn:visionflow:linked:smart-contract-protocol",
       "label": "Smart Contract Protocol"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "label": "Blockchain Interoperability"
     }
   ],
   "qualityScore": 0.52,

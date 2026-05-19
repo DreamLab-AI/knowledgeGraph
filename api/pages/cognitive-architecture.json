@@ -1,0 +1,42 @@
+{
+  "id": "urn:visionflow:page:cognitive-architecture",
+  "title": "Cognitive Architecture",
+  "slug": "cognitive-architecture",
+  "public": true,
+  "classIri": "urn:visionflow:linked:cognitive-architecture",
+  "domain": "infrastructure",
+  "definition": "Cognitive Architecture is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-concept",
+      "label": "AI Concept"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

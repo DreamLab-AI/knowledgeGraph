@@ -580,14 +580,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:environmental-finance",
       "vc:label": "Environmental Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-finance",
-      "vc:label": "Green Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-asset-tokenisation",
-      "vc:label": "Real World Asset Tokenisation"
     }
   ],
   "vc:sourceDomain": "blockchain",

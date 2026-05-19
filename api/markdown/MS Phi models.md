@@ -446,28 +446,16 @@ public:: true
   "label": "MS Phi models",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
       "@id": "urn:visionflow:owl:class:general-purpose-ai-model",
       "vc:label": "General Purpose AI Model"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
+      "vc:label": "Proprietary Large Language Models"
     },
     {
       "@id": "urn:visionflow:owl:class:generative-model",
       "vc:label": "Generative Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "vc:label": "Proprietary Large Language Models"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

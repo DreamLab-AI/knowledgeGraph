@@ -556,14 +556,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:inference-orchestration-system",
       "vc:label": "Inference Orchestration System"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-based-visual-programming",
-      "vc:label": "Node-Based Visual Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-execution-engine",
-      "vc:label": "Workflow Execution Engine"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

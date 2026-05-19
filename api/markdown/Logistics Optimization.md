@@ -504,14 +504,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:industrial-ai",
       "vc:label": "Industrial AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:operations-research",
-      "vc:label": "Operations Research"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supply-chain-management",
-      "vc:label": "Supply Chain Management"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

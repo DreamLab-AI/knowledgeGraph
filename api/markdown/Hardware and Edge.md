@@ -382,20 +382,12 @@ public:: true
   "label": "Hardware and Edge",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-accelerator",
-      "vc:label": "AI Accelerator"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:neural-processing-unit",
       "vc:label": "Neural Processing Unit"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
+      "@id": "urn:visionflow:linked:ai-accelerator",
+      "vc:label": "AI Accelerator"
     },
     {
       "@id": "urn:visionflow:owl:class:edge-computing",

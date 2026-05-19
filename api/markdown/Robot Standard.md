@@ -552,18 +552,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:product-regulation",
       "vc:label": "Product Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-regulation",
-      "vc:label": "Safety Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:technical-standard",
-      "vc:label": "Technical Standard"
     }
   ],
   "vc:sourceDomain": "robotics",

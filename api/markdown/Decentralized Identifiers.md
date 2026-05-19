@@ -952,10 +952,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:self-sovereign-identifier",
       "vc:label": "Self-Sovereign Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri-scheme",
-      "vc:label": "URI Scheme"
     }
   ],
   "vc:sourceDomain": "blockchain",

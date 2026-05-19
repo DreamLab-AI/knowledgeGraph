@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:developer-tooling",
       "label": "Developer Tooling"
-    },
-    {
-      "id": "urn:visionflow:linked:os-level-virtualisation",
-      "label": "OS-Level Virtualisation"
-    },
-    {
-      "id": "urn:visionflow:linked:software-packaging-system",
-      "label": "Software Packaging System"
     }
   ],
   "qualityScore": 0.52,

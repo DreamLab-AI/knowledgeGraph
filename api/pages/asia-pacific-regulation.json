@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:regional-ai-regulation",
       "label": "Regional AI Regulation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-governance",
-      "label": "AI Governance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-framework",
-      "label": "Regulatory Framework"
     }
   ],
   "qualityScore": 0.52,

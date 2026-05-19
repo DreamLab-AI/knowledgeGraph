@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:self-sovereign-identifier",
       "label": "Self-Sovereign Identifier"
-    },
-    {
-      "id": "urn:visionflow:linked:uri-scheme",
-      "label": "URI Scheme"
     }
   ],
   "qualityScore": 0.52,

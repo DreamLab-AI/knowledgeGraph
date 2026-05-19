@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:eventually-consistent-data-structure",
       "label": "Eventually Consistent Data Structure"
-    },
-    {
-      "id": "urn:visionflow:linked:mergeable-data-type",
-      "label": "Mergeable Data Type"
-    },
-    {
-      "id": "urn:visionflow:linked:monotone-data-structure",
-      "label": "Monotone Data Structure"
-    },
-    {
-      "id": "urn:visionflow:linked:replicated-data-structure",
-      "label": "Replicated Data Structure"
     }
   ],
   "qualityScore": 0.52,

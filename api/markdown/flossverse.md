@@ -131,7 +131,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "flossverse is a concept within the ngm domain.",
+  "definition": "flossverse is a blockchain and distributed systems concept and a type of blockchain.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

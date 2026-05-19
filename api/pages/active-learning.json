@@ -12,20 +12,12 @@
       "label": "Data-Efficient Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "label": "Human-in-the-Loop Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:interactive-learning",
       "label": "Interactive Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:supervised-learning",
-      "label": "Supervised Learning"
+      "id": "urn:visionflow:owl:class:human-in-the-loop-learning",
+      "label": "Human-in-the-Loop Learning"
     }
   ],
   "qualityScore": 0.5,

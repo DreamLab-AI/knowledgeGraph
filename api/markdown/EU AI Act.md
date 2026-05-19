@@ -550,14 +550,6 @@ public:: true
   "label": "EU AI Act",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-regulation",
-      "vc:label": "AI Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-regulation",
-      "vc:label": "EU Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:product-safety-regulation",
       "vc:label": "Product Safety Regulation"
     },
@@ -566,8 +558,8 @@ public:: true
       "vc:label": "Risk-Based Regulation"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-regulation",
-      "vc:label": "Digital Regulation"
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -560,14 +560,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:knowledge-representation-artifact",
       "vc:label": "Knowledge Representation Artifact"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology",
-      "vc:label": "Ontology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:controlled-vocabulary",
-      "vc:label": "Controlled Vocabulary"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -412,14 +412,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:statistical-modelling",
       "vc:label": "Statistical Modelling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-analytics",
-      "vc:label": "Predictive Analytics"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

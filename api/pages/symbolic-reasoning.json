@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:symbolic-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Symbolic Reasoning is a concept within the ai domain.",
+  "definition": "Symbolic Reasoning is a artificial intelligence concept and a type of Reasoning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:reasoning",

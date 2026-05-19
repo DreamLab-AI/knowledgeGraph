@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:llm-capability",
       "label": "LLM Capability"
-    },
-    {
-      "id": "urn:visionflow:linked:structured-output-generation",
-      "label": "Structured Output Generation"
-    },
-    {
-      "id": "urn:visionflow:linked:tool-use",
-      "label": "Tool Use"
     }
   ],
   "qualityScore": 0.52,

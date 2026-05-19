@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:smart-contract-platform",
   "domain": "blockchain",
-  "definition": "SmartContractPlatform is a concept within the ngm domain.",
+  "definition": "Smart Contract Platform is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

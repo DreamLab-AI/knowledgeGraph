@@ -414,20 +414,12 @@ public:: true
   "label": "Control Algorithm",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-intelligence",
-      "vc:label": "Computational Intelligence"
-    },
-    {
       "@id": "urn:visionflow:linked:dynamical-systems",
       "vc:label": "Dynamical Systems"
     },
     {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-control",
-      "vc:label": "Feedback Control"
+      "@id": "urn:visionflow:linked:computational-intelligence",
+      "vc:label": "Computational Intelligence"
     },
     {
       "@id": "urn:visionflow:owl:class:optimal-control",

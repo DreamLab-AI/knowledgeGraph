@@ -484,18 +484,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:monitoring-systems",
       "vc:label": "Monitoring Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-networks",
-      "vc:label": "Sensor Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:traceability",
-      "vc:label": "Traceability"
     }
   ],
   "vc:sourceDomain": "infrastructure",

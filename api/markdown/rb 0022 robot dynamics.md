@@ -164,7 +164,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:digital-twin",
       "vc:label": "Digital Twin"
     }
-  ]
+  ],
+  "definition": "robot dynamics is a robotics and autonomous systems concept and a type of Robot Dynamics."
 }
 ```
 

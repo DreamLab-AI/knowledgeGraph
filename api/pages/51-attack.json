@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:51-attack",
   "domain": "blockchain",
-  "definition": "51% Attack is a concept within the bc domain.",
+  "definition": "51% Attack is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

@@ -460,14 +460,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:protocol-economics",
       "vc:label": "Protocol Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -14,7 +14,7 @@
   ],
   "qualityScore": 0.5,
   "authorityScore": 0.0,
-  "maturity": "\u2192 ai:maturity",
+  "maturity": "draft",
   "status": "\u2192 ai:status",
   "relationships": {
     "hasPart": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:installation-and-display-tech",
   "domain": "infrastructure",
-  "definition": "Installation and display tech is a concept within the ngm domain.",
+  "definition": "Installation and display tech is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

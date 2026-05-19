@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:osi-model",
       "label": "OSI Model"
-    },
-    {
-      "id": "urn:visionflow:linked:telecommunications",
-      "label": "Telecommunications"
-    },
-    {
-      "id": "urn:visionflow:owl:class:network-architecture",
-      "label": "Network Architecture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:signal-processing",
-      "label": "Signal Processing"
     }
   ],
   "qualityScore": 0.52,

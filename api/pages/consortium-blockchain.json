@@ -8,20 +8,12 @@
   "definition": "**Consortium Blockchain** is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix \u2014 occupying a deliberate middle position in the trust spectrum between fully public permissionless blockchains ([[Bitcoin]], [[Ethereum]] mainnet, [[Solana]]) where any party may validate and read all state, and fully private internal blockchains operated by a single organisation. The defining structural property is **multi-organisation governance under a hybrid trust model**: validators are known and contractually accountable rather than anonymous, the consensus assumption reduces to an M-of-N honest-majority among a finite committee (typically 4-21 validating organisations) rather than to a probabilistic cryptoeconomic majority among an open validator set, and access policies (transaction submission, channel membership, oracle attestation, smart-contract endorsement) are explicitly negotiated between members rather than enforced by open economic incentives. The four-decade lineage extends from **Practical Byzantine Fault Toleranc",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
       "id": "urn:visionflow:linked:federated-system",
       "label": "Federated System"
     },
     {
       "id": "urn:visionflow:linked:multi-organisation-database",
       "label": "Multi-Organisation Database"
-    },
-    {
-      "id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "label": "Enterprise Blockchain"
     },
     {
       "id": "urn:visionflow:owl:class:permissioned-network",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0104-hand-guiding",
   "domain": "robotics",
-  "definition": "",
+  "definition": "hand guiding is a robotics and autonomous systems concept and a type of Human Robot Interaction.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:human-robot-interaction",

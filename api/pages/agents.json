@@ -8,20 +8,16 @@
   "definition": "**Agents** are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, API requests, browser/operating-system actions, robotic effectors) in pursuit of designated goals, performance measures or instructions, encompassing classical AI architectures formalised by Russell & Norvig in *Artificial Intelligence: A Modern Approach* (1995, 4th edition 2020, \"anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators\") with the PEAS task-environment specification (Performance measure, Environment, Actuators, Sensors) and five canonical agent types (simple reflex agents using condition-action rules without state, model-based reflex agents maintaining internal world models, goal-based agents incorporating explicit future-state targets, utility-based agents optimising expected utility under uncertainty, learning agents containing performance/critic/learning/problem-generator components updating behaviou",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-system",
-      "label": "Autonomous System"
+      "id": "urn:visionflow:linked:intelligent-system",
+      "label": "Intelligent System"
     },
     {
       "id": "urn:visionflow:linked:cognitive-architecture",
       "label": "Cognitive Architecture"
     },
     {
-      "id": "urn:visionflow:linked:intelligent-system",
-      "label": "Intelligent System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:visionflow:linked:autonomous-system",
+      "label": "Autonomous System"
     }
   ],
   "qualityScore": 0.52,

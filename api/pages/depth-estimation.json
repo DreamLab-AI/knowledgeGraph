@@ -12,20 +12,12 @@
       "label": "3D Perception"
     },
     {
-      "id": "urn:visionflow:linked:dense-prediction",
-      "label": "Dense Prediction"
-    },
-    {
       "id": "urn:visionflow:linked:geometric-vision",
       "label": "Geometric Vision"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:scene-understanding",
-      "label": "Scene Understanding"
+      "id": "urn:visionflow:linked:dense-prediction",
+      "label": "Dense Prediction"
     }
   ],
   "qualityScore": 0.52,

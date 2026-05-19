@@ -574,20 +574,12 @@ public:: true
       "vc:label": "API Client"
     },
     {
-      "@id": "urn:visionflow:linked:generative-ai-tool",
-      "vc:label": "Generative AI Tool"
-    },
-    {
       "@id": "urn:visionflow:linked:graphical-user-interface",
       "vc:label": "Graphical User Interface"
     },
     {
       "@id": "urn:visionflow:linked:node-based-interface",
       "vc:label": "Node Based Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-orchestration-system",
-      "vc:label": "Workflow Orchestration System"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

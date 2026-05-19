@@ -10,7 +10,7 @@ public:: true
   "@id": "urn:visionflow:page:de96e003015f3f55d9b488e6571cdd581889e9452a365111003b66fe0fe2b4e5",
   "@type": "Page",
   "vc:slug": "presentation-3-a-conclusion",
-  "title": "Presentation%3A Conclusion",
+  "title": "Presentation: Conclusion",
   "vc:public": true,
   "vc:outboundWikilinks": [],
   "vc:schemaVersion": 1,
@@ -102,7 +102,7 @@ public:: true
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:owl:class:presentation-3-a-conclusion",
   "@type": "OntologyClass",
-  "label": "Presentation%3A Conclusion",
+  "label": "Presentation: Conclusion",
   "subClassOf": [
     {
       "@id": "urn:visionflow:owl:class:infrastructure",
@@ -126,7 +126,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Presentation%3A Conclusion is a concept within the ngm domain.",
+  "definition": "Presentation%3A Conclusion is a technology infrastructure concept and a type of infrastructure.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

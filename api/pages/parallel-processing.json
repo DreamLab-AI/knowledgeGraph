@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:parallel-processing",
   "domain": "infrastructure",
-  "definition": "ParallelProcessing is a concept within the ngm domain.",
+  "definition": "Parallel Processing is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

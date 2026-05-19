@@ -1,0 +1,42 @@
+{
+  "id": "urn:visionflow:page:byzantine-fault-tolerant-system",
+  "title": "Byzantine Fault Tolerant System",
+  "slug": "byzantine-fault-tolerant-system",
+  "public": true,
+  "classIri": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+  "domain": "infrastructure",
+  "definition": "Byzantine Fault Tolerant System is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "subClassOf": [],
+  "qualityScore": 0.3,
+  "authorityScore": 0.5,
+  "maturity": "draft",
+  "status": "stub-promoted",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "fault-tolerance-system",
+      "label": "Fault Tolerance System"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

@@ -414,20 +414,12 @@ public:: true
       "vc:label": "Open Source AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
     },
     {
       "@id": "urn:visionflow:owl:class:large-language-models",
       "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

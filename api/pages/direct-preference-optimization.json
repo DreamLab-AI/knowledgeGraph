@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:preference-learning",
-      "label": "Preference Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:supervised-fine-tuning",
-      "label": "Supervised Fine Tuning"
     }
   ],
   "qualityScore": 0.52,

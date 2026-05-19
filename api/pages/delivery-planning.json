@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:delivery-planning",
   "domain": "infrastructure",
-  "definition": "Delivery Planning is a concept within the ngm domain.",
+  "definition": "Delivery Planning is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

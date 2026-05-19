@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:client-side-dco",
   "domain": "infrastructure",
-  "definition": "Client side DCO is a concept within the ngm domain.",
+  "definition": "Client side DCO is a technology infrastructure concept and a type of Decentralised Web.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:decentralised-web",

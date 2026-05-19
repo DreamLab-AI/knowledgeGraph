@@ -462,10 +462,6 @@ public:: true
   "label": "Hydraulic Actuator",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
       "@id": "urn:visionflow:linked:fluid-power-system",
       "vc:label": "Fluid Power System"
     },
@@ -476,10 +472,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:mechanical-transducer",
       "vc:label": "Mechanical Transducer"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-control-device",
-      "vc:label": "Motion Control Device"
     }
   ],
   "vc:sourceDomain": "robotics",

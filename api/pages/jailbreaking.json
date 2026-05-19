@@ -12,20 +12,12 @@
       "label": "Adversarial Machine Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-alignment",
-      "label": "AI Alignment"
+      "id": "urn:visionflow:owl:class:prompt-engineering",
+      "label": "Prompt Engineering"
     },
     {
       "id": "urn:visionflow:owl:class:ai-risks",
       "label": "AI Risks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-safety",
-      "label": "AI Safety"
-    },
-    {
-      "id": "urn:visionflow:owl:class:prompt-engineering",
-      "label": "Prompt Engineering"
     }
   ],
   "qualityScore": 0.52,

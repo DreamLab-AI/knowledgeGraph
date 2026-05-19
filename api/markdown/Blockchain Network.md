@@ -586,10 +586,6 @@ public:: true
   "label": "Blockchain Network",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "vc:label": "Byzantine Fault Tolerant System"
-    },
-    {
       "@id": "urn:visionflow:linked:fault-tolerant-system",
       "vc:label": "Fault Tolerant System"
     },
@@ -598,12 +594,8 @@ public:: true
       "vc:label": "Overlay Network"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer to Peer Network"
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+      "vc:label": "Byzantine Fault Tolerant System"
     }
   ],
   "vc:sourceDomain": "blockchain",

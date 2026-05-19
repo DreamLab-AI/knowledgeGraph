@@ -518,10 +518,6 @@ public:: true
   "label": "Mixed Reality",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
-    },
-    {
       "@id": "urn:visionflow:linked:immersive-computing",
       "vc:label": "Immersive Computing"
     },
@@ -530,16 +526,8 @@ public:: true
       "vc:label": "Perceptual Computing"
     },
     {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human Computer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

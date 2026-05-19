@@ -8,10 +8,6 @@
   "definition": "ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making under incomplete information \u2014 encompassing directed graphical models (Bayesian networks where joint distributions factorise as products of conditionals p(x\u2081,...,x\u2099) = \u220f\u1d62 p(x\u1d62|pa(x\u1d62)) over directed acyclic graphs encoding conditional independencies via d-separation; dynamic Bayesian networks propagating beliefs across time via Chapman-Kolmogorov; hidden Markov models with discrete latent chains; Kalman filters with Gaussian linear-Gaussian dynamics; particle filters implementing sequential Monte Carlo resampling for non-linear state spaces), undirected graphical models (Markov random fields with Gibbs distributions p(x) = (1/Z) \u220f_C \u03c8_C(x_C) over clique potentials; conditional random fields p(y|x) = (1/Z(x)) exp(\u2211_k \u03bb_k f_k(y,x)) discriminatively conditioning label fields on rich observation features; Boltzmann machines with symmetric weight matrices defining energy-based distributions p(x) \u221d ex",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:bayesian-inference",
-      "label": "Bayesian Inference"
-    },
-    {
       "id": "urn:visionflow:linked:statistical-learning",
       "label": "Statistical Learning"
     },
@@ -20,12 +16,8 @@
       "label": "Uncertainty Quantification"
     },
     {
-      "id": "urn:visionflow:owl:class:generative-model",
-      "label": "Generative Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
+      "id": "urn:visionflow:linked:bayesian-inference",
+      "label": "Bayesian Inference"
     }
   ],
   "qualityScore": 0.52,

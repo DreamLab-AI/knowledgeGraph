@@ -16,10 +16,6 @@
       "label": "SustainabilityMetric"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain-governance",
-      "label": "BlockchainGovernance"
-    },
-    {
       "id": "urn:visionflow:owl:class:environmental-assessment",
       "label": "EnvironmentalAssessment"
     }

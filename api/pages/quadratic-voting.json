@@ -8,16 +8,8 @@
   "definition": "Collective decision-making mechanism where the cost of casting n votes on any single proposal equals n\u00b2 voice credits, formalising preference-intensity revelation whilst resisting plutocratic capture \u2014 developed by Steven Lalley and E. Glen Weyl (2018 AEA Papers and Proceedings), extended into Quadratic Funding (QF) by Buterin, Hitzig and Weyl (2019 Liberal Radicalism / Management Science) where matching subsidies scale as (\u03a3\u221ac\u1d62)\u00b2 \u2212 \u03a3c\u1d62 to amplify projects with broad community support over concentrated large donations, achieving asymptotic convergence to utilitarian social welfare optimum in large populations (Lalley-Weyl 2018), 50-99% reduction in plutocratic distortion versus token-weighted voting, deployed in [[Gitcoin]] 20+ grant rounds distributing $60 M+ to Ethereum public goods (2019-2026), [[Optimism]] RPGF rounds 1-6 allocating $170 M+ (2021-2024), MACI (Minimal Anti-Collusion Infrastructure, PSE Team 2020-2024) providing ZK-SNARK-backed collusion resistance, the Colorado House Democratic Caucus 2019 pilot (107 legislators, 100 voice credits each), Decentraland DAO ($12 M 2023 grant allocation), Taiwan Presidential Hackathon (200K+ citizen participants), clr.fund on-chain ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "label": "Decentralised Autonomous Organisation"
-    },
-    {
       "id": "urn:visionflow:linked:governance-protocol",
       "label": "Governance Protocol"
-    },
-    {
-      "id": "urn:visionflow:linked:mechanism-design",
-      "label": "Mechanism Design"
     },
     {
       "id": "urn:visionflow:linked:public-goods-funding",
@@ -26,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:voting-theory",
       "label": "Voting Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:welfare-economics",
-      "label": "Welfare Economics"
     }
   ],
   "qualityScore": 0.52,

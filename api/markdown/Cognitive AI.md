@@ -514,14 +514,6 @@ public:: true
   "label": "Cognitive AI",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cognitive-architecture",
-      "vc:label": "Cognitive Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
-    },
-    {
       "@id": "urn:visionflow:linked:hybrid-ai",
       "vc:label": "Hybrid AI"
     },
@@ -530,8 +522,8 @@ public:: true
       "vc:label": "Neurosymbolic AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -8,10 +8,6 @@
   "definition": "AI in Games is the interdisciplinary research and engineering field encompassing the design, implementation, and study of computational systems that perceive, decide, learn, and generate within interactive entertainment software, spanning classical symbolic techniques (finite-state machines FSM driving Pac-Man ghost personalities 1980 through Halo Combat Evolved 2001 squad behaviour, hierarchical behaviour trees popularised by Halo 2 Bungie 2004 and now standard across Unreal Engine 5/Unity NavMesh/CryEngine/Godot 4 with 50,000+ shipped titles, Goal-Oriented Action Planning GOAP introduced by Jeff Orkin for F.E.A.R. Monolith 2005 enabling emergent squad tactics via STRIPS-style backward chaining over action preconditions/effects, Hierarchical Task Network HTN planning shipped in Killzone 2 Guerrilla 2009 and Transformers 3 High Moon decomposing high-level intents into primitive task sequences, pathfinding via A* Hart-Nilsson-Raphael 1968 over navigation meshes Recast/Detour Mikko Mononen open-source library 2009 used by Unreal/Unity/CryEngine/id Tech/Cyberpunk 2077 CD Projekt, influence maps Dave Mark IGDA tactical analysis colouring spatial threat/opportunity fields, Monte Carlo T",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-artificial-intelligence",
-      "label": "Applied Artificial Intelligence"
-    },
-    {
       "id": "urn:visionflow:linked:entertainment-technology",
       "label": "Entertainment Technology"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:interactive-computing",
       "label": "Interactive Computing"
-    },
-    {
-      "id": "urn:visionflow:linked:real-time-ai",
-      "label": "Real-Time AI"
     }
   ],
   "qualityScore": 0.52,

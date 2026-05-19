@@ -540,18 +540,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:distributed-collaboration-enablers",
       "vc:label": "Distributed Collaboration Enablers"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-technology",
-      "vc:label": "Speech Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-translation",
-      "vc:label": "Machine Translation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

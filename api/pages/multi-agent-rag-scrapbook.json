@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:multi-agent-rag-scrapbook",
   "domain": "artificial-intelligence",
-  "definition": "Multi Agent RAG scrapbook is a concept within the ngm domain.",
+  "definition": "Multi Agent RAG scrapbook is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

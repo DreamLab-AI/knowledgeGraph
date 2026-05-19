@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:web-architecture",
       "label": "Web Architecture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-computing",
-      "label": "Distributed Computing"
     }
   ],
   "qualityScore": 0.52,

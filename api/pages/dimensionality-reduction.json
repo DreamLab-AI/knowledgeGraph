@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:dimensionality-reduction",
   "domain": "artificial-intelligence",
-  "definition": "Dimensionality Reduction is a concept within the ai domain.",
+  "definition": "Dimensionality Reduction is a artificial intelligence concept and a type of Unsupervised Learning. that enables Data Visualization.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:unsupervised-learning",

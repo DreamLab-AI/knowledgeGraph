@@ -578,16 +578,8 @@ public:: true
       "vc:label": "Digital Finance Package"
     },
     {
-      "@id": "urn:visionflow:linked:eu-regulation",
-      "vc:label": "EU Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:financial-services-regulation",
       "vc:label": "Financial Services Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:harmonised-single-market-rulebook",
-      "vc:label": "Harmonised Single Market Rulebook"
     }
   ],
   "vc:sourceDomain": "blockchain",

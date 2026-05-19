@@ -142,7 +142,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "VirtualReality is a concept within the ngm domain.",
+  "definition": "Virtual Reality is a spatial computing concept and a type of Extended Reality (XR).",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

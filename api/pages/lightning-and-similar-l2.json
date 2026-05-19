@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:lightning-and-similar-l2",
   "domain": "blockchain",
-  "definition": "Lightning and Similar L2 is a concept within the ngm domain.",
+  "definition": "Lightning and Similar L2 is a blockchain and distributed systems concept and a type of Layer2.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:layer2",

@@ -12,16 +12,8 @@
       "label": "Adversarial Learning System"
     },
     {
-      "id": "urn:visionflow:linked:deep-generative-model",
-      "label": "Deep Generative Model"
-    },
-    {
       "id": "urn:visionflow:linked:implicit-density-model",
       "label": "Implicit Density Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:neural-network",
-      "label": "Neural Network"
     },
     {
       "id": "urn:visionflow:owl:class:unsupervised-learning",

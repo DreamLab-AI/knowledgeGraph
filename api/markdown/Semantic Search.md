@@ -382,20 +382,12 @@ public:: true
       "vc:label": "Knowledge Retrieval"
     },
     {
-      "@id": "urn:visionflow:linked:neural-information-retrieval",
-      "vc:label": "Neural Information Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-retrieval",
-      "vc:label": "Information Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
       "@id": "urn:visionflow:owl:class:search-technology",
       "vc:label": "Search Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-information-retrieval",
+      "vc:label": "Neural Information Retrieval"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

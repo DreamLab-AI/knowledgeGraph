@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:fatf-recommendation",
       "label": "FATF Recommendation"
-    },
-    {
-      "id": "urn:visionflow:linked:financial-regulation",
-      "label": "Financial Regulation"
-    },
-    {
-      "id": "urn:visionflow:linked:payment-transparency-standard",
-      "label": "Payment Transparency Standard"
-    },
-    {
-      "id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "label": "AML KYC Compliance"
     }
   ],
   "qualityScore": 0.52,

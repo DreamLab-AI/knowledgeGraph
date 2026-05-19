@@ -650,20 +650,8 @@ public:: true
       "vc:label": "Hyperscaler"
     },
     {
-      "@id": "urn:visionflow:linked:public-company",
-      "vc:label": "Public Company"
-    },
-    {
       "@id": "urn:visionflow:linked:social-media-platform-operator",
       "vc:label": "Social Media Platform Operator"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-conglomerate",
-      "vc:label": "Technology Conglomerate"
-    },
-    {
-      "@id": "urn:visionflow:linked:vr-ar-hardware-manufacturer",
-      "vc:label": "VR AR Hardware Manufacturer"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

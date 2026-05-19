@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:model-weights",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Model Weights is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

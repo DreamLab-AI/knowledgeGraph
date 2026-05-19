@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-scalability",
-      "label": "Blockchain Scalability"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
     }
   ],
   "qualityScore": 0.52,

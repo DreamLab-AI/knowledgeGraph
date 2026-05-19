@@ -486,20 +486,8 @@ public:: true
       "vc:label": "Data Ethics"
     },
     {
-      "@id": "urn:visionflow:linked:political-economy",
-      "vc:label": "Political Economy"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-rights",
       "vc:label": "Digital Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-rights",
-      "vc:label": "Human Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

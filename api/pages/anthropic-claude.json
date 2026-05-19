@@ -12,20 +12,12 @@
       "label": "AI Safety Organization"
     },
     {
-      "id": "urn:visionflow:linked:foundation-model-provider",
-      "label": "Foundation Model Provider"
-    },
-    {
       "id": "urn:visionflow:linked:frontier-ai-lab",
       "label": "Frontier AI Lab"
     },
     {
       "id": "urn:visionflow:linked:large-language-model-family",
       "label": "Large Language Model Family"
-    },
-    {
-      "id": "urn:visionflow:linked:public-benefit-corporation",
-      "label": "Public Benefit Corporation"
     }
   ],
   "qualityScore": 0.54,

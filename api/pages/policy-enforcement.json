@@ -12,16 +12,12 @@
       "label": "Access Control"
     },
     {
-      "id": "urn:visionflow:owl:class:compliance-framework",
-      "label": "Compliance Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:governance",
-      "label": "Governance"
-    },
-    {
       "id": "urn:visionflow:owl:class:security-services",
       "label": "Security Services"
+    },
+    {
+      "id": "urn:visionflow:owl:class:compliance-framework",
+      "label": "Compliance Framework"
     }
   ],
   "qualityScore": 0.52,

@@ -16,20 +16,8 @@
       "label": "Electronic Money Regulation"
     },
     {
-      "id": "urn:visionflow:linked:financial-regulation",
-      "label": "Financial Regulation"
-    },
-    {
       "id": "urn:visionflow:linked:monetary-law",
       "label": "Monetary Law"
-    },
-    {
-      "id": "urn:visionflow:linked:payment-systems-regulation",
-      "label": "Payment Systems Regulation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:consumer-protection",
-      "label": "Consumer Protection"
     }
   ],
   "qualityScore": 0.52,

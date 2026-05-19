@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:reference-standard",
   "domain": "infrastructure",
-  "definition": "ReferenceStandard is a concept within the ngm domain.",
+  "definition": "Reference Standard is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

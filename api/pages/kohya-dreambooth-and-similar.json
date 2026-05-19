@@ -8,24 +8,16 @@
   "definition": "Ecosystem of open-source toolchains, training methodologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale [[Diffusion Models]] \u2014 principally [[Stable Diffusion]] 1.x/2.x, SDXL, and [[FLUX.1]] \u2014 through parameter-efficient adaptation techniques that adjust billion-parameter base models to bespoke visual subjects, artistic styles, or novel concepts using datasets of 5\u2013200 curated images in 5\u201340 minutes on consumer GPUs (RTX 3090/4090 24GB, A100 40/80GB). The dominant training toolchain is kohya-ss/sd-scripts (Kohya Shintaro, Japan), a CLI-first Python-and-Accelerate framework covering SD 1.x, SD 2.x, SDXL, and [[FLUX.1]] via discrete training scripts (train_network.py for LoRA, sdxl_train.py for SDXL Dreambooth, flux_train_network.py for FLUX.1 LoRA) configurable via TOML config files; the companion GUI fork bmaltais/kohya_ss (Brad Maltais, Canada) wraps the identical sd-scripts backend in a Gradio web interface with Docker deployment via ashleykza/kohya:latest. Competing alternatives include OneTrainer (Nerogar, Germany) targeting SD/SDXL/FLUX/HiDream with EMA averaging and multi-concept datasets; AI Toolkit / Ostris (Ryan",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:transfer-learning",
-      "label": "Transfer Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:diffusion-models",
       "label": "Diffusion Models"
     },
     {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
       "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "id": "urn:visionflow:linked:transfer-learning",
+      "label": "Transfer Learning"
     }
   ],
   "qualityScore": 0.52,

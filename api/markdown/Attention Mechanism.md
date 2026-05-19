@@ -160,7 +160,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:telecollaboration",
       "vc:label": "Telecollaboration"
     }
-  ]
+  ],
+  "definition": "Attention Mechanism is a artificial intelligence concept and a type of Neural Network Component."
 }
 ```
 

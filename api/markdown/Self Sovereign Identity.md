@@ -524,18 +524,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:user-centric-identity",
       "vc:label": "User-Centric Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "vc:label": "Cryptographic Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
     }
   ],
   "vc:sourceDomain": "blockchain",

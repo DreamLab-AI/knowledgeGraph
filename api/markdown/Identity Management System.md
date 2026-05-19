@@ -382,14 +382,6 @@ public:: true
       "vc:label": "Access Control System"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-infrastructure",
-      "vc:label": "Digital Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    },
-    {
       "@id": "urn:visionflow:owl:class:security-architecture",
       "vc:label": "Security Architecture"
     }

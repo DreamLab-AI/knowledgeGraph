@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:simulation-platform",
       "label": "Simulation Platform"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-twin",
-      "label": "Digital Twin"
-    },
-    {
-      "id": "urn:visionflow:owl:class:industrial-metaverse",
-      "label": "Industrial Metaverse"
-    },
-    {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "Spatial Computing"
     }
   ],
   "qualityScore": 0.52,

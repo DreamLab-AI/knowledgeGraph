@@ -12,20 +12,12 @@
       "label": "Data Quality"
     },
     {
-      "id": "urn:visionflow:owl:class:data-governance",
-      "label": "Data Governance"
-    },
-    {
       "id": "urn:visionflow:owl:class:enterprise-architecture",
       "label": "Enterprise Architecture"
     },
     {
       "id": "urn:visionflow:owl:class:information-architecture",
       "label": "Information Architecture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:knowledge-management",
-      "label": "Knowledge Management"
     }
   ],
   "qualityScore": 0.52,

@@ -660,14 +660,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:digital-asset-economics",
       "vc:label": "Digital Asset Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-theory",
-      "vc:label": "Monetary Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
     }
   ],
   "vc:sourceDomain": "blockchain",

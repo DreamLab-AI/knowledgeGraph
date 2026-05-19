@@ -8,10 +8,6 @@
   "definition": "Diffusion Models are a class of deep generative models that learn the data distribution p_data(x) by reversing a fixed forward Markov noising process q(x_t | x_{t-1}) that progressively corrupts data x_0 with Gaussian noise across T timesteps until x_T \u2248 N(0,I), then training a neural denoiser \u03b5_\u03b8(x_t, t) (or equivalently a score network s_\u03b8(x_t, t) \u2248 \u2207_{x_t} log p_t(x_t)) to predict the noise (or score) at each level so that ancestral sampling from x_T back to x_0 produces samples from p_data \u2014 introduced in nascent form by Sohl-Dickstein, Weiss, Maheswaranathan and Ganguli at Stanford and Janelia in their 2015 ICML paper \"Deep Unsupervised Learning using Nonequilibrium Thermodynamics\" connecting variational inference with non-equilibrium statistical physics, made practically viable for high-fidelity image synthesis by Ho, Jain and Abbeel (UC Berkeley) in their 2020 NeurIPS paper \"Denoising Diffusion Probabilistic Models\" (DDPM) which simplified the variational training objective to a weighted noise-prediction MSE L_simple = E_{t,x_0,\u03b5}[\u2016\u03b5 \u2212 \u03b5_\u03b8(\u221a(\u1fb1_t)x_0 + \u221a(1\u2212\u1fb1_t)\u03b5, t)\u2016\u00b2] under a cosine or linear \u03b2-schedule with T=1000 steps, paralleled by Song and Ermon (Stanford) whose 2019 Ne",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:deep-generative-model",
-      "label": "Deep Generative Model"
-    },
-    {
       "id": "urn:visionflow:linked:latent-variable-model",
       "label": "Latent Variable Model"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:score-based-model",
       "label": "Score-Based Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:neural-network",
-      "label": "Neural Network"
     }
   ],
   "qualityScore": 0.52,

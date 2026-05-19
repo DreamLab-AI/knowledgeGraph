@@ -598,24 +598,16 @@ public:: true
   "label": "Blockchain Interoperability",
   "subClassOf": [
     {
+      "@id": "urn:visionflow:linked:network-interoperability",
+      "vc:label": "Network Interoperability"
+    },
+    {
       "@id": "urn:visionflow:linked:cross-chain-communication",
       "vc:label": "Cross Chain Communication"
     },
     {
       "@id": "urn:visionflow:linked:distributed-systems-protocol",
       "vc:label": "Distributed Systems Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-interoperability",
-      "vc:label": "Network Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "vc:label": "Cryptographic Protocol"
     }
   ],
   "vc:sourceDomain": "blockchain",

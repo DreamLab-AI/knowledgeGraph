@@ -142,7 +142,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "SpatialComputing is a concept within the ngm domain.",
+  "definition": "Spatial Computing is a spatial computing concept and a type of owl:Thing.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

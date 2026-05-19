@@ -231,7 +231,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "DigitalTwin is a concept within the ngm domain.",
+  "definition": "Digital Twin is a spatial computing concept and a type of Digital Twin Technology. that enables Collaborative Design, Process Optimisation. comprising Control Interface, IoT Sensor Data.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

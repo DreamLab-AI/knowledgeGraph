@@ -608,10 +608,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:human-centred-ai",
       "vc:label": "Human-Centred AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:educational-technology",
-      "vc:label": "Educational Technology"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

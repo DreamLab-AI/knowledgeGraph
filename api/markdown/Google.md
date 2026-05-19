@@ -306,24 +306,16 @@ public:: true
   "label": "Google",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:foundation-model-provider",
-      "vc:label": "Foundation Model Provider"
+      "@id": "urn:visionflow:owl:class:ai-search",
+      "vc:label": "AI Search"
     },
     {
       "@id": "urn:visionflow:linked:technology-conglomerate",
       "vc:label": "Technology Conglomerate"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
+      "@id": "urn:visionflow:linked:foundation-model-provider",
+      "vc:label": "Foundation Model Provider"
     }
   ],
   "vc:sourceDomain": "infrastructure",

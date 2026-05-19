@@ -8,24 +8,16 @@
   "definition": "Silo AI is a Finnish artificial intelligence company founded in Helsinki in 2017, recognised as Europe's largest private AI lab prior to its acquisition by Advanced Micro Devices (AMD) in August 2024, specialising in end-to-end enterprise AI solutions, multilingual open-source large language model development, and European digital sovereignty through language technology research, having produced the Poro 34B model (2023) \u2014 the first major open Finnish/English LLM trained on the LUMI EuroHPC supercomputer \u2014 and the Viking model family (7B, 13B, 33B, 2024) covering all Nordic languages (Danish, Finnish, Icelandic, Norwegian, Swedish) and programming languages under the Apache 2.0 licence, training models on up to 4,096 AMD MI250X GPUs with datasets of 1\u20132 trillion tokens using architectures ranging from BLOOM with ALiBi embeddings (Poro) to Llama-2-style transformer stacks with flash attention, rotary embeddings and grouped query attention (Viking), both produced via the LumiOpen collaboration between Silo AI's SiloGen arm, the University of Turku's TurkuNLP group, and the EU-funded High Performance Language Technologies (HPLT) project, addressing the fundamental challenge of low-res",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-companies",
-      "label": "AI Companies"
-    },
-    {
       "id": "urn:visionflow:owl:class:anthropic-claude",
       "label": "Anthropic Claude"
     },
     {
-      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "label": "Artificial General Intelligence"
-    },
-    {
       "id": "urn:visionflow:owl:class:competition-in-ai",
       "label": "Competition in AI"
+    },
+    {
+      "id": "urn:visionflow:owl:class:ai-companies",
+      "label": "AI Companies"
     }
   ],
   "qualityScore": 0.52,

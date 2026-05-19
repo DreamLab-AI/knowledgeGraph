@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:copyright",
   "domain": "infrastructure",
-  "definition": "copyright is a concept within the ngm domain.",
+  "definition": "copyright is a technology infrastructure concept and a type of Legal Framework.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:legal-framework",

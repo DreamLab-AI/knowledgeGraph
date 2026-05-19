@@ -494,20 +494,12 @@ public:: true
       "vc:label": "Sociotechnical Risk"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-safety",
       "vc:label": "Digital Safety"
     },
     {
       "@id": "urn:visionflow:owl:class:human-rights",
       "vc:label": "Human Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

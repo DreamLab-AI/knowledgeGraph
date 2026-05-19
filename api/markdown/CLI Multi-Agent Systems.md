@@ -364,14 +364,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:llm-agents",
       "vc:label": "LLM Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

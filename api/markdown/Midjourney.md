@@ -548,18 +548,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:ai-video",
       "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

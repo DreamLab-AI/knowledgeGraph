@@ -8,24 +8,16 @@
   "definition": "Asynchronous video is a [[Distributed Collaboration]] communication modality in which recorded video messages \u2014 combining screen capture, webcam footage, audio narration, and on-screen annotation \u2014 are produced by a sender and consumed by recipients independently of the sender's presence, eliminating synchronisation requirements across time zones, work schedules, and cognitive availability windows. Distinguished from [[Video Conferencing]] (synchronous, live presence required) and [[Screencasting]] (one-way broadcast tutorial, not conversational), asynchronous video occupies the communication richness stratum above text-based [[Asynchronous Communication]] whilst remaining fully time-shifted: the sender records a 2\u201315 minute message and the recipient watches, pauses, re-watches, and responds at their own cadence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:asynchronous-communication",
-      "label": "Asynchronous Communication"
-    },
-    {
       "id": "urn:visionflow:linked:digital-workplace-technology",
       "label": "Digital Workplace Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:distributed-collaboration",
-      "label": "Distributed Collaboration"
     },
     {
       "id": "urn:visionflow:linked:video-based-communication",
       "label": "Video-based Communication"
     },
     {
-      "id": "urn:visionflow:owl:class:knowledge-management",
-      "label": "Knowledge Management"
+      "id": "urn:visionflow:linked:asynchronous-communication",
+      "label": "Asynchronous Communication"
     }
   ],
   "qualityScore": 0.52,

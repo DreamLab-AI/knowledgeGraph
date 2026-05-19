@@ -490,10 +490,6 @@ public:: true
   "label": "California AI bill",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-regulation",
-      "vc:label": "AI Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:frontier-model-governance",
       "vc:label": "Frontier Model Governance"
     },
@@ -504,10 +500,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:state-law",
       "vc:label": "State Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-policy",
-      "vc:label": "Technology Policy"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0045-acceleration",
   "domain": "robotics",
-  "definition": "",
+  "definition": "acceleration is a robotics and autonomous systems concept and a type of Newton-Euler Dynamics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:newton-euler-dynamics",

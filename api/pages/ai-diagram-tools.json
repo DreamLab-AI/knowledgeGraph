@@ -8,16 +8,8 @@
   "definition": "AI Diagram Tools are a class of generative AI applications that translate natural-language descriptions, source code, screenshots, or structured specifications into machine-renderable diagram artefacts (flowcharts, sequence diagrams, entity-relationship models, class diagrams, mind maps, architecture diagrams, Gantt charts, deployment topologies, network maps, user journey maps), bridging the long-standing gap between informal whiteboard thinking and the formal diagram-as-code ecosystems (Mermaid, PlantUML, Graphviz DOT, D2 by Terrastruct, Structurizr DSL, ELK, draw.io XML) by using large language models (GPT-4/Claude 3.5/Gemini 1.5/Llama 3) as the intermediate compiler from prose to declarative diagram grammars, then handing the resulting source to deterministic layout algorithms (Sugiyama hierarchical layering Eclipse Layout Kernel ELK 4-phase pipeline cycle-breaking/layer-assignment/crossing-minimisation/coordinate-assignment, force-directed Fruchterman-Reingold, orthogonal routing, Kamada-Kawai energy minimisation, dagre.js port of GraphViz dot for browser execution) and rendering engines (SVG via D3/dagre-d3/Mermaid renderer, Canvas via Konva, HTML/CSS via tldraw, native PNG v",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-productivity-tool",
-      "label": "AI Productivity Tool"
-    },
-    {
       "id": "urn:visionflow:linked:diagram-as-code",
       "label": "Diagram-as-Code"
-    },
-    {
-      "id": "urn:visionflow:linked:generative-ai-application",
-      "label": "Generative AI Application"
     },
     {
       "id": "urn:visionflow:linked:knowledge-visualisation",

@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:information-theory",
       "label": "Information Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:institutional-economics",
-      "label": "Institutional Economics"
-    },
-    {
-      "id": "urn:visionflow:linked:political-economy",
-      "label": "Political Economy"
-    },
-    {
-      "id": "urn:visionflow:linked:social-science",
-      "label": "Social Science"
     }
   ],
   "qualityScore": 0.52,

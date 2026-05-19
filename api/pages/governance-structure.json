@@ -8,20 +8,12 @@
   "definition": "A governance structure is the formal arrangement of authority, accountability, decision-making rights, and control mechanisms within an organisation, system, protocol, or jurisdiction that determines how strategic direction is set, resources are allocated, obligations are enforced, and stakeholders are held accountable for outcomes. Governance structures encompass the roles, bodies, rules, processes, and incentive mechanisms that collectively shape who can decide what, under what constraints, with what transparency, and with what consequences for failure. The concept spans five major domains of contemporary practice: **Corporate governance**: board of directors, C-suite executives, audit committee, remuneration committee, nominations committee operating under Companies Act 2006, UK Corporate Governance Code 2024, OECD Principles of Corporate Governance 2023, and shareholder activism frameworks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:accountability-mechanism",
-      "label": "Accountability Mechanism"
-    },
-    {
       "id": "urn:visionflow:linked:institutional-design",
       "label": "Institutional Design"
     },
     {
-      "id": "urn:visionflow:owl:class:compliance-framework",
-      "label": "Compliance Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:governance-framework",
-      "label": "Governance Framework"
+      "id": "urn:visionflow:linked:accountability-mechanism",
+      "label": "Accountability Mechanism"
     },
     {
       "id": "urn:visionflow:owl:class:trust-framework",

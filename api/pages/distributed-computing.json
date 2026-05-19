@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:networked-systems",
       "label": "Networked Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:parallel-computing",
-      "label": "Parallel Computing"
     }
   ],
   "qualityScore": 0.52,

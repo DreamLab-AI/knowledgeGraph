@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:speech-synthesis",
       "label": "Speech Synthesis"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-companions",
-      "label": "AI companions"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-video",
-      "label": "AI Video"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
     }
   ],
   "qualityScore": 0.52,

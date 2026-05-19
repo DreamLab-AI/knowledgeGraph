@@ -488,14 +488,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:tokenised-asset",
       "vc:label": "Tokenised Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
     }
   ],
   "vc:sourceDomain": "blockchain",

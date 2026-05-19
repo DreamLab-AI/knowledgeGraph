@@ -650,16 +650,8 @@ public:: true
       "vc:label": "Harm Taxonomy"
     },
     {
-      "@id": "urn:visionflow:linked:sociotechnical-risk",
-      "vc:label": "Sociotechnical Risk"
-    },
-    {
       "@id": "urn:visionflow:linked:technology-risk",
       "vc:label": "Technology Risk"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:systemic-risk",
-      "vc:label": "Systemic Risk"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

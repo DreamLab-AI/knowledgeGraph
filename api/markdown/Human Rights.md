@@ -184,7 +184,7 @@ public:: true
   ],
   "vc:sourceDomain": "spatial-computing",
   "vc:status": "revised",
-  "vc:maturity": "production",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604"
   },

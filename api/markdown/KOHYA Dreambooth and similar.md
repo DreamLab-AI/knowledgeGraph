@@ -482,24 +482,16 @@ public:: true
   "label": "KOHYA Dreambooth and similar",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:diffusion-models",
       "vc:label": "Diffusion Models"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
       "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

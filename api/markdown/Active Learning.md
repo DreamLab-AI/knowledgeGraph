@@ -338,20 +338,12 @@ public:: true
       "vc:label": "Data-Efficient Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "vc:label": "Human-in-the-Loop Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:interactive-learning",
       "vc:label": "Interactive Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-learning",
-      "vc:label": "Supervised Learning"
+      "@id": "urn:visionflow:owl:class:human-in-the-loop-learning",
+      "vc:label": "Human-in-the-Loop Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

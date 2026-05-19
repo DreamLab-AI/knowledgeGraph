@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0030-jacobian-matrix",
   "domain": "robotics",
-  "definition": "",
+  "definition": "jacobian matrix is a robotics and autonomous systems concept and a type of Kinematics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:kinematics",

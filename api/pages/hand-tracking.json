@@ -12,20 +12,12 @@
       "label": "Gesture Recognition"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
-    },
-    {
       "id": "urn:visionflow:owl:class:pose-estimation",
       "label": "Pose Estimation"
     },
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
     }
   ],
   "qualityScore": 0.52,

@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:corporate-research-lab",
       "label": "Corporate Research Lab"
-    },
-    {
-      "id": "urn:visionflow:linked:foundation-model-provider",
-      "label": "Foundation Model Provider"
-    },
-    {
-      "id": "urn:visionflow:linked:frontier-lab",
-      "label": "Frontier Lab"
     }
   ],
   "qualityScore": 0.52,

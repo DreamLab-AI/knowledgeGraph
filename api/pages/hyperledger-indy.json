@@ -8,16 +8,8 @@
   "definition": "**Hyperledger Indy** is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the [[Linux Foundation]]-resident [[Hyperledger Foundation]] (now consolidated under the **LF Decentralized Trust** umbrella since June 2024) that provides the canonical reference implementation of a **verifiable data registry** (VDR) for **[[Self-Sovereign Identity]]** (SSI) infrastructure, originally seeded in September 2017 by a code contribution from the **[[Sovrin Foundation]]** (a Utah-incorporated non-profit established in 2016 by Phil Windley, Jason Law and Drummond Reed to operationalise the Sovrin Trust Framework and the public-permissioned Sovrin Network), implementing a four-node-minimum ordering quorum of **stewards** running the **[[Plenum]]** consensus protocol (a Python-based [[Practical Byzantine Fault Tolerance|PBFT]] derivative incorporating the **RBFT** (Redundant BFT, Aublin-Mokhtar-Qu\u00e9ma 2013) and **Aardvark** (Clement-Wong-Alvisi-Dahlin 2009) view-change resilience improvements ensuring liveness under faulty primary replicas), where the on-ledger state is deliberately constrained to four object types \u2014 public **DIDs** under the `did:sov` lega",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "label": "Byzantine Fault Tolerant System"
-    },
-    {
       "id": "urn:visionflow:linked:decentralized-identifier-method",
       "label": "Decentralized Identifier Method"
-    },
-    {
-      "id": "urn:visionflow:linked:hyperledger-project",
-      "label": "Hyperledger Project"
     },
     {
       "id": "urn:visionflow:linked:permissioned-distributed-ledger",

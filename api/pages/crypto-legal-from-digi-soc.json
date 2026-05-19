@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:crypto-legal-from-digi-soc",
   "domain": "blockchain",
-  "definition": "Crypto Legal from DigiSoc is a concept within the ngm domain.",
+  "definition": "Crypto Legal from DigiSoc is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

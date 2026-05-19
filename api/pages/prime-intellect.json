@@ -12,20 +12,12 @@
       "label": "Decentralised AI"
     },
     {
-      "id": "urn:visionflow:linked:open-source-ai",
-      "label": "Open Source AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-computing",
-      "label": "Distributed Computing"
-    },
-    {
       "id": "urn:visionflow:owl:class:federated-learning",
       "label": "Federated Learning"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-ai",
+      "label": "Open Source AI"
     }
   ],
   "qualityScore": 0.52,

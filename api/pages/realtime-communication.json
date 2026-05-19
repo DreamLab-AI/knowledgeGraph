@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:realtime-communication",
   "domain": "infrastructure",
-  "definition": "RealtimeCommunication is a concept within the ngm domain.",
+  "definition": "Realtime Communication is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

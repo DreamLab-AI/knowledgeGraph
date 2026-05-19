@@ -588,14 +588,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:information-integrity-threat",
       "vc:label": "Information Integrity Threat"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-harm",
-      "vc:label": "Online Harm"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

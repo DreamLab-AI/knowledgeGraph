@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:user-privacy",
   "domain": "infrastructure",
-  "definition": "UserPrivacy is a concept within the ngm domain.",
+  "definition": "User Privacy is a technology infrastructure concept and a type of Privacy Framework.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:privacy-framework",

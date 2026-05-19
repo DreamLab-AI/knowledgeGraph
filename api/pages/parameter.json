@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:parameter",
   "domain": "artificial-intelligence",
-  "definition": "Parameter is a concept within the ai domain.",
+  "definition": "Parameter is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

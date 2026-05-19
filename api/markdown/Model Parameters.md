@@ -166,7 +166,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "Model Parameters is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

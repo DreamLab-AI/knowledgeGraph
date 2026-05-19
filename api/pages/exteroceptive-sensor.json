@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:robot-sensor",
       "label": "Robot Sensor"
-    },
-    {
-      "id": "urn:visionflow:owl:class:sensor",
-      "label": "Sensor"
     }
   ],
   "qualityScore": 0.52,

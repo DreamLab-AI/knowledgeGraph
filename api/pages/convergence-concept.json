@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:convergence-concept",
   "domain": "infrastructure",
-  "definition": "ConvergenceConcept is a concept within the ngm domain.",
+  "definition": "Convergence Concept is a technology infrastructure concept and a type of Collaboration.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:collaboration",

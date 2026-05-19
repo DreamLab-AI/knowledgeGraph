@@ -16,16 +16,8 @@
       "label": "Neural Networks"
     },
     {
-      "id": "urn:visionflow:linked:transfer-learning",
-      "label": "Transfer Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:fine-tuning",
       "label": "Fine Tuning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
     }
   ],
   "qualityScore": 0.52,

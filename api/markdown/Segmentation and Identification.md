@@ -414,14 +414,6 @@ public:: true
       "vc:label": "Object Recognition"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:scene-understanding",
       "vc:label": "Scene Understanding"
     }

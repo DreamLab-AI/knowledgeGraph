@@ -890,7 +890,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "Recurrent Neural Network is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

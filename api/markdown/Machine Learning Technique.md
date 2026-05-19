@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Machine Learning Technique is a concept within the ai domain.",
+  "definition": "Machine Learning Technique is a artificial intelligence concept and a type of Machine Learning.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

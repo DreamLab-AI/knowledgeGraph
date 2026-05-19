@@ -151,7 +151,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Threat Actor is a concept within the bc domain.",
+  "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

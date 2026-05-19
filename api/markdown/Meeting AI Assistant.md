@@ -454,16 +454,8 @@ public:: true
       "vc:label": "Collaboration Software"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-collaboration-technology",
-      "vc:label": "Distributed Collaboration Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:meeting-support-tools",
       "vc:label": "Meeting Support Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

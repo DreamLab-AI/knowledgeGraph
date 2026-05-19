@@ -18,22 +18,6 @@
     {
       "id": "urn:visionflow:linked:intellectual-property",
       "label": "Intellectual Property"
-    },
-    {
-      "id": "urn:visionflow:linked:patent-licensing",
-      "label": "Patent Licensing"
-    },
-    {
-      "id": "urn:visionflow:linked:streaming-protocols",
-      "label": "Streaming Protocols"
-    },
-    {
-      "id": "urn:visionflow:linked:video-codec-standards",
-      "label": "Video Codec Standards"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-rights-management",
-      "label": "Digital Rights Management"
     }
   ],
   "qualityScore": 0.52,

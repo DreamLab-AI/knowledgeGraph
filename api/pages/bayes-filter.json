@@ -8,10 +8,6 @@
   "definition": "BayesFilter denotes the canonical recursive probabilistic framework for sequential state estimation in partially-observable stochastic dynamical systems, computing at each timestep the posterior belief bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the latent system state x_t conditioned on the full history of observations z_{1:t} and control inputs u_{1:t}, decomposed via the Markov assumption into a two-stage recursion comprising the **prediction step** bel(x_t) = \u222b p(x_t | u_t, x_{t-1}) bel(x_{t-1}) dx_{t-1} (Chapman-Kolmogorov propagation of the prior belief forward through the motion model p(x_t | u_t, x_{t-1})) and the **measurement update step** bel(x_t) = \u03b7 p(z_t | x_t) bel(x_t) (Bayes-rule incorporation of the new sensor observation z_t weighted by the observation likelihood p(z_t | x_t) and normalised by \u03b7 to integrate to unity), constituting the theoretical substrate of [[Probabilistic Robotics]] (Thrun, Burgard & Fox 2005, MIT Press, 16,000+ citations) and the algorithmic backbone of essentially all modern robotic localisation, [[SLAM]] (Simultaneous Localisation and Mapping), target-tracking, sensor-fusion, navigation and autonomy stacks deployed across an estimated 12 mill",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:bayesian-inference",
-      "label": "Bayesian Inference"
-    },
-    {
       "id": "urn:visionflow:linked:probabilistic-filter",
       "label": "Probabilistic Filter"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:sequential-monte-carlo",
       "label": "Sequential Monte Carlo"
-    },
-    {
-      "id": "urn:visionflow:owl:class:state-estimation",
-      "label": "State Estimation"
     }
   ],
   "qualityScore": 0.52,

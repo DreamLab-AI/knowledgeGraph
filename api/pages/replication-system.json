@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:replication-system",
   "domain": "infrastructure",
-  "definition": "ReplicationSystem is a concept within the ngm domain.",
+  "definition": "Replication System is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

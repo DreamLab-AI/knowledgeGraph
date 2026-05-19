@@ -732,10 +732,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:public-key-cryptosystem",
       "vc:label": "Public-Key Cryptosystem"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-primitive",
-      "vc:label": "Cryptographic Primitive"
     }
   ],
   "vc:sourceDomain": "blockchain",

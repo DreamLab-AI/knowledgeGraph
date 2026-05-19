@@ -354,10 +354,6 @@ public:: true
   "label": "Meeting Recording",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:asynchronous-communication",
-      "vc:label": "Asynchronous Communication"
-    },
-    {
       "@id": "urn:visionflow:linked:meeting-documentation",
       "vc:label": "Meeting Documentation"
     },

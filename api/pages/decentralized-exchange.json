@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:trading-venue",
       "label": "Trading Venue"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-application",
-      "label": "Blockchain Application"
-    },
-    {
-      "id": "urn:visionflow:owl:class:marketplace",
-      "label": "Marketplace"
     }
   ],
   "qualityScore": 0.54,

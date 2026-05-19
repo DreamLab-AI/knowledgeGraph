@@ -570,20 +570,12 @@ public:: true
       "vc:label": "3D Perception"
     },
     {
-      "@id": "urn:visionflow:linked:dense-prediction",
-      "vc:label": "Dense Prediction"
-    },
-    {
       "@id": "urn:visionflow:linked:geometric-vision",
       "vc:label": "Geometric Vision"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-understanding",
-      "vc:label": "Scene Understanding"
+      "@id": "urn:visionflow:linked:dense-prediction",
+      "vc:label": "Dense Prediction"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

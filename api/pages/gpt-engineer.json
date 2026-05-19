@@ -8,18 +8,6 @@
   "definition": "GPT Engineer is an open-source agentic software-development framework initiated by Anton Osika in June 2023 that autonomously transforms a natural-language specification into a working multi-file codebase through a sequential loop of specification elicitation, file-level planning, code generation, sandbox execution, and iterative self-repair \u2014 embodying the scaffold-then-edit paradigm for autonomous codegen agents and catalysing an entire product category of prompt-to-codebase generators that by 2026 encompasses Lovable.dev, Bolt.new, Replit Agent, v0, and commercial autonomous software engineering services. The repository accumulated 50,000+ GitHub stars within weeks of its June 2023 publication, 20,000+ forks, and contributions from 300+ developers, making it the fastest-growing AI coding repository of that period; it briefly held the top position in GitHub trending across all languages. In early 2024 Osika co-founded Lovable AB (Lovable.dev), the commercial full-stack web-application generator extending GPT Engineer's agentic loop to produce complete React/Supabase codebases from a single prompt; Lovable raised a Series-A of approximately $15 million USD in mid-2024 and by Q1 20",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agentic-internet",
-      "label": "Agentic Internet"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agents",
-      "label": "Agents"
-    },
-    {
       "id": "urn:visionflow:owl:class:ai-adoption",
       "label": "AI Adoption"
     },
@@ -28,8 +16,8 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:cognitive-ai",
-      "label": "Cognitive AI"
+      "id": "urn:visionflow:owl:class:agentic-internet",
+      "label": "Agentic Internet"
     }
   ],
   "qualityScore": 0.52,

@@ -402,20 +402,12 @@ public:: true
       "vc:label": "AI Research"
     },
     {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
-    },
-    {
       "@id": "urn:visionflow:linked:scientific-paradigm",
       "vc:label": "Scientific Paradigm"
     },
     {
       "@id": "urn:visionflow:linked:technology-history",
       "vc:label": "Technology History"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

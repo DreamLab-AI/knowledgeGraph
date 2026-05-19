@@ -398,10 +398,6 @@ public:: true
   "label": "Light field",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-photography",
-      "vc:label": "Computational Photography"
-    },
-    {
       "@id": "urn:visionflow:linked:image-based-rendering",
       "vc:label": "Image Based Rendering"
     },
@@ -412,10 +408,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:radiance-field",
       "vc:label": "Radiance Field"
-    },
-    {
-      "@id": "urn:visionflow:linked:volumetric-display",
-      "vc:label": "Volumetric Display"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

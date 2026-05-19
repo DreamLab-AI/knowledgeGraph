@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:golm",
   "domain": "infrastructure",
-  "definition": "GOLM is a concept within the ngm domain.",
+  "definition": "GOLM is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

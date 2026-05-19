@@ -484,18 +484,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:eventually-consistent-data-structure",
       "vc:label": "Eventually Consistent Data Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:mergeable-data-type",
-      "vc:label": "Mergeable Data Type"
-    },
-    {
-      "@id": "urn:visionflow:linked:monotone-data-structure",
-      "vc:label": "Monotone Data Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:replicated-data-structure",
-      "vc:label": "Replicated Data Structure"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

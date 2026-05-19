@@ -8,24 +8,16 @@
   "definition": "A **Collaborative Whiteboard** is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with [[CRDT]]-based (Conflict-free Replicated Data Type) or Operational Transformation synchronisation to resolve concurrent edits across geographically distributed participants. Platforms include Miro (founded 2011, $17.5 billion valuation 2022, 60+ million users by 2026), FigJam (Figma, launched 2021), Mural (founded 2011, enterprise-focused), Lucidchart (Lucid Software, founded 2010), Microsoft Whiteboard (Azure-backed, Teams-integrated), and Excalidraw (open-source, MIT licence, 85,000+ GitHub stars by 2026). Core capabilities encompass: infinite-canvas panning and zooming; freehand vector drawing with pressure-sensitive stylus support (Apple Pencil, Samsung S Pen, Surface Pen); pre-built shape libraries; sticky notes; dot-voting and anonymous voting; countdown timers; template libraries covering retrospectives, design sprints, user journey maps, Wardley maps, and 2,000+ community patterns; mind-map mode; kanban frames; real-time cursor presence with p",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:asynchronous-communication",
-      "label": "Asynchronous Communication"
-    },
-    {
       "id": "urn:visionflow:linked:digital-workspace",
       "label": "Digital Workspace"
     },
     {
-      "id": "urn:visionflow:linked:distributed-collaboration",
-      "label": "Distributed Collaboration"
+      "id": "urn:visionflow:linked:visual-collaboration-tools",
+      "label": "Visual Collaboration Tools"
     },
     {
       "id": "urn:visionflow:linked:remote-work-technology",
       "label": "Remote Work Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:visual-collaboration-tools",
-      "label": "Visual Collaboration Tools"
     }
   ],
   "qualityScore": 0.52,

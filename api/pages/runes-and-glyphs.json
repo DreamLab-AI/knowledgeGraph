@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:runes-and-glyphs",
   "domain": "infrastructure",
-  "definition": "Runes and Glyphs is a concept within the ngm domain.",
+  "definition": "Runes and Glyphs is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

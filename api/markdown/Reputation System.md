@@ -384,14 +384,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:social-coordination",
       "vc:label": "Social Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-networks",
-      "vc:label": "Trust Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-systems",
-      "vc:label": "Identity Systems"
     }
   ],
   "vc:sourceDomain": "blockchain",

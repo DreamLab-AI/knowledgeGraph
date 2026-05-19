@@ -136,7 +136,7 @@ public:: true
   ],
   "vc:sourceDomain": "spatial-computing",
   "vc:status": "→ ai:status",
-  "vc:maturity": "→ ai:maturity",
+  "vc:maturity": "draft",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:52d492846a8cc9529b38ebd87998f011411b8d1f4681cd8ddd578920fd774a4a"
   },

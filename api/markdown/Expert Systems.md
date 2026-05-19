@@ -147,7 +147,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Expert Systems is a concept within the ai domain.",
+  "definition": "Expert Systems is a artificial intelligence concept and a type of Knowledge Representation. that enables Decision Support.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

@@ -514,16 +514,8 @@ public:: true
   "label": "Rendering Pipeline",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computer-graphics",
-      "vc:label": "Computer Graphics"
-    },
-    {
       "@id": "urn:visionflow:linked:gpu-compute",
       "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallel-computing",
-      "vc:label": "Parallel Computing"
     },
     {
       "@id": "urn:visionflow:linked:rasterisation",

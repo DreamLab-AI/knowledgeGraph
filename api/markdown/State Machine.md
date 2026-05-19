@@ -412,14 +412,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:concurrency-theory",
       "vc:label": "Concurrency Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-method",
-      "vc:label": "Formal Method"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
     }
   ],
   "vc:sourceDomain": "infrastructure",

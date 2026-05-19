@@ -386,16 +386,8 @@ public:: true
       "vc:label": "Group Facilitation Tools"
     },
     {
-      "@id": "urn:visionflow:linked:remote-work-technology",
-      "vc:label": "Remote Work Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:synchronous-communication",
       "vc:label": "Synchronous Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-meeting-structure",
-      "vc:label": "Virtual Meeting Structure"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

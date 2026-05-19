@@ -606,20 +606,12 @@ public:: true
       "vc:label": "Central Bank Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
       "@id": "urn:visionflow:linked:monetary-policy-framework",
       "vc:label": "Monetary Policy Framework"
     },
     {
       "@id": "urn:visionflow:linked:payment-system-standard",
       "vc:label": "Payment System Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-money",
-      "vc:label": "Digital Money"
     }
   ],
   "vc:sourceDomain": "blockchain",

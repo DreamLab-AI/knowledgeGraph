@@ -408,14 +408,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:carbon-footprint-measurement",
       "vc:label": "Carbon Footprint Measurement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainability",
-      "vc:label": "Sustainability"
     }
   ],
   "vc:sourceDomain": "infrastructure",

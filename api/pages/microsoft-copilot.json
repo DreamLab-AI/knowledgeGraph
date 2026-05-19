@@ -8,24 +8,16 @@
   "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's $13 billion cumulative investment in OpenAI (initial $1 billion in 2019, subsequent rounds 2021-2023), deployed across five principal product lines: (1) GitHub Copilot \u2014 a code-completion and agentic software development assistant launched in technical preview June 2021 and GA June 2022, originally powered by OpenAI Codex (a GPT-3 variant fine-tuned on 159 GB of public GitHub code), promoted to GPT-4o as default completion model from May 2024, and expanded by late 2024 into a multi-model marketplace supporting Anthropic Claude 3.5/4 Sonnet, Google Gemini 2.0 Flash/2.5 Pro, OpenAI o3, and GPT-4.1, with 4.7 million paid subscribers, ~77,000 enterprise customers by January 2026 and deployment at approximately 90% of Fortune 100 companies; (2) Microsoft 365 Copilot \u2014 an LLM assistant integrated throughout Word, Excel, PowerPoint, Outlook, Teams, and OneNote, generally available from November 2023 at $30/user/month annual commitment, bundled into M365 Personal/Family from January 2025, reachin",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
+      "id": "urn:visionflow:owl:class:code-generation",
+      "label": "Code Generation"
     },
     {
       "id": "urn:visionflow:owl:class:ai-adoption",
       "label": "AI Adoption"
     },
     {
-      "id": "urn:visionflow:owl:class:code-generation",
-      "label": "Code Generation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
+      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "label": "Agent Frameworks"
     }
   ],
   "qualityScore": 0.52,

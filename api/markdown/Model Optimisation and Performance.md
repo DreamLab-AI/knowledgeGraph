@@ -444,14 +444,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:neural-network-compression",
       "vc:label": "Neural Network Compression"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-engineering",
-      "vc:label": "Systems Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

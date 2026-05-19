@@ -654,24 +654,16 @@ public:: true
   "label": "Computer Use and Browser Agents",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
+      "@id": "urn:visionflow:linked:intelligent-system",
+      "vc:label": "Intelligent System"
     },
     {
       "@id": "urn:visionflow:linked:cognitive-architecture",
       "vc:label": "Cognitive Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:intelligent-system",
-      "vc:label": "Intelligent System"
-    },
-    {
       "@id": "urn:visionflow:owl:class:agents",
       "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

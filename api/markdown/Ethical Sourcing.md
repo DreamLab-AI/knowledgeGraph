@@ -708,14 +708,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:responsible-business-conduct",
       "vc:label": "Responsible Business Conduct"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-governance",
-      "vc:label": "Supply Chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-procurement",
-      "vc:label": "Sustainable Procurement"
     }
   ],
   "vc:sourceDomain": "blockchain",

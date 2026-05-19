@@ -612,18 +612,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:simulation-platform",
       "vc:label": "Simulation Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:industrial-metaverse",
-      "vc:label": "Industrial Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

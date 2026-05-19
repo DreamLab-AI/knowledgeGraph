@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:teleoperated-robot",
   "domain": "robotics",
-  "definition": "",
+  "definition": "Teleoperated Robot is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robotics",

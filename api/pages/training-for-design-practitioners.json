@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:training-for-design-practitioners",
   "domain": "infrastructure",
-  "definition": "Training for Design Practitioners is a concept within the ngm domain.",
+  "definition": "Training for Design Practitioners is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

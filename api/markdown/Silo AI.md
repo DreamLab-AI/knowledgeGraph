@@ -234,24 +234,16 @@ public:: true
   "label": "Silo AI",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
       "@id": "urn:visionflow:owl:class:anthropic-claude",
       "vc:label": "Anthropic Claude"
     },
     {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
       "@id": "urn:visionflow:owl:class:competition-in-ai",
       "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-companies",
+      "vc:label": "AI Companies"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

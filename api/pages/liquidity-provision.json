@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:market-making",
       "label": "Market Making"
-    },
-    {
-      "id": "urn:visionflow:linked:yield-generation",
-      "label": "Yield Generation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "label": "Decentralized Finance (DeFi)"
     }
   ],
   "qualityScore": 0.52,

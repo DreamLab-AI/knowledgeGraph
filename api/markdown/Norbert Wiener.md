@@ -234,18 +234,6 @@ public:: true
   "label": "Norbert Wiener",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
       "@id": "urn:visionflow:owl:class:feedback-loop",
       "vc:label": "Feedback Loop"
     },

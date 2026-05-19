@@ -542,24 +542,8 @@ public:: true
       "vc:label": "Threshold Cryptography"
     },
     {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "Blockchain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "vc:label": "Cryptographic Protocol"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-signature",
       "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
     }
   ],
   "vc:sourceDomain": "blockchain",

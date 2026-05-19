@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0007-collaborative-robot",
   "domain": "robotics",
-  "definition": "",
+  "definition": "collaborative robot is a robotics and autonomous systems concept and a type of Industrial Robot.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:industrial-robot",

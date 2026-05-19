@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:object-manipulation",
   "domain": "robotics",
-  "definition": "ObjectManipulation is a concept within the ngm domain.",
+  "definition": "Object Manipulation is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robotics",

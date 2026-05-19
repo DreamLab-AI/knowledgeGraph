@@ -140,7 +140,7 @@ public:: true
   ],
   "vc:sourceDomain": "robotics",
   "vc:status": "active",
-  "vc:maturity": "active",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:c5eb977950ea4a99f857a08454dbfb7cf477cc113fc85d0333ed191352d81f58"
   },

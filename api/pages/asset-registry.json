@@ -16,10 +16,6 @@
       "label": "Blockchain Application"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
-    },
-    {
       "id": "urn:visionflow:owl:class:financial-infrastructure",
       "label": "Financial Infrastructure"
     }

@@ -374,20 +374,12 @@ public:: true
       "vc:label": "Audio Processing"
     },
     {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:multimodal-ai",
       "vc:label": "Multimodal AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
+      "@id": "urn:visionflow:owl:class:conversational-ai",
+      "vc:label": "Conversational AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

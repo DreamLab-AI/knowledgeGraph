@@ -514,24 +514,16 @@ public:: true
   "label": "Real Time",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:control-systems",
-      "vc:label": "Control Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-physical-systems",
-      "vc:label": "Cyber Physical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
       "@id": "urn:visionflow:linked:operating-systems",
       "vc:label": "Operating Systems"
     },
     {
       "@id": "urn:visionflow:linked:safety-critical-systems",
       "vc:label": "Safety Critical Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
     }
   ],
   "vc:sourceDomain": "infrastructure",

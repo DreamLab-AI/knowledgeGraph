@@ -550,20 +550,12 @@ public:: true
   "label": "Fooocus",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:generative-ai-application",
-      "vc:label": "Generative AI Application"
-    },
-    {
       "@id": "urn:visionflow:linked:gradio-application",
       "vc:label": "Gradio Application"
     },
     {
       "@id": "urn:visionflow:linked:local-image-generation-interface",
       "vc:label": "Local Image Generation Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
     },
     {
       "@id": "urn:visionflow:linked:stable-diffusion-frontend",

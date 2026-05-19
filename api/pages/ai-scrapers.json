@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:internet-bot",
       "label": "Internet Bot"
-    },
-    {
-      "id": "urn:visionflow:linked:regulated-data-processor",
-      "label": "Regulated Data Processor"
-    },
-    {
-      "id": "urn:visionflow:linked:web-crawler",
-      "label": "Web Crawler"
     }
   ],
   "qualityScore": 0.52,

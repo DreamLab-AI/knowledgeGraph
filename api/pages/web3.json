@@ -12,20 +12,12 @@
       "label": "Decentralised Finance"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-systems",
-      "label": "Distributed Systems"
-    },
-    {
       "id": "urn:visionflow:owl:class:peer-to-peer-network",
       "label": "Peer-to-Peer Network"
+    },
+    {
+      "id": "urn:visionflow:owl:class:blockchain-network",
+      "label": "Blockchain Network"
     }
   ],
   "qualityScore": 0.52,

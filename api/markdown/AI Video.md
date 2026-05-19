@@ -550,20 +550,12 @@ public:: true
       "vc:label": "Deep Generative Model"
     },
     {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
       "@id": "urn:visionflow:linked:synthetic-media",
       "vc:label": "Synthetic Media"
     },
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

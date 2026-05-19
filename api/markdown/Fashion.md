@@ -394,18 +394,6 @@ public:: true
       "vc:label": "Retail Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
       "@id": "urn:visionflow:owl:class:supply-chain-management",
       "vc:label": "Supply Chain Management"
     }

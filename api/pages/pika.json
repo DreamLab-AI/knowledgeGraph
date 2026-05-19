@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:latent-diffusion-system",
       "label": "Latent Diffusion System"
-    },
-    {
-      "id": "urn:visionflow:linked:text-to-video-generation",
-      "label": "Text-to-Video Generation"
-    },
-    {
-      "id": "urn:visionflow:linked:video-diffusion-model",
-      "label": "Video Diffusion Model"
     }
   ],
   "qualityScore": 0.52,

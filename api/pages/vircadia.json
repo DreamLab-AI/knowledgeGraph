@@ -8,28 +8,16 @@
   "definition": "Vircadia is an open-source, community-governed, self-hostable [[Metaverse]] platform forked from [[High Fidelity]]'s codebase in 2020 under the Apache 2.0 licence, providing a federated architecture for persistent, spatially-aware virtual worlds with support for desktop and [[VR Headsets]] clients, positional voice audio, [[Avatar Physics]], domain-level [[Domain Access Control]], and a JavaScript-based [[Scripting Engine]] that enables collaborative experiences spanning [[Social Presence]], [[Virtual Events]], education, and immersive simulation without dependency on centralised commercial infrastructure. Vircadia inherits the technical lineage of [[Philip Rosedale]]'s [[High Fidelity]] Inc., which between 2013 and 2019 built one of the most technically ambitious real-time 3D networking stacks outside commercial gaming engines\u2014featuring distributed simulation across multiple \"assignment clients\" for audio mixing, entity hosting, avatar collision, and scene management\u2014before pivoting away from the general consumer [[Metaverse]] market toward enterprise [[Spatial Audio]] and eventually ceasing public platform operations in 2023. The fork was initiated by Brad Davis and community con",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:open-source-software",
-      "label": "Open Source Software"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-systems",
-      "label": "Distributed Systems"
-    },
-    {
-      "id": "urn:visionflow:owl:class:metaverse",
-      "label": "Metaverse"
-    },
-    {
       "id": "urn:visionflow:owl:class:social-vr",
       "label": "Social VR"
     },
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "Spatial Computing"
-    },
-    {
       "id": "urn:visionflow:owl:class:virtual-world",
       "label": "Virtual World"
+    },
+    {
+      "id": "urn:visionflow:linked:open-source-software",
+      "label": "Open Source Software"
     }
   ],
   "qualityScore": 0.52,

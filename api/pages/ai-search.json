@@ -16,14 +16,6 @@
       "label": "Retrieval-Augmented Generation"
     },
     {
-      "id": "urn:visionflow:owl:class:conversational-ai",
-      "label": "Conversational AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-retrieval",
-      "label": "Information Retrieval"
-    },
-    {
       "id": "urn:visionflow:owl:class:search-engine",
       "label": "Search Engine"
     }

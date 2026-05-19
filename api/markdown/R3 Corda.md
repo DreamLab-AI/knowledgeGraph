@@ -466,20 +466,12 @@ public:: true
       "vc:label": "Financial Services Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
       "@id": "urn:visionflow:owl:class:enterprise-blockchain",
       "vc:label": "Enterprise Blockchain"
     },
     {
       "@id": "urn:visionflow:owl:class:permissioned-blockchain",
       "vc:label": "Permissioned Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
     }
   ],
   "vc:sourceDomain": "blockchain",

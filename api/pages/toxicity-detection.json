@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:toxicity-detection",
   "domain": "artificial-intelligence",
-  "definition": "Toxicity Detection is a concept within the ai domain.",
+  "definition": "Toxicity Detection is a artificial intelligence concept and a type of Content Moderation.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:content-moderation",

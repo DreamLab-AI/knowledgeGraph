@@ -412,14 +412,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:internet-bot",
       "vc:label": "Internet Bot"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulated-data-processor",
-      "vc:label": "Regulated Data Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-crawler",
-      "vc:label": "Web Crawler"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

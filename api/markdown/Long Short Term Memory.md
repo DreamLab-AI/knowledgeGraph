@@ -154,7 +154,8 @@ public:: true
   "vc:authorityScore": {
     "@value": "0.00",
     "@type": "xsd:float"
-  }
+  },
+  "definition": "Long Short Term Memory is a artificial intelligence concept and a type of Recurrent Neural Network."
 }
 ```
 

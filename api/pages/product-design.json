@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:engineering-design",
       "label": "Engineering Design"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-thinking",
-      "label": "Systems Thinking"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
     }
   ],
   "qualityScore": 0.52,

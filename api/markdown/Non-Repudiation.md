@@ -422,10 +422,6 @@ public:: true
   "label": "Non-Repudiation",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
-    },
-    {
       "@id": "urn:visionflow:linked:digital-evidence",
       "vc:label": "Digital Evidence"
     },
@@ -434,12 +430,8 @@ public:: true
       "vc:label": "Security Property"
     },
     {
-      "@id": "urn:visionflow:owl:class:information-security",
-      "vc:label": "Information Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
+      "@id": "urn:visionflow:linked:accountability-mechanism",
+      "vc:label": "Accountability Mechanism"
     }
   ],
   "vc:sourceDomain": "infrastructure",

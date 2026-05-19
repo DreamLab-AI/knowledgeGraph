@@ -8,16 +8,8 @@
   "definition": "Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions \u2014 ranging from classical Markov chain Monte Carlo methods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential methods (Sequential Monte Carlo, particle filters) through information-geometric approaches (importance sampling, rejection sampling, nested sampling, quasi-Monte Carlo via Sobol sequences, Latin Hypercube sampling) to the domain-specific decoding strategies used in autoregressive language models (temperature scaling, top-k truncation, nucleus/top-p filtering, min-p dynamic thresholding, mirostat adaptive entropy control, eta sampling) and diffusion model schedulers (DDIM deterministic inversion, DPM-Solver fast ODE integrators, Euler/Euler-a, Heun second-order corrector, Karras EDM Restart sampler).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:bayesian-inference",
-      "label": "Bayesian Inference"
-    },
-    {
       "id": "urn:visionflow:linked:numerical-methods",
       "label": "Numerical Methods"
-    },
-    {
-      "id": "urn:visionflow:linked:statistical-computing",
-      "label": "Statistical Computing"
     },
     {
       "id": "urn:visionflow:linked:stochastic-processes",

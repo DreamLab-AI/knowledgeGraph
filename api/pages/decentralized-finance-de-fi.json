@@ -16,16 +16,8 @@
       "label": "Token Economy"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "Blockchain"
-    },
-    {
       "id": "urn:visionflow:owl:class:financial-technology",
       "label": "Financial Technology"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contracts",
-      "label": "Smart Contracts"
     }
   ],
   "qualityScore": 0.52,

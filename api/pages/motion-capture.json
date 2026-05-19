@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:performance-capture",
       "label": "Performance Capture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "Spatial Computing"
     }
   ],
   "qualityScore": 0.52,

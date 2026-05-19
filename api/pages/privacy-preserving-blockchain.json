@@ -8,20 +8,12 @@
   "definition": "Blockchain architectures and cryptographic protocol suites that conceal transaction metadata \u2014 sender identity, recipient identity, transferred amounts, and smart contract state \u2014 whilst preserving network verifiability, immutability, and auditability for authorised parties through an ensemble of techniques including [[Zero-Knowledge Proofs]] (zk-SNARKs via [[Groth16]] and [[Halo 2]], zk-STARKs via [[FRI]] polynomial commitment), [[Ring Signatures]] with decoy mixing sets ([[Monero]] RingCT + [[Bulletproofs+]]), [[Stealth Addresses]] generating one-time ephemeral recipient keys, [[Pedersen Commitments]] binding amounts cryptographically whilst supporting homomorphic addition, [[Confidential Transactions]] (CT) hiding values with blinding factors, [[Homomorphic Encryption]] enabling ciphertext arithmetic, [[Secure Multi-Party Computation]] (SMPC) for threshold key management, and [[Trusted Execution Environments]] (TEE/SGX) for confidential smart contract execution, deployed across a spectrum from pure privacy-by-default chains ([[Monero]] XMR, [[Zcash]] ZEC shielded pool, [[Grin]] MimbleWimble, [[Beam]] MimbleWimble-MW) through programmable privacy layers ([[Aztec Protocol]] Noir-c",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
       "id": "urn:visionflow:linked:privacy-technology",
       "label": "Privacy Technology"
     },
     {
       "id": "urn:visionflow:linked:zero-knowledge-system",
       "label": "Zero-Knowledge System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
     },
     {
       "id": "urn:visionflow:owl:class:cryptographic-protocol",

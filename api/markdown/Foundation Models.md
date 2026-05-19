@@ -786,18 +786,6 @@ public:: true
       "vc:label": "Self-Supervised Learning"
     },
     {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
       "@id": "urn:visionflow:owl:class:pretrained-model",
       "vc:label": "Pretrained Model"
     }

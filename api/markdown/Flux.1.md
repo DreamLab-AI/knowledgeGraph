@@ -746,18 +746,6 @@ public:: true
   "label": "Flux.1",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-model",
-      "vc:label": "Latent Diffusion Model"
-    },
-    {
       "@id": "urn:visionflow:linked:multimodal-diffusion-transformer",
       "vc:label": "Multimodal Diffusion Transformer"
     },
@@ -766,8 +754,8 @@ public:: true
       "vc:label": "Rectified Flow Model"
     },
     {
-      "@id": "urn:visionflow:linked:text-to-image-model",
-      "vc:label": "Text-to-Image Model"
+      "@id": "urn:visionflow:linked:latent-diffusion-model",
+      "vc:label": "Latent Diffusion Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

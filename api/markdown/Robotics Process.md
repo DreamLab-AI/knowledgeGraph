@@ -126,7 +126,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "RoboticsProcess is a concept within the ngm domain.",
+  "definition": "Robotics Process is a robotics and autonomous systems concept and a type of robotics.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

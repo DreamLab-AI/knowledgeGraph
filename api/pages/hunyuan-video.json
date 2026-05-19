@@ -12,24 +12,12 @@
       "label": "Diffusion Transformer"
     },
     {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:visionflow:linked:generative-video-model",
       "label": "Generative Video Model"
     },
     {
-      "id": "urn:visionflow:linked:latent-diffusion-model",
-      "label": "Latent Diffusion Model"
-    },
-    {
       "id": "urn:visionflow:linked:open-weights-foundation-model",
       "label": "Open-Weights Foundation Model"
-    },
-    {
-      "id": "urn:visionflow:linked:text-to-video-model",
-      "label": "Text-to-Video Model"
     }
   ],
   "qualityScore": 0.52,

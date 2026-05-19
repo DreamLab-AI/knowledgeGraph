@@ -524,18 +524,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:global-catastrophic-risk",
       "vc:label": "Global Catastrophic Risk"
-    },
-    {
-      "@id": "urn:visionflow:linked:pandemic-preparedness",
-      "vc:label": "Pandemic Preparedness"
-    },
-    {
-      "@id": "urn:visionflow:linked:weapons-of-mass-destruction",
-      "vc:label": "Weapons of Mass Destruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
     }
   ],
   "vc:sourceDomain": "infrastructure",

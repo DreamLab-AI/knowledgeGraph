@@ -392,14 +392,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:memory-safe-language",
       "vc:label": "Memory-Safe Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:statically-typed-language",
-      "vc:label": "Statically Typed Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-programming-language",
-      "vc:label": "Systems Programming Language"
     }
   ],
   "vc:sourceDomain": "infrastructure",

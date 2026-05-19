@@ -432,18 +432,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:outliner",
       "vc:label": "Outliner"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-knowledge-management",
-      "vc:label": "Personal Knowledge Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-web-tools",
-      "vc:label": "Semantic Web Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
     }
   ],
   "vc:sourceDomain": "infrastructure",

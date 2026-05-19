@@ -16,16 +16,8 @@
       "label": "Harm Taxonomy"
     },
     {
-      "id": "urn:visionflow:linked:sociotechnical-risk",
-      "label": "Sociotechnical Risk"
-    },
-    {
       "id": "urn:visionflow:linked:technology-risk",
       "label": "Technology Risk"
-    },
-    {
-      "id": "urn:visionflow:owl:class:systemic-risk",
-      "label": "Systemic Risk"
     }
   ],
   "qualityScore": 0.52,

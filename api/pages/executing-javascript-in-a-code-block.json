@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:executing-javascript-in-a-code-block",
   "domain": "infrastructure",
-  "definition": "Executing Javascript in a code block is a concept within the ngm domain.",
+  "definition": "Executing Javascript in a code block is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

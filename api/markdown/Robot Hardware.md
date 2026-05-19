@@ -458,24 +458,16 @@ public:: true
   "label": "Robot Hardware",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechatronics",
-      "vc:label": "Mechatronics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:industrial-robot",
-      "vc:label": "Industrial Robot"
-    },
-    {
       "@id": "urn:visionflow:owl:class:mobile-robot-platform",
       "vc:label": "Mobile Robot Platform"
     },
     {
       "@id": "urn:visionflow:owl:class:robotics-platform",
       "vc:label": "Robotics Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechatronics",
+      "vc:label": "Mechatronics"
     }
   ],
   "vc:sourceDomain": "robotics",

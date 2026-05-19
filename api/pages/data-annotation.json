@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:data-annotation",
   "domain": "artificial-intelligence",
-  "definition": "Data Annotation is a concept within the ai domain.",
+  "definition": "Data Annotation is a artificial intelligence concept and a type of Machine Learning Pipeline. that enables Training Data.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning-pipeline",

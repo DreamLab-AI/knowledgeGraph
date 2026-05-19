@@ -802,20 +802,12 @@ public:: true
   "label": "Privacy Preserving Blockchain",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:privacy-technology",
       "vc:label": "Privacy Technology"
     },
     {
       "@id": "urn:visionflow:linked:zero-knowledge-system",
       "vc:label": "Zero-Knowledge System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
     },
     {
       "@id": "urn:visionflow:owl:class:cryptographic-protocol",

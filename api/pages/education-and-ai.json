@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:human-centred-ai",
       "label": "Human-Centred AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:educational-technology",
-      "label": "Educational Technology"
     }
   ],
   "qualityScore": 0.52,

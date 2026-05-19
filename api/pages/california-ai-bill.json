@@ -8,10 +8,6 @@
   "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale [[Frontier Models]] \u2014 most prominently Senate Bill 1047 (SB 1047, 2024, vetoed) and its successor Senate Bill 53 (SB 53, 2025, signed), together with associated transparency and data-governance instruments such as AB 2013 (2024, signed). The corpus sits at the intersection of [[AI Safety]], [[Liability]], [[Algorithmic Accountability]], and [[Technology Policy]], establishing California as the primary sub-national jurisdiction attempting to regulate frontier AI development in the United States and, by the California-effect spillover dynamic historically observed in vehicle emissions and consumer-privacy regulation, potentially shaping norms globally.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-regulation",
-      "label": "AI Regulation"
-    },
-    {
       "id": "urn:visionflow:linked:frontier-model-governance",
       "label": "Frontier Model Governance"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:state-law",
       "label": "State Law"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-policy",
-      "label": "Technology Policy"
     }
   ],
   "qualityScore": 0.52,

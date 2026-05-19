@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:concurrency-theory",
       "label": "Concurrency Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:formal-method",
-      "label": "Formal Method"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-computing",
-      "label": "Distributed Computing"
     }
   ],
   "qualityScore": 0.52,

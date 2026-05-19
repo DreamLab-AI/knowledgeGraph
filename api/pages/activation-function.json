@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:activation-function",
   "domain": "artificial-intelligence",
-  "definition": "",
+  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:neural-network-component",

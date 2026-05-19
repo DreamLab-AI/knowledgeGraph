@@ -410,24 +410,12 @@ public:: true
       "vc:label": "AI Ecosystem"
     },
     {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
       "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
       "vc:label": "Machine Learning Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-software",
+      "vc:label": "Open Source Software"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

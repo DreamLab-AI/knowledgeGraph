@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:query-vector",
   "domain": "artificial-intelligence",
-  "definition": "Query Vector is a concept within the ai domain.",
+  "definition": "Query Vector is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

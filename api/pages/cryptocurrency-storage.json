@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:cryptocurrency-storage",
   "domain": "blockchain",
-  "definition": "CryptocurrencyStorage is a concept within the ngm domain.",
+  "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:digital-wallet",

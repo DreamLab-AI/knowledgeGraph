@@ -408,14 +408,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:interoperability",
       "vc:label": "Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-standard",
-      "vc:label": "Open Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

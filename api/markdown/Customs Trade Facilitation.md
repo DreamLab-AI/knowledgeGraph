@@ -474,18 +474,6 @@ public:: true
       "vc:label": "Trade Finance"
     },
     {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    },
-    {
       "@id": "urn:visionflow:owl:class:supply-chain-traceability",
       "vc:label": "Supply Chain Traceability"
     }

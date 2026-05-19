@@ -410,16 +410,8 @@ public:: true
       "vc:label": "Token Economy"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
       "@id": "urn:visionflow:owl:class:financial-technology",
       "vc:label": "Financial Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
     }
   ],
   "vc:sourceDomain": "blockchain",

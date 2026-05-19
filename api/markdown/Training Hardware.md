@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Training Hardware is a concept within the ai domain.",
+  "definition": "Training Hardware is a artificial intelligence concept and a type of High-Performance Computing. that enables Neural Network Training.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

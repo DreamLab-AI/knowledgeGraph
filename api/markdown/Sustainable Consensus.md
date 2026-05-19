@@ -474,20 +474,12 @@ public:: true
       "vc:label": "Climate Technology"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-systems-protocol",
-      "vc:label": "Distributed Systems Protocol"
-    },
-    {
       "@id": "urn:visionflow:linked:energy-efficient-computing",
       "vc:label": "Energy Efficient Computing"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
+      "@id": "urn:visionflow:linked:distributed-systems-protocol",
+      "vc:label": "Distributed Systems Protocol"
     }
   ],
   "vc:sourceDomain": "blockchain",

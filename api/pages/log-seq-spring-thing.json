@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:log-seq-spring-thing",
   "domain": "infrastructure",
-  "definition": "LogSeqSpringThing is a concept within the ngm domain.",
+  "definition": "Log Seq Spring Thing is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

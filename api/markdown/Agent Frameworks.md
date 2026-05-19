@@ -530,24 +530,16 @@ public:: true
   "label": "Agent Frameworks",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
-    },
-    {
       "@id": "urn:visionflow:linked:llm-orchestration",
       "vc:label": "LLM Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-framework",
-      "vc:label": "Software Framework"
     },
     {
       "@id": "urn:visionflow:linked:workflow-engine",
       "vc:label": "Workflow Engine"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
+      "@id": "urn:visionflow:linked:software-framework",
+      "vc:label": "Software Framework"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

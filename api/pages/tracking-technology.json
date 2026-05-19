@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:tracking-technology",
   "domain": "infrastructure",
-  "definition": "TrackingTechnology is a concept within the ngm domain.",
+  "definition": "Tracking Technology is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

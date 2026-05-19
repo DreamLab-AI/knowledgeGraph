@@ -408,14 +408,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:language-technology",
       "vc:label": "Language Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequence-to-sequence-learning",
-      "vc:label": "Sequence-to-Sequence Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

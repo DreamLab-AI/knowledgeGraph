@@ -8,14 +8,6 @@
   "definition": "Industrial Robot is a reprogrammable, automatically controlled manipulator programmable in three or more axes, fixed in place or mobile, for use in industrial automation applications as defined by ISO 8373:2012. Industrial robots are electromechanical systems integrating articulated kinematic chains, servo-driven joints, and real-time motion controllers to perform high-precision manufacturing tasks \u2014 welding, assembly, material handling, painting, palletising, machining, inspection \u2014 with cycle repeatabilities of \u00b10.01\u2013\u00b10.05 mm at throughputs unattainable by human labour. Major kinematic families span six-axis articulated arms (KUKA KR series, ABB IRB series, FANUC M-series, Yaskawa Motoman GP/MA, St\u00e4ubli RX/TX), four-axis SCARA robots (Epson T-series, ABB IRB 910SC, Yamaha YK-XG) for high-speed horizontal assembly at \u22640.006 mm repeatability, Delta/parallel robots (FANUC M-1iA, ABB IRB 360 FlexPicker) for pick-and-place at 150+ picks/minute in food and pharmaceutical lines, Cartesian gantry systems for CNC machine loading and large-panel handling, and the rapidly growing collaborative robot (cobot) segment (Universal Robots UR3e/UR5e/UR10e/UR20, Doosan A-series, Techman TM12S, FANU",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cyber-physical-systems",
-      "label": "Cyber Physical Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:electromechanical-systems",
-      "label": "Electromechanical Systems"
-    },
-    {
       "id": "urn:visionflow:linked:manufacturing-automation",
       "label": "Manufacturing Automation"
     },
@@ -24,8 +16,8 @@
       "label": "Programmable Logic Controller"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics-systems",
-      "label": "Robotics Systems"
+      "id": "urn:visionflow:linked:electromechanical-systems",
+      "label": "Electromechanical Systems"
     }
   ],
   "qualityScore": 0.52,

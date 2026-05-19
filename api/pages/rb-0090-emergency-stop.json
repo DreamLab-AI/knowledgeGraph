@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0090-emergency-stop",
   "domain": "robotics",
-  "definition": "",
+  "definition": "emergency stop is a robotics and autonomous systems concept and a type of Robot Safety.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot-safety",

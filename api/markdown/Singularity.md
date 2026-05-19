@@ -330,16 +330,8 @@ public:: true
       "vc:label": "Futures Studies"
     },
     {
-      "@id": "urn:visionflow:linked:philosophy-of-mind",
-      "vc:label": "Philosophy of Mind"
-    },
-    {
       "@id": "urn:visionflow:linked:transhumanism",
       "vc:label": "Transhumanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

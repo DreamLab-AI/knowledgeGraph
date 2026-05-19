@@ -444,14 +444,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:network-quality-of-service",
       "vc:label": "Network Quality-of-Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-of-experience",
-      "vc:label": "Quality of Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transport-optimisation",
-      "vc:label": "Real-time Transport Optimisation"
     }
   ],
   "vc:sourceDomain": "distributed-collaboration",

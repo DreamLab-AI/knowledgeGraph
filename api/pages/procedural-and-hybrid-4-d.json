@@ -12,14 +12,6 @@
       "label": "3D Modelling"
     },
     {
-      "id": "urn:visionflow:linked:computer-graphics",
-      "label": "Computer Graphics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
       "id": "urn:visionflow:owl:class:simulation",
       "label": "Simulation"
     },

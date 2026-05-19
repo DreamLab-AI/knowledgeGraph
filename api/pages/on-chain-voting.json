@@ -16,20 +16,8 @@
       "label": "DAO"
     },
     {
-      "id": "urn:visionflow:owl:class:decentralised-web",
-      "label": "Decentralised Web"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
-    },
-    {
       "id": "urn:visionflow:owl:class:governance-token",
       "label": "Governance Token"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contract",
-      "label": "Smart Contract"
     }
   ],
   "qualityScore": 0.52,

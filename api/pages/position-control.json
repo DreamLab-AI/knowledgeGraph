@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:feedback-control",
       "label": "FeedbackControl"
-    },
-    {
-      "id": "urn:visionflow:owl:class:motion-control",
-      "label": "MotionControl"
     }
   ],
   "qualityScore": 0.5,

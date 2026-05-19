@@ -1340,14 +1340,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:securities-representation-format",
       "vc:label": "Securities Representation Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-specification",
-      "vc:label": "Smart Contract Specification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
     }
   ],
   "vc:sourceDomain": "blockchain",

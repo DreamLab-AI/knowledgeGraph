@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:monetary-metal",
       "label": "Monetary Metal"
-    },
-    {
-      "id": "urn:visionflow:linked:reserve-asset",
-      "label": "Reserve Asset"
-    },
-    {
-      "id": "urn:visionflow:linked:tangible-asset",
-      "label": "Tangible Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
     }
   ],
   "qualityScore": 0.52,

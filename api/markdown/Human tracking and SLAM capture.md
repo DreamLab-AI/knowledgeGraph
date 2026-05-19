@@ -126,7 +126,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Human tracking and SLAM capture is a concept within the ngm domain.",
+  "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

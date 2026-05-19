@@ -436,14 +436,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:operational-ai",
       "vc:label": "Operational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "vc:label": "Human-in-the-Loop Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

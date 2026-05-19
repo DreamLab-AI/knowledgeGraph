@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:ontology-conversation-with-ais",
   "domain": "infrastructure",
-  "definition": "Ontology conversation with AIs is a concept within the ngm domain.",
+  "definition": "Ontology conversation with AIs is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

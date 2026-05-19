@@ -16,10 +16,6 @@
       "label": "ThermalImager"
     },
     {
-      "id": "urn:visionflow:owl:class:exteroceptive-sensor",
-      "label": "ExteroceptiveSensor"
-    },
-    {
       "id": "urn:visionflow:owl:class:proximity-sensor",
       "label": "ProximitySensor"
     }

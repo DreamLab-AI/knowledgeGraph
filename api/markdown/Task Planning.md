@@ -382,24 +382,16 @@ public:: true
   "label": "Task Planning",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:sequential-decision-making",
-      "vc:label": "Sequential Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
       "@id": "urn:visionflow:owl:class:automated-planning",
       "vc:label": "Automated Planning"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
       "@id": "urn:visionflow:owl:class:symbolic-ai",
       "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequential-decision-making",
+      "vc:label": "Sequential Decision Making"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

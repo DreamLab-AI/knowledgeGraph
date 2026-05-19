@@ -724,10 +724,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:information-security-system",
       "vc:label": "Information Security System"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-control",
-      "vc:label": "Security Control"
     }
   ],
   "vc:sourceDomain": "infrastructure",

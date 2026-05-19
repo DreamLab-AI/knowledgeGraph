@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:deterministic-function",
       "label": "Deterministic Function"
-    },
-    {
-      "id": "urn:visionflow:linked:digital-fingerprint",
-      "label": "Digital Fingerprint"
-    },
-    {
-      "id": "urn:visionflow:linked:one-way-function",
-      "label": "One-Way Function"
     }
   ],
   "qualityScore": 0.52,

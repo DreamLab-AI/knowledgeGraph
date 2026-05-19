@@ -526,10 +526,6 @@ public:: true
   "label": "DALL·E",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
       "@id": "urn:visionflow:linked:multimodal-model",
       "vc:label": "Multimodal Model"
     },
@@ -540,10 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:text-to-image-model",
       "vc:label": "Text-to-Image Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

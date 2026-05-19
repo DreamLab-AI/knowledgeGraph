@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:meeting-transcription",
   "domain": "artificial-intelligence",
-  "definition": "Meeting Transcription is a concept within the ai domain.",
+  "definition": "Meeting Transcription is a artificial intelligence concept and a type of Speech Recognition.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:speech-recognition",

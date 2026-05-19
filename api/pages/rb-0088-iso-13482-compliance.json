@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0088-iso-13482-compliance",
   "domain": "robotics",
-  "definition": "",
+  "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:functional-safety",

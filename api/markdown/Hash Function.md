@@ -548,14 +548,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:deterministic-function",
       "vc:label": "Deterministic Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-fingerprint",
-      "vc:label": "Digital Fingerprint"
-    },
-    {
-      "@id": "urn:visionflow:linked:one-way-function",
-      "vc:label": "One-Way Function"
     }
   ],
   "vc:sourceDomain": "blockchain",

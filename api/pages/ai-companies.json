@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:research-organisation",
       "label": "Research Organisation"
-    },
-    {
-      "id": "urn:visionflow:linked:software-vendor",
-      "label": "Software Vendor"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-company",
-      "label": "Technology Company"
     }
   ],
   "qualityScore": 0.52,

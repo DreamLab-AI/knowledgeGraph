@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:responsible-business-conduct",
       "label": "Responsible Business Conduct"
-    },
-    {
-      "id": "urn:visionflow:linked:supply-chain-governance",
-      "label": "Supply Chain Governance"
-    },
-    {
-      "id": "urn:visionflow:linked:sustainable-procurement",
-      "label": "Sustainable Procurement"
     }
   ],
   "qualityScore": 0.52,

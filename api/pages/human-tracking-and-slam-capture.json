@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
   "domain": "robotics",
-  "definition": "Human tracking and SLAM capture is a concept within the ngm domain.",
+  "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:sensor-technology",

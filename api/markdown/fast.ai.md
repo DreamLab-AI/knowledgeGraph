@@ -564,14 +564,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:educational-platform",
       "vc:label": "Educational Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ml-framework",
-      "vc:label": "Open Source ML Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch-ecosystem-project",
-      "vc:label": "PyTorch Ecosystem Project"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

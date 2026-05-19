@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:distributed-algorithm",
       "label": "Distributed Algorithm"
-    },
-    {
-      "id": "urn:visionflow:owl:class:state-machine-replication",
-      "label": "State Machine Replication"
     }
   ],
   "qualityScore": 0.52,

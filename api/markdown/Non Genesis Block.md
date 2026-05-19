@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Non Genesis Block is a concept within the bc domain.",
+  "definition": "Non Genesis Block is a blockchain and distributed systems concept and a type of Block.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

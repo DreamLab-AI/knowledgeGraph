@@ -16,16 +16,8 @@
       "label": "Identity Proofing"
     },
     {
-      "id": "urn:visionflow:linked:security-mechanism",
-      "label": "Security Mechanism"
-    },
-    {
       "id": "urn:visionflow:linked:trust-establishment",
       "label": "Trust Establishment"
-    },
-    {
-      "id": "urn:visionflow:owl:class:compliance-control",
-      "label": "Compliance Control"
     }
   ],
   "qualityScore": 0.52,

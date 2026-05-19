@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:non-genesis-block",
   "domain": "blockchain",
-  "definition": "Non Genesis Block is a concept within the bc domain.",
+  "definition": "Non Genesis Block is a blockchain and distributed systems concept and a type of Block.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:block",

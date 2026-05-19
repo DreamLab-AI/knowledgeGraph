@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0043-torque",
   "domain": "robotics",
-  "definition": "",
+  "definition": "torque is a robotics and autonomous systems concept and a type of Robot Dynamics.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot-dynamics",

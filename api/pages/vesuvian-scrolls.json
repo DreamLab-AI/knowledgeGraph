@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:vesuvian-scrolls",
   "domain": "infrastructure",
-  "definition": "Vesuvian Scrolls is a concept within the ngm domain.",
+  "definition": "Vesuvian Scrolls is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

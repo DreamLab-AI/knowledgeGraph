@@ -8,24 +8,16 @@
   "definition": "[[Navigation]] is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents \u2014 ground robots, aerial vehicles, autonomous cars, and embodied AI systems \u2014 to move reliably from a start configuration to a goal state through structured or unstructured environments while avoiding obstacles, respecting kinodynamic constraints, and satisfying user-specified cost objectives. Navigation spans a hierarchy of planning granularities: global route planning over metric or topological maps, local trajectory optimisation within a receding prediction horizon, and reactive reflexive control for immediate obstacle avoidance, each layer exchanging state and command signals at rates from 1 Hz (global replan) to 1 kHz (torque control). The field is formalised as search and optimisation over configuration spaces C \u2286 \u211d\u207f (for n-DOF systems), where C\u2092b\u209b denotes obstacle configurations and C\u2093free = C \\ C\u2092b\u209b is the reachable free space, and the planner must return a continuous, kinematically feasible path \u03b3: [0,1] \u2192 C\u2093free connecting \u03b3(0) = q\u209b\u209c\u2090\u1d63\u209c to \u03b3(1) = qgo\u2090\u2097. Classical deterministic planners \u2014 Dijkstra (1959), A* (Hart et al. ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-systems",
-      "label": "Autonomous Systems"
-    },
-    {
-      "id": "urn:visionflow:owl:class:control-theory",
-      "label": "Control Theory"
-    },
-    {
-      "id": "urn:visionflow:owl:class:motion-planning",
-      "label": "Motion Planning"
-    },
-    {
       "id": "urn:visionflow:owl:class:path-planning",
       "label": "Path Planning"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
+      "id": "urn:visionflow:linked:autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:motion-planning",
+      "label": "Motion Planning"
     }
   ],
   "qualityScore": 0.52,

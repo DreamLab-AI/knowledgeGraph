@@ -16,14 +16,6 @@
       "label": "Industrial Process"
     },
     {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
-      "label": "Consensus Mechanism"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-computing",
-      "label": "Distributed Computing"
-    },
-    {
       "id": "urn:visionflow:owl:class:proof-of-work",
       "label": "Proof-of-Work"
     }

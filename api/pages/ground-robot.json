@@ -12,20 +12,12 @@
       "label": "Autonomous Systems"
     },
     {
-      "id": "urn:visionflow:linked:cyber-physical-systems",
-      "label": "Cyber-Physical Systems"
-    },
-    {
       "id": "urn:visionflow:linked:embodied-ai",
       "label": "Embodied AI"
     },
     {
       "id": "urn:visionflow:linked:unmanned-ground-vehicle",
       "label": "Unmanned Ground Vehicle"
-    },
-    {
-      "id": "urn:visionflow:owl:class:mobile-robot",
-      "label": "Mobile Robot"
     }
   ],
   "qualityScore": 0.52,

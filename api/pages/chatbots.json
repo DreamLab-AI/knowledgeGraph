@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:conversational-ai",
       "label": "Conversational AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
-      "label": "Human-Computer Interaction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
     }
   ],
   "qualityScore": 0.52,

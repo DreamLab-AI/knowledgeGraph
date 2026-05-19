@@ -139,7 +139,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Fuzzy Logic is a concept within the ai domain.",
+  "definition": "Fuzzy Logic is a artificial intelligence concept and a type of Artificial Intelligence. that enables Control Systems.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

@@ -171,7 +171,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Client side DCO is a concept within the ngm domain.",
+  "definition": "Client side DCO is a technology infrastructure concept and a type of Decentralised Web.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

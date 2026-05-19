@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0087-safety-standard",
   "domain": "robotics",
-  "definition": "",
+  "definition": "safety standard is a robotics and autonomous systems concept and a type of Robot Standard.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:robot-standard",

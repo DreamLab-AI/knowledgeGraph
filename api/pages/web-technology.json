@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:web-technology",
   "domain": "infrastructure",
-  "definition": "WebTechnology is a concept within the ngm domain.",
+  "definition": "Web Technology is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

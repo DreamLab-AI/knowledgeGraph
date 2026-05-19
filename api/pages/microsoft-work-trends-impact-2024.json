@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:microsoft-work-trends-impact-2024",
   "domain": "infrastructure",
-  "definition": "Microsoft Work Trends Impact 2024 is a concept within the ngm domain.",
+  "definition": "Microsoft Work Trends Impact 2024 is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

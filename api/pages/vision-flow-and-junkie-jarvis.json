@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:vision-flow-and-junkie-jarvis",
   "domain": "infrastructure",
-  "definition": "VisionFlow and Junkie Jarvis is a concept within the ngm domain.",
+  "definition": "VisionFlow and Junkie Jarvis is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

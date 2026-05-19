@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
   "domain": "infrastructure",
-  "definition": "Layoff tracker and threatened roles is a concept within the ngm domain.",
+  "definition": "Layoff tracker and threatened roles is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

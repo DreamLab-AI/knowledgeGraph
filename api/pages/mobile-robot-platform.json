@@ -8,10 +8,6 @@
   "definition": "A Mobile Robot Platform is an integrated mechatronic base that provides locomotion, power, computing, and sensor-mounting infrastructure upon which higher-level autonomy stacks\u2014perception, planning, and control\u2014are deployed. Platforms are classified by locomotion modality: differential-drive wheeled bases (TurtleBot 4, Clearpath Jackal) achieving 1-2 m/s on smooth floors with <1 cm heading error under wheel-odometry plus IMU fusion; skid-steer all-terrain wheeled bases (Clearpath Husky, Boxer) operating across gravel, grass, and mud at 1 m/s with 150 kg payload; tracked bases for extreme terrain (Clearpath Grizzly, QinetiQ Titan); quadrupedal legged platforms (Boston Dynamics Spot v3 at 1.6 m/s, 14 kg payload, 90-minute endurance; Unitree Go2 Air at 3.5 m/s, 5 kg payload, 4 kg mass with $1,600 USD commercial price 2024; Unitree B2 industrial quad at 20 kg payload, 5 h endurance, IP67, launched Q2 2024; MIT Mini Cheetah open-source 3-DOF per leg at 3 m/s running); humanoid bipedal platforms (Unitree H1 humanoid 1.8 m, 47 kg, 1.5 m/s walking, up to 10 kg manipulated load, launched Q4 2024; Unitree G1 bipedal 127 cm, 35 kg, dexterous seven-DOF arms, launched Q2 2025); wheeled-legged h",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-system",
-      "label": "Autonomous System"
-    },
-    {
       "id": "urn:visionflow:linked:cyber-physical-system",
       "label": "Cyber Physical System"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:unmanned-ground-vehicle",
       "label": "Unmanned Ground Vehicle"
-    },
-    {
-      "id": "urn:visionflow:owl:class:mobile-robot",
-      "label": "Mobile Robot"
     }
   ],
   "qualityScore": 0.52,

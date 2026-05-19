@@ -8,10 +8,6 @@
   "definition": "A distributed system of spatially separated, resource-constrained sensing devices\u2014each comprising a sensor element, microcontroller, radio transceiver, and power source\u2014interconnected through heterogeneous wireless protocols to collect, process, and transmit physical-world measurements toward gateway nodes and cloud platforms, enabling large-scale real-time observation of environmental, industrial, and biological phenomena across spatial scales from single rooms to continental sensor arrays. IoT sensor networks inherit foundational architecture from academic wireless sensor network (WSN) research initiated by Akyildiz et al. (2002) and subsequently industrialised through the IEEE 802.15.4 physical and MAC layer standard (2003, revised 2020), which defines the radio characteristics underpinning Zigbee, Thread, 6LoWPAN, and WirelessHART\u2014the dominant low-power mesh protocols deployed in over 15 billion active IoT nodes globally by 2026. The canonical network architecture separates four tiers: sensing nodes (motes) performing raw data acquisition from one or more transducers (temperature, pressure, humidity, accelerometer, LIDAR, camera, gas sensor, soil moisture, water quality probe),",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cyber-physical-systems",
-      "label": "Cyber-Physical Systems"
-    },
-    {
       "id": "urn:visionflow:linked:networked-embedded-systems",
       "label": "Networked Embedded Systems"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:wireless-sensor-network",
       "label": "Wireless Sensor Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-systems",
-      "label": "Distributed Systems"
     }
   ],
   "qualityScore": 0.52,

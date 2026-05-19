@@ -12,20 +12,12 @@
       "label": "AI Research"
     },
     {
-      "id": "urn:visionflow:linked:cognitive-science",
-      "label": "Cognitive Science"
-    },
-    {
       "id": "urn:visionflow:linked:scientific-paradigm",
       "label": "Scientific Paradigm"
     },
     {
       "id": "urn:visionflow:linked:technology-history",
       "label": "Technology History"
-    },
-    {
-      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "label": "Artificial General Intelligence"
     }
   ],
   "qualityScore": 0.52,

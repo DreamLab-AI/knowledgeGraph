@@ -482,14 +482,6 @@ public:: true
   "label": "Vision Pro",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-mounted-display",
-      "vc:label": "Head-Mounted Display"
-    },
-    {
       "@id": "urn:visionflow:linked:wearable-computing",
       "vc:label": "Wearable Computing"
     },
@@ -498,8 +490,8 @@ public:: true
       "vc:label": "Mixed Reality"
     },
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:visionflow:linked:head-mounted-display",
+      "vc:label": "Head-Mounted Display"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

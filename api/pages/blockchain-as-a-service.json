@@ -12,20 +12,12 @@
       "label": "Cloud Service Model"
     },
     {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
       "id": "urn:visionflow:linked:enterprise-software-platform",
       "label": "Enterprise Software Platform"
     },
     {
       "id": "urn:visionflow:linked:managed-service",
       "label": "Managed Service"
-    },
-    {
-      "id": "urn:visionflow:linked:platform-as-a-service",
-      "label": "Platform as a Service"
     }
   ],
   "qualityScore": 0.52,

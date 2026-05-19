@@ -400,18 +400,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:monetary-metal",
       "vc:label": "Monetary Metal"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-asset",
-      "vc:label": "Reserve Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:tangible-asset",
-      "vc:label": "Tangible Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
     }
   ],
   "vc:sourceDomain": "blockchain",

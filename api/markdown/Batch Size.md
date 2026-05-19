@@ -160,7 +160,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:digital-asset",
       "vc:label": "Digital Asset"
     }
-  ]
+  ],
+  "definition": "Batch Size is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

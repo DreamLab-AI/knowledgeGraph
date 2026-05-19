@@ -440,14 +440,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:smart-contract-operation",
       "vc:label": "Smart Contract Operation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-process",
-      "vc:label": "Blockchain Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
     }
   ],
   "vc:sourceDomain": "blockchain",

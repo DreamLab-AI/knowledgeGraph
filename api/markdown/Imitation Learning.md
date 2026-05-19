@@ -536,14 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sequential-decision-making",
       "vc:label": "Sequential Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-learning",
-      "vc:label": "Supervised Learning"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

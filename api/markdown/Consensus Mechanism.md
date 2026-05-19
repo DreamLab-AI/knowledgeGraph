@@ -700,10 +700,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:distributed-algorithm",
       "vc:label": "Distributed Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine-replication",
-      "vc:label": "State Machine Replication"
     }
   ],
   "vc:sourceDomain": "blockchain",

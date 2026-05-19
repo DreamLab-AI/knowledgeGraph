@@ -16,14 +16,6 @@
       "label": "Open Source"
     },
     {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
-    },
-    {
       "id": "urn:visionflow:owl:class:transformer-architecture",
       "label": "Transformer Architecture"
     }

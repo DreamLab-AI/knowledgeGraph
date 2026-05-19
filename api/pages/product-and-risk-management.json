@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:product-and-risk-management",
   "domain": "infrastructure",
-  "definition": "Product and Risk Management is a concept within the ngm domain.",
+  "definition": "Product and Risk Management is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

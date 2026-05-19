@@ -140,7 +140,7 @@ public:: true
   ],
   "vc:sourceDomain": "distributed-collaboration",
   "vc:status": "active",
-  "vc:maturity": "developing",
+  "vc:maturity": "emerging",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82"
   },

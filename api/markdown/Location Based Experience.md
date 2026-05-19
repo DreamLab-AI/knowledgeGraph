@@ -147,7 +147,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Location Based Experience is a concept within the ngm domain.",
+  "definition": "Location Based Experience is a spatial computing concept and a type of Immersive Experience.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

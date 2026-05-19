@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:product-regulation",
       "label": "Product Regulation"
-    },
-    {
-      "id": "urn:visionflow:linked:safety-regulation",
-      "label": "Safety Regulation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:technical-standard",
-      "label": "Technical Standard"
     }
   ],
   "qualityScore": 0.52,

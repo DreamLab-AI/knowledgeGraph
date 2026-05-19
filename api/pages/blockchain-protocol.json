@@ -16,20 +16,8 @@
       "label": "Consensus Algorithm"
     },
     {
-      "id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
-    },
-    {
       "id": "urn:visionflow:owl:class:distributed-system-protocol",
       "label": "Distributed System Protocol"
-    },
-    {
-      "id": "urn:visionflow:owl:class:network-protocol",
-      "label": "Network Protocol"
-    },
-    {
-      "id": "urn:visionflow:owl:class:state-machine-replication",
-      "label": "State Machine Replication"
     }
   ],
   "qualityScore": 0.5,

@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:erc-20-token",
       "label": "ERC-20 Token"
-    },
-    {
-      "id": "urn:visionflow:linked:voting-instrument",
-      "label": "Voting Instrument"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:fungible-token",
-      "label": "Fungible Token"
     }
   ],
   "qualityScore": 0.52,

@@ -12,20 +12,12 @@
       "label": "Deep Generative Model"
     },
     {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:visionflow:linked:synthetic-media",
       "label": "Synthetic Media"
     },
     {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:multimodal-ai",
-      "label": "Multimodal AI"
+      "id": "urn:visionflow:linked:foundation-model",
+      "label": "Foundation Model"
     }
   ],
   "qualityScore": 0.52,

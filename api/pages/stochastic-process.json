@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:measure-theory",
       "label": "Measure Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:probability-theory",
-      "label": "Probability Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:time-series-analysis",
-      "label": "Time Series Analysis"
     }
   ],
   "qualityScore": 0.52,

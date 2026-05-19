@@ -18,22 +18,6 @@
     {
       "id": "urn:visionflow:linked:decentralized-web",
       "label": "Decentralized Web"
-    },
-    {
-      "id": "urn:visionflow:linked:linked-data",
-      "label": "Linked Data"
-    },
-    {
-      "id": "urn:visionflow:owl:class:privacy-by-design",
-      "label": "Privacy by Design"
-    },
-    {
-      "id": "urn:visionflow:owl:class:semantic-web",
-      "label": "Semantic Web"
-    },
-    {
-      "id": "urn:visionflow:owl:class:web-standards",
-      "label": "Web Standards"
     }
   ],
   "qualityScore": 0.52,

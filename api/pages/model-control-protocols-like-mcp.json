@@ -8,24 +8,16 @@
   "definition": "Model Control Protocols like MCP refers to the family of open, standardised communication protocols that govern how large language model (LLM) inference hosts communicate with external services, tools, data sources, and agents at runtime, enabling composable agentic ecosystems without per-integration custom code. The canonical instantiation is Anthropic's **Model Context Protocol (MCP)**, published as an open specification in November 2024 and reaching stable 1.0 status, which defines a JSON-RPC 2.0 message layer carried over three transport bindings\u2014stdio (subprocess pipe), Server-Sent Events (SSE) over HTTP, and streamable HTTP\u2014through which **MCP Clients** (embedded in host applications such as Claude Desktop, Cursor, Cline, and Continue) discover and invoke capabilities advertised by **MCP Servers** (thin adapters that expose file-systems, databases, APIs, SaaS platforms, or entire workflow engines). The protocol defines four primitive capability types: **Resources** (static or dynamic data blobs the server can provide, e.g. files, database rows, live feeds), **Tools** (callable functions with JSON-Schema parameter schemas that the LLM may invoke by emitting a structured tool-c",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agentic-internet",
-      "label": "Agentic Internet"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agents",
-      "label": "Agents"
-    },
-    {
       "id": "urn:visionflow:owl:class:api-gateway",
       "label": "API Gateway"
     },
     {
       "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "id": "urn:visionflow:owl:class:agentic-internet",
+      "label": "Agentic Internet"
     }
   ],
   "qualityScore": 0.52,

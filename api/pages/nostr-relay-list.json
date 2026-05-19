@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:nostr-relay-list",
   "domain": "blockchain",
-  "definition": "nostr relay list is a concept within the ngm domain.",
+  "definition": "nostr relay list is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

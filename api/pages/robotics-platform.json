@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:software-framework",
       "label": "Software Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:control-system",
-      "label": "Control System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-twin",
-      "label": "Digital Twin"
-    },
-    {
-      "id": "urn:visionflow:owl:class:middleware",
-      "label": "Middleware"
     }
   ],
   "qualityScore": 0.52,

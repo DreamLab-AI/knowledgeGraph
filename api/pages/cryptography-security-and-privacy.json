@@ -8,10 +8,6 @@
   "definition": "Cryptography Security and Privacy denotes the cross-disciplinary infrastructure layer combining mathematical primitives (symmetric encryption AES-GCM/ChaCha20-Poly1305/ASCON-128 NIST lightweight finalist February 2023, hash functions SHA-2/SHA-3 Keccak/BLAKE3 throughput 6.8 GB/s single-thread, password hashing Argon2id RFC 9106/bcrypt/scrypt RFC 7914, asymmetric RSA-2048/4096, elliptic-curve ECDH X25519/NIST P-256/P-384/P-521, digital signatures EdDSA Ed25519 RFC 8032/Schnorr BIP-340, post-quantum NIST FIPS 203 ML-KEM CRYSTALS-Kyber August 2024/FIPS 204 ML-DSA CRYSTALS-Dilithium/FIPS 205 SLH-DSA SPHINCS+/FIPS 206 FN-DSA Falcon draft 2025), advanced protocols (zero-knowledge proofs zk-SNARKs Groth16/PLONK/Halo2 recursive composition, zk-STARKs StarkWare transparent quantum-resistant 100K-1M constraints/second, Bulletproofs range proofs without trusted setup, fully homomorphic encryption FHE Microsoft SEAL/IBM HELib/OpenFHE/Zama Concrete/fhEVM Aleo Penumbra 2024 bootstrapping 10ms-1s per gate, secure multi-party computation SPDZ active security/MASCOT OT-based/AGMPC garbled circuits/Inpher Sepior threshold signing 2-of-3 to n-of-n), trusted execution environments (Intel SGX deprecate",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-mathematics",
-      "label": "Applied Mathematics"
-    },
-    {
       "id": "urn:visionflow:linked:computer-science",
       "label": "Computer Science"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:trusted-computing",
       "label": "Trusted Computing"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-security",
-      "label": "Information Security"
     }
   ],
   "qualityScore": 0.52,

@@ -8,20 +8,16 @@
   "definition": "**Distributed Identity** (used interchangeably with **decentralised identity** and **self-sovereign identity / SSI**) is the architectural paradigm in which natural persons, legal entities, devices and digital objects own and present cryptographically-verifiable identifiers and attribute claims without dependence on any single registrar or identity provider, replacing the historic centralised IdP model (one administrator controls accounts, attributes and authentication, e.g. Active Directory, Facebook Login, Apple ID) and the federated model (SAML 2005, OIDC 2014, eIDAS 1.0 2014 \u2014 many IdPs trusted through bilateral or hub-and-spoke agreements) with a **holder-issuer-verifier triangle of trust** in which (a) **issuers** (banks, universities, governments, employers, sensors) sign **verifiable credentials** (VCs \u2014 W3C Verifiable Credentials Data Model 2.0 Recommendation May 2025, ISO/IEC 18013-5 mobile driving licence mdoc-cbor 2021, SD-JWT VC IETF draft 2024) referencing **decentralised identifiers** (DIDs \u2014 W3C DID Core 1.0 Recommendation July 2022 with 200+ registered DID methods including did:web/did:webvh DNS-anchored, did:peer pairwise P2P, did:plc Bluesky AT Protocol, did:ion ",
   "subClassOf": [
     {
+      "id": "urn:visionflow:owl:class:privacy-preserving-technology",
+      "label": "Privacy-Preserving Technology"
+    },
+    {
       "id": "urn:visionflow:owl:class:decentralised-web",
       "label": "Decentralised Web"
     },
     {
       "id": "urn:visionflow:owl:class:digital-identity",
       "label": "Digital Identity"
-    },
-    {
-      "id": "urn:visionflow:owl:class:identity-management",
-      "label": "Identity Management"
-    },
-    {
-      "id": "urn:visionflow:owl:class:privacy-preserving-technology",
-      "label": "Privacy-Preserving Technology"
     }
   ],
   "qualityScore": 0.52,

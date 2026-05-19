@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:technique",
   "domain": "artificial-intelligence",
-  "definition": "Technique is a concept within the ai domain.",
+  "definition": "Technique is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

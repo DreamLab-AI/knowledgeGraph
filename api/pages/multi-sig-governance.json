@@ -16,24 +16,8 @@
       "label": "Threshold Cryptography"
     },
     {
-      "id": "urn:visionflow:owl:class:access-control-system",
-      "label": "Access Control System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-governance",
-      "label": "Blockchain Governance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
-    },
-    {
       "id": "urn:visionflow:owl:class:digital-signature",
       "label": "Digital Signature"
-    },
-    {
-      "id": "urn:visionflow:owl:class:hash-function",
-      "label": "Hash Function"
     }
   ],
   "qualityScore": 0.52,

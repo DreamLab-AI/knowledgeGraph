@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:webid",
   "domain": "blockchain",
-  "definition": "webid is a concept within the ngm domain.",
+  "definition": "webid is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

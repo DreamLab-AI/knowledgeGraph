@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:online-learning",
   "domain": "artificial-intelligence",
-  "definition": "Online Learning is a concept within the ai domain.",
+  "definition": "Online Learning is a artificial intelligence concept and a type of Machine Learning. that enables Real-Time Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning",

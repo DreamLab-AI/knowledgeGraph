@@ -12,16 +12,8 @@
       "label": "Climate-Aligned Finance"
     },
     {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
       "id": "urn:visionflow:linked:green-infrastructure",
       "label": "Green Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "Blockchain"
     },
     {
       "id": "urn:visionflow:owl:class:sustainable-technology",

@@ -8,28 +8,16 @@
   "definition": "Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed [[Foundation Models]] trained on multi-trillion-token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial licence agreements, distinguishing them from [[Open Source AI]] counterparts and defining a distinct commercialisation strategy within the broader [[Generative AI]] ecosystem. The five defining characteristics of PLLMs are: (1) **weight non-disclosure** \u2014 inference is provided exclusively via API endpoints, web products, or enterprise deployments, preventing local fine-tuning, weight inspection, mechanistic interpretability analysis, or redistribution; practitioners interact with models as black-box services rather than artefacts under their direct control; (2) **frontier-scale training** \u2014 parameter counts range from tens of billions in efficiency variants (GPT-4o Mini, Gemini 2.0 Flash, Claude Haiku) to estimated hundreds of billions or above for flagship models (GPT-4 ~1.7T total MoE, Claude 3 Opus ~450B dense equivalent, Gemini Ultra ~1.5T MoE, Grok 3 ~314B dense), trained on 2T\u201315",
   "subClassOf": [
     {
+      "id": "urn:visionflow:owl:class:transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
       "id": "urn:visionflow:owl:class:cognitive-ai",
       "label": "Cognitive AI"
     },
     {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
       "id": "urn:visionflow:owl:class:large-language-models",
       "label": "Large Language Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    },
-    {
-      "id": "urn:visionflow:owl:class:transformer-architecture",
-      "label": "Transformer Architecture"
     }
   ],
   "qualityScore": 0.52,

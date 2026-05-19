@@ -402,20 +402,12 @@ public:: true
       "vc:label": "Data Quality"
     },
     {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
       "@id": "urn:visionflow:owl:class:enterprise-architecture",
       "vc:label": "Enterprise Architecture"
     },
     {
       "@id": "urn:visionflow:owl:class:information-architecture",
       "vc:label": "Information Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
     }
   ],
   "vc:sourceDomain": "infrastructure",

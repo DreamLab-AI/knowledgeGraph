@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:safety-measure",
   "domain": "artificial-intelligence",
-  "definition": "Safety Measure is a concept within the ai domain.",
+  "definition": "Safety Measure is a artificial intelligence concept and a type of Ai Governance.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:ai-governance",

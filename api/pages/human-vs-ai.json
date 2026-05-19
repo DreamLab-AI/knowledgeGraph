@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:human-vs-ai",
   "domain": "artificial-intelligence",
-  "definition": "Human vs AI is a concept within the ngm domain.",
+  "definition": "Human vs AI is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

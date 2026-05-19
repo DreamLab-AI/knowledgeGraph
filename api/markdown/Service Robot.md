@@ -156,7 +156,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:digital-twin",
       "vc:label": "Digital Twin"
     }
-  ]
+  ],
+  "definition": "Service Robot is a robotics and autonomous systems concept and a type of robotics."
 }
 ```
 

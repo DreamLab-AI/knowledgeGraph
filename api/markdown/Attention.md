@@ -536,10 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:representation-learning",
       "vc:label": "Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequence-model",
-      "vc:label": "Sequence Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

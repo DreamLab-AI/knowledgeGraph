@@ -772,14 +772,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:legal-entity-wrappers",
       "vc:label": "Legal Entity Wrappers"
-    },
-    {
-      "@id": "urn:visionflow:linked:liability-shield-mechanisms",
-      "vc:label": "Liability Shield Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-compliance-frameworks",
-      "vc:label": "Regulatory Compliance Frameworks"
     }
   ],
   "vc:sourceDomain": "blockchain",

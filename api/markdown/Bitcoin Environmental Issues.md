@@ -550,10 +550,6 @@ public:: true
   "label": "Bitcoin Environmental Issues",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:climate-finance",
-      "vc:label": "Climate Finance"
-    },
-    {
       "@id": "urn:visionflow:linked:digital-asset-ecology",
       "vc:label": "Digital Asset Ecology"
     },
@@ -564,10 +560,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:environmental-impact-assessment",
       "vc:label": "Environmental Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-sustainability",
-      "vc:label": "Blockchain Sustainability"
     }
   ],
   "vc:sourceDomain": "blockchain",

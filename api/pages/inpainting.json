@@ -8,10 +8,6 @@
   "definition": "Inpainting is the computational task of plausibly reconstructing missing, occluded, masked or unwanted regions of an image or video so the completed output appears coherent with the surrounding (known) context, originally formalised in the digital domain by Bertalmio, Sapiro, Caselles and Ballester (SIGGRAPH 2000) as a partial-differential-equation (PDE) problem that propagates isophote lines from the boundary of a hole inward via anisotropic diffusion of intensity (a Navier-Stokes-inspired transport process subsequently re-derived by Bertalmio, Bertozzi and Sapiro 2001 as a streamfunction-vorticity coupling between image gradient and Laplacian), evolving over the next two decades through exemplar-based and patch-synthesis methods (Criminisi, P\u00e9rez and Toyama CVPR 2003/PAMI 2004 introducing a priority-driven greedy patch-copy schedule that propagates structure before texture by ranking boundary patches by a confidence \u00d7 data term; Drori, Cohen-Or and Yeshurun 2003 fragment-based completion; PatchMatch by Barnes, Shechtman, Finkelstein and Goldman SIGGRAPH 2009 introducing a randomised approximate nearest-neighbour-field algorithm that achieved order-of-magnitude speed-ups and becam",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:conditional-image-synthesis",
-      "label": "Conditional Image Synthesis"
-    },
-    {
       "id": "urn:visionflow:linked:image-editing",
       "label": "Image Editing"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:owl:class:computer-vision-task",
       "label": "Computer Vision Task"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
     }
   ],
   "qualityScore": 0.52,

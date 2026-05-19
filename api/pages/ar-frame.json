@@ -12,20 +12,12 @@
       "label": "AR Hardware"
     },
     {
-      "id": "urn:visionflow:linked:head-mounted-display",
-      "label": "Head-Mounted Display"
-    },
-    {
       "id": "urn:visionflow:linked:optical-see-through-hmd",
       "label": "Optical See-Through HMD"
     },
     {
       "id": "urn:visionflow:linked:spatial-computing-platform",
       "label": "Spatial Computing Platform"
-    },
-    {
-      "id": "urn:visionflow:linked:wearable-device",
-      "label": "Wearable Device"
     }
   ],
   "qualityScore": 0.52,

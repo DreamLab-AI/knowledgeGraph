@@ -160,7 +160,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:blockchain",
       "vc:label": "Blockchain"
     }
-  ]
+  ],
+  "definition": "Epoch is a artificial intelligence concept and a type of artificial-intelligence."
 }
 ```
 

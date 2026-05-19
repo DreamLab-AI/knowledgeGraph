@@ -16,20 +16,8 @@
       "label": "Payment Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:bitcoin",
-      "label": "Bitcoin"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
-    },
-    {
       "id": "urn:visionflow:owl:class:lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
-    },
-    {
-      "id": "urn:visionflow:owl:class:money",
-      "label": "Money"
     }
   ],
   "qualityScore": 0.52,

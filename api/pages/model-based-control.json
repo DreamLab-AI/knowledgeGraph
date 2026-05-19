@@ -16,14 +16,6 @@
       "label": "Trajectory Optimisation"
     },
     {
-      "id": "urn:visionflow:owl:class:control-theory",
-      "label": "Control Theory"
-    },
-    {
-      "id": "urn:visionflow:owl:class:optimal-control",
-      "label": "Optimal Control"
-    },
-    {
       "id": "urn:visionflow:owl:class:robot-control",
       "label": "Robot Control"
     }

@@ -143,7 +143,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Bagging is a concept within the ai domain.",
+  "definition": "Bagging is a artificial intelligence concept and a type of Ensemble Methods. that enables Parallel Training.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:policy-framework",
       "label": "Policy Framework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:governance-framework",
-      "label": "Governance Framework"
     }
   ],
   "qualityScore": 0.52,

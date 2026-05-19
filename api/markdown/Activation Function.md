@@ -160,7 +160,8 @@ public:: true
       "@id": "urn:visionflow:owl:class:edge-computing",
       "vc:label": "Edge Computing"
     }
-  ]
+  ],
+  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component."
 }
 ```
 

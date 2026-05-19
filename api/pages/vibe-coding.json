@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:vibe-coding",
   "domain": "infrastructure",
-  "definition": "Vibe Coding is a concept within the ngm domain.",
+  "definition": "Vibe Coding is a technology infrastructure concept and a type of Software Engineering.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:software-engineering",

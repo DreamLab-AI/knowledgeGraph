@@ -506,24 +506,8 @@ public:: true
       "vc:label": "Market Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:product-liability",
-      "vc:label": "Product Liability"
-    },
-    {
       "@id": "urn:visionflow:linked:regulation",
       "vc:label": "Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-regulation",
-      "vc:label": "Digital Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
     }
   ],
   "vc:sourceDomain": "infrastructure",

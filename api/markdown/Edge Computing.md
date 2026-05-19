@@ -544,14 +544,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:network-function-virtualisation",
       "vc:label": "Network Function Virtualisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
     }
   ],
   "vc:sourceDomain": "infrastructure",

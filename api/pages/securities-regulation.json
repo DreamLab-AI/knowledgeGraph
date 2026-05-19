@@ -16,16 +16,8 @@
       "label": "Digital Asset Law"
     },
     {
-      "id": "urn:visionflow:linked:financial-regulation",
-      "label": "Financial Regulation"
-    },
-    {
       "id": "urn:visionflow:linked:investment-law",
       "label": "Investment Law"
-    },
-    {
-      "id": "urn:visionflow:owl:class:compliance-framework",
-      "label": "Compliance Framework"
     }
   ],
   "qualityScore": 0.52,

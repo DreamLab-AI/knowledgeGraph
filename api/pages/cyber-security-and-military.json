@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:national-security-capability",
       "label": "National Security Capability"
-    },
-    {
-      "id": "urn:visionflow:linked:state-sponsored-activity",
-      "label": "State-Sponsored Activity"
-    },
-    {
-      "id": "urn:visionflow:linked:warfighting-domain",
-      "label": "Warfighting Domain"
     }
   ],
   "qualityScore": 0.52,

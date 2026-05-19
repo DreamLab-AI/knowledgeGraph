@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:virtual-world-traversal",
   "domain": "spatial-computing",
-  "definition": "Virtual World Traversal is a concept within the mv domain.",
+  "definition": "Virtual World Traversal is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:spatial-computing",

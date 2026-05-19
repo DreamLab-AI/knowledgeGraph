@@ -16,16 +16,8 @@
       "label": "Trust Service"
     },
     {
-      "id": "urn:visionflow:owl:class:access-control-system",
-      "label": "Access Control System"
-    },
-    {
       "id": "urn:visionflow:owl:class:authentication-service",
       "label": "Authentication Service"
-    },
-    {
-      "id": "urn:visionflow:owl:class:identity-management-system",
-      "label": "Identity Management System"
     }
   ],
   "qualityScore": 0.52,

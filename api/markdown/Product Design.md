@@ -452,14 +452,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:engineering-design",
       "vc:label": "Engineering Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-thinking",
-      "vc:label": "Systems Thinking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

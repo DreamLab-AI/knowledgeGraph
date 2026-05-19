@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0017-rescue-robot",
   "domain": "robotics",
-  "definition": "",
+  "definition": "rescue robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:mobile-robot",

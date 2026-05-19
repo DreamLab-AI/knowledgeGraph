@@ -432,14 +432,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:institutional-economics",
       "vc:label": "Institutional Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance",
-      "vc:label": "Governance"
     }
   ],
   "vc:sourceDomain": "blockchain",

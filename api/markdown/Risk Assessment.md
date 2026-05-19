@@ -434,20 +434,12 @@ public:: true
       "vc:label": "Audit"
     },
     {
-      "@id": "urn:visionflow:linked:safety-engineering",
-      "vc:label": "Safety Engineering"
-    },
-    {
       "@id": "urn:visionflow:linked:systems-analysis",
       "vc:label": "Systems Analysis"
     },
     {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
+      "@id": "urn:visionflow:linked:safety-engineering",
+      "vc:label": "Safety Engineering"
     }
   ],
   "vc:sourceDomain": "infrastructure",

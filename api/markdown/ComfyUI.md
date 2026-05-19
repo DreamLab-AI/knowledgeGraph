@@ -602,20 +602,12 @@ public:: true
       "vc:label": "Diffusion Model Runtime"
     },
     {
-      "@id": "urn:visionflow:linked:generative-ai-tool",
-      "vc:label": "Generative AI Tool"
-    },
-    {
       "@id": "urn:visionflow:linked:inference-orchestrator",
       "vc:label": "Inference Orchestrator"
     },
     {
       "@id": "urn:visionflow:linked:node-based-visual-programming-environment",
       "vc:label": "Node-Based Visual Programming Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

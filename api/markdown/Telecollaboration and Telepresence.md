@@ -4479,7 +4479,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Telecollaboration and Telepresence is a concept within the ngm domain.",
+  "definition": "Telecollaboration and Telepresence is a spatial computing concept and a type of Telepresence.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

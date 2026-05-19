@@ -678,10 +678,6 @@ public:: true
   "label": "Cryptography Security and Privacy",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-mathematics",
-      "vc:label": "Applied Mathematics"
-    },
-    {
       "@id": "urn:visionflow:linked:computer-science",
       "vc:label": "Computer Science"
     },
@@ -692,10 +688,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:trusted-computing",
       "vc:label": "Trusted Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-security",
-      "vc:label": "Information Security"
     }
   ],
   "vc:sourceDomain": "infrastructure",

@@ -120,7 +120,12 @@ public:: true
   "@id": "urn:visionflow:owl:class:ai-safety",
   "@type": "OntologyClass",
   "label": "AI Safety",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    }
+  ],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "active",
   "vc:maturity": "draft",

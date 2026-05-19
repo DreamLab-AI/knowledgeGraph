@@ -8,10 +8,6 @@
   "definition": "Image and Video Restoration is a computational imaging discipline within the artificial-intelligence and computer-vision domain concerned with recovering high-quality, perceptually faithful visual content from degraded observations, where degradation encompasses noise corruption (Gaussian/Poisson/salt-and-pepper/film grain/sensor read noise arising from low-light imaging, high-ISO photography, medical scanners, astronomical telescopes), blur (camera motion blur from hand-shake or subject movement, optical defocus blur from shallow depth-of-field misalignment, atmospheric turbulence degrading long-range surveillance and astronomical imaging), compression artefacts (JPEG blocking, ringing at sharp edges, colour banding from chroma subsampling in legacy video codecs), downscaling (spatial super-resolution recovering high-frequency detail lost during bicubic/bilinear resampling or achieved through optical limitations), temporal degradation (interlacing, frame-rate conversion, video stabilisation from shaky footage), ageing damage (fading, scratches, dust, chemical decomposition in archival photographic and film stocks), and missing content (inpainting recovering semantically plausible ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computational-photography",
-      "label": "Computational Photography"
-    },
-    {
       "id": "urn:visionflow:linked:image-processing",
       "label": "Image Processing"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:signal-recovery",
       "label": "Signal Recovery"
-    },
-    {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
     }
   ],
   "qualityScore": 0.52,

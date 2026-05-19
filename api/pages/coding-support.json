@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:coding-support",
   "domain": "infrastructure",
-  "definition": "Coding support is a concept within the ngm domain.",
+  "definition": "Coding support is a technology infrastructure concept and a type of Software Engineering.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:software-engineering",

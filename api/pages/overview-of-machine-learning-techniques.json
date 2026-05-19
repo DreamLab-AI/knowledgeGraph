@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
   "domain": "artificial-intelligence",
-  "definition": "Overview of Machine Learning Techniques is a concept within the ngm domain.",
+  "definition": "Overview of Machine Learning Techniques is a artificial intelligence concept and a type of Deep Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:deep-learning",

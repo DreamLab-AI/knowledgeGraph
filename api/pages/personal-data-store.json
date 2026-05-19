@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:personal-data-store",
   "domain": "infrastructure",
-  "definition": "PersonalDataStore is a concept within the ngm domain.",
+  "definition": "Personal Data Store is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

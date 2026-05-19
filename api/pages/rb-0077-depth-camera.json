@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:rb-0077-depth-camera",
   "domain": "robotics",
-  "definition": "",
+  "definition": "depth camera is a robotics and autonomous systems concept and a type of Camera.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:camera",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:data-cleaning",
   "domain": "artificial-intelligence",
-  "definition": "Data Cleaning is a concept within the ai domain.",
+  "definition": "Data Cleaning is a artificial intelligence concept and a type of Data Preprocessing. that enables Data Analysis.",
   "subClassOf": [
     {
       "id": "urn:visionflow:linked:data-preprocessing",

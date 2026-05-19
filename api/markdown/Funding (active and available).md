@@ -131,7 +131,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Funding (active and available) is a concept within the ngm domain.",
+  "definition": "Funding (active and available) is a technology infrastructure concept and a type of Resource Management.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

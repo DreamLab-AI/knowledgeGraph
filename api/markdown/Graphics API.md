@@ -536,14 +536,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:hardware-interface",
       "vc:label": "Hardware Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:rendering-interface",
-      "vc:label": "Rendering Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-software",
-      "vc:label": "System Software"
     }
   ],
   "vc:sourceDomain": "spatial-computing",

@@ -210,24 +210,16 @@ public:: true
   "label": "ONTOLOGY_TECHNICAL_DETAILS",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:visionflow:owl:class:record-keeping-system",
+      "vc:label": "Record-Keeping System"
     },
     {
       "@id": "urn:visionflow:owl:class:data-structure",
       "vc:label": "Data Structure"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-data-structure",
-      "vc:label": "DistributedDataStructure"
-    },
-    {
       "@id": "urn:visionflow:owl:class:distributed-system",
       "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:record-keeping-system",
-      "vc:label": "Record-Keeping System"
     }
   ],
   "vc:sourceDomain": "infrastructure",
@@ -247,7 +239,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.",
+  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:constraint",
   "domain": "artificial-intelligence",
-  "definition": "Constraint is a concept within the ai domain.",
+  "definition": "Constraint is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:artificial-intelligence",

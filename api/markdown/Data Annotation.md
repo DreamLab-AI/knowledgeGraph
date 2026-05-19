@@ -159,7 +159,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Data Annotation is a concept within the ai domain.",
+  "definition": "Data Annotation is a artificial intelligence concept and a type of Machine Learning Pipeline. that enables Training Data.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

@@ -494,14 +494,6 @@ public:: true
   "label": "Green Blockchain Initiatives",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-technology",
-      "vc:label": "Environmental Technology"
-    },
-    {
       "@id": "urn:visionflow:linked:esg",
       "vc:label": "ESG"
     },
@@ -510,8 +502,8 @@ public:: true
       "vc:label": "Sustainable Finance"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
+      "@id": "urn:visionflow:linked:environmental-technology",
+      "vc:label": "Environmental Technology"
     }
   ],
   "vc:sourceDomain": "blockchain",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:revision-list",
   "domain": "infrastructure",
-  "definition": "Revision List is a concept within the ngm domain.",
+  "definition": "Revision List is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

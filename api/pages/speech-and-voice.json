@@ -12,20 +12,12 @@
       "label": "Audio Processing"
     },
     {
-      "id": "urn:visionflow:owl:class:conversational-ai",
-      "label": "Conversational AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:multimodal-ai",
       "label": "Multimodal AI"
     },
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
-      "label": "Natural Language Processing"
+      "id": "urn:visionflow:owl:class:conversational-ai",
+      "label": "Conversational AI"
     }
   ],
   "qualityScore": 0.52,

@@ -16,18 +16,6 @@
       "label": "Retail Technology"
     },
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
-      "label": "Computer Vision"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
       "id": "urn:visionflow:owl:class:supply-chain-management",
       "label": "Supply Chain Management"
     }

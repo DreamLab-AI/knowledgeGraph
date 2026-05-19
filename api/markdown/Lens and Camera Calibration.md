@@ -530,10 +530,6 @@ public:: true
   "label": "Lens and Camera Calibration",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-photography",
-      "vc:label": "Computational Photography"
-    },
-    {
       "@id": "urn:visionflow:linked:geometric-camera-models",
       "vc:label": "Geometric Camera Models"
     },
@@ -544,14 +540,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:3-d-reconstruction",
       "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

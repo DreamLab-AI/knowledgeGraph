@@ -2844,14 +2844,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:organisational-software",
       "vc:label": "Organisational Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3-stack",
-      "vc:label": "Web3 Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
     }
   ],
   "vc:sourceDomain": "blockchain",

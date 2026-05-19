@@ -548,14 +548,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:latent-diffusion-system",
       "vc:label": "Latent Diffusion System"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-video-generation",
-      "vc:label": "Text-to-Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-diffusion-model",
-      "vc:label": "Video Diffusion Model"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

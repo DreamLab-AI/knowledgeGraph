@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:token-weighted-governance",
       "label": "Token-Weighted Governance"
-    },
-    {
-      "id": "urn:visionflow:linked:treasury-allocation-mechanism",
-      "label": "Treasury Allocation Mechanism"
-    },
-    {
-      "id": "urn:visionflow:linked:voting-system",
-      "label": "Voting System"
     }
   ],
   "qualityScore": 0.52,

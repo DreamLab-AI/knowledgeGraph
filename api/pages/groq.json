@@ -8,10 +8,6 @@
   "definition": "Groq Inc is an American semiconductor and artificial intelligence inference company founded in 2016 in Mountain View, California by Jonathan Ross (former Google engineer who co-invented the Tensor Processing Unit during a Google 20% project in 2013) and Doug Wightman, that designs and deploys the Language Processing Unit (LPU)\u2014a deterministic, software-scheduled, single-thread-per-chip Tensor Streaming Processor (TSP) architecture optimised exclusively for low-latency, batch-of-one large language model inference, in contrast to the general-purpose GPU + High Bandwidth Memory (HBM) paradigm dominated by [[NVIDIA]] (H100/H200/B200 with HBM3/HBM3e), [[AMD]] (MI300X with HBM3), and the wafer-scale alternative from [[Cerebras]] (CS-3); the LPU architecture eschews HBM entirely in favour of 230 MB on-chip SRAM per GroqChip GC1 die (yielding deterministic ~80 TB/s on-die memory bandwidth versus HBM3e's ~5 TB/s off-chip), employs a single instruction multiple data (SIMD) streaming processor with compile-time-scheduled instruction issue eliminating runtime arbitration and dynamic scheduling overhead, and delivers measured inference throughput of 750-1,000+ tokens/second on Meta Llama 3 70B ",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-accelerator",
-      "label": "AI Accelerator"
-    },
-    {
       "id": "urn:visionflow:linked:ai-inference-hardware",
       "label": "AI Inference Hardware"
     },
@@ -22,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:domain-specific-architecture",
       "label": "Domain-Specific Architecture"
-    },
-    {
-      "id": "urn:visionflow:linked:semiconductor-company",
-      "label": "Semiconductor Company"
     }
   ],
   "qualityScore": 0.52,

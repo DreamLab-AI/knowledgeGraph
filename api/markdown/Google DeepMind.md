@@ -596,14 +596,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:corporate-research-lab",
       "vc:label": "Corporate Research Lab"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model-provider",
-      "vc:label": "Foundation Model Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-lab",
-      "vc:label": "Frontier Lab"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

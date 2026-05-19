@@ -187,7 +187,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Agent is a concept within the bc domain.",
+  "definition": "Agent is a blockchain and distributed systems concept and a type of Blockchain.",
   "vc:qualityScore": {
     "@value": "0.50",
     "@type": "xsd:float"

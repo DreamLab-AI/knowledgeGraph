@@ -18,18 +18,6 @@
     {
       "id": "urn:visionflow:linked:programmable-money",
       "label": "Programmable Money"
-    },
-    {
-      "id": "urn:visionflow:linked:proof-of-stake-network",
-      "label": "Proof of Stake Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:public-blockchain",
-      "label": "Public Blockchain"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
     }
   ],
   "qualityScore": 0.52,

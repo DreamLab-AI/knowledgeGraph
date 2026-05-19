@@ -718,10 +718,6 @@ public:: true
   "label": "ESG Reporting",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:corporate-disclosure",
-      "vc:label": "Corporate Disclosure"
-    },
-    {
       "@id": "urn:visionflow:linked:non-financial-reporting",
       "vc:label": "Non-Financial Reporting"
     },
@@ -732,10 +728,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sustainability-disclosure",
       "vc:label": "Sustainability Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
     }
   ],
   "vc:sourceDomain": "blockchain",

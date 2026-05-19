@@ -584,14 +584,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:self-sovereign-identity-component",
       "vc:label": "Self-Sovereign Identity Component"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:personal-data-store",
-      "vc:label": "Personal Data Store"
     }
   ],
   "vc:sourceDomain": "blockchain",

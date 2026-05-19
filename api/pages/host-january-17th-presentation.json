@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:host-january-17th-presentation",
   "domain": "infrastructure",
-  "definition": "HOST January 17th Presentation is a concept within the ngm domain.",
+  "definition": "HOST January 17th Presentation is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

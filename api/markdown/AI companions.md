@@ -568,14 +568,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:large-language-model-application",
       "vc:label": "Large Language Model Application"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

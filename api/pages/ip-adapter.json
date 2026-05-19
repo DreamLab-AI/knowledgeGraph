@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:image-conditioning-mechanism",
       "label": "Image Conditioning Mechanism"
-    },
-    {
-      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
-      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "qualityScore": 0.52,

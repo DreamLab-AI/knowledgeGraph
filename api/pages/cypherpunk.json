@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:cypherpunk",
   "domain": "blockchain",
-  "definition": "cypherpunk is a concept within the ngm domain.",
+  "definition": "cypherpunk is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

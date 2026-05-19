@@ -510,10 +510,6 @@ public:: true
   "label": "Inpainting",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:conditional-image-synthesis",
-      "vc:label": "Conditional Image Synthesis"
-    },
-    {
       "@id": "urn:visionflow:linked:image-editing",
       "vc:label": "Image Editing"
     },
@@ -524,10 +520,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:computer-vision-task",
       "vc:label": "Computer Vision Task"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

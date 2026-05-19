@@ -12,24 +12,12 @@
       "label": "Economic Philosophy"
     },
     {
-      "id": "urn:visionflow:linked:monetary-theory",
-      "label": "Monetary Theory"
-    },
-    {
-      "id": "urn:visionflow:linked:sound-money",
-      "label": "Sound Money"
-    },
-    {
       "id": "urn:visionflow:linked:store-of-value",
       "label": "Store of Value"
     },
     {
-      "id": "urn:visionflow:owl:class:bitcoin",
-      "label": "Bitcoin"
-    },
-    {
-      "id": "urn:visionflow:owl:class:digital-asset",
-      "label": "Digital Asset"
+      "id": "urn:visionflow:linked:monetary-theory",
+      "label": "Monetary Theory"
     }
   ],
   "qualityScore": 0.52,

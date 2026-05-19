@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:information-resource",
       "label": "Information Resource"
-    },
-    {
-      "id": "urn:visionflow:linked:networked-resource",
-      "label": "Networked Resource"
     }
   ],
   "qualityScore": 0.52,

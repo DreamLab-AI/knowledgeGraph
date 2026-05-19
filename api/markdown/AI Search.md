@@ -450,14 +450,6 @@ public:: true
       "vc:label": "Retrieval-Augmented Generation"
     },
     {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-retrieval",
-      "vc:label": "Information Retrieval"
-    },
-    {
       "@id": "urn:visionflow:owl:class:search-engine",
       "vc:label": "Search Engine"
     }

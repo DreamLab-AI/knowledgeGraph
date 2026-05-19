@@ -294,16 +294,12 @@ public:: true
       "vc:label": "Access Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance",
-      "vc:label": "Governance"
-    },
-    {
       "@id": "urn:visionflow:owl:class:security-services",
       "vc:label": "Security Services"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-framework",
+      "vc:label": "Compliance Framework"
     }
   ],
   "vc:sourceDomain": "infrastructure",

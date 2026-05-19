@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:psychological-phenomenon",
   "domain": "infrastructure",
-  "definition": "PsychologicalPhenomenon is a concept within the ngm domain.",
+  "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars , Character.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:humans-avatars-character",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:runtime-inspection",
   "domain": "artificial-intelligence",
-  "definition": "Runtime Inspection is a concept within the ai domain.",
+  "definition": "Runtime Inspection is a artificial intelligence concept and a type of Ai Governance.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:ai-governance",

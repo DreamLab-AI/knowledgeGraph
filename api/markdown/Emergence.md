@@ -616,14 +616,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:cross-scale-phenomenon",
       "vc:label": "Cross-Scale Phenomenon"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-reductive-property",
-      "vc:label": "Non-Reductive Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:organisational-pattern",
-      "vc:label": "Organisational Pattern"
     }
   ],
   "vc:sourceDomain": "infrastructure",

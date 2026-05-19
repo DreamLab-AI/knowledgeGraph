@@ -430,20 +430,8 @@ public:: true
       "vc:label": "Consensus Algorithm"
     },
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "vc:label": "Cryptographic Protocol"
-    },
-    {
       "@id": "urn:visionflow:owl:class:distributed-system-protocol",
       "vc:label": "Distributed System Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine-replication",
-      "vc:label": "State Machine Replication"
     }
   ],
   "vc:sourceDomain": "blockchain",

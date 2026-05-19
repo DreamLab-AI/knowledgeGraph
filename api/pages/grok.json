@@ -8,14 +8,6 @@
   "definition": "Grok is the family of large language models developed by xAI, the AI laboratory founded in July 2023 by Elon Musk together with researchers Igor Babuschkin (ex-DeepMind, ex-OpenAI), Tony Wu (ex-Google Brain), Christian Szegedy (Inception/BatchNorm co-author, ex-Google), Yuhuai \"Tony\" Wu (ex-Google, formal mathematics), Greg Yang (\u03bcP parameterisation, ex-Microsoft Research), Jimmy Ba (Adam optimiser co-inventor, University of Toronto/Vector Institute), Manuel Kroiss (ex-DeepMind), Zihang Dai (Transformer-XL co-author), Ross Nordeen (ex-Tesla compute), and Kyle Kosic (ex-OpenAI), positioned as a \"maximum-truth-seeking\" conversational assistant with rapid release cadence and deep integration into X (formerly Twitter) Premium+ subscriptions, spanning a model lineage from Grok-1 (November 2023, 314-billion-parameter Mixture-of-Experts with 8 experts and 2 active per token, released under Apache 2.0 open weights March 17 2024 via the official xAI/grok-1 GitHub repository becoming the largest open-weights LLM at release), Grok-1.5 (March 2024, 128K-token context window, MMLU 73.0, HumanEval 74.1, MATH 50.6), Grok-1.5V (April 2024, first xAI multimodal model with RealWorldQA spatial-reason",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:conversational-ai-system",
-      "label": "Conversational AI System"
-    },
-    {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
-    },
-    {
       "id": "urn:visionflow:linked:frontier-model",
       "label": "Frontier Model"
     },
@@ -26,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:transformer-model",
       "label": "Transformer Model"
-    },
-    {
-      "id": "urn:visionflow:owl:class:mixture-of-experts",
-      "label": "Mixture of Experts"
     }
   ],
   "qualityScore": 0.51,

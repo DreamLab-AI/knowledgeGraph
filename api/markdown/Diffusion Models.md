@@ -514,10 +514,6 @@ public:: true
   "label": "Diffusion Models",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:deep-generative-model",
-      "vc:label": "Deep Generative Model"
-    },
-    {
       "@id": "urn:visionflow:linked:latent-variable-model",
       "vc:label": "Latent Variable Model"
     },
@@ -528,10 +524,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:score-based-model",
       "vc:label": "Score-Based Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

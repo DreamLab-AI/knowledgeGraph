@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:neural-network-compression",
       "label": "Neural Network Compression"
-    },
-    {
-      "id": "urn:visionflow:linked:systems-engineering",
-      "label": "Systems Engineering"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
     }
   ],
   "qualityScore": 0.52,

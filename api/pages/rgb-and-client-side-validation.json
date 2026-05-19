@@ -16,20 +16,8 @@
       "label": "Off-Chain Protocol"
     },
     {
-      "id": "urn:visionflow:owl:class:bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "id": "urn:visionflow:owl:class:layer-3",
       "label": "Layer 3"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contracts",
-      "label": "Smart Contracts"
-    },
-    {
-      "id": "urn:visionflow:owl:class:utxo-model",
-      "label": "UTXO Model"
     }
   ],
   "qualityScore": 0.54,

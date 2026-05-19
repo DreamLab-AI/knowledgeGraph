@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:protocol-buffer",
   "domain": "infrastructure",
-  "definition": "ProtocolBuffer is a concept within the ngm domain.",
+  "definition": "Protocol Buffer is a technology infrastructure concept and a type of Data Format.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:data-format",

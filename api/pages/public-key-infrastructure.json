@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:public-key-infrastructure",
   "domain": "blockchain",
-  "definition": "PublicKeyInfrastructure is a concept within the ngm domain.",
+  "definition": "Public Key Infrastructure is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

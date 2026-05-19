@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:x402-and-l402-payment-protocols",
   "domain": "blockchain",
-  "definition": "x402 and l402 payment protocols is a concept within the ngm domain.",
+  "definition": "x402 and l402 payment protocols is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:blockchain",

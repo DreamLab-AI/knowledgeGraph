@@ -12,20 +12,12 @@
       "label": "Conditional Image Generation"
     },
     {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
-    },
-    {
-      "id": "urn:visionflow:linked:transfer-learning",
-      "label": "Transfer Learning"
-    },
-    {
       "id": "urn:visionflow:owl:class:fine-tuning",
       "label": "Fine-tuning"
     },
     {
-      "id": "urn:visionflow:owl:class:neural-network",
-      "label": "Neural Network"
+      "id": "urn:visionflow:linked:diffusion-model",
+      "label": "Diffusion Model"
     }
   ],
   "qualityScore": 0.52,

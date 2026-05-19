@@ -12,28 +12,12 @@
       "label": "AI Assistants"
     },
     {
-      "id": "urn:visionflow:linked:instruction-following",
-      "label": "Instruction Following"
-    },
-    {
       "id": "urn:visionflow:linked:natural-language-generation",
       "label": "Natural Language Generation"
     },
     {
-      "id": "urn:visionflow:owl:class:conversational-ai",
-      "label": "Conversational AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "id": "urn:visionflow:owl:class:generative-ai",
-      "label": "Generative AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
+      "id": "urn:visionflow:linked:instruction-following",
+      "label": "Instruction Following"
     }
   ],
   "qualityScore": 0.52,

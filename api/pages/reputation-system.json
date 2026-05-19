@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:social-coordination",
       "label": "Social Coordination"
-    },
-    {
-      "id": "urn:visionflow:linked:trust-networks",
-      "label": "Trust Networks"
-    },
-    {
-      "id": "urn:visionflow:owl:class:identity-systems",
-      "label": "Identity Systems"
     }
   ],
   "qualityScore": 0.52,

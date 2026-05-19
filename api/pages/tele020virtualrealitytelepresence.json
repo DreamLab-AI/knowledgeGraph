@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:tele020virtualrealitytelepresence",
   "domain": "infrastructure",
-  "definition": "TELE020virtualrealitytelepresence is a concept within the ngm domain.",
+  "definition": "TELE020virtualrealitytelepresence is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

@@ -1160,18 +1160,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:erc-20-token",
       "vc:label": "ERC-20 Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-instrument",
-      "vc:label": "Voting Instrument"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fungible-token",
-      "vc:label": "Fungible Token"
     }
   ],
   "vc:sourceDomain": "blockchain",

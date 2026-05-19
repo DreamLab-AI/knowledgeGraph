@@ -18,14 +18,6 @@
     {
       "id": "urn:visionflow:linked:sequence-to-sequence-model",
       "label": "Sequence to Sequence Model"
-    },
-    {
-      "id": "urn:visionflow:linked:weakly-supervised-learning",
-      "label": "Weakly Supervised Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:transformer",
-      "label": "Transformer"
     }
   ],
   "qualityScore": 0.52,

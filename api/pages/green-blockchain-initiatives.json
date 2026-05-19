@@ -8,14 +8,6 @@
   "definition": "**Green Blockchain Initiatives** encompass the coordinated technological, economic, and governance efforts aimed at eliminating or materially reducing the environmental footprint of distributed ledger systems, spanning four principal intervention vectors: (1) consensus mechanism replacement \u2014 transitioning from energy-intensive [[Proof of Work]] to [[Proof of Stake]] and delegated variants reducing per-transaction electricity consumption by 99.0-99.95%, exemplified by Ethereum's September 2022 Merge cutting annualised electricity draw from approximately 78 TWh to under 0.01 TWh whilst preserving settlement finality; (2) renewable energy sourcing and certification \u2014 directing mining and validation workloads toward stranded hydroelectric, curtailed wind, and geothermal resources through PPAs, RECs, EACs, and direct co-location with generation facilities, documented by CCRI sector reports 2024-2026 and Galaxy Digital's 2024 Bitcoin Mining Electricity Report estimating 52-58% renewable/low-carbon energy share across the Bitcoin network as of Q4 2024; (3) tokenised environmental markets \u2014 creating blockchain-native representations of carbon credits, biodiversity credits, and renewable e",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-ledger-technology",
-      "label": "Distributed Ledger Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:environmental-technology",
-      "label": "Environmental Technology"
-    },
-    {
       "id": "urn:visionflow:linked:esg",
       "label": "ESG"
     },
@@ -24,8 +16,8 @@
       "label": "Sustainable Finance"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain-network",
-      "label": "Blockchain Network"
+      "id": "urn:visionflow:linked:environmental-technology",
+      "label": "Environmental Technology"
     }
   ],
   "qualityScore": 0.52,

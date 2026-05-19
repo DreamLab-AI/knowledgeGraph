@@ -586,20 +586,12 @@ public:: true
       "vc:label": "AI Safety Organization"
     },
     {
-      "@id": "urn:visionflow:linked:foundation-model-provider",
-      "vc:label": "Foundation Model Provider"
-    },
-    {
       "@id": "urn:visionflow:linked:frontier-ai-lab",
       "vc:label": "Frontier AI Lab"
     },
     {
       "@id": "urn:visionflow:linked:large-language-model-family",
       "vc:label": "Large Language Model Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-benefit-corporation",
-      "vc:label": "Public Benefit Corporation"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

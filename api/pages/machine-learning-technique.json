@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:machine-learning-technique",
   "domain": "artificial-intelligence",
-  "definition": "Machine Learning Technique is a concept within the ai domain.",
+  "definition": "Machine Learning Technique is a artificial intelligence concept and a type of Machine Learning.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:machine-learning",

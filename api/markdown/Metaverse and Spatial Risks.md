@@ -147,7 +147,7 @@ public:: true
     "@value": "2026-05-18T07:12:05Z",
     "@type": "xsd:dateTime"
   },
-  "definition": "Metaverse and Spatial Risks is a concept within the ngm domain.",
+  "definition": "Metaverse and Spatial Risks is a spatial computing concept and a type of Metaverse governance and safeguarding.",
   "vc:qualityScore": {
     "@value": "0.35",
     "@type": "xsd:float"

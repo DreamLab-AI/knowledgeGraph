@@ -424,14 +424,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:economic-inequality",
       "vc:label": "Economic Inequality"
-    },
-    {
-      "@id": "urn:visionflow:linked:political-economy",
-      "vc:label": "Political Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-stratification",
-      "vc:label": "Social Stratification"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

@@ -444,18 +444,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:fatf-recommendation",
       "vc:label": "FATF Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-transparency-standard",
-      "vc:label": "Payment Transparency Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
     }
   ],
   "vc:sourceDomain": "blockchain",

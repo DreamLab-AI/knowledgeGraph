@@ -582,16 +582,8 @@ public:: true
       "vc:label": "Cross-Chain Application"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
-    },
-    {
       "@id": "urn:visionflow:linked:smart-contract-protocol",
       "vc:label": "Smart Contract Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
     }
   ],
   "vc:sourceDomain": "blockchain",

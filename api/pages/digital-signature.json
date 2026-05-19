@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:public-key-cryptosystem",
       "label": "Public-Key Cryptosystem"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cryptographic-primitive",
-      "label": "Cryptographic Primitive"
     }
   ],
   "qualityScore": 0.52,

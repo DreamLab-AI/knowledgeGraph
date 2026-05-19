@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:goal",
   "domain": "artificial-intelligence",
-  "definition": "Goal is a concept within the ai domain.",
+  "definition": "Goal is a artificial intelligence concept and a type of Objective.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:objective",

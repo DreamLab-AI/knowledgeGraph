@@ -676,14 +676,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:token-weighted-governance",
       "vc:label": "Token-Weighted Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:treasury-allocation-mechanism",
-      "vc:label": "Treasury Allocation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-system",
-      "vc:label": "Voting System"
     }
   ],
   "vc:sourceDomain": "blockchain",

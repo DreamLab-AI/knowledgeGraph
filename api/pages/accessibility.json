@@ -12,20 +12,12 @@
       "label": "Design Principle"
     },
     {
-      "id": "urn:visionflow:linked:inclusive-design",
-      "label": "Inclusive Design"
-    },
-    {
       "id": "urn:visionflow:linked:non-functional-requirement",
       "label": "Non-Functional Requirement"
     },
     {
       "id": "urn:visionflow:linked:quality-attribute",
       "label": "Quality Attribute"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-factors",
-      "label": "Human Factors"
     }
   ],
   "qualityScore": 0.52,

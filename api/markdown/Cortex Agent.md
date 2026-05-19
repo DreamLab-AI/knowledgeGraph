@@ -382,10 +382,6 @@ public:: true
   "label": "Cortex Agent",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
       "@id": "urn:visionflow:owl:class:agentic-internet",
       "vc:label": "Agentic Internet"
     },
@@ -396,10 +392,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:cognitive-ai",
       "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

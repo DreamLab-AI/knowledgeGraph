@@ -164,7 +164,7 @@ public:: true
   ],
   "vc:sourceDomain": "blockchain",
   "vc:status": "active",
-  "vc:maturity": "production",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a"
   },

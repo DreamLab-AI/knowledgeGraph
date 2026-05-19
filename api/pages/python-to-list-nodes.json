@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:python-to-list-nodes",
   "domain": "infrastructure",
-  "definition": "Python to list nodes is a concept within the ngm domain.",
+  "definition": "Python to list nodes is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

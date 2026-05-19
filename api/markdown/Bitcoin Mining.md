@@ -1518,14 +1518,6 @@ public:: true
       "vc:label": "Industrial Process"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
       "@id": "urn:visionflow:owl:class:proof-of-work",
       "vc:label": "Proof-of-Work"
     }

@@ -410,20 +410,8 @@ public:: true
       "vc:label": "Payment Systems"
     },
     {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
       "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
       "vc:label": "Lightning and Similar L2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:money",
-      "vc:label": "Money"
     }
   ],
   "vc:sourceDomain": "infrastructure",

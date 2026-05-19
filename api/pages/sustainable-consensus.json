@@ -12,20 +12,12 @@
       "label": "Climate Technology"
     },
     {
-      "id": "urn:visionflow:linked:distributed-systems-protocol",
-      "label": "Distributed Systems Protocol"
-    },
-    {
       "id": "urn:visionflow:linked:energy-efficient-computing",
       "label": "Energy Efficient Computing"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "label": "Blockchain Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
-      "label": "Consensus Mechanism"
+      "id": "urn:visionflow:linked:distributed-systems-protocol",
+      "label": "Distributed Systems Protocol"
     }
   ],
   "qualityScore": 0.52,

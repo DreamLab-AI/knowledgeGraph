@@ -152,7 +152,7 @@ public:: true
   ],
   "vc:sourceDomain": "spatial-computing",
   "vc:status": "active",
-  "vc:maturity": "active",
+  "vc:maturity": "production-ready",
   "vc:definedIn": {
     "@id": "urn:visionflow:page:c49800be1c4585cfef2523c311b410ff903bc646bf08ba59829b64374aa7384c"
   },

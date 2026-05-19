@@ -424,14 +424,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:sequence-to-sequence-model",
       "vc:label": "Sequence to Sequence Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:weakly-supervised-learning",
-      "vc:label": "Weakly Supervised Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
     }
   ],
   "vc:sourceDomain": "artificial-intelligence",

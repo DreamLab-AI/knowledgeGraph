@@ -784,14 +784,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:trading-venue",
       "vc:label": "Trading Venue"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-application",
-      "vc:label": "Blockchain Application"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marketplace",
-      "vc:label": "Marketplace"
     }
   ],
   "vc:sourceDomain": "blockchain",

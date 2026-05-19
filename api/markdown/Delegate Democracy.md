@@ -692,14 +692,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:social-choice-mechanism",
       "vc:label": "Social Choice Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-model",
-      "vc:label": "Governance Model"
     }
   ],
   "vc:sourceDomain": "blockchain",

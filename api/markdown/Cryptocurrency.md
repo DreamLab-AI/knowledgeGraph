@@ -738,10 +738,6 @@ public:: true
   "label": "Cryptocurrency",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bearer-instrument",
-      "vc:label": "Bearer Instrument"
-    },
-    {
       "@id": "urn:visionflow:linked:cryptoasset",
       "vc:label": "Cryptoasset"
     },
@@ -752,10 +748,6 @@ public:: true
     {
       "@id": "urn:visionflow:linked:permissionless-asset",
       "vc:label": "Permissionless Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
     }
   ],
   "vc:sourceDomain": "blockchain",

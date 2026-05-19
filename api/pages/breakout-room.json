@@ -16,16 +16,8 @@
       "label": "Group Facilitation Tools"
     },
     {
-      "id": "urn:visionflow:linked:remote-work-technology",
-      "label": "Remote Work Technology"
-    },
-    {
       "id": "urn:visionflow:linked:synchronous-communication",
       "label": "Synchronous Communication"
-    },
-    {
-      "id": "urn:visionflow:linked:virtual-meeting-structure",
-      "label": "Virtual Meeting Structure"
     }
   ],
   "qualityScore": 0.52,

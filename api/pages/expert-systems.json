@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:expert-systems",
   "domain": "artificial-intelligence",
-  "definition": "Expert Systems is a concept within the ai domain.",
+  "definition": "Expert Systems is a artificial intelligence concept and a type of Knowledge Representation. that enables Decision Support.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:knowledge-representation",

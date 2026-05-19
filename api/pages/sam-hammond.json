@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:visionflow:owl:class:sam-hammond",
   "domain": "infrastructure",
-  "definition": "Sam Hammond is a concept within the ngm domain.",
+  "definition": "Sam Hammond is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:visionflow:owl:class:infrastructure",

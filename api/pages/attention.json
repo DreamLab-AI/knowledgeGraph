@@ -18,10 +18,6 @@
     {
       "id": "urn:visionflow:linked:representation-learning",
       "label": "Representation Learning"
-    },
-    {
-      "id": "urn:visionflow:linked:sequence-model",
-      "label": "Sequence Model"
     }
   ],
   "qualityScore": 0.52,
