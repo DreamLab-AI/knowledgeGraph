@@ -111,6 +111,10 @@
       "label": "Camera Parameters"
     },
     {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

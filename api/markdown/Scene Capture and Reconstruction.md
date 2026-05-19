@@ -295,12 +295,12 @@ public:: true
       "vc:label": "3D Reconstruction"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-dasset",
-      "vc:label": "3DAsset"
+      "@id": "urn:visionflow:owl:class:3-d-asset",
+      "vc:label": "3D Asset"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-dcontent-pipeline",
-      "vc:label": "3DContentPipeline"
+      "@id": "urn:visionflow:owl:class:3-d-content-pipeline",
+      "vc:label": "3D Content Pipeline"
     },
     {
       "@id": "urn:visionflow:owl:class:application-layer",
@@ -530,8 +530,8 @@ public:: true
         "label": "3D Content Generation"
       },
       {
-        "@id": "urn:ngm:class:3-dasset",
-        "label": "3DAsset"
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
       },
       {
         "@id": "urn:ngm:class:ar-technology",
@@ -642,8 +642,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:3-dcontent-pipeline",
-        "label": "3DContentPipeline"
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
       },
       {
         "@id": "urn:ngm:class:augmented-reality",
@@ -1072,12 +1072,12 @@ public:: true
     },
     {
       "raw": "[[3DAsset]]",
-      "resolved": "urn:visionflow:owl:class:3-dasset",
+      "resolved": "urn:visionflow:owl:class:3-d-asset",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[3DContentPipeline]]",
-      "resolved": "urn:visionflow:owl:class:3-dcontent-pipeline",
+      "resolved": "urn:visionflow:owl:class:3-d-content-pipeline",
       "kind": "ResolvedLink"
     },
     {

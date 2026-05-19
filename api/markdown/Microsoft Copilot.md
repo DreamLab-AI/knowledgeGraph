@@ -251,26 +251,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:microsoft-copilot",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:microsoft-copilot",
+  "@type": "Individual",
   "label": "Microsoft Copilot",
   "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's cumulative investment in OpenAI (initial subsequent rounds 2021-2023), deployed across five principa...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:code-generation",
-      "label": "Code Generation"
-    },
-    {
-      "@id": "urn:ngm:class:ai-adoption",
-      "label": "AI Adoption"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -482,7 +468,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ]
 }
 ```
 

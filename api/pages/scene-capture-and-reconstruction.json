@@ -102,8 +102,8 @@
         "label": "3D Content Generation"
       },
       {
-        "id": "urn:ngm:class:3-dasset",
-        "label": "3DAsset"
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
       },
       {
         "id": "urn:ngm:class:ar-technology",
@@ -187,8 +187,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:3-dcontent-pipeline",
-        "label": "3DContentPipeline"
+        "id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
       },
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -559,12 +559,12 @@
       "label": "3D Reconstruction"
     },
     {
-      "slug": "3-dasset",
-      "label": "3DAsset"
+      "slug": "3-d-asset",
+      "label": "3D Asset"
     },
     {
-      "slug": "3-dcontent-pipeline",
-      "label": "3DContentPipeline"
+      "slug": "3-d-content-pipeline",
+      "label": "3D Content Pipeline"
     },
     {
       "slug": "application-layer",

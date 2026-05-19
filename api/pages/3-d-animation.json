@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:9026bbd4156f3e6767469ec12fb54e7c8c410d0764859c416c5887315e8358c0",
-  "title": "3DAnimation",
-  "slug": "3-danimation",
+  "title": "3D Animation",
+  "slug": "3-d-animation",
   "public": true,
-  "classIri": "urn:ngm:class:3-danimation",
+  "classIri": "urn:ngm:class:3-d-animation",
   "domain": "spatial-computing",
-  "definition": "3DAnimation is a spatial computing concept and a type of Animation Technique.",
+  "definition": "3D Animation is a spatial computing concept and a type of Animation Technique.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -40,6 +40,14 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "dynamic-character-animation",
+      "label": "Dynamic Character Animation"
+    },
+    {
+      "slug": "real-time-character-animation",
+      "label": "Real Time Character Animation"
+    },
     {
       "slug": "unreal-engine",
       "label": "Unreal Engine"

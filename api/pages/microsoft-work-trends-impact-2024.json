@@ -3,16 +3,11 @@
   "title": "Microsoft Work Trends Impact 2024",
   "slug": "microsoft-work-trends-impact-2024",
   "public": true,
-  "classIri": "urn:ngm:class:microsoft-work-trends-impact-2024",
+  "classIri": "urn:ngm:individual:microsoft-work-trends-impact-2024",
   "domain": "infrastructure",
   "definition": "Microsoft Work Trends Impact 2024 is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

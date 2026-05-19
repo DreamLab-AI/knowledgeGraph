@@ -331,26 +331,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:open-ai-whisper",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:open-ai-whisper",
+  "@type": "Individual",
   "label": "Open AI Whisper",
   "definition": "OpenAI Whisper is a large-scale, weakly-supervised, encoder-decoder Transformer architecture for automatic speech recognition (ASR) and speech translation, introduced by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever at OpenAI in September 2022 in the p...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:automatic-speech-recognition",
-      "label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:ngm:class:multilingual-model",
-      "label": "Multilingual Model"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -594,7 +580,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:multilingual-model",
+      "label": "Multilingual Model"
+    }
+  ]
 }
 ```
 

@@ -299,26 +299,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:stable-diffusion-training",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:stable-diffusion-training",
+  "@type": "Individual",
   "label": "Stable Diffusion Training",
   "definition": "Stable Diffusion Training encompasses the corpus of mods for adapting pre-trained latent diffusion models—primarily the Stable Diffusion (SD 1.x, SDXL, SD3, FLUX.1) family—to new subjects, styles, concepts, or task domains through fine-tuning, parameter-efficient adaptation, and embedding optimis...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:fine-tuning",
-      "label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:ngm:class:diffusion-model",
-      "label": "Diffusion Model"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -530,7 +516,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
+    }
+  ]
 }
 ```
 

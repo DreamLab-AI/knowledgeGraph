@@ -1,8 +1,8 @@
 - ### Definition
-  - 3DContentPipeline is a concept within the ngm domain.
+  - 3D Content Pipeline is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DContentPipeline
+  - owl-class:: infrastructure:3D Content Pipeline
   - owl-role:: Concept
 
 - ### Relationships

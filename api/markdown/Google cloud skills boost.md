@@ -39,24 +39,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:google-cloud-skills-boost",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:google-cloud-skills-boost",
+  "@type": "Individual",
   "label": "Google cloud skills boost",
   "definition": "Google cloud skills boost is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ]
 }
 ```
 

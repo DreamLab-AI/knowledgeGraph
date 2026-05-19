@@ -3,24 +3,11 @@
   "title": "Meta Platforms",
   "slug": "meta-platforms",
   "public": true,
-  "classIri": "urn:ngm:class:meta-platforms",
+  "classIri": "urn:ngm:individual:meta-platforms",
   "domain": "artificial-intelligence",
   "definition": "Meta Platforms Inc is a Menlo Park-headquartered American multinational technology conglomerate founded 4 February 2004 in a Harvard University dormitory by Mark Zuckerberg with co-founders Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes as TheFacebook.com \u2014 initially a Harvar...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:foundation-model-developer",
-      "label": "Foundation Model Developer"
-    },
-    {
-      "id": "urn:ngm:class:hyperscaler",
-      "label": "Hyperscaler"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

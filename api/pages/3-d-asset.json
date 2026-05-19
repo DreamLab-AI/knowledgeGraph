@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:3f445960723a4f7e172497ee9e8362aa248bb4a0c4e8dc8336a6237460e7311f",
-  "title": "3DAsset",
-  "slug": "3-dasset",
+  "title": "3D Asset",
+  "slug": "3-d-asset",
   "public": true,
-  "classIri": "urn:ngm:class:3-dasset",
+  "classIri": "urn:ngm:class:3-d-asset",
   "domain": "spatial-computing",
-  "definition": "3DAsset is a spatial computing concept and a type of Digital Asset Management.",
+  "definition": "3D Asset is a spatial computing concept and a type of Digital Asset Management.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -43,6 +43,14 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "virtual-model",
+      "label": "Virtual Model"
     }
   ]
 }

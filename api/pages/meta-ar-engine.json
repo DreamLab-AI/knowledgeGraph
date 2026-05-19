@@ -3,20 +3,11 @@
   "title": "Meta AR engine",
   "slug": "meta-ar-engine",
   "public": true,
-  "classIri": "urn:ngm:class:meta-ar-engine",
+  "classIri": "urn:ngm:individual:meta-ar-engine",
   "domain": "spatial-computing",
   "definition": "Meta AR engine is the integrated stack of hardware, operating system, runtime APIs, developer SDKs, and AI services produced by Meta Reality Labs that enables augmented reality, mixed reality, and extended reality experiences across the Meta device family \u2014 spanning Meta Quest headsets (Quest 2, ...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:augmented-reality",
-      "label": "Augmented Reality"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

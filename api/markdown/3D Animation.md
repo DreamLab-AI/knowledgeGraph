@@ -1,13 +1,13 @@
 public:: true
 
-# 3DAnimation
+# 3D Animation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:9026bbd4156f3e6767469ec12fb54e7c8c410d0764859c416c5887315e8358c0",
   "@type": "Page",
-  "vc:slug": "3-danimation",
-  "title": "3DAnimation",
+  "vc:slug": "3-d-animation",
+  "title": "3D Animation",
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
@@ -39,10 +39,10 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:3-danimation",
+  "@id": "urn:ngm:class:3-d-animation",
   "@type": "Class",
-  "label": "3DAnimation",
-  "definition": "3DAnimation is a spatial computing concept and a type of Animation Technique.",
+  "label": "3D Animation",
+  "definition": "3D Animation is a spatial computing concept and a type of Animation Technique.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -67,7 +67,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-danimation:776c802a9fc9",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-animation:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
   "vc:appliesTo": {
     "@id": "urn:visionflow:page:9026bbd4156f3e6767469ec12fb54e7c8c410d0764859c416c5887315e8358c0"
@@ -91,10 +91,10 @@ public:: true
 
 
 - ### Definition
-  - 3DAnimation is a concept within the ngm domain.
+  - 3D Animation is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAnimation
+  - owl-class:: infrastructure:3D Animation
   - owl-role:: Concept
 
 - ### Relationships

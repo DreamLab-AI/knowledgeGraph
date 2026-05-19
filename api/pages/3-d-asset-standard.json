@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:ac471d565acfa4646419d4e3d02f6084f6cdc9fd070f12d09fdb8312a338536f",
-  "title": "3DAssetStandard",
-  "slug": "3-dasset-standard",
+  "title": "3D Asset Standard",
+  "slug": "3-d-asset-standard",
   "public": true,
-  "classIri": "urn:ngm:class:3-dasset-standard",
+  "classIri": "urn:ngm:class:3-d-asset-standard",
   "domain": "infrastructure",
-  "definition": "3DAssetStandard is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "3D Asset Standard is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -41,6 +41,10 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "gltf-standard",
+      "label": "Gltf Standard"
+    },
     {
       "slug": "unreal-engine",
       "label": "Unreal Engine"

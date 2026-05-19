@@ -1,13 +1,13 @@
 public:: true
 
-# 3DDesign
+# 3D Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:8b5f26e1526d95a377b2fcfc06fb7875aaa0de259d2a6433c75c59194143993b",
   "@type": "Page",
-  "vc:slug": "3-ddesign",
-  "title": "3DDesign",
+  "vc:slug": "3-d-design",
+  "title": "3D Design",
   "vc:public": true,
   "vc:outboundWikilinks": [],
   "vc:schemaVersion": 2,
@@ -34,10 +34,10 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:3-ddesign",
+  "@id": "urn:ngm:class:3-d-design",
   "@type": "Class",
-  "label": "3DDesign",
-  "definition": "3DDesign is a technology infrastructure concept and a type of infrastructure.",
+  "label": "3D Design",
+  "definition": "3D Design is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
@@ -58,7 +58,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-ddesign:776c802a9fc9",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-design:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
   "vc:appliesTo": {
     "@id": "urn:visionflow:page:8b5f26e1526d95a377b2fcfc06fb7875aaa0de259d2a6433c75c59194143993b"
@@ -76,10 +76,10 @@ public:: true
 
 
 - ### Definition
-  - 3DDesign is a concept within the ngm domain.
+  - 3D Design is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DDesign
+  - owl-class:: infrastructure:3D Design
   - owl-role:: Concept
 
 - ### Relationships

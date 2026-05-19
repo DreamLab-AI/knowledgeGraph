@@ -30,24 +30,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:microsoft-work-trends-impact-2024",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:microsoft-work-trends-impact-2024",
+  "@type": "Individual",
   "label": "Microsoft Work Trends Impact 2024",
   "definition": "Microsoft Work Trends Impact 2024 is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ]
 }
 ```
 

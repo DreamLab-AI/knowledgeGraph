@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227",
-  "title": "3DContentPipeline",
-  "slug": "3-dcontent-pipeline",
+  "title": "3D Content Pipeline",
+  "slug": "3-d-content-pipeline",
   "public": true,
-  "classIri": "urn:ngm:class:3-dcontent-pipeline",
+  "classIri": "urn:ngm:class:3-d-content-pipeline",
   "domain": "infrastructure",
-  "definition": "3DContentPipeline is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "3D Content Pipeline is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -32,12 +32,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
     },
     {
       "slug": "unreal-engine",
       "label": "Unreal Engine"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
     }
   ]
 }

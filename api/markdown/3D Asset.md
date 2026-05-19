@@ -1,13 +1,13 @@
 public:: true
 
-# 3DAsset
+# 3D Asset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:3f445960723a4f7e172497ee9e8362aa248bb4a0c4e8dc8336a6237460e7311f",
   "@type": "Page",
-  "vc:slug": "3-dasset",
-  "title": "3DAsset",
+  "vc:slug": "3-d-asset",
+  "title": "3D Asset",
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
@@ -39,10 +39,10 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:3-dasset",
+  "@id": "urn:ngm:class:3-d-asset",
   "@type": "Class",
-  "label": "3DAsset",
-  "definition": "3DAsset is a spatial computing concept and a type of Digital Asset Management.",
+  "label": "3D Asset",
+  "definition": "3D Asset is a spatial computing concept and a type of Digital Asset Management.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -67,7 +67,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-dasset:776c802a9fc9",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-asset:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
   "vc:appliesTo": {
     "@id": "urn:visionflow:page:3f445960723a4f7e172497ee9e8362aa248bb4a0c4e8dc8336a6237460e7311f"
@@ -91,10 +91,10 @@ public:: true
 
 
 - ### Definition
-  - 3DAsset is a concept within the ngm domain.
+  - 3D Asset is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAsset
+  - owl-class:: infrastructure:3D Asset
   - owl-role:: Concept
 
 - ### Relationships

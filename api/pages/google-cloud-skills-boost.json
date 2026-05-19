@@ -3,16 +3,11 @@
   "title": "Google cloud skills boost",
   "slug": "google-cloud-skills-boost",
   "public": true,
-  "classIri": "urn:ngm:class:google-cloud-skills-boost",
+  "classIri": "urn:ngm:individual:google-cloud-skills-boost",
   "domain": "infrastructure",
   "definition": "Google cloud skills boost is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
   "maturity": "draft",
   "relationships": {

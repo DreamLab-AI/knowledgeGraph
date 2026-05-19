@@ -55,8 +55,8 @@ public:: true
       "vc:label": "VisualServoing"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-dreconstruction",
-      "vc:label": "3DReconstruction"
+      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
     },
     {
       "@id": "urn:visionflow:owl:class:object-detection",
@@ -148,8 +148,8 @@ public:: true
         "label": "VisualServoing"
       },
       {
-        "@id": "urn:ngm:class:3-dreconstruction",
-        "label": "3DReconstruction"
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
       },
       {
         "@id": "urn:ngm:class:object-detection",
@@ -240,7 +240,7 @@ public:: true
     },
     {
       "raw": "[[3DReconstruction]]",
-      "resolved": "urn:visionflow:owl:class:3-dreconstruction",
+      "resolved": "urn:visionflow:owl:class:3-d-reconstruction",
       "kind": "ResolvedLink"
     },
     {

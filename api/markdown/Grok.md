@@ -587,26 +587,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:grok",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:grok",
+  "@type": "Individual",
   "label": "Grok",
   "definition": "Grok is the family of large language models developed by xAI, the AI laboratory founded in July 2023 by Elon Musk toger with researchers Igor Babuschkin (ex-DeepMind, ex-OpenAI), Tony Wu (ex-Google Brain), Christian Szegedy (Inception/BatchNorm co-author, ex-Google), Yuhuai \"Tony\" Wu (ex-Google, ...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:class:frontier-model",
-      "label": "Frontier Model"
-    },
-    {
-      "@id": "urn:ngm:class:large-language-model",
-      "label": "Large Language Model"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -910,7 +896,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:frontier-model",
+      "label": "Frontier Model"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    }
+  ]
 }
 ```
 

@@ -1,8 +1,8 @@
 - ### Definition
-  - 3DAssetStandard is a concept within the ngm domain.
+  - 3D Asset Standard is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAssetStandard
+  - owl-class:: infrastructure:3D Asset Standard
   - owl-role:: Concept
 
 - ### Relationships

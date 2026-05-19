@@ -67,16 +67,16 @@ public:: true
       "vc:label": "3D Rendering Engine"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-danimation",
-      "vc:label": "3DAnimation"
+      "@id": "urn:visionflow:owl:class:3-d-animation",
+      "vc:label": "3D Animation"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-dasset-standard",
-      "vc:label": "3DAssetStandard"
+      "@id": "urn:visionflow:owl:class:3-d-asset-standard",
+      "vc:label": "3D Asset Standard"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-dcontent-pipeline",
-      "vc:label": "3DContentPipeline"
+      "@id": "urn:visionflow:owl:class:3-d-content-pipeline",
+      "vc:label": "3D Content Pipeline"
     },
     {
       "@id": "urn:visionflow:owl:class:ai-avatars",
@@ -414,12 +414,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:3-danimation",
-        "label": "3DAnimation"
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
       },
       {
-        "@id": "urn:ngm:class:3-dcontent-pipeline",
-        "label": "3DContentPipeline"
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
       },
       {
         "@id": "urn:ngm:class:fluid-simulation",
@@ -448,8 +448,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:3-dcontent-pipeline",
-        "label": "3DContentPipeline"
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
       },
       {
         "@id": "urn:ngm:class:ai-avatars",
@@ -566,8 +566,8 @@ public:: true
         "label": "3D Graphics Standard"
       },
       {
-        "@id": "urn:ngm:class:3-dasset-standard",
-        "label": "3DAssetStandard"
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
       },
       {
         "@id": "urn:ngm:class:scene-graph-format",
@@ -671,17 +671,17 @@ public:: true
     },
     {
       "raw": "[[3DAnimation]]",
-      "resolved": "urn:visionflow:owl:class:3-danimation",
+      "resolved": "urn:visionflow:owl:class:3-d-animation",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[3DAssetStandard]]",
-      "resolved": "urn:visionflow:owl:class:3-dasset-standard",
+      "resolved": "urn:visionflow:owl:class:3-d-asset-standard",
       "kind": "ResolvedLink"
     },
     {
       "raw": "[[3DContentPipeline]]",
-      "resolved": "urn:visionflow:owl:class:3-dcontent-pipeline",
+      "resolved": "urn:visionflow:owl:class:3-d-content-pipeline",
       "kind": "ResolvedLink"
     },
     {

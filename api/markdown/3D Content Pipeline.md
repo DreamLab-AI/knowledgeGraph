@@ -1,13 +1,13 @@
 public:: true
 
-# 3DContentPipeline
+# 3D Content Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227",
   "@type": "Page",
-  "vc:slug": "3-dcontent-pipeline",
-  "title": "3DContentPipeline",
+  "vc:slug": "3-d-content-pipeline",
+  "title": "3D Content Pipeline",
   "vc:public": true,
   "vc:outboundWikilinks": [],
   "vc:schemaVersion": 2,
@@ -34,10 +34,10 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:3-dcontent-pipeline",
+  "@id": "urn:ngm:class:3-d-content-pipeline",
   "@type": "Class",
-  "label": "3DContentPipeline",
-  "definition": "3DContentPipeline is a technology infrastructure concept and a type of infrastructure.",
+  "label": "3D Content Pipeline",
+  "definition": "3D Content Pipeline is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
@@ -58,7 +58,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-dcontent-pipeline:776c802a9fc9",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-content-pipeline:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
   "vc:appliesTo": {
     "@id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227"
@@ -76,10 +76,10 @@ public:: true
 
 
 - ### Definition
-  - 3DContentPipeline is a concept within the ngm domain.
+  - 3D Content Pipeline is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DContentPipeline
+  - owl-class:: infrastructure:3D Content Pipeline
   - owl-role:: Concept
 
 - ### Relationships

@@ -1,8 +1,8 @@
 - ### Definition
-  - 3DAsset is a concept within the ngm domain.
+  - 3D Asset is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAsset
+  - owl-class:: infrastructure:3D Asset
   - owl-role:: Concept
 
 - ### Relationships

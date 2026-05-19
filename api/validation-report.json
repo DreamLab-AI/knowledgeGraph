@@ -1,12 +1,12 @@
 {
-  "total_pages": 2849,
-  "pages_with_ontology": 2813,
-  "public_pages": 2827,
-  "total_issues": 1557,
+  "total_pages": 2842,
+  "pages_with_ontology": 2806,
+  "public_pages": 2821,
+  "total_issues": 1547,
   "errors": 0,
-  "warnings": 1557,
+  "warnings": 1547,
   "by_code": {
-    "MULTI_PARENT": 1557
+    "MULTI_PARENT": 1547
   },
   "issues": [
     {
@@ -14,6 +14,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Perception and Sensing, Lidar"
+    },
+    {
+      "path": "3D Animation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Content and Assets, Animation Technique"
+    },
+    {
+      "path": "3D Asset.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Content and Assets, Digital Asset Management"
     },
     {
       "path": "3D Content Generation.md",
@@ -80,18 +92,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Interaction Technology, Interaction Design, User Interface"
-    },
-    {
-      "path": "3DAnimation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Animation Technique"
-    },
-    {
-      "path": "3DAsset.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Content and Assets, Digital Asset Management"
     },
     {
       "path": "A-Star Algorithm.md",
@@ -590,12 +590,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Digital Content Creation Tools"
-    },
-    {
-      "path": "Anthropic Claude.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Application, AI Safety Organization, Frontier AI Lab"
     },
     {
       "path": "Anti Counterfeiting.md",
@@ -1472,12 +1466,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Animation Technique"
-    },
-    {
-      "path": "ChatGPT.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Application, AI Assistants, Natural Language Generation"
     },
     {
       "path": "Chatbots.md",
@@ -3754,12 +3742,6 @@
       "message": "Multiple parents (3): Token and Asset, Commodity, Hard Money"
     },
     {
-      "path": "Google DeepMind.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Governance and Ethics, AI Research Laboratory, Alphabet Subsidiary"
-    },
-    {
       "path": "Governance Architecture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3818,12 +3800,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Governance and Regulation, ESG, Sustainable Finance"
-    },
-    {
-      "path": "Grok.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Model Architecture, Frontier Model, Large Language Model"
     },
     {
       "path": "Ground Robot.md",
@@ -4948,18 +4924,6 @@
       "message": "Multiple parents (2): Platform and Environment, Network Infrastructure"
     },
     {
-      "path": "Meta AR engine.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Platform and Environment, Augmented Reality"
-    },
-    {
-      "path": "Meta Platforms.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Governance and Ethics, Foundation Model Developer, Hyperscaler"
-    },
-    {
       "path": "Metadata Management.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5108,12 +5072,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Software Engineering, System Architecture"
-    },
-    {
-      "path": "Microsoft Copilot.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Application, Code Generation, AI Adoption"
     },
     {
       "path": "Middleware.md",
@@ -5404,12 +5362,6 @@
       "message": "Multiple parents (2): AI Infrastructure (Category), AI Hardware"
     },
     {
-      "path": "NVIDIA Omniverse.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Platform and Environment, 3D Platform, Physical AI"
-    },
-    {
       "path": "Nakamoto Consensus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5696,12 +5648,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Open AI Whisper.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Application, Automatic Speech Recognition, Multilingual Model"
     },
     {
       "path": "Open AI.md",
@@ -7442,12 +7388,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Token and Asset, Financial Instrument, Payments Infrastructure"
-    },
-    {
-      "path": "Stable Diffusion Training.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Model Architecture, Fine Tuning, Diffusion Model"
     },
     {
       "path": "Stablecoin Regulation.md",

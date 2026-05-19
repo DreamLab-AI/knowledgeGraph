@@ -1401,3514 +1401,17 @@
       "qualityScore": 0.0
     }
   ],
-  "artificial-intelligence": [
-    {
-      "slug": "3-d-content-generation",
-      "title": "3D Content Generation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "a-star-algorithm",
-      "title": "A-Star Algorithm",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-adoption",
-      "title": "AI Adoption",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-agent-system",
-      "title": "AI Agent System",
-      "qualityScore": 0.92
-    },
-    {
-      "slug": "ai-alignment",
-      "title": "AI Alignment",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-applications",
-      "title": "AI Applications",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-audit",
-      "title": "AI Audit",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-board",
-      "title": "AI Board",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-companies",
-      "title": "AI Companies",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-concept",
-      "title": "AI Concept",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-defence-doc",
-      "title": "AI Defence Doc",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-deployment",
-      "title": "AI Deployment",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-development-tools",
-      "title": "AI Development Tools",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-development",
-      "title": "AI Development",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-diagram-tools",
-      "title": "AI Diagram Tools",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-documentation-standards",
-      "title": "AI Documentation Standards",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-ethics-board",
-      "title": "AI Ethics Board",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-ethics-checklist",
-      "title": "AI Ethics Checklist",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-ethics",
-      "title": "AI Ethics",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-fairness",
-      "title": "AI Fairness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-framework",
-      "title": "AI Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-game-agent",
-      "title": "AI Game Agent",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-governance-framework",
-      "title": "AI Governance Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-governance-maturity-model",
-      "title": "AI Governance Maturity Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-governance",
-      "title": "AI Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-hardware",
-      "title": "AI Hardware",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-impact-assessment",
-      "title": "AI Impact Assessment",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-incident",
-      "title": "AI Incident",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-infrastructure",
-      "title": "AI Infrastructure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-liability",
-      "title": "AI Liability",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-lifecycle",
-      "title": "AI Lifecycle",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-metadata",
-      "title": "AI Metadata",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-model-card",
-      "title": "AI Model Card",
-      "qualityScore": 0.91
-    },
-    {
-      "slug": "ai-monitoring",
-      "title": "AI Monitoring",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-office",
-      "title": "AI Office",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-operator",
-      "title": "AI Operator",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-provider",
-      "title": "AI Provider",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-risk-management",
-      "title": "AI Risk Management",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-risk-register",
-      "title": "AI Risk Register",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-risk",
-      "title": "AI Risk",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-risks",
-      "title": "AI Risks",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-safety",
-      "title": "AI Safety",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-scrapers",
-      "title": "AI Scrapers",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-search",
-      "title": "AI Search",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-security",
-      "title": "AI Security",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-system-eu-definition",
-      "title": "AI System (EU Definition)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-system-component",
-      "title": "AI System Component",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-tri-sm",
-      "title": "AI TRiSM",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-trust-risk-and-security-management",
-      "title": "AI Trust Risk and Security Management",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-trustworthiness-dimensions",
-      "title": "AI Trustworthiness Dimensions",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-trustworthiness",
-      "title": "AI Trustworthiness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-upscaling-and-super-resolution",
-      "title": "AI Upscaling and Super-Resolution",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-user",
-      "title": "AI User",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-video",
-      "title": "AI Video",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-as-a-step-function",
-      "title": "AI as a step function",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-companions",
-      "title": "AI companions",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-in-games",
-      "title": "AI in Games",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-privacy-at-the-2024-olympics",
-      "title": "AI privacy at the 2024 Olympics",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-augmented-software-engineering",
-      "title": "AI-Augmented Software Engineering",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-generated-content-disclosure",
-      "title": "AI-Generated Content Disclosure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-grounded-domain",
-      "title": "AI-GroundedDomain",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "aiapplications",
-      "title": "AIApplications",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "aidomain",
-      "title": "AIDomain",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "aiethics",
-      "title": "AIEthics",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "aiethics-domain",
-      "title": "AIEthicsDomain",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "aiops",
-      "title": "AIOps",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "aisystem",
-      "title": "AISystem",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "albert",
-      "title": "ALBERT",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "auc",
-      "title": "AUC",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "accountability-oecd",
-      "title": "Accountability (OECD)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "accountability",
-      "title": "Accountability",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "accountable-party",
-      "title": "Accountable Party",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "accuracy",
-      "title": "Accuracy",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "activation-function",
-      "title": "Activation Function",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "active-learning",
-      "title": "Active Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "adoption-of-convergent-technologies",
-      "title": "Adoption of Convergent Technologies",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "adversarial-attack",
-      "title": "Adversarial Attack",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "adversarial-attacks",
-      "title": "Adversarial Attacks",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "adversarial-robustness",
-      "title": "Adversarial Robustness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "adversarial-testing",
-      "title": "Adversarial Testing",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "advice-for-developing-gen-ai",
-      "title": "Advice for developing GenAI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "agent-event-stream",
-      "title": "Agent Event Stream",
-      "qualityScore": 0.85
-    },
-    {
-      "slug": "agent-frameworks",
-      "title": "Agent Frameworks",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "agentic-alliance",
-      "title": "Agentic Alliance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "agentic-internet",
-      "title": "Agentic Internet",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "agentic-metaverse-for-global-creatives",
-      "title": "Agentic Metaverse for Global Creatives",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "agentic-mycelia",
-      "title": "Agentic Mycelia",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "agentic-workshop",
-      "title": "Agentic Workshop",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "agents",
-      "title": "Agents",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "ai-art-categorization",
-      "title": "Ai Art Categorization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-governance-principle",
-      "title": "Ai Governance Principle",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "ai-machine-learning",
-      "title": "Ai Machine Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-origin-declaration",
-      "title": "Ai Origin Declaration",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-transparency-framework",
-      "title": "Ai Transparency Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithm",
-      "title": "Algorithm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithmic-accountability",
-      "title": "Algorithmic Accountability",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithmic-bias-and-variance",
-      "title": "Algorithmic Bias and Variance",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "algorithmic-bias",
-      "title": "Algorithmic Bias",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithmic-framework",
-      "title": "Algorithmic Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithmic-transparency-index",
-      "title": "Algorithmic Transparency Index",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "algorithmic-transparency-reports",
-      "title": "Algorithmic Transparency Reports",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "animate-diff",
-      "title": "AnimateDiff",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "anthropic-claude",
-      "title": "Anthropic Claude",
-      "qualityScore": 0.54
-    },
-    {
-      "slug": "architecture",
-      "title": "Architecture",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "artificial-general-intelligence",
-      "title": "Artificial General Intelligence",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "artificial-intelligence-domain",
-      "title": "Artificial Intelligence Domain",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "artificial-intelligence",
-      "title": "Artificial Intelligence",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "asia-pacific-regulation",
-      "title": "Asia Pacific Regulation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "asset-tokenization",
-      "title": "Asset Tokenization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "asynchronous-execution",
-      "title": "Asynchronous Execution",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "attack-vector",
-      "title": "Attack Vector",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "attention-aware-interaction",
-      "title": "Attention Aware Interaction",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "attention-head",
-      "title": "Attention Head",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "attention-mask",
-      "title": "Attention Mask",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "attention-mechanism",
-      "title": "Attention Mechanism",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "attention-weight",
-      "title": "Attention Weight",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "attention",
-      "title": "Attention",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "audit-trail",
-      "title": "Audit Trail",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "auto-ml",
-      "title": "AutoML",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "autoencoder",
-      "title": "Autoencoder",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "automated-planning",
-      "title": "Automated Planning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "automated-podcasting",
-      "title": "Automated Podcasting",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "automated-summarization",
-      "title": "Automated Summarization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "autonomous-ai-agents",
-      "title": "Autonomous AI Agents",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bart",
-      "title": "BART",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bdi-model",
-      "title": "BDI Model",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bert",
-      "title": "BERT",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "backdoor-attack",
-      "title": "Backdoor Attack",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "backpropagation",
-      "title": "Backpropagation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bagging",
-      "title": "Bagging",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "barter-system",
-      "title": "Barter System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "batch-normalisation",
-      "title": "Batch Normalisation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "batch-processing",
-      "title": "Batch Processing",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "batch-size",
-      "title": "Batch Size",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bayes-filter",
-      "title": "Bayes Filter",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "bayesian-inference",
-      "title": "Bayesian Inference",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "behavior-analysis",
-      "title": "Behavior Analysis",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "behavioral-analytics",
-      "title": "Behavioral Analytics",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "behavioral-modeling",
-      "title": "Behavioral Modeling",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "benchmark-standard",
-      "title": "Benchmark Standard",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bias-detection-methods",
-      "title": "Bias Detection Methods",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "bias-mitigation-techniques",
-      "title": "Bias Mitigation Techniques",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "bias-in-large-language-models",
-      "title": "Bias in Large Language Models",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "bias",
-      "title": "Bias",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "boosting",
-      "title": "Boosting",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "cli-multi-agent-systems",
-      "title": "CLI Multi-Agent Systems",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "california-ai-bill",
-      "title": "California AI bill",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "call-centres",
-      "title": "Call Centres",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "causal-attention",
-      "title": "Causal Attention",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "chat-gpt",
-      "title": "ChatGPT",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "chatbots",
-      "title": "Chatbots",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "checkpoints",
-      "title": "Checkpoints",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "claude",
-      "title": "Claude",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "co-training",
-      "title": "Co Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "code-generation",
-      "title": "Code Generation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "cognitive-ai",
-      "title": "Cognitive AI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "collective-intelligence-system",
-      "title": "Collective Intelligence System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "collective-learning",
-      "title": "Collective Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "comfy-ui-client",
-      "title": "ComfyUI Client",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "comfy-ui-workflows",
-      "title": "ComfyUI Workflows",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "comfy-ui",
-      "title": "ComfyUI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "community-governance-model",
-      "title": "Community Governance Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "community-governance",
-      "title": "Community Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "competition-in-ai",
-      "title": "Competition in AI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "compliance-audit-trail",
-      "title": "Compliance Audit Trail",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "compliance-dashboard",
-      "title": "Compliance Dashboard",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "compliance-framework",
-      "title": "Compliance Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "compliance-standards",
-      "title": "Compliance Standards",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "component",
-      "title": "Component",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "composite-ai",
-      "title": "Composite AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "computation-and-intelligence-domain",
-      "title": "Computation And Intelligence Domain",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "computational-component",
-      "title": "Computational Component",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "computer-hardware",
-      "title": "Computer Hardware",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "computer-use-and-browser-agents",
-      "title": "Computer Use and Browser Agents",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "computer-vision-task",
-      "title": "Computer Vision Task",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "computer-vision",
-      "title": "Computer Vision",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "conditional-random-field",
-      "title": "Conditional Random Field",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "confidential-computing",
-      "title": "Confidential Computing",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "constitutional-ai",
-      "title": "Constitutional AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "constitutional-principle",
-      "title": "Constitutional Principle",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "constraint-based-design",
-      "title": "Constraint Based Design",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "constraint",
-      "title": "Constraint",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "content-moderation",
-      "title": "Content Moderation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "context-engineering",
-      "title": "Context Engineering",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "context-window",
-      "title": "Context Window",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "continued-pre-training",
-      "title": "Continued Pre Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "contrastive-learning",
-      "title": "Contrastive Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "control-algorithm",
-      "title": "Control Algorithm",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "control-net-and-similar-spatial-conditioning-systems",
-      "title": "ControlNet and Similar Spatial Conditioning Systems",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "convergence",
-      "title": "Convergence",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "conversational-ai",
-      "title": "Conversational AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "convolutional-neural-network",
-      "title": "Convolutional Neural Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "cortex-agent",
-      "title": "Cortex Agent",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "cross-attention",
-      "title": "Cross Attention",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "cross-platform-compliance-hub",
-      "title": "Cross-Platform Compliance Hub",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "cybersecurity",
-      "title": "Cybersecurity",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "dall-e",
-      "title": "DALL\u00b7E",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "dao-governance",
-      "title": "DAO Governance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "data-annotation",
-      "title": "Data Annotation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "data-augmentation-strategies",
-      "title": "Data Augmentation Strategies",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "data-breach",
-      "title": "Data Breach",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-cleaning",
-      "title": "Data Cleaning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "data-compression",
-      "title": "Data Compression",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-efficient-learning",
-      "title": "Data Efficient Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-governance",
-      "title": "Data Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-lake",
-      "title": "Data Lake",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-minimisation",
-      "title": "Data Minimisation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-poisoning",
-      "title": "Data Poisoning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "data-protection-regulation",
-      "title": "Data Protection Regulation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-structure",
-      "title": "Data Structure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "data-versioning",
-      "title": "Data Versioning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "death-of-the-internet",
-      "title": "Death of the Internet",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "decision-transparency",
-      "title": "Decision Transparency",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "decoder",
-      "title": "Decoder",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "deep-generative-model",
-      "title": "Deep Generative Model",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "deep-learning",
-      "title": "Deep Learning",
-      "qualityScore": 0.91
-    },
-    {
-      "slug": "deepfakes-and-fraudulent-content",
-      "title": "Deepfakes and fraudulent content",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "deepfakes",
-      "title": "Deepfakes",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "depth-estimation",
-      "title": "Depth Estimation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "dialogue-system",
-      "title": "Dialogue System",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "differential-privacy",
-      "title": "Differential Privacy",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "diffusion-model",
-      "title": "Diffusion Model",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "diffusion-models",
-      "title": "Diffusion Models",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "digital-actor-creation",
-      "title": "Digital Actor Creation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "digital-fabrication",
-      "title": "Digital Fabrication",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "digital-governance",
-      "title": "Digital Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "digital-regulation",
-      "title": "Digital Regulation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "digital-services-act",
-      "title": "Digital Services Act",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "digital-society-harms",
-      "title": "Digital Society Harms",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "digital-society-surveillance",
-      "title": "Digital Society Surveillance",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "digital-tax-compliance-node",
-      "title": "Digital Tax Compliance Node",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "dimensionality-reduction",
-      "title": "Dimensionality Reduction",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "direct-preference-optimization",
-      "title": "Direct Preference Optimization",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "disparate-impact",
-      "title": "Disparate Impact",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "diversity-non-discrimination-and-fairness",
-      "title": "Diversity, Non-Discrimination, and Fairness",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "documentation-generation",
-      "title": "Documentation Generation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "dropout",
-      "title": "Dropout",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "drug-discovery-ai",
-      "title": "Drug Discovery AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "etl-pipeline",
-      "title": "ETL Pipeline",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ai-creative-media",
-      "title": "ETSI Domain AI + Creative Media",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ai-data-mgmt",
-      "title": "ETSI Domain AI + Data Mgmt",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ai-governance",
-      "title": "ETSI Domain AI + Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ai-human-interface",
-      "title": "ETSI Domain AI + Human Interface",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ai",
-      "title": "ETSI Domain AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-data-management-ai",
-      "title": "ETSI Domain: Data Management + AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-data-management-ethics",
-      "title": "ETSI Domain: Data Management + Ethics",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-ethics-and-law",
-      "title": "ETSI Domain: Ethics & Law",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsi-domain-governance-and-compliance",
-      "title": "ETSI Domain: Governance & Compliance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "etsidomain-classification",
-      "title": "ETSIDomainClassification",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-compliance",
-      "title": "ETSI_Domain_Governance_Compliance",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-security",
-      "title": "ETSI_Domain_Governance_Security",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-economy",
-      "title": "ETSI_Domain_Governance___Economy",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-ethics",
-      "title": "ETSI_Domain_Governance___Ethics",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-governance-society",
-      "title": "ETSI_Domain_Governance___Society",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "etsi-domain-human-interface-governance",
-      "title": "ETSI_Domain_Human_Interface___Governance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "etsi-domain-infrastructure-governance",
-      "title": "ETSI_Domain_Infrastructure___Governance",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "eu-ai-act",
-      "title": "EU AI Act",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "economic-governance",
-      "title": "Economic Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "economics",
-      "title": "Economics",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "edge-ai-accelerator",
-      "title": "Edge AI Accelerator",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "edge-ai-accelerators",
-      "title": "Edge AI Accelerators",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "edge-ai-security",
-      "title": "Edge AI Security",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "edge-ai-system",
-      "title": "Edge AI System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "edge-ai-for-smart-cities",
-      "title": "Edge AI for Smart Cities",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "edge-cloud-collaboration",
-      "title": "Edge-Cloud Collaboration",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "education-and-ai",
-      "title": "Education and AI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "embedded-ai-frameworks",
-      "title": "Embedded AI Frameworks",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "embodied-minds",
-      "title": "Embodied Minds",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "emotional-intelligence",
-      "title": "Emotional Intelligence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "empathetic-ai",
-      "title": "Empathetic AI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "encoder-decoder-architecture",
-      "title": "Encoder Decoder Architecture",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "encoder",
-      "title": "Encoder",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ensemble-methods",
-      "title": "Ensemble Methods",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "entity",
-      "title": "Entity",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "epoch",
-      "title": "Epoch",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ethical-ai",
-      "title": "Ethical AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ethical-framework",
-      "title": "Ethical Framework",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ethical-review-process",
-      "title": "Ethical Review Process",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ethics-and-law-layer",
-      "title": "Ethics & Law Layer",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "evaluation-benchmarks-and-leaderboards",
-      "title": "Evaluation benchmarks and leaderboards",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "expert-systems",
-      "title": "Expert Systems",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "explainability-oecd",
-      "title": "Explainability (OECD)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "explainability",
-      "title": "Explainability",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "explainable-ai",
-      "title": "Explainable AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "explanation",
-      "title": "Explanation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "fpga",
-      "title": "FPGA",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "face-swap",
-      "title": "Face Swap",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "fairness-oecd",
-      "title": "Fairness (OECD)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "fairness-accuracy-tradeoffs",
-      "title": "Fairness Accuracy Tradeoffs",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "fairness-auditing-tools",
-      "title": "Fairness Auditing Tools",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "fairness-constraints",
-      "title": "Fairness Constraints",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "fairness-metrics",
-      "title": "Fairness Metrics",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "fairness",
-      "title": "Fairness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "feature-engineering",
-      "title": "Feature Engineering",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "feature-importance",
-      "title": "Feature Importance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "feature-store",
-      "title": "Feature Store",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "federated-edge-learning",
-      "title": "Federated Edge Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "feed-forward-network",
-      "title": "Feed Forward Network",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "feedforward-neural-network",
-      "title": "Feedforward Neural Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "financialised-agentic-memetics",
-      "title": "Financialised Agentic Memetics",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "fine-tuning",
-      "title": "Fine Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "flux-1",
-      "title": "Flux.1",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "fooocus",
-      "title": "Fooocus",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "foundation-model-provider",
-      "title": "Foundation Model Provider",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "foundation-model",
-      "title": "Foundation Model",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "foundation-models",
-      "title": "Foundation Models",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "full-fine-tuning",
-      "title": "Full Fine Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "function-calling",
-      "title": "Function Calling",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "fuzzy-logic",
-      "title": "Fuzzy Logic",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gdpr-article-22-compliance",
-      "title": "GDPR Article 22 Compliance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "gpt-2",
-      "title": "GPT 2",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gpt-3",
-      "title": "GPT 3",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gpt-4",
-      "title": "GPT 4",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gpt-engineer",
-      "title": "GPT Engineer",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "gpt",
-      "title": "GPT",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gpts-and-custom-assistants",
-      "title": "GPTs and Custom Assistants",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "gartner-prediction",
-      "title": "Gartner Prediction",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "gemini",
-      "title": "Gemini",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "general-purpose-ai-model",
-      "title": "General Purpose AI Model",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "generative-ai-engineering",
-      "title": "Generative AI Engineering",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "generative-ai",
-      "title": "Generative AI",
-      "qualityScore": 0.9
-    },
-    {
-      "slug": "generative-adversarial-network",
-      "title": "Generative Adversarial Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "generative-adversarial-networks",
-      "title": "Generative Adversarial Networks",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "generative-content",
-      "title": "Generative Content",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "generative-design-tool",
-      "title": "Generative Design Tool",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "generative-model",
-      "title": "Generative Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "global-explanation",
-      "title": "Global Explanation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "global-inequality",
-      "title": "Global Inequality",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "goal",
-      "title": "Goal",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "google-deep-mind",
-      "title": "Google DeepMind",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "governance-architecture",
-      "title": "Governance Architecture",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "governance-board",
-      "title": "Governance Board",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "governance-framework",
-      "title": "Governance Framework",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "governance-model",
-      "title": "Governance Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "governance",
-      "title": "Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "gradient-clipping",
-      "title": "Gradient Clipping",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "gradient-descent",
-      "title": "Gradient Descent",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "graph-algorithms",
-      "title": "Graph Algorithms",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "graph-neural-network",
-      "title": "Graph Neural Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "grok",
-      "title": "Grok",
-      "qualityScore": 0.51
-    },
-    {
-      "slug": "groq",
-      "title": "Groq",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "group-vs-individual-fairness",
-      "title": "Group vs Individual Fairness",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "hand-tracking",
-      "title": "Hand Tracking",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "harmful-bias",
-      "title": "Harmful Bias",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "healthcare-analytics",
-      "title": "Healthcare Analytics",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "healthcare-application-classification",
-      "title": "Healthcare Application Classification",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "helpfulness",
-      "title": "Helpfulness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "heuristic-methods",
-      "title": "Heuristic Methods",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "high-risk-ai-system",
-      "title": "High Risk AI System",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "history-and-path-to-agi",
-      "title": "History and Path to AGI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "homomorphic-encryption-for-machine-learning",
-      "title": "Homomorphic Encryption for Machine Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "honesty",
-      "title": "Honesty",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "human-agency-and-oversight",
-      "title": "Human Agency and Oversight",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "human-computer-interaction",
-      "title": "Human Computer Interaction",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "human-preference",
-      "title": "Human Preference",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "human-in-the-loop",
-      "title": "Human in the Loop",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "human-vs-ai",
-      "title": "Human vs AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "human-in-the-loop-learning",
-      "title": "Human-in-the- Loop Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "humaninthe-loop-learning",
-      "title": "Humaninthe Loop Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "hunyuan-video",
-      "title": "Hunyuan Video",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "hyper-personalisation",
-      "title": "Hyper personalisation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "hyperparameter",
-      "title": "Hyperparameter",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ieee-7000-series-standards",
-      "title": "IEEE 7000 Series Standards",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ip-adapter",
-      "title": "IP-Adapter",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "identification-system",
-      "title": "Identification System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "image-classification",
-      "title": "Image Classification",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "image-segmentation",
-      "title": "Image Segmentation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "image-and-video-restoration",
-      "title": "Image and Video Restoration",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "imitation-learning",
-      "title": "Imitation Learning",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "inference-hardware",
-      "title": "Inference Hardware",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "inference",
-      "title": "Inference",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "information-security",
-      "title": "Information Security",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "informed-search",
-      "title": "Informed Search",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "infrastructure-component",
-      "title": "Infrastructure Component",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "inpainting",
-      "title": "Inpainting",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "interactive-learning",
-      "title": "Interactive Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "internet-infrastructure",
-      "title": "Internet Infrastructure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "interpretability",
-      "title": "Interpretability",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "interpretable-ai",
-      "title": "Interpretable AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "intersectional-fairness",
-      "title": "Intersectional Fairness",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "intrinsic-interpretability",
-      "title": "Intrinsic Interpretability",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "io-t-ai-integration",
-      "title": "IoT AI Integration",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "jailbreaking",
-      "title": "Jailbreaking",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "kohya-dreambooth-and-similar",
-      "title": "KOHYA Dreambooth and similar",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "key-vector",
-      "title": "Key Vector",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "knowledge-distillation-for-edge",
-      "title": "Knowledge Distillation for Edge",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "knowledge-distillation",
-      "title": "Knowledge Distillation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "knowledge-graph-construction",
-      "title": "Knowledge Graph Construction",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "knowledge-graphing",
-      "title": "Knowledge Graphing",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "knowledge-organization-system",
-      "title": "Knowledge Organization System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "knowledge-organization",
-      "title": "Knowledge Organization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "knowledge-representation",
-      "title": "Knowledge Representation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "lang-chain",
-      "title": "LangChain",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "large-language-models",
-      "title": "Large Language Models",
-      "qualityScore": 0.92
-    },
-    {
-      "slug": "latency-aware-edge-ai",
-      "title": "Latency-Aware Edge AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "layer-normalisation",
-      "title": "Layer Normalisation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "learning-algorithm",
-      "title": "Learning Algorithm",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "lens-and-camera-calibration",
-      "title": "Lens and Camera Calibration",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "limited-risk-ai",
-      "title": "Limited Risk AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "list-of-agent-projects",
-      "title": "List Of Agent Projects",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "llama-3",
-      "title": "Llama 3",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "lo-ra",
-      "title": "Lo RA",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "lo-ra-do-ra-etc",
-      "title": "LoRA DoRA etc",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "logic-programming",
-      "title": "Logic Programming",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "logistics-optimization",
-      "title": "Logistics Optimization",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "long-short-term-memory",
-      "title": "Long Short Term Memory",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "loss-function",
-      "title": "Loss Function",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ms-phi-models",
-      "title": "MS Phi models",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "machine-learning-framework",
-      "title": "Machine Learning Framework",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-learning-infrastructure",
-      "title": "Machine Learning Infrastructure",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-learning-model",
-      "title": "Machine Learning Model",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-learning-models",
-      "title": "Machine Learning Models",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-learning-pipeline",
-      "title": "Machine Learning Pipeline",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "machine-learning-platform",
-      "title": "Machine Learning Platform",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-learning-technique",
-      "title": "Machine Learning Technique",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "machine-learning",
-      "title": "Machine Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "machine-translation",
-      "title": "Machine Translation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mathematical-science",
-      "title": "Mathematical Science",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "maximum-sequence-length",
-      "title": "Maximum Sequence Length",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mean-absolute-error",
-      "title": "Mean Absolute Error",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "medical-ai",
-      "title": "Medical AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "medical-diagnosis-ai",
-      "title": "Medical Diagnosis AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "medical-imaging-ai",
-      "title": "Medical Imaging AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "meeting-transcription",
-      "title": "Meeting Transcription",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "membership-inference",
-      "title": "Membership Inference",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "meta-platforms",
-      "title": "Meta Platforms",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "microsoft-copilot",
-      "title": "Microsoft Copilot",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "midjourney",
-      "title": "Midjourney",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "minimal-risk-ai",
-      "title": "Minimal Risk AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "minimax-algorithm",
-      "title": "Minimax Algorithm",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "title": "Mistral and Mixtral",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "mistral",
-      "title": "Mistral",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mixed-precision-training",
-      "title": "Mixed Precision Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mixtral",
-      "title": "Mixtral",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mixture-of-experts",
-      "title": "Mixture of Experts",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "mixup",
-      "title": "Mixup",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-architecture",
-      "title": "Model Architecture",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-capacity",
-      "title": "Model Capacity",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-compression-for-edge",
-      "title": "Model Compression for Edge",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "model-context-protocol",
-      "title": "Model Context Protocol",
-      "qualityScore": 0.7
-    },
-    {
-      "slug": "model-control-protocols-like-mcp",
-      "title": "Model Control Protocols like MCP",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "model-depth",
-      "title": "Model Depth",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-ensembling",
-      "title": "Model Ensembling",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-evaluation-results",
-      "title": "Model Evaluation Results",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "model-extraction",
-      "title": "Model Extraction",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-interpretability",
-      "title": "Model Interpretability",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-inversion",
-      "title": "Model Inversion",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-optimisation-and-performance",
-      "title": "Model Optimisation and Performance",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "model-parameters",
-      "title": "Model Parameters",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-performance",
-      "title": "Model Performance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-property",
-      "title": "Model Property",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-pruning-for-edge-deployment",
-      "title": "Model Pruning for Edge Deployment",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "model-robustness",
-      "title": "Model Robustness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-training",
-      "title": "Model Training",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "model-transparency",
-      "title": "Model Transparency",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-weights",
-      "title": "Model Weights",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model-width",
-      "title": "Model Width",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "model",
-      "title": "Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "model-ops",
-      "title": "ModelOps",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "module",
-      "title": "Module",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "monitoring-dashboard",
-      "title": "Monitoring Dashboard",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "monte-carlo-tree-search",
-      "title": "Monte Carlo Tree Search",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "multi-agent-rag-scrapbook",
-      "title": "Multi Agent RAG scrapbook",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "multi-head-attention",
-      "title": "Multi-Head Attention",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "multimodal-ai",
-      "title": "Multimodal AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "multimodal-understanding",
-      "title": "Multimodal Understanding",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "music-and-audio",
-      "title": "Music and Audio",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "npu",
-      "title": "NPU",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "named-entity-recognition",
-      "title": "Named Entity Recognition",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "named-entity",
-      "title": "Named Entity",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "natural-language-processing",
-      "title": "Natural Language Processing",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "network-architecture",
-      "title": "Network Architecture",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-3-d-generation",
-      "title": "Neural 3D Generation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "neural-network-architecture",
-      "title": "Neural Network Architecture",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-network-component",
-      "title": "Neural Network Component",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-network-layer",
-      "title": "Neural Network Layer",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-network-quantisation",
-      "title": "Neural Network Quantisation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-network",
-      "title": "Neural Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "neural-networking",
-      "title": "Neural Networking",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-radiance-field",
-      "title": "Neural Radiance Field",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neuromorphic-chip",
-      "title": "Neuromorphic Chip",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neuromorphic-chips",
-      "title": "Neuromorphic Chips",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "newcastle-ai-and-health-innovation",
-      "title": "Newcastle AI & Health Innovation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "norbert-wiener",
-      "title": "Norbert Wiener",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "objective",
-      "title": "Objective",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "on-device-learning",
-      "title": "On-Device Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "online-learning",
-      "title": "Online Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ontology-in-llm-operations",
-      "title": "Ontology in LLM Operations",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "open-ai-whisper",
-      "title": "Open AI Whisper",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "open-ai",
-      "title": "Open AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "open-generative-ai-tools",
-      "title": "Open Generative AI tools",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "open-webui-and-pipelines",
-      "title": "Open Webui and Pipelines",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "optimization-algorithm",
-      "title": "Optimization Algorithm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "optimization-algorithms",
-      "title": "Optimization Algorithms",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "overfitting",
-      "title": "Overfitting",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "overview-of-machine-learning-techniques",
-      "title": "Overview of Machine Learning Techniques",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "pegasus",
-      "title": "PEGASUS",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "parameter-efficient-fine-tuning",
-      "title": "Parameter-Efficient Fine-Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "parameter",
-      "title": "Parameter",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "particle-filter",
-      "title": "Particle Filter",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "pathfinding-algorithm",
-      "title": "Pathfinding Algorithm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pathology-ai",
-      "title": "Pathology AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "pattern-recognition",
-      "title": "Pattern Recognition",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "perception-system",
-      "title": "Perception System",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "performance-benchmarks",
-      "title": "Performance Benchmarks",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pika",
-      "title": "Pika",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "planning-and-scheduling",
-      "title": "Planning and Scheduling",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "platform-governance",
-      "title": "Platform Governance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "policy-update-magnitude",
-      "title": "Policy Update Magnitude",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pose-estimation",
-      "title": "Pose Estimation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "post-hoc-explanation",
-      "title": "Post Hoc Explanation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "power-efficient-ai",
-      "title": "Power-Efficient AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pre-training",
-      "title": "Pre Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "precision",
-      "title": "Precision",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "predictive-analytics",
-      "title": "Predictive Analytics",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "predictive-maintenance",
-      "title": "Predictive Maintenance",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "predictive-personalization",
-      "title": "Predictive Personalization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pretrained-model",
-      "title": "Pretrained Model",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "pretrained-weights",
-      "title": "Pretrained Weights",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "prime-intellect",
-      "title": "Prime Intellect",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "privacy-budget-management",
-      "title": "Privacy Budget Management",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-by-design",
-      "title": "Privacy By Design",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-impact-assessment",
-      "title": "Privacy Impact Assessment",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-mechanism",
-      "title": "Privacy Mechanism",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-preserving-analytics",
-      "title": "Privacy Preserving Analytics",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "privacy-preserving-data-mining",
-      "title": "Privacy Preserving Data Mining",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-utility-tradeoffs",
-      "title": "Privacy Utility Tradeoffs",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "privacy-and-data-governance",
-      "title": "Privacy and Data Governance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "probabilistic-model",
-      "title": "Probabilistic Model",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "programming-language",
-      "title": "Programming Language",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "programming-paradigm",
-      "title": "Programming Paradigm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "prohibited-ai-practice",
-      "title": "Prohibited AI Practice",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "prompt-engineering",
-      "title": "Prompt Engineering",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "prompt-tuning",
-      "title": "Prompt Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "property",
-      "title": "Property",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "proprietary-ai-video",
-      "title": "Proprietary AI Video",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "proprietary-image-generation",
-      "title": "Proprietary Image Generation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "proprietary-large-language-models",
-      "title": "Proprietary Large Language Models",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "proximal-policy-optimisation",
-      "title": "Proximal Policy Optimisation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "pseudonymisation",
-      "title": "Pseudonymisation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "push-to-local-rag",
-      "title": "Push To Local RAG",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "python-and-py-torch",
-      "title": "Python and PyTorch",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "python-to-build-rag-data-page",
-      "title": "Python to build RAG data page",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "qlo-ra",
-      "title": "QLoRA",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "quantum-ai",
-      "title": "Quantum AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "query-key-value",
-      "title": "Query Key Value",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "query-vector",
-      "title": "Query Vector",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "question-answering",
-      "title": "Question Answering",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "roc-curve",
-      "title": "ROC Curve",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "radiology-ai",
-      "title": "Radiology AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "rapid-ai-deployment",
-      "title": "Rapid AI Deployment",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "real-time-inference-at-edge",
-      "title": "Real-Time Inference at Edge",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "real-time-processing",
-      "title": "Real-time Processing",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "reasoning",
-      "title": "Reasoning",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "recurrent-neural-network",
-      "title": "Recurrent Neural Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "redress-procedure",
-      "title": "Redress Procedure",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "regularisation",
-      "title": "Regularisation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "regulatory-compliance",
-      "title": "Regulatory Compliance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "reinforcement-learning-algorithm",
-      "title": "Reinforcement Learning Algorithm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "reinforcement-learning-from-human-feedback",
-      "title": "Reinforcement Learning from Human Feedback",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "reinforcement-learning",
-      "title": "Reinforcement Learning",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "residual-network",
-      "title": "Residual Network",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "responsible-ai-principles",
-      "title": "Responsible AI Principles",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "responsible-ai-unconference",
-      "title": "Responsible AI Unconference",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "responsible-ai",
-      "title": "Responsible AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "retrieval-augmented-generation-rag",
-      "title": "Retrieval Augmented Generation - RAG",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "reward-model",
-      "title": "Reward Model",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "risk-management",
-      "title": "Risk Management",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "risk-mitigation",
-      "title": "Risk Mitigation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "risk-treatment",
-      "title": "Risk Treatment",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "risk",
-      "title": "Risk",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ro-berta",
-      "title": "RoBERTa",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "robotics-control",
-      "title": "Robotics Control",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "robustness",
-      "title": "Robustness",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "runtime-inspection",
-      "title": "Runtime Inspection",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "strips",
-      "title": "STRIPS",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "safety-fine-tuning",
-      "title": "Safety Fine Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "safety-measure",
-      "title": "Safety Measure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "safety-vulnerability",
-      "title": "Safety Vulnerability",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "safety-and-alignment",
-      "title": "Safety and alignment",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "sampling",
-      "title": "Sampling",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "scaled-dot-product-attention",
-      "title": "Scaled Dot Product Attention",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "scene-capture-and-reconstruction",
-      "title": "Scene Capture and Reconstruction",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "search-algorithm",
-      "title": "Search Algorithm",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "search-algorithms",
-      "title": "Search Algorithms",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "search-technology",
-      "title": "Search Technology",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "segmentation-and-identification",
-      "title": "Segmentation and Identification",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "self-attention",
-      "title": "Self Attention",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "self-improvement",
-      "title": "Self Improvement",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "self-training",
-      "title": "Self Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "semantic-search",
-      "title": "Semantic Search",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "semantic-segmentation",
-      "title": "Semantic Segmentation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "semantic-web",
-      "title": "Semantic Web",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "semi-supervised-learning",
-      "title": "Semi-Supervised Learning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "sentence-piece",
-      "title": "SentencePiece",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "sentiment-analysis",
-      "title": "Sentiment Analysis",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "silo-ai",
-      "title": "Silo AI",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "singularity",
-      "title": "Singularity",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "societal-and-environmental-wellbeing",
-      "title": "Societal and Environmental Wellbeing",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "soft-prompt-embedding",
-      "title": "Soft Prompt Embedding",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "software-architecture",
-      "title": "Software Architecture",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "software-development-process",
-      "title": "Software Development Process",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "soon-next-later-ai-futurology",
-      "title": "Soon-Next-Later (AI futurology)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "sovereign-ai-bid",
-      "title": "Sovereign AI bid",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "sparse-mixture-of-experts",
-      "title": "Sparse Mixture of Experts",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "spatial-ai-associate",
-      "title": "Spatial AI Associate",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "spatial-ai",
-      "title": "Spatial AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "speech-recognition",
-      "title": "Speech Recognition",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "speech-and-voice",
-      "title": "Speech and Voice",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "title": "Stable Diffusion Training",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "stable-diffusion",
-      "title": "Stable Diffusion",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "stacking",
-      "title": "Stacking",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "stakeholder-engagement-in-ai",
-      "title": "Stakeholder Engagement in AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "standardized-asset-classification",
-      "title": "Standardized Asset Classification",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "standards-compliance",
-      "title": "Standards Compliance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "standards-organization",
-      "title": "Standards Organization",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "state-change",
-      "title": "State Change",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "state-of-the-art-in-ai",
-      "title": "State of the art in AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "stochastic-process",
-      "title": "Stochastic Process",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "supervised-fine-tuning",
-      "title": "Supervised Fine Tuning",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "supervised-learning",
-      "title": "Supervised Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "symbolic-ai",
-      "title": "Symbolic AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "symbolic-reasoning",
-      "title": "Symbolic Reasoning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "synthetic-data-generation",
-      "title": "Synthetic Data Generation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "system-architecture",
-      "title": "System Architecture",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "system",
-      "title": "System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "systemic-risk",
-      "title": "Systemic Risk",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "t5",
-      "title": "T5",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "tpu",
-      "title": "TPU",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "task-adaptation",
-      "title": "Task Adaptation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "task-planning",
-      "title": "Task Planning",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "teacher-student-training",
-      "title": "Teacher Student Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "technical-robustness-and-safety",
-      "title": "Technical Robustness and Safety",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "technique",
-      "title": "Technique",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "tensor-processing-unit",
-      "title": "Tensor Processing Unit",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "text-to-3-d",
-      "title": "Text-to-3D",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "text-to-image",
-      "title": "Text-to-Image",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "text-to-speech",
-      "title": "Text-to-Speech",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "the-cognitive-revolution",
-      "title": "The Cognitive Revolution",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "third-party-vulnerability",
-      "title": "Third-Party Vulnerability",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "time-series-forecasting",
-      "title": "Time Series Forecasting",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "tiny-ml",
-      "title": "TinyML",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "token-embedding",
-      "title": "Token Embedding",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "tokenisation",
-      "title": "Tokenisation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "tokenization",
-      "title": "Tokenization",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "toxicity-detection",
-      "title": "Toxicity Detection",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "traceability-mechanism",
-      "title": "Traceability Mechanism",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "training-data-repository",
-      "title": "Training Data Repository",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "training-data",
-      "title": "Training Data",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "training-dataset-metadata",
-      "title": "Training Dataset Metadata",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "training-hardware",
-      "title": "Training Hardware",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "training-instability",
-      "title": "Training Instability",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "training-method",
-      "title": "Training Method",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "training-methods",
-      "title": "Training Methods",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "training-and-fine-tuning",
-      "title": "Training and fine tuning",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "training",
-      "title": "Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transfer-learning",
-      "title": "Transfer Learning",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "transformer-architecture",
-      "title": "Transformer Architecture",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transformer",
-      "title": "Transformer",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transformers",
-      "title": "Transformers",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "translation",
-      "title": "Translation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "transparency-oecd",
-      "title": "Transparency (OECD)",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transparency-metrics",
-      "title": "Transparency Metrics",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transparency-notice",
-      "title": "Transparency Notice",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transparency-and-explainability",
-      "title": "Transparency and Explainability",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "transparency",
-      "title": "Transparency",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "transparent-governance",
-      "title": "Transparent Governance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "treatment-planning-ai",
-      "title": "Treatment Planning AI",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "trust-and-governance-domain",
-      "title": "Trust and Governance Domain",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "trust-and-safety",
-      "title": "Trust and Safety",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "trustworthy-ai-framework",
-      "title": "Trustworthy AI Framework",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "unesco-recommendation-on-the-ethics-of-ai",
-      "title": "UNESCO Recommendation on the Ethics of AI",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "underfitting",
-      "title": "Underfitting",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "unsupervised-learning",
-      "title": "Unsupervised Learning",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "user-agreement-compliance",
-      "title": "User Agreement Compliance",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "user-privacy-control",
-      "title": "User Privacy Control",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "value-alignment",
-      "title": "Value Alignment",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "value-vector",
-      "title": "Value Vector",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "value",
-      "title": "Value",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "variational-autoencoders",
-      "title": "Variational Autoencoders",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "video-processing",
-      "title": "Video Processing",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "virtual-society-regulations",
-      "title": "Virtual Society Regulations",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "virtual-training",
-      "title": "Virtual Training",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "vision-processing",
-      "title": "Vision Processing",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "vision-claw-agentic-container",
-      "title": "VisionClaw Agentic Container",
-      "qualityScore": 0.88
-    },
-    {
-      "slug": "vocabulary-governance",
-      "title": "Vocabulary Governance",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "weight-decay",
-      "title": "Weight Decay",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "workforce-augmentation",
-      "title": "Workforce Augmentation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "ai-core-concepts",
-      "title": "ai core concepts",
-      "qualityScore": 0.4
-    },
-    {
-      "slug": "ai-application",
-      "title": "AI Application",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "ai-governance-and-ethics",
-      "title": "AI Governance and Ethics",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "ai-model-architecture",
-      "title": "AI Model Architecture",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "ai-research-area",
-      "title": "AI Research Area",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "ai-technique",
-      "title": "AI Technique",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "fast-ai",
-      "title": "fast.ai",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "k-anonymity-in-datasets",
-      "title": "k-Anonymity in Datasets",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "latent-space",
-      "title": "latent space",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "m-bert",
-      "title": "mBERT",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "m-t5",
-      "title": "mT5",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "multimodal",
-      "title": "multimodal",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ollama",
-      "title": "ollama",
-      "qualityScore": 0.35
-    }
-  ],
   "spatial-computing": [
+    {
+      "slug": "3-d-animation",
+      "title": "3D Animation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "3-d-asset",
+      "title": "3D Asset",
+      "qualityScore": 0.35
+    },
     {
       "slug": "3-d-development",
       "title": "3D Development",
@@ -4958,16 +1461,6 @@
       "slug": "3-d-and-4-d",
       "title": "3D and 4D",
       "qualityScore": 0.5
-    },
-    {
-      "slug": "3-danimation",
-      "title": "3DAnimation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "3-dasset",
-      "title": "3DAsset",
-      "qualityScore": 0.35
     },
     {
       "slug": "ar-frame",
@@ -9355,372 +5848,20 @@
       "qualityScore": 0.5
     }
   ],
-  "distributed-collaboration": [
-    {
-      "slug": "3-d-gaussian-splatting",
-      "title": "3D Gaussian Splatting",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "ai-avatars",
-      "title": "AI Avatars",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "asynchronous-collaboration",
-      "title": "Asynchronous Collaboration",
-      "qualityScore": 0.55
-    },
-    {
-      "slug": "asynchronous-video",
-      "title": "Asynchronous Video",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "augmented-reality-collaboration",
-      "title": "Augmented Reality Collaboration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "bandwidth-adaptation",
-      "title": "Bandwidth Adaptation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "blockchain-collaboration",
-      "title": "Blockchain Collaboration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "breakout-room",
-      "title": "Breakout Room",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "crdt",
-      "title": "CRDT",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "collaborative-whiteboard",
-      "title": "Collaborative Whiteboard",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "communication-theory",
-      "title": "Communication Theory",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "cryptocurrency-remuneration",
-      "title": "Cryptocurrency Remuneration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "dao-governance-for-telecollaboration",
-      "title": "DAO Governance for Telecollaboration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "digital-twin-collaboration",
-      "title": "Digital Twin Collaboration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "digital-workplace-platform",
-      "title": "Digital Workplace Platform",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "distributed-collaboration",
-      "title": "Distributed Collaboration",
-      "qualityScore": 0.3
-    },
-    {
-      "slug": "distributed-decision-making",
-      "title": "Distributed Decision Making",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "haptic-feedback-telepresence",
-      "title": "Haptic Feedback Telepresence",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "horizon-workrooms",
-      "title": "Horizon Workrooms",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "immersive-communication",
-      "title": "Immersive Communication",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "language-translation",
-      "title": "Language Translation",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "media-richness-theory",
-      "title": "Media Richness Theory",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "media-theory",
-      "title": "Media Theory",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "meeting-ai-assistant",
-      "title": "Meeting AI Assistant",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "meeting-recording",
-      "title": "Meeting Recording",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "metaverse-application",
-      "title": "Metaverse Application",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "metaverse-telepresence-bridge",
-      "title": "Metaverse-Telepresence Bridge",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "network-protocol",
-      "title": "Network Protocol",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "networkcomponent",
-      "title": "Networkcomponent",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "neural-radiance-fields",
-      "title": "Neural Radiance Fields",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "neural-rendering",
-      "title": "Neural Rendering",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "organisational-theory",
-      "title": "Organisational Theory",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "perceptual-experience",
-      "title": "Perceptual Experience",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "presence-indicator",
-      "title": "Presence Indicator",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "real-time-language-translation",
-      "title": "Real-Time Language Translation",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "real-time-translation",
-      "title": "Real-time Translation",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "remote-communication",
-      "title": "Remote Communication",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "remote-pair-programming",
-      "title": "Remote Pair Programming",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "robotic-system",
-      "title": "Robotic System",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "robotic-telepresence",
-      "title": "Robotic Telepresence",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "robotics-telepresence-bridge",
-      "title": "Robotics-Telepresence Bridge",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "screen-sharing",
-      "title": "Screen Sharing",
-      "qualityScore": 0.52
-    },
-    {
-      "slug": "self-presence",
-      "title": "Self Presence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "shared-whiteboards",
-      "title": "Shared Whiteboards",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "smart-contract-coordination",
-      "title": "Smart Contract Coordination",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "social-presence-theory",
-      "title": "Social Presence Theory",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "social-presence",
-      "title": "Social Presence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "synchronous-collaboration",
-      "title": "Synchronous Collaboration",
-      "qualityScore": 0.55
-    },
-    {
-      "slug": "tele-001-telepresence",
-      "title": "TELE 001 telepresence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "tele-050-neuralrenderingtelepresence",
-      "title": "TELE 050 neuralrenderingtelepresence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "technology-adoption",
-      "title": "Technology Adoption",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "telecollaboration-domain",
-      "title": "Telecollaboration Domain",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "telecollaboration-and-telepresence-domain",
-      "title": "Telecollaboration and Telepresence Domain",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "telecollaboration",
-      "title": "Telecollaboration",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "teleoperation-systems",
-      "title": "Teleoperation Systems",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "threaded-messaging",
-      "title": "Threaded Messaging",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "video-async",
-      "title": "Video Async",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "video-conferencing",
-      "title": "Video Conferencing",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "virtual-meeting",
-      "title": "Virtual Meeting",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "virtual-office-spaces",
-      "title": "Virtual Office Spaces",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "virtual-reality-telepresence",
-      "title": "Virtual Reality Telepresence",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "voice-memo",
-      "title": "Voice Memo",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "web-rtc",
-      "title": "WebRTC",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "dc-communication",
-      "title": "Communication Technology",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "dc-protocol-and-infra",
-      "title": "Protocol and Infrastructure",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "dc-telepresence",
-      "title": "Telepresence",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "dc-workspace-tools",
-      "title": "Workspace Tools",
-      "qualityScore": 0.0
-    },
-    {
-      "slug": "tc-0002-collaborative-document-editing",
-      "title": "tc 0002 collaborative document editing",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "tc-0003-telepresence-robot",
-      "title": "tc 0003 telepresence robot",
-      "qualityScore": 0.5
-    }
-  ],
   "infrastructure": [
     {
-      "slug": "3-dasset-standard",
-      "title": "3DAssetStandard",
+      "slug": "3-d-asset-standard",
+      "title": "3D Asset Standard",
       "qualityScore": 0.35
     },
     {
-      "slug": "3-dcontent-pipeline",
-      "title": "3DContentPipeline",
+      "slug": "3-d-content-pipeline",
+      "title": "3D Content Pipeline",
       "qualityScore": 0.35
     },
     {
-      "slug": "3-ddesign",
-      "title": "3DDesign",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "3-dreconstruction",
-      "title": "3DReconstruction",
+      "slug": "3-d-design",
+      "title": "3D Design",
       "qualityScore": 0.35
     },
     {
@@ -11554,11 +7695,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "tai-chi",
-      "title": "Tai Chi",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "tax",
       "title": "Tax",
       "qualityScore": 0.5
@@ -11754,11 +7890,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "walks-and-exercise",
-      "title": "Walks and exercise",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "watermarks",
       "title": "Watermarks",
       "qualityScore": 0.35
@@ -11824,11 +7955,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "birthday",
-      "title": "birthday",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "blockchain-core-concepts",
       "title": "blockchain core concepts",
       "qualityScore": 0.4
@@ -11886,11 +8012,6 @@
     {
       "slug": "heatmap",
       "title": "heatmap",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "house",
-      "title": "house",
       "qualityScore": 0.5
     },
     {
@@ -12007,11 +8128,3860 @@
       "slug": "today-presentation-2",
       "title": "today presentation 2",
       "qualityScore": 0.35
+    }
+  ],
+  "artificial-intelligence": [
+    {
+      "slug": "3-d-content-generation",
+      "title": "3D Content Generation",
+      "qualityScore": 0.35
     },
     {
-      "slug": "watch",
-      "title": "watch",
+      "slug": "a-star-algorithm",
+      "title": "A-Star Algorithm",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-adoption",
+      "title": "AI Adoption",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-agent-system",
+      "title": "AI Agent System",
+      "qualityScore": 0.92
+    },
+    {
+      "slug": "ai-alignment",
+      "title": "AI Alignment",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-applications",
+      "title": "AI Applications",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-audit",
+      "title": "AI Audit",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-board",
+      "title": "AI Board",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-companies",
+      "title": "AI Companies",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-concept",
+      "title": "AI Concept",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-defence-doc",
+      "title": "AI Defence Doc",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-deployment",
+      "title": "AI Deployment",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-development-tools",
+      "title": "AI Development Tools",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-development",
+      "title": "AI Development",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-diagram-tools",
+      "title": "AI Diagram Tools",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "title": "AI Documentation Standards",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-ethics-board",
+      "title": "AI Ethics Board",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "title": "AI Ethics Checklist",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-ethics",
+      "title": "AI Ethics",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-fairness",
+      "title": "AI Fairness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-framework",
+      "title": "AI Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-game-agent",
+      "title": "AI Game Agent",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-governance-framework",
+      "title": "AI Governance Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-governance-maturity-model",
+      "title": "AI Governance Maturity Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-governance",
+      "title": "AI Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-hardware",
+      "title": "AI Hardware",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "title": "AI Impact Assessment",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-incident",
+      "title": "AI Incident",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-infrastructure",
+      "title": "AI Infrastructure",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-liability",
+      "title": "AI Liability",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-lifecycle",
+      "title": "AI Lifecycle",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-metadata",
+      "title": "AI Metadata",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-model-card",
+      "title": "AI Model Card",
+      "qualityScore": 0.91
+    },
+    {
+      "slug": "ai-monitoring",
+      "title": "AI Monitoring",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-office",
+      "title": "AI Office",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-operator",
+      "title": "AI Operator",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-provider",
+      "title": "AI Provider",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-risk-management",
+      "title": "AI Risk Management",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-risk-register",
+      "title": "AI Risk Register",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-risk",
+      "title": "AI Risk",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-risks",
+      "title": "AI Risks",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-safety",
+      "title": "AI Safety",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-scrapers",
+      "title": "AI Scrapers",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-search",
+      "title": "AI Search",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-security",
+      "title": "AI Security",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "title": "AI System (EU Definition)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-system-component",
+      "title": "AI System Component",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-tri-sm",
+      "title": "AI TRiSM",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-trust-risk-and-security-management",
+      "title": "AI Trust Risk and Security Management",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-trustworthiness-dimensions",
+      "title": "AI Trustworthiness Dimensions",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "title": "AI Trustworthiness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "title": "AI Upscaling and Super-Resolution",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-user",
+      "title": "AI User",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-video",
+      "title": "AI Video",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-as-a-step-function",
+      "title": "AI as a step function",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-companions",
+      "title": "AI companions",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-in-games",
+      "title": "AI in Games",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-privacy-at-the-2024-olympics",
+      "title": "AI privacy at the 2024 Olympics",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-augmented-software-engineering",
+      "title": "AI-Augmented Software Engineering",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "title": "AI-Generated Content Disclosure",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "title": "AI-GroundedDomain",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "aiapplications",
+      "title": "AIApplications",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "aidomain",
+      "title": "AIDomain",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "aiethics",
+      "title": "AIEthics",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "aiethics-domain",
+      "title": "AIEthicsDomain",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "aiops",
+      "title": "AIOps",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "aisystem",
+      "title": "AISystem",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "albert",
+      "title": "ALBERT",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "auc",
+      "title": "AUC",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "accountability-oecd",
+      "title": "Accountability (OECD)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "accountability",
+      "title": "Accountability",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "accountable-party",
+      "title": "Accountable Party",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "accuracy",
+      "title": "Accuracy",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "activation-function",
+      "title": "Activation Function",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "active-learning",
+      "title": "Active Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "title": "Adoption of Convergent Technologies",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "adversarial-attack",
+      "title": "Adversarial Attack",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "adversarial-attacks",
+      "title": "Adversarial Attacks",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "adversarial-robustness",
+      "title": "Adversarial Robustness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "adversarial-testing",
+      "title": "Adversarial Testing",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "advice-for-developing-gen-ai",
+      "title": "Advice for developing GenAI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "agent-event-stream",
+      "title": "Agent Event Stream",
+      "qualityScore": 0.85
+    },
+    {
+      "slug": "agent-frameworks",
+      "title": "Agent Frameworks",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "agentic-alliance",
+      "title": "Agentic Alliance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "agentic-internet",
+      "title": "Agentic Internet",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "agentic-metaverse-for-global-creatives",
+      "title": "Agentic Metaverse for Global Creatives",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "agentic-mycelia",
+      "title": "Agentic Mycelia",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "agentic-workshop",
+      "title": "Agentic Workshop",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "agents",
+      "title": "Agents",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "ai-art-categorization",
+      "title": "Ai Art Categorization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-governance-principle",
+      "title": "Ai Governance Principle",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "ai-machine-learning",
+      "title": "Ai Machine Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "title": "Ai Origin Declaration",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "title": "Ai Transparency Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithm",
+      "title": "Algorithm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "title": "Algorithmic Accountability",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "title": "Algorithmic Bias and Variance",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "algorithmic-bias",
+      "title": "Algorithmic Bias",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithmic-framework",
+      "title": "Algorithmic Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "title": "Algorithmic Transparency Index",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "algorithmic-transparency-reports",
+      "title": "Algorithmic Transparency Reports",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "animate-diff",
+      "title": "AnimateDiff",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "anthropic-claude",
+      "title": "Anthropic Claude",
+      "qualityScore": 0.54
+    },
+    {
+      "slug": "architecture",
+      "title": "Architecture",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "title": "Artificial General Intelligence",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "title": "Artificial Intelligence Domain",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "artificial-intelligence",
+      "title": "Artificial Intelligence",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "title": "Asia Pacific Regulation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "asset-tokenization",
+      "title": "Asset Tokenization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "asynchronous-execution",
+      "title": "Asynchronous Execution",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "attack-vector",
+      "title": "Attack Vector",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "title": "Attention Aware Interaction",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "attention-head",
+      "title": "Attention Head",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "attention-mask",
+      "title": "Attention Mask",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "attention-mechanism",
+      "title": "Attention Mechanism",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "attention-weight",
+      "title": "Attention Weight",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "attention",
+      "title": "Attention",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "audit-trail",
+      "title": "Audit Trail",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "auto-ml",
+      "title": "AutoML",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "autoencoder",
+      "title": "Autoencoder",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "automated-planning",
+      "title": "Automated Planning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "automated-podcasting",
+      "title": "Automated Podcasting",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "automated-summarization",
+      "title": "Automated Summarization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "autonomous-ai-agents",
+      "title": "Autonomous AI Agents",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bart",
+      "title": "BART",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bdi-model",
+      "title": "BDI Model",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bert",
+      "title": "BERT",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "backdoor-attack",
+      "title": "Backdoor Attack",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "backpropagation",
+      "title": "Backpropagation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bagging",
+      "title": "Bagging",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "barter-system",
+      "title": "Barter System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "batch-normalisation",
+      "title": "Batch Normalisation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "batch-processing",
+      "title": "Batch Processing",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "batch-size",
+      "title": "Batch Size",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bayes-filter",
+      "title": "Bayes Filter",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "bayesian-inference",
+      "title": "Bayesian Inference",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "behavior-analysis",
+      "title": "Behavior Analysis",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "behavioral-analytics",
+      "title": "Behavioral Analytics",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "behavioral-modeling",
+      "title": "Behavioral Modeling",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "benchmark-standard",
+      "title": "Benchmark Standard",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bias-detection-methods",
+      "title": "Bias Detection Methods",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "title": "Bias Mitigation Techniques",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "title": "Bias in Large Language Models",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "bias",
+      "title": "Bias",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "boosting",
+      "title": "Boosting",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "title": "CLI Multi-Agent Systems",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "california-ai-bill",
+      "title": "California AI bill",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "call-centres",
+      "title": "Call Centres",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "causal-attention",
+      "title": "Causal Attention",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "chat-gpt",
+      "title": "ChatGPT",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "chatbots",
+      "title": "Chatbots",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "checkpoints",
+      "title": "Checkpoints",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "claude",
+      "title": "Claude",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "co-training",
+      "title": "Co Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "code-generation",
+      "title": "Code Generation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "cognitive-ai",
+      "title": "Cognitive AI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "title": "Collective Intelligence System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "collective-learning",
+      "title": "Collective Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "comfy-ui-client",
+      "title": "ComfyUI Client",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "title": "ComfyUI Workflows",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "comfy-ui",
+      "title": "ComfyUI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "community-governance-model",
+      "title": "Community Governance Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "community-governance",
+      "title": "Community Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "competition-in-ai",
+      "title": "Competition in AI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "title": "Compliance Audit Trail",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "compliance-dashboard",
+      "title": "Compliance Dashboard",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "compliance-framework",
+      "title": "Compliance Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "compliance-standards",
+      "title": "Compliance Standards",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "component",
+      "title": "Component",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "composite-ai",
+      "title": "Composite AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "title": "Computation And Intelligence Domain",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "computational-component",
+      "title": "Computational Component",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "computer-hardware",
+      "title": "Computer Hardware",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "title": "Computer Use and Browser Agents",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "computer-vision-task",
+      "title": "Computer Vision Task",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "computer-vision",
+      "title": "Computer Vision",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "conditional-random-field",
+      "title": "Conditional Random Field",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "confidential-computing",
+      "title": "Confidential Computing",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "constitutional-ai",
+      "title": "Constitutional AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "constitutional-principle",
+      "title": "Constitutional Principle",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "constraint-based-design",
+      "title": "Constraint Based Design",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "constraint",
+      "title": "Constraint",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "content-moderation",
+      "title": "Content Moderation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "context-engineering",
+      "title": "Context Engineering",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "context-window",
+      "title": "Context Window",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "continued-pre-training",
+      "title": "Continued Pre Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "contrastive-learning",
+      "title": "Contrastive Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "control-algorithm",
+      "title": "Control Algorithm",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "title": "ControlNet and Similar Spatial Conditioning Systems",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "convergence",
+      "title": "Convergence",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "conversational-ai",
+      "title": "Conversational AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "title": "Convolutional Neural Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "cortex-agent",
+      "title": "Cortex Agent",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "cross-attention",
+      "title": "Cross Attention",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "title": "Cross-Platform Compliance Hub",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "cybersecurity",
+      "title": "Cybersecurity",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "dall-e",
+      "title": "DALL\u00b7E",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "dao-governance",
+      "title": "DAO Governance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "data-annotation",
+      "title": "Data Annotation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "data-augmentation-strategies",
+      "title": "Data Augmentation Strategies",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "data-breach",
+      "title": "Data Breach",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-cleaning",
+      "title": "Data Cleaning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "data-compression",
+      "title": "Data Compression",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-efficient-learning",
+      "title": "Data Efficient Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-governance",
+      "title": "Data Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-lake",
+      "title": "Data Lake",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-minimisation",
+      "title": "Data Minimisation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-poisoning",
+      "title": "Data Poisoning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "data-protection-regulation",
+      "title": "Data Protection Regulation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-structure",
+      "title": "Data Structure",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "data-versioning",
+      "title": "Data Versioning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "death-of-the-internet",
+      "title": "Death of the Internet",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "decision-transparency",
+      "title": "Decision Transparency",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "decoder",
+      "title": "Decoder",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "deep-generative-model",
+      "title": "Deep Generative Model",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "deep-learning",
+      "title": "Deep Learning",
+      "qualityScore": 0.91
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "title": "Deepfakes and fraudulent content",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "deepfakes",
+      "title": "Deepfakes",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "depth-estimation",
+      "title": "Depth Estimation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "dialogue-system",
+      "title": "Dialogue System",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "differential-privacy",
+      "title": "Differential Privacy",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "diffusion-model",
+      "title": "Diffusion Model",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "diffusion-models",
+      "title": "Diffusion Models",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "digital-actor-creation",
+      "title": "Digital Actor Creation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "digital-fabrication",
+      "title": "Digital Fabrication",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "digital-governance",
+      "title": "Digital Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "digital-regulation",
+      "title": "Digital Regulation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "digital-services-act",
+      "title": "Digital Services Act",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "digital-society-harms",
+      "title": "Digital Society Harms",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "title": "Digital Society Surveillance",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "digital-tax-compliance-node",
+      "title": "Digital Tax Compliance Node",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "title": "Dimensionality Reduction",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "title": "Direct Preference Optimization",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "disparate-impact",
+      "title": "Disparate Impact",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "title": "Diversity, Non-Discrimination, and Fairness",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "documentation-generation",
+      "title": "Documentation Generation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "dropout",
+      "title": "Dropout",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "drug-discovery-ai",
+      "title": "Drug Discovery AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "etl-pipeline",
+      "title": "ETL Pipeline",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ai-creative-media",
+      "title": "ETSI Domain AI + Creative Media",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ai-data-mgmt",
+      "title": "ETSI Domain AI + Data Mgmt",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ai-governance",
+      "title": "ETSI Domain AI + Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ai-human-interface",
+      "title": "ETSI Domain AI + Human Interface",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "title": "ETSI Domain AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-data-management-ai",
+      "title": "ETSI Domain: Data Management + AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "title": "ETSI Domain: Data Management + Ethics",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "title": "ETSI Domain: Ethics & Law",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "title": "ETSI Domain: Governance & Compliance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "etsidomain-classification",
+      "title": "ETSIDomainClassification",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "title": "ETSI_Domain_Governance_Compliance",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "title": "ETSI_Domain_Governance_Security",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "title": "ETSI_Domain_Governance___Economy",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "title": "ETSI_Domain_Governance___Ethics",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "title": "ETSI_Domain_Governance___Society",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "title": "ETSI_Domain_Human_Interface___Governance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "etsi-domain-infrastructure-governance",
+      "title": "ETSI_Domain_Infrastructure___Governance",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "eu-ai-act",
+      "title": "EU AI Act",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "economic-governance",
+      "title": "Economic Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "economics",
+      "title": "Economics",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "edge-ai-accelerator",
+      "title": "Edge AI Accelerator",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "edge-ai-accelerators",
+      "title": "Edge AI Accelerators",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "edge-ai-security",
+      "title": "Edge AI Security",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "edge-ai-system",
+      "title": "Edge AI System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "edge-ai-for-smart-cities",
+      "title": "Edge AI for Smart Cities",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "edge-cloud-collaboration",
+      "title": "Edge-Cloud Collaboration",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "education-and-ai",
+      "title": "Education and AI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "embedded-ai-frameworks",
+      "title": "Embedded AI Frameworks",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "embodied-minds",
+      "title": "Embodied Minds",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "emotional-intelligence",
+      "title": "Emotional Intelligence",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "empathetic-ai",
+      "title": "Empathetic AI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "title": "Encoder Decoder Architecture",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "encoder",
+      "title": "Encoder",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ensemble-methods",
+      "title": "Ensemble Methods",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "entity",
+      "title": "Entity",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "epoch",
+      "title": "Epoch",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ethical-ai",
+      "title": "Ethical AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ethical-framework",
+      "title": "Ethical Framework",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ethical-review-process",
+      "title": "Ethical Review Process",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "title": "Ethics & Law Layer",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "title": "Evaluation benchmarks and leaderboards",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "expert-systems",
+      "title": "Expert Systems",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "explainability-oecd",
+      "title": "Explainability (OECD)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "explainability",
+      "title": "Explainability",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "explainable-ai",
+      "title": "Explainable AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "explanation",
+      "title": "Explanation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "fpga",
+      "title": "FPGA",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "face-swap",
+      "title": "Face Swap",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "fairness-oecd",
+      "title": "Fairness (OECD)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "fairness-accuracy-tradeoffs",
+      "title": "Fairness Accuracy Tradeoffs",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "fairness-auditing-tools",
+      "title": "Fairness Auditing Tools",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "fairness-constraints",
+      "title": "Fairness Constraints",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "fairness-metrics",
+      "title": "Fairness Metrics",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "fairness",
+      "title": "Fairness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "feature-engineering",
+      "title": "Feature Engineering",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "feature-importance",
+      "title": "Feature Importance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "feature-store",
+      "title": "Feature Store",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "federated-edge-learning",
+      "title": "Federated Edge Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "feed-forward-network",
+      "title": "Feed Forward Network",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "feedforward-neural-network",
+      "title": "Feedforward Neural Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "financialised-agentic-memetics",
+      "title": "Financialised Agentic Memetics",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "fine-tuning",
+      "title": "Fine Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "flux-1",
+      "title": "Flux.1",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "fooocus",
+      "title": "Fooocus",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "foundation-model-provider",
+      "title": "Foundation Model Provider",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "foundation-model",
+      "title": "Foundation Model",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "foundation-models",
+      "title": "Foundation Models",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "full-fine-tuning",
+      "title": "Full Fine Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "function-calling",
+      "title": "Function Calling",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "fuzzy-logic",
+      "title": "Fuzzy Logic",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gdpr-article-22-compliance",
+      "title": "GDPR Article 22 Compliance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "gpt-2",
+      "title": "GPT 2",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gpt-3",
+      "title": "GPT 3",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gpt-4",
+      "title": "GPT 4",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gpt-engineer",
+      "title": "GPT Engineer",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "gpt",
+      "title": "GPT",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "title": "GPTs and Custom Assistants",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "gartner-prediction",
+      "title": "Gartner Prediction",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "gemini",
+      "title": "Gemini",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "general-purpose-ai-model",
+      "title": "General Purpose AI Model",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "generative-ai-engineering",
+      "title": "Generative AI Engineering",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "generative-ai",
+      "title": "Generative AI",
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "title": "Generative Adversarial Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "title": "Generative Adversarial Networks",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "generative-content",
+      "title": "Generative Content",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "generative-design-tool",
+      "title": "Generative Design Tool",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "generative-model",
+      "title": "Generative Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "global-explanation",
+      "title": "Global Explanation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "global-inequality",
+      "title": "Global Inequality",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "goal",
+      "title": "Goal",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "google-deep-mind",
+      "title": "Google DeepMind",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "governance-architecture",
+      "title": "Governance Architecture",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "governance-board",
+      "title": "Governance Board",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "governance-framework",
+      "title": "Governance Framework",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "governance-model",
+      "title": "Governance Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "governance",
+      "title": "Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "gradient-clipping",
+      "title": "Gradient Clipping",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "gradient-descent",
+      "title": "Gradient Descent",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "graph-algorithms",
+      "title": "Graph Algorithms",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "graph-neural-network",
+      "title": "Graph Neural Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "grok",
+      "title": "Grok",
+      "qualityScore": 0.51
+    },
+    {
+      "slug": "groq",
+      "title": "Groq",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "group-vs-individual-fairness",
+      "title": "Group vs Individual Fairness",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "hand-tracking",
+      "title": "Hand Tracking",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "harmful-bias",
+      "title": "Harmful Bias",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "healthcare-analytics",
+      "title": "Healthcare Analytics",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "healthcare-application-classification",
+      "title": "Healthcare Application Classification",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "helpfulness",
+      "title": "Helpfulness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "heuristic-methods",
+      "title": "Heuristic Methods",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "high-risk-ai-system",
+      "title": "High Risk AI System",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "title": "History and Path to AGI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "homomorphic-encryption-for-machine-learning",
+      "title": "Homomorphic Encryption for Machine Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "honesty",
+      "title": "Honesty",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "human-agency-and-oversight",
+      "title": "Human Agency and Oversight",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "human-computer-interaction",
+      "title": "Human Computer Interaction",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "human-preference",
+      "title": "Human Preference",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "human-in-the-loop",
+      "title": "Human in the Loop",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "human-vs-ai",
+      "title": "Human vs AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "human-in-the-loop-learning",
+      "title": "Human-in-the- Loop Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "humaninthe-loop-learning",
+      "title": "Humaninthe Loop Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "hunyuan-video",
+      "title": "Hunyuan Video",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "hyper-personalisation",
+      "title": "Hyper personalisation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "hyperparameter",
+      "title": "Hyperparameter",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ieee-7000-series-standards",
+      "title": "IEEE 7000 Series Standards",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ip-adapter",
+      "title": "IP-Adapter",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "identification-system",
+      "title": "Identification System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "image-classification",
+      "title": "Image Classification",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "image-segmentation",
+      "title": "Image Segmentation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "title": "Image and Video Restoration",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "imitation-learning",
+      "title": "Imitation Learning",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "inference-hardware",
+      "title": "Inference Hardware",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "inference",
+      "title": "Inference",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "information-security",
+      "title": "Information Security",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "informed-search",
+      "title": "Informed Search",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "infrastructure-component",
+      "title": "Infrastructure Component",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "inpainting",
+      "title": "Inpainting",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "interactive-learning",
+      "title": "Interactive Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "internet-infrastructure",
+      "title": "Internet Infrastructure",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "interpretability",
+      "title": "Interpretability",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "interpretable-ai",
+      "title": "Interpretable AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "intersectional-fairness",
+      "title": "Intersectional Fairness",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "title": "Intrinsic Interpretability",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "io-t-ai-integration",
+      "title": "IoT AI Integration",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "jailbreaking",
+      "title": "Jailbreaking",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "title": "KOHYA Dreambooth and similar",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "key-vector",
+      "title": "Key Vector",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "knowledge-distillation-for-edge",
+      "title": "Knowledge Distillation for Edge",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "knowledge-distillation",
+      "title": "Knowledge Distillation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "title": "Knowledge Graph Construction",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "knowledge-graphing",
+      "title": "Knowledge Graphing",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "knowledge-organization-system",
+      "title": "Knowledge Organization System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "knowledge-organization",
+      "title": "Knowledge Organization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "knowledge-representation",
+      "title": "Knowledge Representation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "lang-chain",
+      "title": "LangChain",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "large-language-models",
+      "title": "Large Language Models",
+      "qualityScore": 0.92
+    },
+    {
+      "slug": "latency-aware-edge-ai",
+      "title": "Latency-Aware Edge AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "layer-normalisation",
+      "title": "Layer Normalisation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "learning-algorithm",
+      "title": "Learning Algorithm",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "title": "Lens and Camera Calibration",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "limited-risk-ai",
+      "title": "Limited Risk AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "list-of-agent-projects",
+      "title": "List Of Agent Projects",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "llama-3",
+      "title": "Llama 3",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "lo-ra",
+      "title": "Lo RA",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "title": "LoRA DoRA etc",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "logic-programming",
+      "title": "Logic Programming",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "logistics-optimization",
+      "title": "Logistics Optimization",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "long-short-term-memory",
+      "title": "Long Short Term Memory",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "loss-function",
+      "title": "Loss Function",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ms-phi-models",
+      "title": "MS Phi models",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "machine-learning-framework",
+      "title": "Machine Learning Framework",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "title": "Machine Learning Infrastructure",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-learning-model",
+      "title": "Machine Learning Model",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-learning-models",
+      "title": "Machine Learning Models",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "title": "Machine Learning Pipeline",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "machine-learning-platform",
+      "title": "Machine Learning Platform",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-learning-technique",
+      "title": "Machine Learning Technique",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "machine-learning",
+      "title": "Machine Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "machine-translation",
+      "title": "Machine Translation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mathematical-science",
+      "title": "Mathematical Science",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "maximum-sequence-length",
+      "title": "Maximum Sequence Length",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mean-absolute-error",
+      "title": "Mean Absolute Error",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "medical-ai",
+      "title": "Medical AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "title": "Medical Diagnosis AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "title": "Medical Imaging AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "meeting-transcription",
+      "title": "Meeting Transcription",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "membership-inference",
+      "title": "Membership Inference",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "meta-platforms",
+      "title": "Meta Platforms",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "microsoft-copilot",
+      "title": "Microsoft Copilot",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "midjourney",
+      "title": "Midjourney",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "minimal-risk-ai",
+      "title": "Minimal Risk AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "minimax-algorithm",
+      "title": "Minimax Algorithm",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "title": "Mistral and Mixtral",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "mistral",
+      "title": "Mistral",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mixed-precision-training",
+      "title": "Mixed Precision Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mixtral",
+      "title": "Mixtral",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mixture-of-experts",
+      "title": "Mixture of Experts",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "mixup",
+      "title": "Mixup",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-architecture",
+      "title": "Model Architecture",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-capacity",
+      "title": "Model Capacity",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-compression-for-edge",
+      "title": "Model Compression for Edge",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "model-context-protocol",
+      "title": "Model Context Protocol",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "title": "Model Control Protocols like MCP",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "model-depth",
+      "title": "Model Depth",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-ensembling",
+      "title": "Model Ensembling",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-evaluation-results",
+      "title": "Model Evaluation Results",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "model-extraction",
+      "title": "Model Extraction",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-interpretability",
+      "title": "Model Interpretability",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-inversion",
+      "title": "Model Inversion",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "title": "Model Optimisation and Performance",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "model-parameters",
+      "title": "Model Parameters",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-performance",
+      "title": "Model Performance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-property",
+      "title": "Model Property",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-pruning-for-edge-deployment",
+      "title": "Model Pruning for Edge Deployment",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "model-robustness",
+      "title": "Model Robustness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-training",
+      "title": "Model Training",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "model-transparency",
+      "title": "Model Transparency",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-weights",
+      "title": "Model Weights",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model-width",
+      "title": "Model Width",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "model",
+      "title": "Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "model-ops",
+      "title": "ModelOps",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "module",
+      "title": "Module",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "monitoring-dashboard",
+      "title": "Monitoring Dashboard",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "title": "Monte Carlo Tree Search",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "multi-agent-rag-scrapbook",
+      "title": "Multi Agent RAG scrapbook",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "multi-head-attention",
+      "title": "Multi-Head Attention",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "multimodal-ai",
+      "title": "Multimodal AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "multimodal-understanding",
+      "title": "Multimodal Understanding",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "music-and-audio",
+      "title": "Music and Audio",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "npu",
+      "title": "NPU",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "named-entity-recognition",
+      "title": "Named Entity Recognition",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "named-entity",
+      "title": "Named Entity",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "natural-language-processing",
+      "title": "Natural Language Processing",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "network-architecture",
+      "title": "Network Architecture",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "title": "Neural 3D Generation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "neural-network-architecture",
+      "title": "Neural Network Architecture",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-network-component",
+      "title": "Neural Network Component",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-network-layer",
+      "title": "Neural Network Layer",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "title": "Neural Network Quantisation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-network",
+      "title": "Neural Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "neural-networking",
+      "title": "Neural Networking",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-radiance-field",
+      "title": "Neural Radiance Field",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neuromorphic-chip",
+      "title": "Neuromorphic Chip",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neuromorphic-chips",
+      "title": "Neuromorphic Chips",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "newcastle-ai-and-health-innovation",
+      "title": "Newcastle AI & Health Innovation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "norbert-wiener",
+      "title": "Norbert Wiener",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "objective",
+      "title": "Objective",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "on-device-learning",
+      "title": "On-Device Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "online-learning",
+      "title": "Online Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ontology-in-llm-operations",
+      "title": "Ontology in LLM Operations",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "open-ai-whisper",
+      "title": "Open AI Whisper",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "open-ai",
+      "title": "Open AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "title": "Open Generative AI tools",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "title": "Open Webui and Pipelines",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "optimization-algorithm",
+      "title": "Optimization Algorithm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "optimization-algorithms",
+      "title": "Optimization Algorithms",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "overfitting",
+      "title": "Overfitting",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "title": "Overview of Machine Learning Techniques",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "pegasus",
+      "title": "PEGASUS",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "title": "Parameter-Efficient Fine-Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "parameter",
+      "title": "Parameter",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "particle-filter",
+      "title": "Particle Filter",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "pathfinding-algorithm",
+      "title": "Pathfinding Algorithm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pathology-ai",
+      "title": "Pathology AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "pattern-recognition",
+      "title": "Pattern Recognition",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "perception-system",
+      "title": "Perception System",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "performance-benchmarks",
+      "title": "Performance Benchmarks",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pika",
+      "title": "Pika",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "title": "Planning and Scheduling",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "platform-governance",
+      "title": "Platform Governance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "policy-update-magnitude",
+      "title": "Policy Update Magnitude",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pose-estimation",
+      "title": "Pose Estimation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "title": "Post Hoc Explanation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "power-efficient-ai",
+      "title": "Power-Efficient AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pre-training",
+      "title": "Pre Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "precision",
+      "title": "Precision",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "predictive-analytics",
+      "title": "Predictive Analytics",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "predictive-maintenance",
+      "title": "Predictive Maintenance",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "predictive-personalization",
+      "title": "Predictive Personalization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pretrained-model",
+      "title": "Pretrained Model",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "pretrained-weights",
+      "title": "Pretrained Weights",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "prime-intellect",
+      "title": "Prime Intellect",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "privacy-budget-management",
+      "title": "Privacy Budget Management",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-by-design",
+      "title": "Privacy By Design",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-impact-assessment",
+      "title": "Privacy Impact Assessment",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-mechanism",
+      "title": "Privacy Mechanism",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "title": "Privacy Preserving Analytics",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "privacy-preserving-data-mining",
+      "title": "Privacy Preserving Data Mining",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-utility-tradeoffs",
+      "title": "Privacy Utility Tradeoffs",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "privacy-and-data-governance",
+      "title": "Privacy and Data Governance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "probabilistic-model",
+      "title": "Probabilistic Model",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "programming-language",
+      "title": "Programming Language",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "programming-paradigm",
+      "title": "Programming Paradigm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "prohibited-ai-practice",
+      "title": "Prohibited AI Practice",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "prompt-engineering",
+      "title": "Prompt Engineering",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "prompt-tuning",
+      "title": "Prompt Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "property",
+      "title": "Property",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "title": "Proprietary AI Video",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "title": "Proprietary Image Generation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "title": "Proprietary Large Language Models",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "title": "Proximal Policy Optimisation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "pseudonymisation",
+      "title": "Pseudonymisation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "push-to-local-rag",
+      "title": "Push To Local RAG",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "python-and-py-torch",
+      "title": "Python and PyTorch",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "python-to-build-rag-data-page",
+      "title": "Python to build RAG data page",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "qlo-ra",
+      "title": "QLoRA",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "quantum-ai",
+      "title": "Quantum AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "query-key-value",
+      "title": "Query Key Value",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "query-vector",
+      "title": "Query Vector",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "question-answering",
+      "title": "Question Answering",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "roc-curve",
+      "title": "ROC Curve",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "radiology-ai",
+      "title": "Radiology AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "rapid-ai-deployment",
+      "title": "Rapid AI Deployment",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "real-time-inference-at-edge",
+      "title": "Real-Time Inference at Edge",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "real-time-processing",
+      "title": "Real-time Processing",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "reasoning",
+      "title": "Reasoning",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "title": "Recurrent Neural Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "redress-procedure",
+      "title": "Redress Procedure",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "regularisation",
+      "title": "Regularisation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "regulatory-compliance",
+      "title": "Regulatory Compliance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "reinforcement-learning-algorithm",
+      "title": "Reinforcement Learning Algorithm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "title": "Reinforcement Learning from Human Feedback",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "reinforcement-learning",
+      "title": "Reinforcement Learning",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "residual-network",
+      "title": "Residual Network",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "title": "Responsible AI Principles",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "responsible-ai-unconference",
+      "title": "Responsible AI Unconference",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "responsible-ai",
+      "title": "Responsible AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "title": "Retrieval Augmented Generation - RAG",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "reward-model",
+      "title": "Reward Model",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "risk-management",
+      "title": "Risk Management",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "risk-mitigation",
+      "title": "Risk Mitigation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "risk-treatment",
+      "title": "Risk Treatment",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "risk",
+      "title": "Risk",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ro-berta",
+      "title": "RoBERTa",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "robotics-control",
+      "title": "Robotics Control",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "robustness",
+      "title": "Robustness",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "runtime-inspection",
+      "title": "Runtime Inspection",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "strips",
+      "title": "STRIPS",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "safety-fine-tuning",
+      "title": "Safety Fine Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "safety-measure",
+      "title": "Safety Measure",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "safety-vulnerability",
+      "title": "Safety Vulnerability",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "safety-and-alignment",
+      "title": "Safety and alignment",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "sampling",
+      "title": "Sampling",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "title": "Scaled Dot Product Attention",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "title": "Scene Capture and Reconstruction",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "search-algorithm",
+      "title": "Search Algorithm",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "search-algorithms",
+      "title": "Search Algorithms",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "search-technology",
+      "title": "Search Technology",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "title": "Segmentation and Identification",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "self-attention",
+      "title": "Self Attention",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "self-improvement",
+      "title": "Self Improvement",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "self-training",
+      "title": "Self Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "semantic-search",
+      "title": "Semantic Search",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "semantic-segmentation",
+      "title": "Semantic Segmentation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "semantic-web",
+      "title": "Semantic Web",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "title": "Semi-Supervised Learning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "sentence-piece",
+      "title": "SentencePiece",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "sentiment-analysis",
+      "title": "Sentiment Analysis",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "silo-ai",
+      "title": "Silo AI",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "singularity",
+      "title": "Singularity",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "societal-and-environmental-wellbeing",
+      "title": "Societal and Environmental Wellbeing",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "soft-prompt-embedding",
+      "title": "Soft Prompt Embedding",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "software-architecture",
+      "title": "Software Architecture",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "software-development-process",
+      "title": "Software Development Process",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "title": "Soon-Next-Later (AI futurology)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "sovereign-ai-bid",
+      "title": "Sovereign AI bid",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "sparse-mixture-of-experts",
+      "title": "Sparse Mixture of Experts",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "spatial-ai-associate",
+      "title": "Spatial AI Associate",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "spatial-ai",
+      "title": "Spatial AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "speech-recognition",
+      "title": "Speech Recognition",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "speech-and-voice",
+      "title": "Speech and Voice",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "title": "Stable Diffusion Training",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "stable-diffusion",
+      "title": "Stable Diffusion",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "stacking",
+      "title": "Stacking",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "title": "Stakeholder Engagement in AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "standardized-asset-classification",
+      "title": "Standardized Asset Classification",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "standards-compliance",
+      "title": "Standards Compliance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "standards-organization",
+      "title": "Standards Organization",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "state-change",
+      "title": "State Change",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "state-of-the-art-in-ai",
+      "title": "State of the art in AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "stochastic-process",
+      "title": "Stochastic Process",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "supervised-fine-tuning",
+      "title": "Supervised Fine Tuning",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "supervised-learning",
+      "title": "Supervised Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "symbolic-ai",
+      "title": "Symbolic AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "symbolic-reasoning",
+      "title": "Symbolic Reasoning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "title": "Synthetic Data Generation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "system-architecture",
+      "title": "System Architecture",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "system",
+      "title": "System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "systemic-risk",
+      "title": "Systemic Risk",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "t5",
+      "title": "T5",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "tpu",
+      "title": "TPU",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "task-adaptation",
+      "title": "Task Adaptation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "task-planning",
+      "title": "Task Planning",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "teacher-student-training",
+      "title": "Teacher Student Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "technical-robustness-and-safety",
+      "title": "Technical Robustness and Safety",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "technique",
+      "title": "Technique",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "tensor-processing-unit",
+      "title": "Tensor Processing Unit",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "text-to-3-d",
+      "title": "Text-to-3D",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "text-to-image",
+      "title": "Text-to-Image",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "text-to-speech",
+      "title": "Text-to-Speech",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "the-cognitive-revolution",
+      "title": "The Cognitive Revolution",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "third-party-vulnerability",
+      "title": "Third-Party Vulnerability",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "time-series-forecasting",
+      "title": "Time Series Forecasting",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "tiny-ml",
+      "title": "TinyML",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "token-embedding",
+      "title": "Token Embedding",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "tokenisation",
+      "title": "Tokenisation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "tokenization",
+      "title": "Tokenization",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "toxicity-detection",
+      "title": "Toxicity Detection",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "traceability-mechanism",
+      "title": "Traceability Mechanism",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "training-data-repository",
+      "title": "Training Data Repository",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "training-data",
+      "title": "Training Data",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "training-dataset-metadata",
+      "title": "Training Dataset Metadata",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "training-hardware",
+      "title": "Training Hardware",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "training-instability",
+      "title": "Training Instability",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "training-method",
+      "title": "Training Method",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "training-methods",
+      "title": "Training Methods",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "title": "Training and fine tuning",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "training",
+      "title": "Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transfer-learning",
+      "title": "Transfer Learning",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "transformer-architecture",
+      "title": "Transformer Architecture",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transformer",
+      "title": "Transformer",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transformers",
+      "title": "Transformers",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "translation",
+      "title": "Translation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "transparency-oecd",
+      "title": "Transparency (OECD)",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transparency-metrics",
+      "title": "Transparency Metrics",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transparency-notice",
+      "title": "Transparency Notice",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transparency-and-explainability",
+      "title": "Transparency and Explainability",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "transparency",
+      "title": "Transparency",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "transparent-governance",
+      "title": "Transparent Governance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "treatment-planning-ai",
+      "title": "Treatment Planning AI",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "title": "Trust and Governance Domain",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "trust-and-safety",
+      "title": "Trust and Safety",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "trustworthy-ai-framework",
+      "title": "Trustworthy AI Framework",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "unesco-recommendation-on-the-ethics-of-ai",
+      "title": "UNESCO Recommendation on the Ethics of AI",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "underfitting",
+      "title": "Underfitting",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "unsupervised-learning",
+      "title": "Unsupervised Learning",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "title": "User Agreement Compliance",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "user-privacy-control",
+      "title": "User Privacy Control",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "value-alignment",
+      "title": "Value Alignment",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "value-vector",
+      "title": "Value Vector",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "value",
+      "title": "Value",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "variational-autoencoders",
+      "title": "Variational Autoencoders",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "video-processing",
+      "title": "Video Processing",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "virtual-society-regulations",
+      "title": "Virtual Society Regulations",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "virtual-training",
+      "title": "Virtual Training",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "vision-processing",
+      "title": "Vision Processing",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "title": "VisionClaw Agentic Container",
+      "qualityScore": 0.88
+    },
+    {
+      "slug": "vocabulary-governance",
+      "title": "Vocabulary Governance",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "weight-decay",
+      "title": "Weight Decay",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "workforce-augmentation",
+      "title": "Workforce Augmentation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "ai-core-concepts",
+      "title": "ai core concepts",
+      "qualityScore": 0.4
+    },
+    {
+      "slug": "ai-application",
+      "title": "AI Application",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "title": "AI Governance and Ethics",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-model-architecture",
+      "title": "AI Model Architecture",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-research-area",
+      "title": "AI Research Area",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-technique",
+      "title": "AI Technique",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "fast-ai",
+      "title": "fast.ai",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "k-anonymity-in-datasets",
+      "title": "k-Anonymity in Datasets",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "latent-space",
+      "title": "latent space",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "m-bert",
+      "title": "mBERT",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "m-t5",
+      "title": "mT5",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "multimodal",
+      "title": "multimodal",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ollama",
+      "title": "ollama",
+      "qualityScore": 0.35
+    }
+  ],
+  "distributed-collaboration": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "title": "3D Gaussian Splatting",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "ai-avatars",
+      "title": "AI Avatars",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "asynchronous-collaboration",
+      "title": "Asynchronous Collaboration",
+      "qualityScore": 0.55
+    },
+    {
+      "slug": "asynchronous-video",
+      "title": "Asynchronous Video",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "augmented-reality-collaboration",
+      "title": "Augmented Reality Collaboration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "title": "Bandwidth Adaptation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "blockchain-collaboration",
+      "title": "Blockchain Collaboration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "breakout-room",
+      "title": "Breakout Room",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "crdt",
+      "title": "CRDT",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "title": "Collaborative Whiteboard",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "communication-theory",
+      "title": "Communication Theory",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "cryptocurrency-remuneration",
+      "title": "Cryptocurrency Remuneration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "dao-governance-for-telecollaboration",
+      "title": "DAO Governance for Telecollaboration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "digital-twin-collaboration",
+      "title": "Digital Twin Collaboration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "title": "Digital Workplace Platform",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "distributed-collaboration",
+      "title": "Distributed Collaboration",
+      "qualityScore": 0.3
+    },
+    {
+      "slug": "distributed-decision-making",
+      "title": "Distributed Decision Making",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "haptic-feedback-telepresence",
+      "title": "Haptic Feedback Telepresence",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "horizon-workrooms",
+      "title": "Horizon Workrooms",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "immersive-communication",
+      "title": "Immersive Communication",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "language-translation",
+      "title": "Language Translation",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "media-richness-theory",
+      "title": "Media Richness Theory",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "media-theory",
+      "title": "Media Theory",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "title": "Meeting AI Assistant",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "meeting-recording",
+      "title": "Meeting Recording",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "metaverse-application",
+      "title": "Metaverse Application",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "title": "Metaverse-Telepresence Bridge",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "network-protocol",
+      "title": "Network Protocol",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "networkcomponent",
+      "title": "Networkcomponent",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "neural-radiance-fields",
+      "title": "Neural Radiance Fields",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-rendering",
+      "title": "Neural Rendering",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "organisational-theory",
+      "title": "Organisational Theory",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "perceptual-experience",
+      "title": "Perceptual Experience",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "presence-indicator",
+      "title": "Presence Indicator",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "real-time-language-translation",
+      "title": "Real-Time Language Translation",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "real-time-translation",
+      "title": "Real-time Translation",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "remote-communication",
+      "title": "Remote Communication",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "remote-pair-programming",
+      "title": "Remote Pair Programming",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "robotic-system",
+      "title": "Robotic System",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "robotic-telepresence",
+      "title": "Robotic Telepresence",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "title": "Robotics-Telepresence Bridge",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "screen-sharing",
+      "title": "Screen Sharing",
+      "qualityScore": 0.52
+    },
+    {
+      "slug": "self-presence",
+      "title": "Self Presence",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "shared-whiteboards",
+      "title": "Shared Whiteboards",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "smart-contract-coordination",
+      "title": "Smart Contract Coordination",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "social-presence-theory",
+      "title": "Social Presence Theory",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "social-presence",
+      "title": "Social Presence",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "synchronous-collaboration",
+      "title": "Synchronous Collaboration",
+      "qualityScore": 0.55
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "title": "TELE 001 telepresence",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "tele-050-neuralrenderingtelepresence",
+      "title": "TELE 050 neuralrenderingtelepresence",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "technology-adoption",
+      "title": "Technology Adoption",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "telecollaboration-domain",
+      "title": "Telecollaboration Domain",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "telecollaboration-and-telepresence-domain",
+      "title": "Telecollaboration and Telepresence Domain",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "telecollaboration",
+      "title": "Telecollaboration",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "teleoperation-systems",
+      "title": "Teleoperation Systems",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "threaded-messaging",
+      "title": "Threaded Messaging",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "video-async",
+      "title": "Video Async",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "video-conferencing",
+      "title": "Video Conferencing",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "virtual-meeting",
+      "title": "Virtual Meeting",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "virtual-office-spaces",
+      "title": "Virtual Office Spaces",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "virtual-reality-telepresence",
+      "title": "Virtual Reality Telepresence",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "voice-memo",
+      "title": "Voice Memo",
+      "qualityScore": 0.35
+    },
+    {
+      "slug": "web-rtc",
+      "title": "WebRTC",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "dc-communication",
+      "title": "Communication Technology",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-protocol-and-infra",
+      "title": "Protocol and Infrastructure",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-telepresence",
+      "title": "Telepresence",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-workspace-tools",
+      "title": "Workspace Tools",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "title": "tc 0002 collaborative document editing",
+      "qualityScore": 0.5
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "title": "tc 0003 telepresence robot",
+      "qualityScore": 0.5
     }
   ],
   "blockchain": [

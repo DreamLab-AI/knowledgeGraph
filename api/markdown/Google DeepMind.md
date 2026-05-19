@@ -503,26 +503,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:google-deep-mind",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:google-deep-mind",
+  "@type": "Individual",
   "label": "Google DeepMind",
   "definition": "Google DeepMind is the artificial general intelligence research laboratory of Alphabet Inc., headquartered at S2 Handyside Building, King's Cross, London with ~staff and additional sites in Mountain View, Zurich, Paris, Montreal and Tel Aviv, formed in April 2023 through the formal merger of Deep...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:ai-research-laboratory",
-      "label": "AI Research Laboratory"
-    },
-    {
-      "@id": "urn:ngm:class:alphabet-subsidiary",
-      "label": "Alphabet Subsidiary"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -810,7 +796,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-laboratory",
+      "label": "AI Research Laboratory"
+    },
+    {
+      "@id": "urn:ngm:class:alphabet-subsidiary",
+      "label": "Alphabet Subsidiary"
+    }
+  ]
 }
 ```
 

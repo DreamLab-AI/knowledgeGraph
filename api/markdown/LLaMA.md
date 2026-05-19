@@ -39,24 +39,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:lla-ma",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:lla-ma",
+  "@type": "Individual",
   "label": "LLaMA",
   "definition": "Large Language Model Meta AI: a collection of foundation language models ranging from 7B to 65B parameters, designed to be efficient and performant whilst using only publicly available data.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ]
 }
 ```
 

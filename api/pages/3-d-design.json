@@ -1,11 +1,11 @@
 {
-  "id": "urn:visionflow:page:341e9461b1019ebcd2e8fcbef3035221b2cfa55fd1d85c80407ff13b96f9fb8b",
-  "title": "Walks and exercise",
-  "slug": "walks-and-exercise",
+  "id": "urn:visionflow:page:8b5f26e1526d95a377b2fcfc06fb7875aaa0de259d2a6433c75c59194143993b",
+  "title": "3D Design",
+  "slug": "3-d-design",
   "public": true,
-  "classIri": "urn:ngm:class:walks-and-exercise",
+  "classIri": "urn:ngm:class:3-d-design",
   "domain": "infrastructure",
-  "definition": "Walks and exercise is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "3D Design is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -30,5 +30,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "virtual-world-building",
+      "label": "Virtual World Building"
+    }
+  ]
 }

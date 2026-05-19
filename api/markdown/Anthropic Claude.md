@@ -499,26 +499,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:anthropic-claude",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:anthropic-claude",
+  "@type": "Individual",
   "label": "Anthropic Claude",
   "definition": "Anthropic is an American artificial-intelligence safety and research company incorporated in Delaware as a Public Benefit Corporation (PBC) and headquartered in San Francisco, founded by Dario Amodei (CEO, former VP of Research at OpenAI), his sister Daniela Amodei (President), and seven addition...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-safety-organization",
-      "label": "AI Safety Organization"
-    },
-    {
-      "@id": "urn:ngm:class:frontier-ai-lab",
-      "label": "Frontier AI Lab"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -814,7 +800,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety-organization",
+      "label": "AI Safety Organization"
+    },
+    {
+      "@id": "urn:ngm:class:frontier-ai-lab",
+      "label": "Frontier AI Lab"
+    }
+  ]
 }
 ```
 

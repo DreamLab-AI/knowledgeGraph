@@ -351,26 +351,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:chat-gpt",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:chat-gpt",
+  "@type": "Individual",
   "label": "ChatGPT",
   "definition": "ChatGPT is a conversational AI assistant developed by OpenAI and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned Large Language Models accessible to general consumers via a web interface, achieving 100 monthly active users within 6...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-application",
-      "label": "AI Application"
-    },
-    {
-      "@id": "urn:ngm:class:ai-assistants",
-      "label": "AI Assistants"
-    },
-    {
-      "@id": "urn:ngm:class:natural-language-generation",
-      "label": "Natural Language Generation"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -654,7 +640,21 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:ai-assistants",
+      "label": "AI Assistants"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-generation",
+      "label": "Natural Language Generation"
+    }
+  ]
 }
 ```
 

@@ -1,13 +1,13 @@
 public:: true
 
-# 3DAssetStandard
+# 3D Asset Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:ac471d565acfa4646419d4e3d02f6084f6cdc9fd070f12d09fdb8312a338536f",
   "@type": "Page",
-  "vc:slug": "3-dasset-standard",
-  "title": "3DAssetStandard",
+  "vc:slug": "3-d-asset-standard",
+  "title": "3D Asset Standard",
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
@@ -39,10 +39,10 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:3-dasset-standard",
+  "@id": "urn:ngm:class:3-d-asset-standard",
   "@type": "Class",
-  "label": "3DAssetStandard",
-  "definition": "3DAssetStandard is a technology infrastructure concept and a type of infrastructure.",
+  "label": "3D Asset Standard",
+  "definition": "3D Asset Standard is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
   "relations": {
@@ -71,7 +71,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-dasset-standard:776c802a9fc9",
+  "@id": "urn:visionflow:annotation:link-resolutions:3-d-asset-standard:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
   "vc:appliesTo": {
     "@id": "urn:visionflow:page:ac471d565acfa4646419d4e3d02f6084f6cdc9fd070f12d09fdb8312a338536f"
@@ -95,10 +95,10 @@ public:: true
 
 
 - ### Definition
-  - 3DAssetStandard is a concept within the ngm domain.
+  - 3D Asset Standard is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAssetStandard
+  - owl-class:: infrastructure:3D Asset Standard
   - owl-role:: Concept
 
 - ### Relationships

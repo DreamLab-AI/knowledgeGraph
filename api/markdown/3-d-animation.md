@@ -1,8 +1,8 @@
 - ### Definition
-  - 3DAnimation is a concept within the ngm domain.
+  - 3D Animation is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DAnimation
+  - owl-class:: infrastructure:3D Animation
   - owl-role:: Concept
 
 - ### Relationships

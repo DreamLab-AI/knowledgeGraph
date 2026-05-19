@@ -1,8 +1,8 @@
 - ### Definition
-  - 3DDesign is a concept within the ngm domain.
+  - 3D Design is a concept within the ngm domain.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:3DDesign
+  - owl-class:: infrastructure:3D Design
   - owl-role:: Concept
 
 - ### Relationships
